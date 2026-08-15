@@ -1,0 +1,228 @@
+# Qiskit Fall Fest 2026: Thailand — เว็บไซต์งาน
+
+เว็บไซต์ทางการของ Qiskit Fall Fest 2026: ประเทศไทย
+สร้างด้วย **Next.js 15 (App Router) + TypeScript** ผลลัพธ์เป็นไฟล์ static ล้วน อัปโหลดขึ้นเซิร์ฟเวอร์ธรรมดาได้เลย ไม่ต้องมี Node บนเซิร์ฟเวอร์
+
+---
+
+## เริ่มใช้งานใน 3 คำสั่ง
+
+```bash
+npm install       # ติดตั้ง dependency
+npm run dev       # เปิดดูที่ http://localhost:3000
+npm run build     # สร้างไฟล์จริง ผลลัพธ์อยู่ในโฟลเดอร์ out/
+```
+
+เสร็จแล้วอัปโหลดทุกอย่างในโฟลเดอร์ `out/` ขึ้นเซิร์ฟเวอร์ จบ
+
+---
+
+## 🔴 8 อย่างที่ต้องแก้ก่อนเปิดเว็บจริง
+
+ทุกอย่างอยู่ในไฟล์ **`data/site.ts`** และ **`data/editions.ts`** ไม่ต้องแตะโค้ดหน้าเว็บเลย
+
+| # | สิ่งที่ต้องแก้ | แก้ที่ไหน |
+|---|---|---|
+| 1 | **ลิงก์ฟอร์มลงทะเบียน** (Google Form / Airtable) | `data/site.ts` → `contact.registerForm` — ใส่แล้วฟอร์มจะฝังในหน้า `/register` อัตโนมัติ |
+| 2 | **อีเมลทางการของงาน** | `data/site.ts` → `contact.email` แล้วเปลี่ยน `emailConfirmed` เป็น `true` |
+| 3 | **ลิงก์เชิญ Discord** | `data/site.ts` → `contact.discord` |
+| 4 | **ยืนยันวันที่งาน มทส.** | `data/editions.ts` → edition `sut` → `date` และตั้ง `dateConfirmed: true` |
+| 5 | **วันที่งาน True Digital Park** | `data/editions.ts` → edition `bangkok` → `date` + `dateLabel` |
+| 6 | **วันที่ปฐมนิเทศออนไลน์ 2 รอบ** | `data/editions.ts` → edition `online` → `dateLabel` |
+| 7 | **ชื่อวิทยากร** | `data/people.ts` → `speakers` เปลี่ยน `confirmed: true` เมื่อยืนยันแล้ว |
+| 8 | **จำนวนผู้ลงทะเบียน** (ให้แถบที่นั่งขยับ) | `data/editions.ts` → `registered` ของแต่ละ edition |
+
+> ค้นหาคำว่า `TBC` หรือ `รอยืนยัน` ในโปรเจกต์ จะเจอทุกจุดที่ยังต้องเติม
+
+---
+
+## โครงสร้างโปรเจกต์
+
+```
+app/                     หน้าเว็บทั้งหมด (1 โฟลเดอร์ = 1 หน้า)
+├── layout.tsx           โครงหลัก + meta tags + JSON-LD + ฟอนต์
+├── globals.css          ⭐ ระบบสีและสไตล์ทั้งหมดอยู่ไฟล์เดียวนี้
+├── page.tsx             หน้าแรก
+├── about/ editions/ programme/ register/ learn/
+├── speakers/ committee/ partners/ news/ qtric/ faq/ contact/
+├── code-of-conduct/
+├── sitemap.ts  robots.ts  not-found.tsx
+
+components/              ชิ้นส่วนที่ใช้ซ้ำ
+├── Nav.tsx              แถบเมนู + mega menu + เมนูมือถือ
+├── Footer.tsx  Countdown.tsx  EditionCard.tsx
+├── Timeline.tsx  PersonCard.tsx  Icon.tsx  ui.tsx
+
+data/                    ⭐ เนื้อหาทั้งหมดอยู่ที่นี่ แก้ตรงนี้พอ
+├── site.ts              ข้อมูลงาน เมนู ช่องทางติดต่อ
+├── editions.ts          งานย่อยแต่ละเมือง
+├── programme.ts         ตารางเวลา หลักสูตร สายเนื้อหา
+├── people.ts            วิทยากร + คณะกรรมการ
+├── partners.ts          พันธมิตร + สิ่งที่ IBM สนับสนุน
+├── learn.ts             เช็กลิสต์ ศัพท์ควอนตัม การบ้าน
+├── faq.ts  news.ts
+
+lib/i18n.tsx             ระบบสองภาษา ไทย/อังกฤษ
+public/assets/           กราฟิก SVG ทั้งหมด
+```
+
+---
+
+## ระบบสองภาษา
+
+ข้อความทุกจุดเขียนเป็นคู่ `{ th: "...", en: "..." }` ปุ่ม `TH | EN` บนแถบเมนูสลับได้ทันที ค่าที่เลือกจำไว้ในเบราว์เซอร์
+
+**เพิ่มข้อความใหม่:**
+
+```tsx
+const { t } = useLang();
+<p>{t({ th: "สวัสดี", en: "Hello" })}</p>
+```
+
+HTML ที่ build ออกมาเป็นภาษาไทยเสมอ (ดีต่อ SEO ไทย) แล้วสลับเป็นอังกฤษฝั่งเบราว์เซอร์
+
+> ถ้าภายหลังอยากได้ URL แยกภาษา (`/en/...`) ให้เปลี่ยนไปใช้ `next-intl` โครงสร้างข้อมูลปัจจุบันย้ายได้เลยโดยไม่ต้องเขียน copy ใหม่
+
+---
+
+## ระบบสี
+
+สีทั้งหมดสุ่มมาจากภาพชุดสติกเกอร์ Qiskit Fall Fest 2026 จริง ๆ อยู่ที่ `:root` ในไฟล์ `app/globals.css`
+
+| Token | ค่า | ใช้ทำอะไร |
+|---|---|---|
+| `--indigo-900` | `#1B0E3F` | พื้นมืดสุด hero, footer |
+| `--indigo-800` | `#2B145A` | สีแบรนด์หลัก, ตัวหนังสือบนพื้นสว่าง |
+| `--lavender-400` | `#B896F8` | accent, ไอคอน, focus ring |
+| `--pink-400` | `#ED84B5` | ปุ่ม CTA และ hover เท่านั้น |
+| `--ice-100` | `#DCE4F9` | ตัวหนังสือบนพื้นมืด |
+
+### ⚠️ กฎที่ห้ามละเมิด
+
+ตรวจ contrast ตาม WCAG 2.1 แล้ว:
+
+- `--pink-400` บนพื้นขาว = **2.45** ❌ **ห้ามใช้เป็นตัวหนังสือ**
+- `--lavender-400` บนพื้นขาว = **2.40** ❌ **ห้ามใช้เป็นตัวหนังสือ**
+- ปุ่มพื้นชมพูต้องใช้ตัวหนังสือสี `--indigo-900` (7.25 ✅) **ห้ามใช้สีขาว**
+
+ชมพูและลาเวนเดอร์ใช้ได้กับ *พื้น เส้น ไอคอน* บนพื้นขาว และใช้เป็น *ตัวหนังสือ* ได้เฉพาะบนพื้นมืด
+
+---
+
+## กราฟิก
+
+`public/assets/` มี SVG 11 ไฟล์ที่ **ออกแบบขึ้นใหม่ทั้งหมด** ไม่ได้ลอกหรือดัดแปลงโลโก้ IBM หรือ Qiskit จึงวางคู่กับโลโก้ทางการได้อย่างปลอดภัย
+
+`hero-bg` · `og-image` · `badge-2026` · `logo-mark` · `favicon` · `pattern-circuit` · `divider-wave` · `speaker-placeholder` · `venue-card` · `partner-placeholder` · `icons`
+
+### สิ่งที่ยังต้องหามาเพิ่ม
+
+| รายการ | เอามาจากไหน |
+|---|---|
+| โลโก้ IBM Quantum / Qiskit Fall Fest ทางการ | ชุด asset ที่ IBM ส่งให้ทีมโฮสต์ → เก็บที่ `public/assets/official/` |
+| โลโก้ qBraid, True, มหาวิทยาลัยต่าง ๆ | ขอไฟล์ SVG จากแต่ละองค์กรโดยตรง |
+| รูปวิทยากรและกรรมการ | ขอจากเจ้าตัว + หนังสือยินยอมตาม PDPA → วางที่ `public/assets/photos/` แล้วใส่ path ที่ `photo` ใน `data/people.ts` |
+| ภาพอาคาร มทส. และ True Digital Park | ถ่ายเอง หรือขอจากฝ่ายสื่อสารองค์กร → เปลี่ยน `image` ใน `data/editions.ts` |
+
+### แปลง og-image เป็น PNG (จำเป็นสำหรับ Facebook / LinkedIn)
+
+Facebook และ LinkedIn อ่าน SVG ไม่ได้ ต้องแปลงเป็น PNG ก่อน:
+
+```bash
+npx sharp-cli -i public/assets/og-image.svg -o public/assets/og-image.png resize 1200 630
+```
+
+แล้วเปลี่ยน path ใน `app/layout.tsx` จาก `og-image.svg` เป็น `og-image.png`
+
+---
+
+## Deploy
+
+### กรณี 1 — วางที่ root ของโดเมน
+
+```bash
+npm run build
+# อัปโหลดทุกอย่างในโฟลเดอร์ out/
+```
+
+### กรณี 2 — วางใน subfolder เช่น `qtric.sut.ac.th/qff2026/`
+
+```bash
+NEXT_PUBLIC_BASE_PATH=/qff2026 npm run build
+```
+
+จากนั้นอัปโหลด `out/` ไปไว้ในโฟลเดอร์ `qff2026` บนเซิร์ฟเวอร์
+
+### ตั้งค่าเซิร์ฟเวอร์
+
+โปรเจกต์นี้ใช้ `trailingSlash: true` ทุกหน้าจึงเป็นโฟลเดอร์ที่มี `index.html` อยู่ข้างใน
+Apache และ Nginx ทั่วไปเสิร์ฟได้เลยโดยไม่ต้องตั้งค่าเพิ่ม
+
+---
+
+## ฟอนต์
+
+ใช้ IBM Plex แบบ self-host ผ่าน `@fontsource` **ไม่พึ่ง Google Fonts**
+โหลดเร็วกว่า ไม่มีปัญหาเครือข่ายมหาวิทยาลัย และไม่ส่งข้อมูลผู้ใช้ออกนอกเซิร์ฟเวอร์ (ดีต่อ PDPA)
+
+- `IBM Plex Sans Thai` — ภาษาไทย
+- `IBM Plex Sans` — ภาษาอังกฤษ
+- `IBM Plex Mono` — ตัวเลข เวลา และ label
+
+**ภาษาไทยตั้ง `line-height: 1.85`** สูงกว่าอังกฤษ เพราะสระบนล่างและวรรณยุกต์จะชนกันถ้าใช้ค่าปกติ อย่าลดค่านี้
+
+---
+
+## งานที่ต้องทำเพิ่ม
+
+### ก่อนเปิดเว็บ
+- [ ] เติมข้อมูล 8 ข้อในตารางด้านบน
+- [ ] แปลง `og-image.svg` เป็น PNG
+- [ ] ใส่ Google Maps embed ในหน้า edition (แทน placeholder ที่มีอยู่)
+- [ ] ตรวจ Code of Conduct กับแนวทางของ IBM และฝ่ายกฎหมายมหาวิทยาลัย
+- [ ] ใส่ analytics — แนะนำ Plausible เพราะเป็นมิตรกับ PDPA มากกว่า GA4
+
+### หลังจบงาน
+- [ ] เพิ่มหน้า `/recap` — ภาพบรรยากาศ สไลด์ โน้ตบุ๊ก วิดีโอย้อนหลัง
+- [ ] เปลี่ยนปุ่ม CTA จาก "ลงทะเบียน" เป็น "ดูสรุปงาน"
+- [ ] เก็บ feedback form
+
+---
+
+## กติกาการใช้แบรนด์ IBM ⚠️
+
+ตามสไลด์ *Branding do and do nots* ที่ IBM ส่งให้ทีมโฮสต์:
+
+| ✅ ใช้ได้ | ❌ ห้ามใช้ |
+|---|---|
+| โลโก้ **IBM Quantum** | โลโก้ **IBM** เปล่า ๆ (แถบขีด 8 เส้น) — ต้องมีสัญญาซึ่งงานนี้ไม่มี |
+| โลโก้ลูกโลกวงรีของ IBM Quantum | ห้ามแก้ไข ดัดแปลง ยืด บีบ หรือเปลี่ยนสีโลโก้ใด ๆ |
+
+**ข้อกำหนดที่ทำไว้ให้แล้วในเว็บ:**
+
+- ข้อความ `Qiskit Fall Fest 2026` อยู่มุมซ้ายล่างของ footer ✅
+- Trademark notice อยู่ใน footer ✅
+
+> อย่าลบสองอย่างนี้ออก เป็นเงื่อนไขของ IBM
+
+---
+
+## Accessibility
+
+ทำตามมาตรฐาน WCAG 2.1 ระดับ AA แล้ว:
+
+- Contrast ผ่านทุกคู่ตามตารางด้านบน
+- Focus ring ชัดเจนทุกจุดที่กดได้ (`3px --lavender-400`)
+- Mega menu และเมนูมือถือใช้คีย์บอร์ดได้ครบ กด `Esc` ปิดได้
+- Skip-to-content link เป็นอย่างแรกในหน้า
+- Countdown ตั้ง `aria-live="off"` ไม่ให้ screen reader อ่านทุกวินาที และมีข้อความวันที่แบบ static คู่กัน
+- รองรับ `prefers-reduced-motion`
+- Touch target บนมือถือ ≥ 44×44px
+
+**อย่าลืมทดสอบ** ด้วยคีย์บอร์ดล้วน (ไม่แตะเมาส์) ทุกครั้งที่เพิ่มหน้าใหม่
+
+---
+
+*Qiskit and IBM Quantum are trademarks of International Business Machines Corporation.*
+*Used with permission for Qiskit Fall Fest 2026.*
+# qtt2026
