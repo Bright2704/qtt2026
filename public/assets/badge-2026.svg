@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="Qiskit Fall Fest 2026 Thailand circular badge">
+  <defs>
+    <!-- top arc: left -> right over the top -->
+    <path id="arcTop" d="M 36 160 A 124 124 0 0 1 284 160" fill="none"/>
+    <!-- bottom arc: left -> right under the bottom (text reads upright) -->
+    <path id="arcBot" d="M 44 160 A 116 116 0 0 0 276 160" fill="none"/>
+  </defs>
+
+  <circle cx="160" cy="160" r="156" fill="#212729"/>
+  <circle cx="160" cy="160" r="146" fill="none" stroke="#ED84B5" stroke-width="1.5" stroke-opacity=".7"/>
+
+  <text font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="21" letter-spacing="5.5" fill="#FFFFFF">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">QISKIT FALL FEST</textPath>
+  </text>
+  <text font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="18" letter-spacing="6" fill="#B896F8">
+    <textPath href="#arcBot" startOffset="50%" text-anchor="middle">THAILAND</textPath>
+  </text>
+
+  <text x="44" y="167" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="18" fill="#DCE4F9">2026</text>
+  <text x="276" y="167" text-anchor="end" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="18" fill="#DCE4F9">2026</text>
+
+  <!-- central mark: tilted Bloch orbits + state vector (original geometry) -->
+  <g transform="translate(160,155)">
+    <circle r="50" fill="none" stroke="#ED84B5" stroke-width="2"/>
+    <ellipse rx="50" ry="18" fill="none" stroke="#B896F8" stroke-width="1.4" stroke-opacity=".9" transform="rotate(28)"/>
+    <ellipse rx="50" ry="18" fill="none" stroke="#5587F7" stroke-width="1.4" stroke-opacity=".9" transform="rotate(-28)"/>
+    <ellipse rx="18" ry="50" fill="none" stroke="#DCE4F9" stroke-width="1.2" stroke-opacity=".55"/>
+    <path d="M0 0 L 33 -38" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="33" cy="-38" r="6.5" fill="#FFFFFF"/>
+    <circle cx="0" cy="0" r="3.4" fill="#ED84B5"/>
+    <circle cx="-42" cy="27" r="4.5" fill="#B896F8"/>
+  </g>
+</svg>

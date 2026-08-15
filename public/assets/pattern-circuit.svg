@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Tileable quantum circuit pattern">
+  <rect width="240" height="240" fill="none"/>
+  <g stroke="#2B145A" stroke-opacity=".16" stroke-width="1.2" fill="none">
+    <path d="M0 40 H240"/><path d="M0 100 H240"/><path d="M0 160 H240"/><path d="M0 220 H240"/>
+    <rect x="34" y="26" width="28" height="28" rx="7"/>
+    <rect x="148" y="86" width="28" height="28" rx="7"/>
+    <rect x="76" y="146" width="28" height="28" rx="7"/>
+    <rect x="190" y="206" width="28" height="28" rx="7"/>
+    <path d="M118 40 V100"/><path d="M28 160 V220"/>
+  </g>
+  <g fill="#ED84B5" fill-opacity=".28">
+    <circle cx="118" cy="40" r="4"/><circle cx="118" cy="100" r="4"/>
+    <circle cx="28" cy="160" r="4"/><circle cx="28" cy="220" r="4"/>
+  </g>
+</svg>

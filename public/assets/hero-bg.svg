@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Abstract quantum interference background in indigo, lavender and pink">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0E0722"/>
+      <stop offset="45%" stop-color="#1B0E3F"/>
+      <stop offset="100%" stop-color="#2B145A"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B896F8" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#B896F8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ED84B5" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#ED84B5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5587F7" stop-opacity=".40"/>
+      <stop offset="100%" stop-color="#5587F7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#DCE4F9" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#DCE4F9" stop-opacity=".55"/>
+      <stop offset="70%" stop-color="#ED84B5" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#B896F8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="26"/></filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- ambient light blooms -->
+  <circle cx="1230" cy="215" r="330" fill="url(#glowA)"/>
+  <circle cx="285" cy="720" r="300" fill="url(#glowB)"/>
+  <circle cx="820" cy="120" r="260" fill="url(#glowC)"/>
+
+  <!-- interference field: stacked sine waves = superposition motif -->
+  <g fill="none" stroke="url(#wave)" stroke-linecap="round">
+    <path d="M-40 470 Q 160 380 360 470 T 760 470 T 1160 470 T 1560 470" stroke-width="1.6" opacity=".9"/>
+    <path d="M-40 505 Q 160 395 360 505 T 760 505 T 1160 505 T 1560 505" stroke-width="1.3" opacity=".75"/>
+    <path d="M-40 540 Q 160 410 360 540 T 760 540 T 1160 540 T 1560 540" stroke-width="1.1" opacity=".6"/>
+    <path d="M-40 575 Q 160 425 360 575 T 760 575 T 1160 575 T 1560 575" stroke-width="1" opacity=".45"/>
+    <path d="M-40 610 Q 160 440 360 610 T 760 610 T 1160 610 T 1560 610" stroke-width=".9" opacity=".3"/>
+    <path d="M-40 645 Q 160 455 360 645 T 760 645 T 1160 645 T 1560 645" stroke-width=".8" opacity=".2"/>
+  </g>
+
+  <!-- circuit rails with gates (top-left) -->
+  <g stroke="#DCE4F9" stroke-opacity=".28" stroke-width="1.4" fill="none">
+    <path d="M110 175 H 520"/><path d="M110 235 H 520"/><path d="M110 295 H 520"/>
+    <rect x="196" y="156" width="38" height="38" rx="9" fill="#2B145A" fill-opacity=".9" stroke="#B896F8" stroke-opacity=".8"/>
+    <rect x="300" y="216" width="38" height="38" rx="9" fill="#2B145A" fill-opacity=".9" stroke="#ED84B5" stroke-opacity=".8"/>
+    <rect x="404" y="276" width="38" height="38" rx="9" fill="#2B145A" fill-opacity=".9" stroke="#5587F7" stroke-opacity=".8"/>
+    <path d="M319 235 V 295"/>
+    <circle cx="319" cy="295" r="6" fill="#ED84B5" stroke="none"/>
+  </g>
+
+  <!-- entanglement graph (right) -->
+  <g stroke="#B896F8" stroke-opacity=".45" stroke-width="1.2">
+    <path d="M1180 640 L1320 560 L1440 660 L1290 730 Z" fill="none"/>
+    <path d="M1180 640 L1440 660"/><path d="M1320 560 L1290 730"/>
+  </g>
+  <g fill="#DCE4F9">
+    <circle cx="1180" cy="640" r="7"/><circle cx="1320" cy="560" r="9" fill="#ED84B5"/>
+    <circle cx="1440" cy="660" r="7"/><circle cx="1290" cy="730" r="8" fill="#B896F8"/>
+  </g>
+
+  <!-- probability dust -->
+  <g fill="#DCE4F9" opacity=".5">
+    <circle cx="640" cy="150" r="2"/><circle cx="905" cy="255" r="1.6"/><circle cx="1050" cy="405" r="2.2"/>
+    <circle cx="430" cy="640" r="1.8"/><circle cx="720" cy="780" r="2"/><circle cx="1490" cy="330" r="1.6"/>
+    <circle cx="180" cy="420" r="1.8"/><circle cx="960" cy="690" r="1.5"/><circle cx="1380" cy="180" r="2"/>
+    <circle cx="560" cy="330" r="1.4"/><circle cx="1140" cy="820" r="1.7"/><circle cx="255" cy="255" r="1.5"/>
+  </g>
+
+  <!-- horizon fade so headline text stays legible -->
+  <rect y="620" width="1600" height="280" fill="#0E0722" opacity=".35" filter="url(#soft)"/>
+</svg>
