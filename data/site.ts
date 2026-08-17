@@ -46,7 +46,19 @@ export const site = {
     instagram: "", // TBC
     youtube: "", // TBC
     linkedin: "https://www.linkedin.com/company/qtric",
-    registerForm: "", // TBC — ใส่ลิงก์ Google Form / Airtable แล้วฟอร์มจะฝังอัตโนมัติ
+
+    /** ใส่ลิงก์ Google Form / Airtable ถ้าอยากฝังฟอร์มสำเร็จรูปแทนฟอร์มของเว็บ */
+    registerForm: "",
+
+    /**
+     * ปลายทางรับข้อมูลจากฟอร์มลงทะเบียนของเว็บ (รับ POST เป็น JSON)
+     * ใช้ได้กับ Formspree, Basin, Web3Forms หรือ API ของทีมเอง
+     * ตัวอย่าง: "https://formspree.io/f/xxxxxxxx"
+     *
+     * ถ้าเว้นว่างไว้ ฟอร์มยังใช้งานได้ปกติ แต่จะสรุปคำตอบทั้งหมด
+     * เป็นอีเมลให้ผู้สมัครกดส่งแทน จึงเปิดรับสมัครได้ทันทีโดยไม่ต้องรอ backend
+     */
+    formEndpoint: "",
   },
 
   qbraid: {

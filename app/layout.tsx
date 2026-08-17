@@ -18,6 +18,7 @@ import "@fontsource/ibm-plex-mono/latin-400.css";
 import "@fontsource/ibm-plex-mono/latin-500.css";
 
 import "./globals.css";
+import "./magic.css";
 import { LangProvider } from "@/lib/i18n";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -64,7 +65,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-export const viewport = { themeColor: "#2B145A", width: "device-width", initialScale: 1 };
+export const viewport = { themeColor: "#f4f2fb", width: "device-width", initialScale: 1 };
 
 /** โครงสร้างข้อมูลให้ Google แสดงผลเป็นการ์ดอีเวนต์ */
 const eventJsonLd = {

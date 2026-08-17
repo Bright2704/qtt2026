@@ -286,8 +286,8 @@ export default function Nav() {
               ))}
             </div>
 
-            <div style={{ marginTop: 28 }}>
-              <div className="lang" role="group" aria-label="Language" style={{ color: "var(--indigo-800)" }}>
+            <div style={{ marginTop: 28, display: "flex", alignItems: "center", gap: 14 }}>
+                  <div className="lang" role="group" aria-label="Language" style={{ color: "var(--text-strong)" }}>
                 <button aria-pressed={lang === "th"} onClick={() => setLang("th")}>
                   <span>TH</span>
                 </button>

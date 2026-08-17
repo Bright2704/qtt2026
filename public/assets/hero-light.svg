@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Soft light background with lavender and pink glows">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="42%" stop-color="#f6f4fe"/>
+      <stop offset="100%" stop-color="#e9e3fb"/>
+    </linearGradient>
+    <radialGradient id="gLav" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b796f6" stop-opacity=".40"/>
+      <stop offset="100%" stop-color="#b796f6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f86dad" stop-opacity=".32"/>
+      <stop offset="100%" stop-color="#f86dad" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gIce" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0071fd" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#0071fd" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b796f6" stop-opacity="0"/>
+      <stop offset="38%" stop-color="#b796f6" stop-opacity=".42"/>
+      <stop offset="72%" stop-color="#f86dad" stop-opacity=".34"/>
+      <stop offset="100%" stop-color="#f86dad" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- แสงนุ่ม ๆ สามจุด ให้พื้นไม่แบน -->
+  <circle cx="1210" cy="210" r="360" fill="url(#gLav)"/>
+  <circle cx="330" cy="740" r="330" fill="url(#gPink)"/>
+  <circle cx="820" cy="120" r="280" fill="url(#gIce)"/>
+
+  <!-- คลื่นแทรกสอด สื่อถึงสถานะซ้อนทับของคิวบิต -->
+  <g fill="none" stroke="url(#wave)" stroke-linecap="round">
+    <path d="M-40 470 Q 160 380 360 470 T 760 470 T 1160 470 T 1560 470" stroke-width="1.8"/>
+    <path d="M-40 508 Q 160 396 360 508 T 760 508 T 1160 508 T 1560 508" stroke-width="1.5" opacity=".8"/>
+    <path d="M-40 546 Q 160 412 360 546 T 760 546 T 1160 546 T 1560 546" stroke-width="1.2" opacity=".6"/>
+    <path d="M-40 584 Q 160 428 360 584 T 760 584 T 1160 584 T 1560 584" stroke-width="1" opacity=".42"/>
+    <path d="M-40 622 Q 160 444 360 622 T 760 622 T 1160 622 T 1560 622" stroke-width=".9" opacity=".28"/>
+  </g>
+
+  <!-- วงจรควอนตัมจาง ๆ มุมซ้ายบน -->
+  <g stroke="#461d8a" stroke-opacity=".16" stroke-width="1.4" fill="none">
+    <path d="M110 180 H 520"/><path d="M110 240 H 520"/><path d="M110 300 H 520"/>
+    <rect x="196" y="161" width="38" height="38" rx="9" fill="#ffffff" stroke="#b796f6" stroke-opacity=".8"/>
+    <rect x="300" y="221" width="38" height="38" rx="9" fill="#ffffff" stroke="#f86dad" stroke-opacity=".8"/>
+    <rect x="404" y="281" width="38" height="38" rx="9" fill="#ffffff" stroke="#0071fd" stroke-opacity=".6"/>
+    <path d="M319 240 V 300"/>
+    <circle cx="319" cy="300" r="6" fill="#f86dad" stroke="none"/>
+  </g>
+
+  <!-- กราฟความพัวพันมุมขวาล่าง -->
+  <g stroke="#461d8a" stroke-opacity=".2" stroke-width="1.2">
+    <path d="M1180 660 L1320 580 L1440 680 L1290 750 Z" fill="none"/>
+    <path d="M1180 660 L1440 680"/><path d="M1320 580 L1290 750"/>
+  </g>
+  <g>
+    <circle cx="1180" cy="660" r="7" fill="#b796f6"/>
+    <circle cx="1320" cy="580" r="9" fill="#f86dad"/>
+    <circle cx="1440" cy="680" r="7" fill="#0071fd" fill-opacity=".7"/>
+    <circle cx="1290" cy="750" r="8" fill="#b796f6"/>
+  </g>
+
+  <!-- ฝุ่นความน่าจะเป็น -->
+  <g fill="#461d8a" opacity=".22">
+    <circle cx="640" cy="160" r="2.2"/><circle cx="905" cy="265" r="1.8"/><circle cx="1050" cy="415" r="2.4"/>
+    <circle cx="430" cy="650" r="2"/><circle cx="720" cy="790" r="2.2"/><circle cx="1490" cy="340" r="1.8"/>
+    <circle cx="180" cy="430" r="2"/><circle cx="960" cy="700" r="1.6"/><circle cx="1380" cy="190" r="2.2"/>
+  </g>
+</svg>

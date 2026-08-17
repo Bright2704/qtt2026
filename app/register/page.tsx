@@ -6,6 +6,7 @@ import { editions, statusLabel } from "@/data/editions";
 import { site } from "@/data/site";
 import Icon from "@/components/Icon";
 import { CapacityMeter, Notice, PageHead, Section } from "@/components/ui";
+import RegisterForm from "@/components/RegisterForm";
 
 const steps = [
   {
@@ -199,36 +200,9 @@ export default function Register() {
             loading="lazy"
           />
         ) : (
-          <>
-            <div className="embed-placeholder" style={{ marginTop: 32 }}>
-              <Icon name="i-certificate" size={38} />
-              <div>
-                <h3>{t({ th: "ฟอร์มจะมาอยู่ตรงนี้", en: "The form goes here" })}</h3>
-                <p className="muted" style={{ marginTop: 8, maxWidth: "50ch" }}>
-                  {t({
-                    th: "ใส่ลิงก์ Google Form หรือ Airtable ที่ไฟล์ data/site.ts ช่อง registerForm แล้วฟอร์มจะถูกฝังอัตโนมัติ ไม่ต้องแก้โค้ดหน้านี้",
-                    en: "Add your Google Form or Airtable link to registerForm in data/site.ts and it embeds automatically — no need to touch this page.",
-                  })}
-                </p>
-              </div>
-            </div>
-
-            <h3 style={{ marginTop: 48 }}>
-              {t({ th: "ฟิลด์ที่ฟอร์มควรมี", en: "Fields the form should collect" })}
-            </h3>
-            <div className="table-wrap" style={{ marginTop: 20 }}>
-              <table className="t">
-                <tbody>
-                  {formFields.map((f) => (
-                    <tr key={t(f.field)}>
-                      <td style={{ fontWeight: 500 }}>{t(f.field)}</td>
-                      <td className="muted">{t(f.note)}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </>
+          <div style={{ marginTop: 36 }}>
+            <RegisterForm />
+          </div>
         )}
       </Section>
 
