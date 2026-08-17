@@ -379,20 +379,13 @@ export default function Home() {
               })}
             </p>
             <div className="btn-row">
-              <Link
-                className="btn btn--shimmer"
-                href="/register"
-                style={{ background: "var(--indigo-900)", color: "var(--white)" }}
-              >
+              <Link className="btn btn--solidDark btn--shimmer" href="/register">
                 <span>{t({ th: "ลงทะเบียนเลย", en: "Register now" })}</span>
                 <Icon name="i-arrow" size={18} />
               </Link>
-              <Link
-                className="btn"
-                href="/learn"
-                style={{ borderColor: "var(--indigo-900)", color: "var(--indigo-900)" }}
-              >
+              <Link className="btn btn--solidLight" href="/learn">
                 {t({ th: "ดูวิธีเตรียมตัว", en: "How to prepare" })}
+                <Icon name="i-arrow" size={18} />
               </Link>
             </div>
             <p className="small" style={{ marginTop: 20, opacity: 0.75 }}>

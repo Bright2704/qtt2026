@@ -54,10 +54,12 @@ export default function Footer() {
                         alignItems: "center",
                         gap: 7,
                         padding: "7px 14px",
-                        border: "1px dashed rgba(184,150,248,.25)",
+                        border: "1px dashed rgba(184,150,248,.4)",
                         borderRadius: 999,
                         fontSize: 13.5,
-                        opacity: 0.45,
+                        // 0.45 ให้ค่าคอนทราสต์ 3.67 ตกเกณฑ์ AA — 0.62 ได้ 5.4 ผ่าน
+                        // แต่ยังจางกว่าลิงก์ที่ใช้ได้จริง จึงยังดูออกว่ายังไม่เปิด
+                        opacity: 0.62,
                       }}
                     >
                       <Icon name={s.icon} size={16} />

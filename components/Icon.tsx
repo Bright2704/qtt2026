@@ -86,6 +86,18 @@ const paths: Record<string, React.ReactNode> = {
   "i-check": <path d="M4 12.5 9 17.5 20 6.5" />,
   "i-x": <path d="M6 6l12 12M18 6L6 18" />,
   "i-menu": <path d="M3 7h18M3 12h18M3 17h18" />,
+  "i-copy": (
+    <>
+      <rect x="9" y="9" width="12" height="12" rx="2.5" />
+      <path d="M15 5.5A2.5 2.5 0 0 0 12.5 3h-7A2.5 2.5 0 0 0 3 5.5v7A2.5 2.5 0 0 0 5.5 15" />
+    </>
+  ),
+  "i-download": (
+    <>
+      <path d="M12 3v12M7.5 10.5 12 15l4.5-4.5" />
+      <path d="M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17" />
+    </>
+  ),
   "i-mail": (
     <>
       <rect x="3" y="5" width="18" height="14" rx="2.5" />

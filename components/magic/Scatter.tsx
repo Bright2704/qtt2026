@@ -36,16 +36,21 @@ export default function Scatter({ items }: { items: ScatterItem[] }) {
     let mtx = 0, mty = 0;  // เป้าหมายจากเมาส์
     let mcx = 0, mcy = 0;  // ค่าที่ไล่ตามแบบนุ่ม
 
+    /* จอมือถือสูงน้อยกว่าจอคอม ระยะที่สติกเกอร์วิ่งผ่านสายตาจึงสั้นกว่ามาก
+       ถ้าใช้ speed เท่ากันจะรู้สึกเหมือนไม่ขยับเลย เลยคูณเพิ่มตามความแคบของจอ */
+    const speedBoost = () => (window.innerWidth <= 760 ? 1.75 : 1);
+
     const update = () => {
       raf = 0;
       const vh = window.innerHeight;
+      const boost = speedBoost();
       // ไล่ค่าเมาส์เข้าหาเป้าหมายทีละนิด ให้ลื่นไม่กระตุก
       mcx += (mtx - mcx) * 0.08;
       mcy += (mty - mcy) * 0.08;
 
       for (const s of slots) {
-        const speed = parseFloat(s.dataset.speed || "0.1");
-        const drift = parseFloat(s.dataset.drift || "0");
+        const speed = parseFloat(s.dataset.speed || "0.1") * boost;
+        const drift = parseFloat(s.dataset.drift || "0") * boost;
         const r = s.getBoundingClientRect();
         const fromCenter = r.top + r.height / 2 - vh / 2;
         // ตัวที่พารัลแลกซ์เร็วกว่า ให้ตอบสนองเมาส์แรงกว่าด้วย จะได้รู้สึกเป็นชั้นเดียวกัน

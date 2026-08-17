@@ -21,6 +21,11 @@
   --pink-400: #f86dad;     /* ขอบนกอินทรีของจริง            32%    */
   --pink-500: #f62d86;     /* จุดสีในการ์ดวงจร เฉดจัดกว่า          */
   --pink-200: #fc9fc9;
+  /* เฉดชมพูสำหรับ "ตัวอักษร" โดยเฉพาะ
+     --pink-400 บนพื้นขาวได้แค่ 2.70 และ --pink-500 ได้ 3.72 ทั้งคู่ตกเกณฑ์ AA
+     ตัวนี้ได้ 5.64 บนขาว และ 4.52 บนพื้นม่วงอ่อนสุดของ hero จึงใช้เป็นตัวหนังสือได้
+     สีของสติกเกอร์ยังใช้ --pink-400/500 ตามเดิม ไม่ได้แตะ                      */
+  --pink-text: #c81264;
   --blue-500: #0071fd;     /* นกสีน้ำเงินของจริง             5%    */
 
   /* ---------- Neutrals ---------- */
@@ -31,10 +36,13 @@
   --slate-500: #6e5b99;
   --white: #ffffff;
 
-  /* ---------- Semantic ---------- */
-  --success: #2f9e74;
-  --warning: #9a6f00;
-  --danger: #c8431f;
+  /* ---------- Semantic ----------
+     ทั้งสามตัวใช้เป็นตัวอักษรขนาด 12px ในป้ายสถานะ จึงต้องผ่าน 4.5
+     ไม่ใช่แค่บนพื้นขาว แต่บนพื้นม่วงอ่อน (#e8e1fb) ของหัวหน้าย่อยด้วย
+     เฉดเดิมสว่างเกินไป อ่านไม่ออกบนพื้นม่วง (2.65 / 3.57 / 3.88)          */
+  --success: #1d7355;      /* ขาว 5.78 · ม่วงอ่อน 4.56 */
+  --warning: #7f5b00;      /* ขาว 6.18 · ม่วงอ่อน 4.88 */
+  --danger: #ad3717;       /* ขาว 6.30 · ม่วงอ่อน 4.97 */
 
   /* ---------- Gradients ---------- */
   --grad-hero: linear-gradient(135deg, #0b0420 0%, #150836 45%, #280d5a 100%);
@@ -42,6 +50,9 @@
   --grad-hero-light: linear-gradient(150deg, #ffffff 0%, #f6f4fe 42%, #e9e3fb 100%);
   --grad-head-light: linear-gradient(150deg, #faf9ff 0%, #f1edfd 60%, #e8e1fb 100%);
   --grad-cta: linear-gradient(90deg, #f86dad 0%, #b796f6 100%);
+  /* ไล่สีเดียวกันในเวอร์ชันเข้มพอที่จะเอาไประบายตัวอักษรได้
+     --grad-cta เอามาระบายตัวเลขใหญ่ไม่ได้ ปลายทั้งสองข้างได้แค่ 2.70 กับ 2.41 */
+  --grad-cta-text: linear-gradient(90deg, #c81264 0%, #6f3ccd 100%);
   --grad-meter: linear-gradient(90deg, #b796f6 0%, #f86dad 100%);
 
   /* ---------- Spacing ---------- */
@@ -96,6 +107,10 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+/* ⚠️ ห้ามใส่ overflow-x: hidden หรือ clip ที่ html
+   ทดสอบแล้วทั้งสองค่าทำให้ position: sticky ของแถบเมนูพัง (แถบเลื่อนหายไปกับหน้า)
+   ถ้าเจอหน้าเลื่อนซ้ายขวาได้ ให้ไปแก้ที่ element ที่กว้างเกินจริง ๆ
+   ตรวจหาตัวการด้วย node scripts/mobile-motion-test.mjs */
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 96px; }
 
 body {
@@ -255,8 +270,21 @@ strong { font-weight: 600; }
 .btn--onDark { background: var(--white); color: var(--indigo-900); }
 .btn--onDark:hover { box-shadow: var(--e-2); }
 
+/* สองตัวนี้ใช้ได้เฉพาะบนพื้นเข้ม (.section--dark) เท่านั้น
+   เอาไปวางบนพื้นสว่างเมื่อไหร่ ตัวอักษรจะเหลือคอนทราสต์ราว 1.0 คืออ่านไม่ออกเลย */
 .btn--ghostDark { background: transparent; color: var(--ice-100); border-color: rgba(184, 150, 248, 0.55); }
 .btn--ghostDark:hover { background: rgba(184, 150, 248, 0.14); border-color: var(--lavender-400); }
+
+/* ปุ่มที่วางบนแถบสีจัด (เช่น .cta-band ที่เป็นชมพู-ม่วง)
+   ต้องเป็นพื้นทึบเสมอ ปุ่มโปร่งใสบนพื้นสีจัดจะกลืนไปกับพื้นหลังจนอ่านยาก */
+.btn--solidDark { background: var(--indigo-900); color: var(--white); border-color: var(--indigo-900); }
+.btn--solidDark:hover { background: var(--indigo-800); border-color: var(--indigo-800); box-shadow: var(--e-3); }
+
+.btn--solidLight {
+  background: var(--white); color: var(--indigo-800); border-color: var(--white);
+  box-shadow: 0 2px 10px rgba(21, 8, 54, 0.14);
+}
+.btn--solidLight:hover { background: #f6f2ff; border-color: #f6f2ff; box-shadow: var(--e-3); }
 
 .btn--sm { padding: 9px 18px; font-size: 14.5px; min-height: 38px; }
 .btn--block { width: 100%; }
@@ -453,6 +481,21 @@ strong { font-weight: 600; }
   .nav__actions { margin-left: auto; }
 }
 
+/* จอแคบมาก (iPhone SE กว้าง 320px)
+   เดิม .nav__brand ตั้ง flex: none ไว้ แถวในแถบเมนูจึงย่อไม่ได้
+   รวมกันแล้วกว้าง 334px บนจอ 320px ดันให้ทั้งหน้าเลื่อนซ้ายขวาได้ 14px
+   แก้ด้วยการยอมให้ชื่อแบรนด์หดและตัดท้ายด้วย … ถ้าที่ไม่พอจริง ๆ */
+@media (max-width: 420px) {
+  .nav { gap: var(--s-3); padding-inline: 16px; }
+  .nav__brand { flex: 0 1 auto; min-width: 0; }
+  .nav__brand span { min-width: 0; }
+  .nav__brand strong {
+    font-size: 14.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .nav__brand em { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .mobile-cta { padding-inline: 16px; }
+}
+
 .sheet {
   position: fixed; inset: 0; z-index: 200;
   background: var(--bg); color: var(--text);
@@ -546,7 +589,7 @@ strong { font-weight: 600; }
 .stat__num {
   display: block; font-family: var(--font-mono), monospace;
   font-size: clamp(34px, 4.6vw, 52px); font-weight: 500; line-height: 1;
-  background: var(--grad-cta); -webkit-background-clip: text; background-clip: text;
+  background: var(--grad-cta-text); -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent; color: var(--indigo-600);
 }
 .stat__label { display: block; margin-top: var(--s-3); font-size: 15px; color: var(--text-muted); line-height: 1.55; }
@@ -565,8 +608,12 @@ strong { font-weight: 600; }
 .edition__meta svg { color: var(--indigo-600); flex: none; }
 .edition__who { font-size: 14px; color: var(--text-muted); padding: var(--s-3); background: var(--surface-2); border-radius: var(--r-sm); }
 .edition__actions { margin-top: auto; padding-top: var(--s-3); display: flex; gap: var(--s-2); flex-wrap: wrap; }
-.edition--muted { opacity: 0.72; }
-.edition--muted:hover { opacity: 1; }
+/* งานที่ยังไม่เปิด — เดิมหรี่ทั้งการ์ดด้วย opacity 0.72 ทำให้ตัวหนังสือตกเกณฑ์
+   เปลี่ยนมาบอกด้วยพื้นกับเส้นขอบแทน ตัวอักษรยังเข้มเต็มที่ อ่านออกทุกบรรทัด */
+.edition--muted { background: var(--surface-2); border-style: dashed; }
+.edition--muted .edition__img { filter: grayscale(0.55); opacity: 0.85; }
+.edition--muted:hover { background: var(--surface); border-style: solid; }
+.edition--muted:hover .edition__img { filter: none; opacity: 1; }
 
 /* ============================================================
    Timeline (programme)
@@ -708,6 +755,12 @@ table.t td.muted { color: var(--text-muted); }
 }
 .notice--warn { background: #fdf6e6; border-left-color: #d9a520; }
 .notice--pink { background: #fdf0f6; border-left-color: var(--pink-400); }
+/* แถบบอกว่าฟอร์มอยู่ในโหมดทดลอง — ต้องเห็นชัดแต่ไม่ตะโกนแข่งกับตัวฟอร์ม */
+.notice--demo {
+  background: #f3efff; border-left-color: var(--indigo-600);
+  margin-bottom: var(--s-6); color: var(--indigo-900);
+}
+.notice--demo b { color: var(--indigo-800); }
 .notice svg { flex: none; margin-top: 3px; color: var(--indigo-600); }
 .notice p { margin-bottom: 0.5em; }
 .notice p:last-child { margin-bottom: 0; }
@@ -767,16 +820,18 @@ table.t td.muted { color: var(--text-muted); }
   padding-block: calc(var(--nav-h) + var(--s-8)) var(--s-8);
   margin-top: calc(var(--nav-h) * -1);
 }
+/* ลายวงจรจาง ๆ เป็นสีเข้มบนพื้นสว่าง จึงไม่ต้อง invert แล้ว */
 .pagehead::before {
   content: ""; position: absolute; inset: 0;
   background-image: url("/assets/pattern-circuit.svg"); background-size: 240px;
-  opacity: 0.07; filter: invert(1);
+  opacity: 0.06;
 }
 .pagehead > * { position: relative; z-index: 1; }
-.pagehead h1 { color: var(--indigo-800); max-width: 20ch; }
-.pagehead .lead { margin-top: var(--s-4); max-width: 60ch; }
+/* หัวข้อบนพื้นสว่างต้องเป็นม่วงเข้ม (13.6) — สีขาวเหลือจากตอนธีมมืด อ่านไม่ออกเลย */
+.pagehead h1 { color: var(--text-strong); max-width: 20ch; }
+.pagehead .lead { margin-top: var(--s-4); max-width: 60ch; color: var(--text-muted); }
 
-.crumbs { font-size: 13.5px; margin-bottom: var(--s-4); opacity: 0.7; font-family: var(--font-mono), monospace; }
+.crumbs { font-size: 13.5px; margin-bottom: var(--s-4); color: var(--text-muted); font-family: var(--font-mono), monospace; }
 .crumbs a { text-decoration: none; }
 .crumbs a:hover { text-decoration: underline; }
 

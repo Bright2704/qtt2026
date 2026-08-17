@@ -48,7 +48,9 @@
    ของตัวเอง ไม่ใช่ของวง ซึ่งทำให้รัศมีผิดไปมาก */
 .orbit__path {
   position: absolute;
-  inset: var(--inset, 2%);
+  /* --ring-scale ดึงวงในให้ถ่างออกตอนจอแคบ ไม่งั้นสติกเกอร์วงในจะซ้อนเหรียญตรา
+     (วงยิ่งเล็ก inset ยิ่งต้องน้อย รัศมีจึงจะไม่หดตามไปด้วย) */
+  inset: calc(var(--inset, 2%) * var(--ring-scale, 1));
   animation: orbitSpin var(--spin, 30s) linear infinite;
   animation-delay: var(--delay, 0s);
   pointer-events: none;
@@ -58,9 +60,11 @@
   position: absolute;
   top: 0;
   left: 50%;
-  width: var(--size, 90px);
-  margin-left: calc(var(--size, 90px) / -2);
-  margin-top: calc(var(--size, 90px) / -2);
+  /* --o-scale ให้ย่อสติกเกอร์ทั้งวงพร้อมกันตอนจอแคบ โดยไม่ต้องแก้ค่าใน data */
+  --s: calc(var(--size, 90px) * var(--o-scale, 1));
+  width: var(--s);
+  margin-left: calc(var(--s) / -2);
+  margin-top: calc(var(--s) / -2);
   animation: orbitCounter var(--spin, 30s) linear infinite;
   animation-delay: var(--delay, 0s);
   will-change: transform;
@@ -77,15 +81,23 @@
   to   { transform: rotate(calc((var(--angle) * -1) - 360deg)); }
 }
 
-/* ชั้นในไว้เอียงสติกเกอร์ + ลอยขึ้นลง โดยไม่ไปกวนการโคจร */
+/* ชั้นในไว้เอียงสติกเกอร์ + ลอยขึ้นลง โดยไม่ไปกวนการโคจร
+   --scrollv ทำให้ทั้งวงสะบัดตามจังหวะปัดจอ — เป็นลูกเล่นหลักของฝั่งมือถือ */
 .orbit__art {
   display: block;
   width: 100%;
   height: auto;
-  transform: rotate(var(--tilt, 0deg));
+  transform: rotate(calc(var(--tilt, 0deg) + var(--scrollv, 0) * 15deg));
+  transition: transform 220ms var(--ease-out);
   animation: stickerBob var(--bob, 5s) ease-in-out infinite;
   animation-delay: var(--delay, 0s);
   filter: drop-shadow(0 8px 18px rgba(40, 13, 90, 0.16));
+}
+
+/* เหรียญตราตรงกลางเอียงสวนทางเล็กน้อย ให้รู้สึกว่ามีน้ำหนักจริง */
+.orbit__center {
+  rotate: calc(var(--scrollv, 0) * -4deg);
+  transition: rotate 260ms var(--ease-out);
 }
 @keyframes stickerBob {
   0%, 100% { translate: 0 0; }
@@ -235,6 +247,8 @@
 /* กันหน้าว่างถ้า JS ไม่ทำงาน */
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; filter: none; }
+  /* ปิดการสะบัดตามการเลื่อนทั้งหมด (ScrollSway ก็ไม่ทำงานอยู่แล้ว แต่กันไว้อีกชั้น) */
+  .hero__orbit, .orbit__center, .orbit__art, .scatter__item { transition: none; }
 }
 .no-js .reveal { opacity: 1; transform: none; filter: none; }
 
@@ -327,19 +341,34 @@
   opacity: var(--op, 0.9);
   will-change: transform;
 }
-/* ชั้นใน: รับการเอียงกับการลอย แยกกันเพื่อไม่ให้ transform ตีกัน */
+/* ชั้นใน: รับการเอียงกับการลอย แยกกันเพื่อไม่ให้ transform ตีกัน
+   --scrollv มาจาก ScrollSway ทำให้สติกเกอร์สะบัดตามจังหวะที่ผู้ใช้ปัดจอ
+   สำคัญมากบนมือถือ เพราะไม่มีเมาส์ให้ทำพารัลแลกซ์ตามเคอร์เซอร์ */
 .scatter__item {
   display: block;
   width: 100%;
   height: auto;
-  transform: rotate(var(--tilt, 0deg));
+  transform: rotate(calc(var(--tilt, 0deg) + var(--scrollv, 0) * 11deg));
+  transition: transform 200ms var(--ease-out);
   animation: stickerBob var(--bob, 6s) ease-in-out infinite;
   animation-delay: var(--delay, 0s);
   filter: drop-shadow(0 10px 22px rgba(40, 13, 90, 0.18));
 }
+/* จอมือถือ: เดิมซ่อนสติกเกอร์ตกแต่งเกือบทั้งหมด เหลือพารัลแลกซ์ให้ดูแทบไม่มีเลย
+   เปลี่ยนมาย่อขนาดแล้วเก็บไว้สามตัวแรกของแต่ละ section ยังมีความเคลื่อนไหว
+   แต่ไม่แน่นจนแย่งสายตากับตัวหนังสือ (เนื้อหาอยู่ z-index สูงกว่าอยู่แล้ว) */
 @media (max-width: 760px) {
-  .scatter__slot { display: none; }
-  .scatter__slot--keep { display: block; width: calc(var(--size, 96px) * 0.6); }
+  .scatter__slot {
+    width: calc(var(--size, 96px) * 0.56);
+    opacity: calc(var(--op, 0.9) * 0.8);
+  }
+  .scatter__slot:nth-child(n + 5) { display: none; }
+  .scatter__slot--keep { display: block; width: calc(var(--size, 96px) * 0.62); }
+}
+@media (max-width: 420px) {
+  .scatter__slot { width: calc(var(--size, 96px) * 0.5); }
+  .scatter__slot:nth-child(n + 4) { display: none; }
+  .scatter__slot--keep { display: block; }
 }
 
 /* ------------------------------------------------------------
@@ -351,13 +380,31 @@
   z-index: 2;
   justify-self: center;
   width: 100%;
+  /* ขยับตามแรงปัดจอ ทำหน้าที่แทนพารัลแลกซ์ตามเมาส์ที่มือถือใช้ไม่ได้ */
+  translate: 0 calc(var(--scrollv, 0) * -18px);
+  transition: translate 240ms var(--ease-out);
 }
+/* จอมือถือ: เดิมบีบกรอบเหลือ 260px แต่ปล่อยเหรียญตราไว้ที่ 100%
+   เหรียญจึงกว้าง 269px ล้นกรอบและทับสติกเกอร์ที่โคจรอยู่จนมองไม่เห็น
+   แก้โดยขยายกรอบตามความกว้างจอ แล้วย่อเหรียญลงให้วงโคจรมีที่หายใจ */
 @media (max-width: 900px) {
-  /* จอเล็กแสดงแค่เหรียญตรา ไม่ต้องมีวงโคจร จะได้ไม่แย่งพื้นที่ข้อความ */
-  .hero__orbit { max-width: 260px; margin-top: var(--s-6); }
-  .hero__orbit .orbit__item { display: none; }
-  .hero__orbit .orbit__ring { display: none; }
-  .hero__orbit .orbit__center { width: 100%; }
+  .hero__orbit {
+    max-width: min(340px, 86vw);
+    margin-top: var(--s-5);
+    margin-inline: auto;
+  }
+  .hero__orbit .orbit__center { width: 42%; }
+  .hero__orbit .orbit__ring { display: block; }
+  .orbit { --ring-scale: 0.62; }
+}
+@media (max-width: 560px) {
+  /* ย่อสติกเกอร์ที่โคจรลงนิดหนึ่ง จะได้ไม่ชนกันเองบนวงที่เล็กลง
+     แล้วถ่างวงในออกอีก เพื่อให้เห็นสติกเกอร์ครบทุกตัวไม่โดนเหรียญบัง
+     เผื่อระยะไว้เยอะหน่อย เพราะสติกเกอร์บางตัวเป็นแคปซูลยาว
+     พอเอียงตาม --tilt แล้วปลายด้านหนึ่งยื่นเข้าหาเหรียญมากกว่าที่ขนาดกล่องบอก */
+  .hero__orbit { max-width: min(320px, 82vw); }
+  .orbit { --o-scale: 0.82; --ring-scale: 0.36; }
+  .hero__orbit .orbit__center { width: 36%; }
 }
 
 .sticker-band {
@@ -385,7 +432,7 @@
     var(--indigo-800) 0%,
     var(--indigo-800) 30%,
     var(--indigo-600) 44%,
-    var(--pink-500) 54%,
+    var(--pink-text) 54%,
     var(--indigo-800) 70%,
     var(--indigo-800) 100%
   );
@@ -455,7 +502,7 @@
   display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
   font-size: 15.5px; font-weight: 600; color: var(--indigo-800); padding: 0;
 }
-.field > label b, .field > legend b { color: var(--pink-500); font-weight: 600; }
+.field > label b, .field > legend b { color: var(--pink-text); font-weight: 600; }
 .field__val {
   margin-left: auto; font-family: var(--font-mono), monospace;
   font-size: 13px; font-weight: 500; color: var(--indigo-600);
@@ -516,6 +563,53 @@
 }
 .form-done p { max-width: 46ch; margin-inline: auto; }
 .form-done .btn-row { justify-content: center; }
+
+/* รหัสอ้างอิง — ตัวใหญ่ อ่านออกเสียงได้ ผู้สมัครจดหรือแคปหน้าจอเก็บไว้ได้ */
+.form-done__ref {
+  display: inline-flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  justify-content: center; margin: 0 auto var(--s-5);
+  padding: 10px 18px; border-radius: var(--r-pill);
+  background: var(--indigo-050); border: 1px solid rgba(70, 29, 138, 0.2);
+}
+.form-done__ref span { font-size: 14px; color: var(--indigo-800); font-weight: 600; }
+.form-done__ref code {
+  font-family: var(--font-mono, ui-monospace, "SFMono-Regular", Menlo, monospace);
+  font-size: 19px; font-weight: 700; letter-spacing: 0.06em; color: var(--indigo-900);
+}
+
+/* ตารางสรุปคำตอบบนหน้ายืนยัน */
+.receipt {
+  margin: var(--s-6) 0 0; text-align: left;
+  border: 1px solid var(--border); border-radius: var(--r-md);
+  background: var(--surface-2); overflow: hidden;
+}
+.receipt__row {
+  display: grid; grid-template-columns: minmax(0, 12rem) minmax(0, 1fr);
+  gap: var(--s-4); padding: 11px var(--s-5);
+  border-top: 1px solid var(--border-soft); font-size: 15px;
+}
+.receipt__row:first-child { border-top: 0; }
+.receipt dt { color: var(--text-muted); margin: 0; }
+.receipt dd { margin: 0; color: var(--text-strong); font-weight: 500; overflow-wrap: anywhere; }
+@media (max-width: 560px) {
+  .receipt__row { grid-template-columns: 1fr; gap: 2px; }
+  .receipt dt { font-size: 13.5px; }
+}
+
+.demo-log {
+  margin-top: var(--s-6); padding-top: var(--s-5);
+  border-top: 1px dashed var(--border);
+}
+.demo-log .btn-row { justify-content: center; }
+
+/* วงกลมหมุนตอนกำลังส่ง ให้รู้ว่าปุ่มทำงานอยู่จริง ไม่ได้ค้าง */
+.spin {
+  width: 16px; height: 16px; flex: none; border-radius: 50%;
+  border: 2px solid currentColor; border-top-color: transparent;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .spin { animation-duration: 2.4s; } }
 
 /* ------------------------------------------------------------
    14. Pointer layer — ชั้นที่ขยับตามเมาส์

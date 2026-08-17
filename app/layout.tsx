@@ -22,6 +22,7 @@ import "./magic.css";
 import { LangProvider } from "@/lib/i18n";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import ScrollSway from "@/components/magic/ScrollSway";
 
 const SITE_URL = "https://qtric.sut.ac.th/qff2026/";
 
@@ -112,6 +113,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(eventJsonLd) }}
         />
         <LangProvider>
+          <ScrollSway />
           <a className="skip" href="#main">
             ข้ามไปยังเนื้อหาหลัก / Skip to content
           </a>

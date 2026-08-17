@@ -63,7 +63,7 @@ export default function EditionDetail({ slug }: { slug: string }) {
                 {t({ th: "จองที่นั่งงานนี้", en: "Book a seat here" })}
                 <Icon name="i-arrow" size={18} />
               </Link>
-              <Link className="btn btn--ghostDark" href="/learn">
+              <Link className="btn btn--secondary" href="/learn">
                 {t({ th: "ดูวิธีเตรียมตัว", en: "How to prepare" })}
               </Link>
             </div>

@@ -23,7 +23,7 @@ export default function NotFound() {
             {t({ th: "กลับหน้าแรก", en: "Back to the home page" })}
             <Icon name="i-arrow" size={18} />
           </Link>
-          <Link className="btn btn--ghostDark" href="/editions">
+          <Link className="btn btn--secondary" href="/editions">
             {t({ th: "ดูงานทั้งหมด", en: "See all editions" })}
           </Link>
         </div>

@@ -1,20 +1,33 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { useLang, type L } from "@/lib/i18n";
 import { editions } from "@/data/editions";
 import { site } from "@/data/site";
+import {
+  clearRegistrations,
+  downloadCsv,
+  listRegistrations,
+  makeRef,
+  saveRegistration,
+  type StoredRegistration,
+} from "@/lib/registrations";
 import Icon from "./Icon";
 
 /* ============================================================
    ฟอร์มลงทะเบียนที่ใช้งานได้จริง
 
-   ส่งข้อมูลไปที่ site.contact.formEndpoint (รองรับ Formspree,
-   Basin, Web3Forms หรือ API ของทีมเอง — อะไรก็ได้ที่รับ POST JSON)
+   ทำงานสองโหมด สลับอัตโนมัติจาก site.contact.formEndpoint
 
-   ถ้ายังไม่ได้ตั้งค่า endpoint ฟอร์มจะไม่พัง แต่จะสรุปคำตอบทั้งหมด
-   เป็นอีเมลให้ผู้ใช้กดส่งแทน เว็บจึงเปิดรับสมัครได้ตั้งแต่วันแรก
-   โดยไม่ต้องรอ backend
+   1. โหมดจริง  — มี endpoint แล้ว ยิง POST JSON ออกไป
+                  (ใช้ได้กับ Formspree, Basin, Web3Forms หรือ API ของทีมเอง)
+
+   2. โหมดจำลอง — ยังไม่ได้ตั้ง endpoint ฟอร์มยังเดินครบทุกขั้น
+                  ตรวจข้อมูล → หน่วงเหมือนกำลังส่ง → ออกรหัสอ้างอิง
+                  → หน้ายืนยันพร้อมสรุปคำตอบ → กดส่งอีเมลจริงต่อได้
+                  ข้อมูลเก็บในเครื่องผู้ใช้เท่านั้น ใช้ทดสอบและสาธิตได้เต็มรูปแบบ
+
+   พอได้ endpoint จริงมาแล้ว แก้ที่ data/site.ts ที่เดียว ไม่ต้องแตะไฟล์นี้
    ============================================================ */
 
 type Values = {
@@ -57,11 +70,36 @@ const SOURCE_OPTS: { v: string; l: L }[] = [
   { v: "other", l: { th: "อื่น ๆ", en: "Other" } },
 ];
 
+/** ข้อมูลตัวอย่างสำหรับกดทดสอบฟอร์มรวดเดียว ไม่ต้องพิมพ์เอง */
+const SAMPLE: Values = {
+  name: "ณิชา วัฒนศิริ",
+  email: "nicha.w@example.ac.th",
+  edition: "sut",
+  status: "undergrad",
+  org: "มหาวิทยาลัยเทคโนโลยีสุรนารี",
+  province: "นครราชสีมา",
+  codeLevel: "3",
+  quantumLevel: "1",
+  laptop: "yes",
+  needs: "มังสวิรัติ",
+  source: "university",
+  coc: true,
+  photo: true,
+};
+
+const DEMO = !site.contact.formEndpoint;
+
 export default function RegisterForm() {
   const { t, lang } = useLang();
   const [v, setV] = useState<Values>(EMPTY);
   const [errors, setErrors] = useState<Partial<Record<keyof Values, L>>>({});
   const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [receipt, setReceipt] = useState<{ ref: string; lines: string[]; at: string } | null>(null);
+  const [saved, setSaved] = useState<StoredRegistration[]>([]);
+  const [copied, setCopied] = useState(false);
+
+  // localStorage อ่านได้หลัง hydrate เท่านั้น ไม่งั้น HTML ฝั่ง server จะไม่ตรงกับ client
+  useEffect(() => { if (DEMO) setSaved(listRegistrations()); }, []);
 
   const open = editions.filter((e) => e.status === "open" || e.status === "soon");
   const set = <K extends keyof Values>(k: K, val: Values[K]) => {
@@ -98,89 +136,173 @@ export default function RegisterForm() {
     return true;
   }
 
-  function buildSummary() {
+  /** คำตอบทั้งหมดในรูปแบบอ่านง่าย ใช้ทั้งบนหน้ายืนยัน ในอีเมล และตอนคัดลอก */
+  function summaryLines(): string[] {
     const ed = editions.find((x) => x.id === v.edition);
     const st = STATUS_OPTS.find((x) => x.v === v.status);
     const sr = SOURCE_OPTS.find((x) => x.v === v.source);
+    const laptopL: Record<string, L> = {
+      yes: { th: "นำมาเองได้", en: "Yes" },
+      no: { th: "นำมาเองไม่ได้", en: "No" },
+      online: { th: "เข้าร่วมออนไลน์", en: "Joining online" },
+    };
+    const yn = (b: boolean) => t(b ? { th: "ยินยอม", en: "Yes" } : { th: "ไม่ยินยอม", en: "No" });
     return [
-      `${t({ th: "ชื่อ", en: "Name" })}: ${v.name}`,
-      `${t({ th: "อีเมล", en: "Email" })}: ${v.email}`,
-      `${t({ th: "งานที่เลือก", en: "Edition" })}: ${ed ? t(ed.name) : v.edition}`,
-      `${t({ th: "สถานะ", en: "Status" })}: ${st ? t(st.l) : v.status}`,
-      `${t({ th: "สถาบัน", en: "Institution" })}: ${v.org}`,
-      `${t({ th: "จังหวัด", en: "Province" })}: ${v.province || "-"}`,
-      `${t({ th: "ประสบการณ์เขียนโปรแกรม", en: "Programming experience" })}: ${v.codeLevel}/5`,
-      `${t({ th: "ประสบการณ์ควอนตัม", en: "Quantum experience" })}: ${v.quantumLevel}/5`,
-      `${t({ th: "นำโน้ตบุ๊กมาเองได้", en: "Brings a laptop" })}: ${v.laptop}`,
-      `${t({ th: "ข้อจำกัดด้านอาหารหรือการเข้าถึง", en: "Dietary or accessibility needs" })}: ${v.needs || "-"}`,
-      `${t({ th: "รู้จักงานจาก", en: "Heard about us via" })}: ${sr ? t(sr.l) : v.source || "-"}`,
-      `${t({ th: "ยอมรับข้อปฏิบัติในงาน", en: "Accepted Code of Conduct" })}: ${v.coc ? "yes" : "no"}`,
-      `${t({ th: "ยินยอมให้ถ่ายภาพ", en: "Photo consent" })}: ${v.photo ? "yes" : "no"}`,
-    ].join("\n");
+      `${t({ th: "ชื่อ", en: "Name" })}\t${v.name}`,
+      `${t({ th: "อีเมล", en: "Email" })}\t${v.email}`,
+      `${t({ th: "งานที่เลือก", en: "Edition" })}\t${ed ? t(ed.name) : t({ th: "ยังไม่แน่ใจ", en: "Not sure yet" })}`,
+      `${t({ th: "สถานะ", en: "Status" })}\t${st ? t(st.l) : v.status}`,
+      `${t({ th: "สถาบัน", en: "Institution" })}\t${v.org}`,
+      `${t({ th: "จังหวัด", en: "Province" })}\t${v.province || "—"}`,
+      `${t({ th: "ประสบการณ์เขียนโปรแกรม", en: "Programming experience" })}\t${v.codeLevel} / 5`,
+      `${t({ th: "ประสบการณ์ควอนตัม", en: "Quantum experience" })}\t${v.quantumLevel} / 5`,
+      `${t({ th: "โน้ตบุ๊ก", en: "Laptop" })}\t${laptopL[v.laptop] ? t(laptopL[v.laptop]) : "—"}`,
+      `${t({ th: "ข้อจำกัดด้านอาหารหรือการเข้าถึง", en: "Dietary or access needs" })}\t${v.needs || "—"}`,
+      `${t({ th: "รู้จักงานจาก", en: "Heard about us via" })}\t${sr ? t(sr.l) : "—"}`,
+      `${t({ th: "ยอมรับข้อปฏิบัติในงาน", en: "Code of Conduct" })}\t${yn(v.coc)}`,
+      `${t({ th: "ยินยอมให้ถ่ายภาพ", en: "Photo consent" })}\t${yn(v.photo)}`,
+    ];
+  }
+
+  function finish(ref: string, lines: string[]) {
+    const at = new Date().toLocaleString(lang === "th" ? "th-TH" : "en-GB", {
+      dateStyle: "medium",
+      timeStyle: "short",
+    });
+    setReceipt({ ref, lines, at });
+    setState("done");
+    window.scrollTo({ top: Math.max(0, window.scrollY - 120), behavior: "smooth" });
   }
 
   async function onSubmit(ev: FormEvent) {
     ev.preventDefault();
     if (!validate()) return;
 
-    const endpoint = site.contact.formEndpoint;
+    const lines = summaryLines();
+    setState("sending");
 
-    if (!endpoint) {
-      // ยังไม่มี backend — เปิดโปรแกรมอีเมลพร้อมข้อมูลครบให้กดส่ง
-      const subject = encodeURIComponent(
-        `[QFF2026TH] ${t({ th: "ลงทะเบียน", en: "Registration" })} — ${v.name}`,
+    /* ---------- โหมดจำลอง ---------- */
+    if (DEMO) {
+      const ref = makeRef(v.edition);
+      // หน่วงไว้ให้เห็นสถานะ "กำลังส่ง" เหมือนตอนยิงเซิร์ฟเวอร์จริง
+      await new Promise((r) => setTimeout(r, 900));
+      setSaved(
+        saveRegistration({
+          ref,
+          submittedAt: new Date().toISOString(),
+          lang,
+          demo: true,
+          values: { ...v },
+        }),
       );
-      const body = encodeURIComponent(buildSummary());
-      window.location.href = `mailto:${site.contact.email}?subject=${subject}&body=${body}`;
-      setState("done");
+      finish(ref, lines);
       return;
     }
 
-    setState("sending");
+    /* ---------- โหมดจริง ---------- */
     try {
-      const res = await fetch(endpoint, {
+      const res = await fetch(site.contact.formEndpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({ ...v, lang, submittedFrom: "qff2026-website" }),
       });
-      setState(res.ok ? "done" : "error");
+      if (!res.ok) { setState("error"); return; }
+      finish(makeRef(v.edition), lines);
     } catch {
       setState("error");
     }
   }
 
   /* ---------- หน้าจอหลังส่งสำเร็จ ---------- */
-  if (state === "done") {
+  if (state === "done" && receipt) {
+    const plain = receipt.lines.map((l) => l.replace("\t", ": ")).join("\n");
+    const mailHref =
+      `mailto:${site.contact.email}` +
+      `?subject=${encodeURIComponent(`[${receipt.ref}] ${t({ th: "ลงทะเบียน Qiskit Fall Fest 2026", en: "Qiskit Fall Fest 2026 registration" })}`)}` +
+      `&body=${encodeURIComponent(plain)}`;
+
     return (
-      <div className="card form-done" role="status">
+      <div className="card form-done" role="status" aria-live="polite">
         <span className="form-done__tick">
           <Icon name="i-check" size={30} strokeWidth={2.4} />
         </span>
-        <h3>{t({ th: "ลงทะเบียนเรียบร้อยแล้ว", en: "You are registered" })}</h3>
+        <h3>
+          {DEMO
+            ? t({ th: "ส่งฟอร์มสำเร็จ (โหมดทดลอง)", en: "Submitted successfully (test mode)" })
+            : t({ th: "ลงทะเบียนเรียบร้อยแล้ว", en: "You are registered" })}
+        </h3>
+
+        <p className="form-done__ref">
+          <span>{t({ th: "รหัสอ้างอิง", en: "Reference" })}</span>
+          <code>{receipt.ref}</code>
+        </p>
+
         <p>
-          {site.contact.formEndpoint
+          {DEMO
             ? t({
-                th: "เราได้รับข้อมูลของคุณแล้ว อีเมลยืนยันพร้อมขั้นตอนถัดไปจะส่งไปที่กล่องจดหมายของคุณ ถ้าไม่เจอลองดูในโฟลเดอร์สแปม",
-                en: "We have your details. A confirmation email with your next steps is on its way — check your spam folder if it does not appear.",
+                th: "ฟอร์มทำงานครบทุกขั้นตอนแล้ว ตั้งแต่ตรวจข้อมูลจนถึงออกรหัสอ้างอิง ตอนนี้ยังไม่ได้ต่อระบบหลังบ้าน ข้อมูลจึงถูกเก็บไว้ในเบราว์เซอร์เครื่องนี้เท่านั้น หากต้องการส่งถึงทีมงานจริง กดปุ่มส่งอีเมลด้านล่างได้เลย",
+                en: "Every step ran for real — validation, submission, reference code. The backend is not connected yet, so your answers stayed in this browser. To reach the team right now, use the email button below.",
               })
             : t({
-                th: "เราเปิดโปรแกรมอีเมลพร้อมข้อมูลของคุณให้แล้ว กรุณากดส่งอีเมลนั้นเพื่อยืนยันการลงทะเบียน",
-                en: "We have opened your email app with all your details filled in. Please send that email to complete your registration.",
+                th: "เราได้รับข้อมูลของคุณแล้ว อีเมลยืนยันพร้อมขั้นตอนถัดไปจะส่งไปที่กล่องจดหมายของคุณ ถ้าไม่เจอลองดูในโฟลเดอร์สแปม",
+                en: "We have your details. A confirmation email with your next steps is on its way — check your spam folder if it does not appear.",
               })}
         </p>
-        <div className="btn-row" style={{ marginTop: 20 }}>
-          <a className="btn btn--primary" href="/learn">
-            {t({ th: "ไปดูวิธีเตรียมตัว", en: "See how to prepare" })}
-            <Icon name="i-arrow" size={18} />
+
+        <dl className="receipt">
+          {receipt.lines.map((line) => {
+            const [k, val] = line.split("\t");
+            return (
+              <div className="receipt__row" key={k}>
+                <dt>{k}</dt>
+                <dd>{val}</dd>
+              </div>
+            );
+          })}
+          <div className="receipt__row">
+            <dt>{t({ th: "เวลาที่ส่ง", en: "Submitted at" })}</dt>
+            <dd>{receipt.at}</dd>
+          </div>
+        </dl>
+
+        <div className="btn-row" style={{ marginTop: 24 }}>
+          <a className="btn btn--primary" href={mailHref}>
+            <Icon name="i-mail" size={18} />
+            {t({ th: "ส่งข้อมูลนี้ทางอีเมล", en: "Email these details" })}
           </a>
           <button
             type="button"
             className="btn btn--secondary"
-            onClick={() => { setV(EMPTY); setState("idle"); }}
+            onClick={async () => {
+              try {
+                await navigator.clipboard.writeText(`${receipt.ref}\n${plain}`);
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2200);
+              } catch { /* บางเบราว์เซอร์ไม่ให้สิทธิ์คลิปบอร์ด */ }
+            }}
+          >
+            <Icon name={copied ? "i-check" : "i-copy"} size={18} />
+            {copied
+              ? t({ th: "คัดลอกแล้ว", en: "Copied" })
+              : t({ th: "คัดลอกข้อมูล", en: "Copy details" })}
+          </button>
+        </div>
+
+        <div className="btn-row" style={{ marginTop: 12 }}>
+          <a className="btn btn--sm btn--secondary" href="/learn">
+            {t({ th: "ไปดูวิธีเตรียมตัว", en: "See how to prepare" })}
+            <Icon name="i-arrow" size={16} />
+          </a>
+          <button
+            type="button"
+            className="btn btn--sm btn--secondary"
+            onClick={() => { setV(EMPTY); setReceipt(null); setState("idle"); }}
           >
             {t({ th: "ลงทะเบียนอีกคน", en: "Register someone else" })}
           </button>
         </div>
+
+        {DEMO && saved.length > 0 && <DemoLog rows={saved} onClear={() => { clearRegistrations(); setSaved([]); }} t={t} />}
       </div>
     );
   }
@@ -194,6 +316,41 @@ export default function RegisterForm() {
 
   return (
     <form className="rform" onSubmit={onSubmit} noValidate>
+      {DEMO && (
+        <div className="notice notice--demo">
+          <Icon name="i-info" size={22} />
+          <div>
+            <p style={{ margin: 0 }}>
+              <b>{t({ th: "โหมดทดลองใช้งาน", en: "Test mode" })}</b>{" "}
+              {t({
+                th: "ฟอร์มนี้ทำงานได้ครบทุกขั้นตอน ลองกรอกและกดส่งได้เลย ข้อมูลจะถูกเก็บไว้ในเบราว์เซอร์เครื่องนี้เท่านั้น ยังไม่ส่งออกไปที่ใด เมื่อใส่ปลายทางรับข้อมูลใน data/site.ts แล้ว ฟอร์มจะสลับไปส่งจริงอัตโนมัติ",
+                en: "This form is fully working — fill it in and submit. Your answers stay in this browser and are not sent anywhere yet. Once a form endpoint is set in data/site.ts, it switches to live submissions automatically.",
+              })}
+            </p>
+            <div className="btn-row" style={{ marginTop: 12 }}>
+              <button
+                type="button"
+                className="btn btn--sm btn--secondary"
+                onClick={() => { setV(SAMPLE); setErrors({}); }}
+              >
+                <Icon name="i-spark" size={16} />
+                {t({ th: "กรอกข้อมูลตัวอย่างให้", en: "Fill with sample data" })}
+              </button>
+              {saved.length > 0 && (
+                <button
+                  type="button"
+                  className="btn btn--sm btn--secondary"
+                  onClick={() => downloadCsv(saved)}
+                >
+                  <Icon name="i-download" size={16} />
+                  {t({ th: `ดาวน์โหลดที่กรอกไว้ (${saved.length})`, en: `Download saved entries (${saved.length})` })}
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
       {state === "error" && (
         <div className="notice notice--warn" role="alert" style={{ marginBottom: 24 }}>
           <Icon name="i-alert" size={22} />
@@ -425,12 +582,41 @@ export default function RegisterForm() {
               ? t({ th: "กำลังส่ง...", en: "Sending…" })
               : t({ th: "ยืนยันการลงทะเบียน", en: "Complete registration" })}
           </span>
-          {state !== "sending" && <Icon name="i-arrow" size={18} />}
+          {state === "sending" ? <span className="spin" aria-hidden="true" /> : <Icon name="i-arrow" size={18} />}
         </button>
         <p className="small muted" style={{ margin: 0 }}>
           {t({ th: "ช่องที่มี * ต้องกรอก", en: "Fields marked * are required" })}
         </p>
       </div>
     </form>
+  );
+}
+
+/** รายการที่กรอกไว้ในโหมดทดลอง ช่วยยืนยันว่าฟอร์มเก็บข้อมูลได้ครบจริง */
+function DemoLog({
+  rows, onClear, t,
+}: {
+  rows: StoredRegistration[];
+  onClear: () => void;
+  t: (l: L) => string;
+}) {
+  return (
+    <div className="demo-log">
+      <p className="small muted" style={{ margin: 0 }}>
+        {t({
+          th: `เก็บไว้ในเบราว์เซอร์นี้แล้ว ${rows.length} รายการ`,
+          en: `${rows.length} entries saved in this browser`,
+        })}
+      </p>
+      <div className="btn-row" style={{ marginTop: 10 }}>
+        <button type="button" className="btn btn--sm btn--secondary" onClick={() => downloadCsv(rows)}>
+          <Icon name="i-download" size={16} />
+          {t({ th: "ดาวน์โหลด CSV", en: "Download CSV" })}
+        </button>
+        <button type="button" className="btn btn--sm btn--secondary" onClick={onClear}>
+          {t({ th: "ล้างข้อมูลทดลอง", en: "Clear test data" })}
+        </button>
+      </div>
+    </div>
   );
 }
