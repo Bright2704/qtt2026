@@ -1,0 +1,14 @@
+<svg width="400" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" fill="#0b0420"/>
+  <rect x="20" y="20" width="360" height="200" rx="16" fill="#150836" stroke="#0071fd" stroke-width="2"/>
+  <circle cx="200" cy="100" r="50" fill="none" stroke="#b796f6" stroke-width="3"/>
+  <circle cx="200" cy="100" r="35" fill="none" stroke="#f86dad" stroke-width="2"/>
+  <circle cx="200" cy="100" r="20" fill="#0071fd"/>
+  <line x1="140" y1="100" x2="100" y2="60" stroke="#b796f6" stroke-width="2"/>
+  <line x1="260" y1="100" x2="300" y2="60" stroke="#b796f6" stroke-width="2"/>
+  <line x1="200" y1="150" x2="200" y2="180" stroke="#f86dad" stroke-width="2"/>
+  <circle cx="100" cy="60" r="8" fill="#f86dad"/>
+  <circle cx="300" cy="60" r="8" fill="#f86dad"/>
+  <circle cx="200" cy="185" r="8" fill="#0071fd"/>
+  <text x="200" y="210" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="16" font-weight="600" fill="white">Online Session</text>
+</svg>

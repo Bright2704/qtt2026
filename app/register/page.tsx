@@ -102,7 +102,7 @@ const formFields: { field: { th: string; en: string }; note: { th: string; en: s
 
 export default function Register() {
   const { t } = useLang();
-  const open = editions.filter((e) => e.status === "open");
+  const open = editions.filter((e) => e.status === "open" || e.status === "soon");
   const hasForm = Boolean(site.contact.registerForm);
 
   return (
@@ -115,6 +115,26 @@ export default function Register() {
           en: "About three minutes. No fee. You receive a confirmation email with your next steps straight away.",
         }}
       />
+
+      {/* ---------- Registration Form (FIRST!) ---------- */}
+      <Section variant="lilac" id="form">
+        <p className="eyebrow">{t({ th: "กรอกฟอร์ม", en: "Fill the form" })}</p>
+        <h2>{t({ th: "ฟอร์มลงทะเบียน", en: "Registration Form" })}</h2>
+
+        {hasForm ? (
+          <iframe
+            className="embed-frame"
+            style={{ marginTop: 32 }}
+            src={site.contact.registerForm}
+            title={t({ th: "ฟอร์มลงทะเบียน", en: "Registration form" })}
+            loading="lazy"
+          />
+        ) : (
+          <div style={{ marginTop: 36 }}>
+            <RegisterForm />
+          </div>
+        )}
+      </Section>
 
       {/* ---------- Steps ---------- */}
       <Section tight>
@@ -184,26 +204,6 @@ export default function Register() {
             ))}
           </ul>
         </div>
-      </Section>
-
-      {/* ---------- Form ---------- */}
-      <Section variant="lilac" id="form">
-        <p className="eyebrow">{t({ th: "ขั้นที่สอง", en: "Step two" })}</p>
-        <h2>{t({ th: "กรอกฟอร์มลงทะเบียน", en: "Complete the registration form" })}</h2>
-
-        {hasForm ? (
-          <iframe
-            className="embed-frame"
-            style={{ marginTop: 32 }}
-            src={site.contact.registerForm}
-            title={t({ th: "ฟอร์มลงทะเบียน", en: "Registration form" })}
-            loading="lazy"
-          />
-        ) : (
-          <div style={{ marginTop: 36 }}>
-            <RegisterForm />
-          </div>
-        )}
       </Section>
 
       {/* ---------- After ---------- */}

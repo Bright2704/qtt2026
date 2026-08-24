@@ -1,0 +1,10 @@
+<svg width="400" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" fill="#7c3aed"/>
+  <rect x="20" y="20" width="360" height="200" rx="16" fill="#5b21b6" stroke="#c4b5fd" stroke-width="2"/>
+  <rect x="60" y="100" width="80" height="100" rx="8" fill="#6d28d9"/>
+  <rect x="160" y="80" width="80" height="120" rx="8" fill="#7c3aed"/>
+  <rect x="260" y="120" width="80" height="80" rx="8" fill="#8b5cf6"/>
+  <circle cx="320" cy="60" r="15" fill="#f86dad"/>
+  <text x="200" y="60" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="18" font-weight="600" fill="white">Phitsanulok Hub</text>
+  <text x="200" y="85" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="14" fill="#ddd6fe">Naresuan University</text>
+</svg>

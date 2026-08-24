@@ -1,0 +1,11 @@
+<svg width="400" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" fill="#280d5a"/>
+  <rect x="20" y="20" width="360" height="200" rx="16" fill="#461d8a" stroke="#b796f6" stroke-width="2"/>
+  <circle cx="60" cy="60" r="24" fill="#f86dad"/>
+  <circle cx="340" cy="60" r="16" fill="#b796f6" opacity="0.6"/>
+  <circle cx="320" cy="180" r="20" fill="#f86dad" opacity="0.4"/>
+  <text x="200" y="100" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="18" font-weight="600" fill="white">Korat Hub</text>
+  <text x="200" y="130" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="14" fill="#d6c6fc">Suranaree University of Technology</text>
+  <text x="200" y="160" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="13" fill="#b796f6">25 October 2026</text>
+  <text x="200" y="190" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="12" fill="#fc9fc9">50 seats</text>
+</svg>

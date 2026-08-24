@@ -25,6 +25,7 @@ export const speakers: Person[] = [
       th: "ควอนตัมใช้ทำอะไรได้ และเส้นทางอาชีพสายควอนตัม",
       en: "Quantum use cases and career paths",
     },
+    photo: "/assets/photos/speaker-1.svg",
     link: "https://www.linkedin.com/in/worawat-meevasana-7423a94b/",
     confirmed: true,
   },
@@ -33,6 +34,7 @@ export const speakers: Person[] = [
     role: { th: "Session 1 Online Lecture Speaker", en: "Session 1 Online Lecture Speaker" },
     org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
     topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
+    photo: "/assets/photos/speaker-2.svg",
     confirmed: true,
   },
   {
@@ -40,6 +42,7 @@ export const speakers: Person[] = [
     role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional Quantum Partner" },
     org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
     topic: { th: "Qiskit Theory Support", en: "Qiskit Theory Support" },
+    photo: "/assets/photos/speaker-3.svg",
     confirmed: true,
   },
   {
@@ -47,6 +50,7 @@ export const speakers: Person[] = [
     role: { th: "Session 1 Lead Speaker & Platform Partner", en: "Session 1 Lead Speaker & Platform Partner" },
     org: { th: "qBraid", en: "qBraid" },
     topic: { th: "qBraid Platform & Optimization", en: "qBraid Platform & Optimization" },
+    photo: "/assets/photos/speaker-4.svg",
     confirmed: true,
   },
   {
@@ -62,6 +66,7 @@ export const speakers: Person[] = [
     role: { th: "Track Lead - Energy", en: "Track Lead - Energy" },
     org: { th: "QTRiC", en: "QTRiC" },
     topic: { th: "Energy & Smart Grid Optimization", en: "Energy & Smart Grid Optimization" },
+    photo: "/assets/photos/speaker-5.svg",
     confirmed: true,
   },
   {
@@ -69,6 +74,7 @@ export const speakers: Person[] = [
     role: { th: "Track Lead - PQC", en: "Track Lead - PQC" },
     org: { th: "รอยืนยัน", en: "To be confirmed" },
     topic: { th: "Post-Quantum Cryptography & Security", en: "Post-Quantum Cryptography & Security" },
+    photo: "/assets/photos/speaker-6.svg",
     confirmed: false,
   },
   // === Session 3: Networking Circle Leads ===
@@ -77,6 +83,7 @@ export const speakers: Person[] = [
     role: { th: "Circle 1 Lead - Senior Mentorship", en: "Circle 1 Lead - Senior Mentorship" },
     org: { th: "QTRiC", en: "QTRiC" },
     topic: { th: "Deep-tech career growth, startup scaling", en: "Deep-tech career growth, startup scaling" },
+    photo: "/assets/photos/speaker-1.svg",
     confirmed: true,
   },
   {

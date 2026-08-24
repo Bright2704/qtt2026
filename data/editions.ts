@@ -84,7 +84,7 @@ export const editions: Edition[] = [
         },
       },
     ],
-    image: "/assets/venue-card.svg",
+    image: "/assets/venue-sut.svg",
   },
   {
     id: "bangkok",
@@ -135,7 +135,7 @@ export const editions: Edition[] = [
         },
       },
     ],
-    image: "/assets/venue-card.svg",
+    image: "/assets/venue-bangkok.svg",
   },
   {
     id: "online",
@@ -176,7 +176,7 @@ export const editions: Edition[] = [
         },
       },
     ],
-    image: "/assets/venue-card.svg",
+    image: "/assets/venue-online.svg",
   },
   {
     id: "chiangmai",
@@ -216,7 +216,7 @@ export const editions: Edition[] = [
         },
       },
     ],
-    image: "/assets/venue-card.svg",
+    image: "/assets/venue-chiangmai.svg",
   },
   {
     id: "psu",
@@ -256,7 +256,7 @@ export const editions: Edition[] = [
         },
       },
     ],
-    image: "/assets/venue-card.svg",
+    image: "/assets/venue-psu.svg",
   },
   {
     id: "phitsanulok",
@@ -288,7 +288,7 @@ export const editions: Edition[] = [
       en: "Naresuan University, Tha Pho, Mueang, Phitsanulok 65000",
     },
     travel: [],
-    image: "/assets/venue-card.svg",
+    image: "/assets/venue-phitsanulok.svg",
   },
   {
     id: "chonburi",
@@ -320,7 +320,7 @@ export const editions: Edition[] = [
       en: "To be confirmed",
     },
     travel: [],
-    image: "/assets/venue-card.svg",
+    image: "/assets/venue-chonburi.svg",
   },
 ];
 
