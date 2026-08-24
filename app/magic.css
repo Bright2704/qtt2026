@@ -18,10 +18,24 @@
   margin-inline: auto;
 }
 
+/* เดิมพึ่ง `display:grid; place-items:center` ของ .orbit ให้จัดกึ่งกลางให้
+   แต่วงแหวนกับสติกเกอร์ที่โคจรทั้งหมดเป็น position:absolute ซึ่งไม่นับเป็น
+   grid item เลย เหลือแค่เหรียญตราตัวเดียวที่ยังอยู่ในโฟลว์กริด แถวกริดที่
+   auto-size จึงหดเหลือเท่าความสูงของเหรียญเอง ไม่มีที่ว่างเหลือให้จัดกลาง
+   แนวตั้ง — แนวนอนบังเอิญพอดีเพราะคอลัมน์เดียวยืดเต็มความกว้างอยู่แล้ว
+   แต่แนวตั้งเลยเพี้ยนขึ้นไปชิดบนของกรอบวงโคจร (เห็นชัดในภาพที่ผู้ใช้ส่งมา)
+
+   แก้โดยดึงเหรียญออกจากกริดมาวางแบบ absolute + inset:0 + margin:auto แทน
+   วิธีนี้จัดกลางได้ทั้งสองแนวเสมอ ไม่ว่าองค์ประกอบข้างเคียงจะเป็น absolute
+   กี่ตัวก็ตาม และไม่ชนกับ transform ของอนิเมชัน orbitBreathe ที่ยังใช้
+   scale/translateY อยู่ตามเดิม เพราะการจัดกลางใช้ margin ไม่ใช้ transform */
 .orbit__center {
-  position: relative;
+  position: absolute;
+  inset: 0;
+  margin: auto;
   z-index: 3;
   width: 46%;
+  height: fit-content;
   animation: orbitBreathe 7s var(--ease-out) infinite;
   filter: drop-shadow(0 16px 34px rgba(40, 13, 90, 0.22));
 }

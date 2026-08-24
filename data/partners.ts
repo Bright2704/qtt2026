@@ -92,6 +92,22 @@ export const partnerTiers: PartnerTier[] = [
         sub: { th: "ความร่วมมือระดับประเทศ", en: "National collaboration" },
         confirmed: true,
       },
+      {
+        name: { th: "Siam Quantum Valley", en: "Siam Quantum Valley" },
+        sub: { th: "Industry Partner & Collaborator", en: "Industry Partner & Collaborator" },
+        confirmed: true,
+      },
+    ],
+  },
+  {
+    title: { th: "เครือข่ายมหาวิทยาลัยระดับภูมิภาค", en: "Regional University Network" },
+    note: {
+      th: "Regional Workshop Nodes ทั่วประเทศ",
+      en: "Regional Workshop Nodes across Thailand",
+    },
+    partners: [
+      { name: { th: "มหาวิทยาลัยนเรศวร", en: "Naresuan University" }, sub: { th: "Phitsanulok Hub", en: "Phitsanulok Hub" }, confirmed: false },
+      { name: { th: "เครือข่ายพันธมิตรภาคตะวันออก", en: "Eastern Partner Network" }, sub: { th: "Chonburi Hub", en: "Chonburi Hub" }, confirmed: false },
     ],
   },
 ];

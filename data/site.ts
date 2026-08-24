@@ -81,19 +81,46 @@ export const globalStats: { num: string; label: L }[] = [
     },
   },
   {
-    num: "150",
-    label: { th: "ผู้จัดงานอาสาสมัครทั่วโลก", en: "volunteer organisers globally" },
+    num: "6",
+    label: {
+      th: "Regional Hubs ทั่วประเทศไทย",
+      en: "regional hubs across Thailand",
+    },
   },
   {
-    num: "2",
+    num: "60+",
     label: {
-      th: "เมืองในประเทศไทย (และอาจเพิ่มอีก 2)",
-      en: "cities in Thailand, with two more planned",
+      th: "ผู้เข้าร่วมเป้าหมายต่อ Hub",
+      en: "target participants per hub",
     },
   },
   {
     num: "100%",
     label: { th: "ฟรี ไม่มีค่าลงทะเบียน", en: "free — no registration fee" },
+  },
+];
+
+/** Key Deadlines & Milestones */
+export const keyDeadlines: { date: string; label: L; status: "done" | "current" | "upcoming" }[] = [
+  {
+    date: "25 Aug 2026",
+    label: { th: "ส่งคำขอวิทยากรให้ IBM", en: "Submit Speaker Request to IBM" },
+    status: "upcoming",
+  },
+  {
+    date: "8 Sept 2026",
+    label: { th: "เปิดตัวเว็บไซต์และส่งข้อมูลงาน", en: "Site Launch & Submit Event Information" },
+    status: "upcoming",
+  },
+  {
+    date: "Sept - Oct 2026",
+    label: { th: "Session 1: Online Lecture ระดับประเทศ", en: "Session 1: National Online Lecture Day" },
+    status: "upcoming",
+  },
+  {
+    date: "Sept - Dec 2026",
+    label: { th: "Session 2 & 3: Regional Workshop Days", en: "Session 2 & 3: Regional Workshop Days" },
+    status: "upcoming",
   },
 ];
 
@@ -123,8 +150,8 @@ export const minorNavItems: NavItem[] = [
 
 export const announce: { text: L; cta: L } = {
   text: {
-    th: "เปิดลงทะเบียนแล้ว · มทส. 25 ต.ค. 2026 · ที่นั่งจำกัด 50 ที่",
-    en: "Registration open · SUT, 25 Oct 2026 · 50 seats only",
+    th: "6 Regional Hubs ทั่วประเทศ · Online Lectures + On-site Workshops · ฟรีทั้งหมด",
+    en: "6 Regional Hubs nationwide · Online Lectures + On-site Workshops · Completely free",
   },
   cta: { th: "ลงทะเบียน", en: "Register" },
 };

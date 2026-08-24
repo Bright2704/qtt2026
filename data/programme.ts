@@ -9,97 +9,115 @@ export type Slot = {
   tbc?: boolean;
 };
 
-/** ตารางเวลาหลัก ใช้ทั้งงานที่ มทส. และ True Digital Park */
+/** ตารางเวลาหลัก — โครงสร้าง 3 Sessions ตาม Master Plan */
 export const agenda: Slot[] = [
+  // === Session 1: Online Lectures (Centralized) ===
   {
     time: "08:30 – 09:00",
     kind: "admin",
-    title: { th: "ลงทะเบียนหน้างาน", en: "Registration" },
+    title: { th: "ลงทะเบียนออนไลน์", en: "Online Check-in" },
     detail: {
-      th: "รับป้ายชื่อ ตรวจสอบว่าบัญชี qBraid ใช้งานได้ และเชื่อมต่อ Wi-Fi ให้เรียบร้อยก่อนเริ่ม",
-      en: "Collect your badge, check that your qBraid account works, and get onto the Wi-Fi before we begin.",
+      th: "เข้าระบบ Zoom ตรวจสอบการเชื่อมต่อ และรับภาพรวมของงาน IBM Qiskit Fall Fest 2026",
+      en: "Join Zoom, verify your connection, and receive an overview of IBM Qiskit Fall Fest 2026.",
     },
   },
   {
-    time: "09:00 – 10:00",
+    time: "09:00 – 10:30",
     title: {
-      th: "Intro to Qiskit บน qBraid — ทฤษฎี (ก)",
-      en: "Intro to Qiskit on qBraid — theory (a)",
+      th: "Lecture 1: Qiskit Theory & Fundamentals",
+      en: "Lecture 1: Qiskit Theory & Fundamentals",
     },
     detail: {
-      th: "ปูพื้นข้อมูลควอนตัมและการคำนวณควอนตัมผ่านแพลตฟอร์ม qBraid เริ่มจากคิวบิตคืออะไร ทำไมมันถึงต่างจากบิต",
-      en: "An introduction to quantum information and computing via qBraid: what a qubit is, and why it differs from a bit.",
+      th: "แนะนำ Quantum Computing, พื้นฐานคณิตศาสตร์, ทำไมต้อง Qiskit และวิธีใช้งาน Qiskit & Quantum Gates",
+      en: "Introduction to Quantum Computing, mathematical foundations, why Qiskit, and how to use Qiskit & Quantum Gates.",
+    },
+    speaker: {
+      th: "Pak Shen (Monash) / IBM Request / อ.นิค",
+      en: "Pak Shen (Monash) / IBM Request / Aj. Nick",
     },
     tbc: true,
   },
   {
-    time: "10:00 – 11:00",
+    time: "10:30 – 12:00",
     title: {
-      th: "Intro to Qiskit บน qBraid — ทฤษฎี (ข)",
-      en: "Intro to Qiskit on qBraid — theory (b)",
+      th: "Lecture 2: qBraid Platform & Optimization",
+      en: "Lecture 2: qBraid Platform & Optimization",
     },
     detail: {
-      th: "พื้นฐานวงจรควอนตัมและเกตด้วย Qiskit — เกต X, H, CNOT และการอ่านผลจากการวัด",
-      en: "Fundamentals of quantum circuits and gates using Qiskit — the X, H, and CNOT gates, and how to read measurement results.",
+      th: "แนะนำแพลตฟอร์ม qBraid Cloud, ตั้งค่า environment & SDK, การ frame ปัญหา Optimization และ Qiskit on qBraid workflow",
+      en: "Introduction to qBraid Cloud Platform, setting up environment & SDK, optimization problem framing, and Qiskit on qBraid workflow.",
+    },
+    speaker: {
+      th: "Ricky Young (qBraid) / ทีม: พัช, มีเบียร์, พี่ตง, แม็กกกี้",
+      en: "Ricky Young (qBraid) / Team: Pach, Beer, Tong, Maggy",
     },
     tbc: true,
   },
   {
-    time: "11:00 – 12:00",
-    title: { th: "ลงมือทำ ภาค 1", en: "Hands-on, part 1" },
+    time: "12:00 – 12:15",
+    title: { th: "Q&A และเตรียมตัวสู่ Workshop", en: "Q&A & Transition to Workshops" },
     detail: {
-      th: "เขียนโค้ดจริงบน qBraid สร้างวงจรแรกของคุณและรันดูผล มีทีม TA เดินดูแลตลอด ติดตรงไหนยกมือได้เลย",
-      en: "Write real code on qBraid: build your first circuit and run it. Teaching assistants circulate throughout — put your hand up whenever you get stuck.",
+      th: "เปิดรับคำถาม และแนะนำการเตรียมตัวสำหรับ Session 2 On-site Workshops",
+      en: "Open Q&A session and preparation guide for Session 2 On-site Workshops.",
     },
   },
   {
-    time: "12:00 – 13:00",
+    time: "12:15 – 13:00",
     kind: "break",
-    title: { th: "พักกลางวัน", en: "Lunch" },
+    title: { th: "พักกลางวัน", en: "Lunch Break" },
     detail: {
       th: "รายละเอียดอาหารกลางวันแจ้งแยกตามสถานที่ในอีเมลยืนยัน",
       en: "Lunch arrangements differ by venue and are confirmed in your registration email.",
     },
-    tbc: true,
   },
+  // === Session 2: On-site Workshops (Regional Hubs) ===
   {
-    time: "13:00 – 14:00",
-    title: { th: "ลงมือทำ ภาค 2", en: "Hands-on, part 2" },
+    time: "13:00 – 15:00",
+    title: { th: "Session 2: Hands-on Lab", en: "Session 2: Hands-on Lab" },
     detail: {
-      th: "ต่อยอดจากภาคเช้า สร้างสถานะพัวพัน (entanglement) และทดลองดัดแปลงวงจรของตัวเอง",
-      en: "Building on the morning: create entangled states and experiment with modifying your own circuits.",
-    },
-  },
-  {
-    time: "14:00 – 15:00",
-    title: {
-      th: "ควอนตัมใช้ทำอะไรได้ และเส้นทางอาชีพสายควอนตัม",
-      en: "Quantum use cases and career paths",
-    },
-    detail: {
-      th: "ความสำคัญของเทคโนโลยีควอนตัม โอกาสในระดับภูมิภาค และบทบาทของ QTRiC ในการผลักดันระบบนิเวศควอนตัมของไทย",
-      en: "Why quantum technology matters, what the regional opportunities look like, and QTRiC's role in building Thailand's quantum ecosystem.",
+      th: "Lab 1: ออกแบบวงจรและ implement algorithm บน qBraid\nLab 2: แปลงโจทย์ domain เป็น QUBO/Circuits",
+      en: "Lab 1: Circuit design & algorithm implementation on qBraid\nLab 2: Formulating domain challenges into QUBO/Circuits",
     },
     speaker: {
-      th: "รศ. ดร. วรวัฒน์ มีวาสนา",
-      en: "Assoc. Prof. Dr. Worawat Meevasana",
+      th: "Mentors & TAs: มีเบียร์, เอกชัย, ดร.สรวิศ, นงลักษณ์",
+      en: "Mentors & TAs: Beer, Ekkachai, Dr. Sorawit, Nonglak",
     },
   },
   {
-    time: "15:00 – 15:15",
-    kind: "break",
-    title: { th: "พักเบรก", en: "Break" },
-    detail: { th: "พักดื่มน้ำ ยืดเส้นยืดสาย", en: "A short pause for refreshments." },
-  },
-  {
-    time: "15:15 – 16:15",
-    title: {
-      th: "เครือข่ายและกรณีใช้งานจริง",
-      en: "Networking and use cases",
-    },
+    time: "15:00 – 16:00",
+    title: { th: "Use Case Challenge Sprint", en: "Use Case Challenge Sprint" },
     detail: {
-      th: "แนะนำแนวคิดเพื่อจุดประกายก่อนส่งต่อไปยังงาน Deep Dive ที่จะจัดต่อเนื่อง พร้อมเปิดพื้นที่ให้ผู้เข้าร่วมได้คุยกันเอง",
-      en: "Ideas to spark what comes next, ahead of our follow-on deep-dive events — plus open space for participants to talk with one another.",
+      th: "เลือก Domain Track: Energy & Smart Grid, Network Optimization, หรือ Post-Quantum Cryptography แล้วทำ Solution Architecture",
+      en: "Choose your Domain Track: Energy & Smart Grid, Network Optimization, or Post-Quantum Cryptography and build a Solution Architecture.",
+    },
+    speaker: {
+      th: "Track Leads: อ.นนท์ (Energy), อ.มนัสวี (PQC), Domain Experts",
+      en: "Track Leads: Aj. Non (Energy), Aj. Manasvi (PQC), Domain Experts",
+    },
+  },
+  {
+    time: "16:00 – 16:30",
+    title: { th: "Pitch & Review", en: "Pitch & Review" },
+    detail: {
+      th: "นำเสนอผลงาน: Problem → Solution → Presentation",
+      en: "Team Pitching: Problem → Solution → Presentation",
+    },
+    speaker: {
+      th: "Judging Panel & Mentors",
+      en: "Judging Panel & Mentors",
+    },
+  },
+  // === Session 3: Networking & Sharing ===
+  {
+    time: "16:30 – 17:00",
+    title: { th: "Session 3: Networking Circles", en: "Session 3: Networking Circles" },
+    detail: {
+      th: "เลือกวงคุย:\n• Circle 1: Senior Mentorship (พี่จู๊ด) — Career growth, startup scaling\n• Circle 2: Academic & Faculty (อ.แจน) — Research grants, curriculum design\n• Circle 3: Student & Community (น้องๆ) — Learning path, hackathon experience",
+      en: "Choose your circle:\n• Circle 1: Senior Mentorship (P'Jude) — Career growth, startup scaling\n• Circle 2: Academic & Faculty (Aj. Jan) — Research grants, curriculum design\n• Circle 3: Student & Community (Students) — Learning path, hackathon experience",
+    },
+    speaker: {
+      th: "Circle Leads: พี่จู๊ด, อ.แจน, Student Leads",
+      en: "Circle Leads: P'Jude, Aj. Jan, Student Leads",
     },
   },
 ];
@@ -122,12 +140,30 @@ export const tracks: Track[] = [
     },
   },
   {
-    name: { th: "สายกรณีใช้งานและอุตสาหกรรม", en: "Use case and industry" },
-    level: { th: "รู้พื้นฐานแล้ว", en: "Some background helpful" },
-    status: "current-bkk",
+    name: { th: "Theme 1: Energy & Smart Grid", en: "Theme 1: Energy & Smart Grid" },
+    level: { th: "Use Case Challenge", en: "Use Case Challenge" },
+    status: "current",
     detail: {
-      th: "เซสชันช่วงบ่ายของงานที่ True Digital Park เน้นการหาค่าที่เหมาะที่สุดและงานด้านการเงิน",
-      en: "Afternoon sessions at the True Digital Park edition, focused on optimisation and finance.",
+      th: "Peak shaving, battery dispatch, grid load balancing ด้วย QUBO / QAOA / Linear-Quadratic Optimization — ดูแลโดย อ.นนท์",
+      en: "Peak shaving, battery dispatch, grid load balancing using QUBO / QAOA / Linear-Quadratic Optimization — led by Aj. Non",
+    },
+  },
+  {
+    name: { th: "Theme 2: Network & Telecom", en: "Theme 2: Network & Telecom" },
+    level: { th: "Use Case Challenge", en: "Use Case Challenge" },
+    status: "current",
+    detail: {
+      th: "Routing efficiency, traffic flow, topology optimization ด้วย Graph mapping & Quantum heuristics",
+      en: "Routing efficiency, traffic flow, topology optimization using Graph mapping & Quantum heuristics",
+    },
+  },
+  {
+    name: { th: "Theme 3: Post-Quantum Cryptography", en: "Theme 3: Post-Quantum Cryptography" },
+    level: { th: "Use Case Challenge", en: "Use Case Challenge" },
+    status: "current",
+    detail: {
+      th: "Quantum security threats, key exchange, PQC algorithm migration & lattice-based crypto — ดูแลโดย อ.มนัสวี",
+      en: "Quantum security threats, key exchange, PQC algorithm migration & lattice-based crypto — led by Aj. Manasvi",
     },
   },
   {

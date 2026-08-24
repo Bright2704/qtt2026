@@ -16,9 +16,10 @@ export type Person = {
    ------------------------------------------------------------ */
 
 export const speakers: Person[] = [
+  // === Session 1: Online Lectures ===
   {
     name: { th: "รศ. ดร. วรวัฒน์ มีวาสนา", en: "Assoc. Prof. Dr. Worawat Meevasana" },
-    role: { th: "หัวหน้าผู้จัดงาน", en: "Lead organiser" },
+    role: { th: "ที่ปรึกษาและหัวหน้าโครงการ", en: "Advisor & Project Lead" },
     org: { th: "มหาวิทยาลัยเทคโนโลยีสุรนารี", en: "Suranaree University of Technology" },
     topic: {
       th: "ควอนตัมใช้ทำอะไรได้ และเส้นทางอาชีพสายควอนตัม",
@@ -28,44 +29,83 @@ export const speakers: Person[] = [
     confirmed: true,
   },
   {
-    name: { th: "รอประกาศ", en: "To be announced" },
-    role: { th: "ผู้สอน", en: "Instructor" },
-    org: { th: "รอยืนยัน", en: "To be confirmed" },
-    topic: {
-      th: "Intro to Qiskit บน qBraid — ทฤษฎี (ก)",
-      en: "Intro to Qiskit on qBraid — theory (a)",
-    },
-    confirmed: false,
-  },
-  {
-    name: { th: "รอประกาศ", en: "To be announced" },
-    role: { th: "ผู้สอน", en: "Instructor" },
-    org: { th: "รอยืนยัน", en: "To be confirmed" },
-    topic: {
-      th: "Intro to Qiskit บน qBraid — ทฤษฎี (ข)",
-      en: "Intro to Qiskit on qBraid — theory (b)",
-    },
-    confirmed: false,
-  },
-  {
-    name: { th: "รอประกาศ", en: "To be announced" },
-    role: { th: "ผู้สอนภาคปฏิบัติ", en: "Hands-on instructor" },
-    org: { th: "รอยืนยัน", en: "To be confirmed" },
-    topic: { th: "ลงมือทำ ภาค 1 และ 2", en: "Hands-on parts 1 and 2" },
-    confirmed: false,
-  },
-  {
     name: { th: "ดร. Choong Pak Shen", en: "Dr. Choong Pak Shen" },
-    role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional advisor" },
+    role: { th: "Session 1 Online Lecture Speaker", en: "Session 1 Online Lecture Speaker" },
     org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
-    topic: { th: "รอยืนยันหัวข้อ", en: "Topic to be confirmed" },
-    confirmed: false,
+    topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
+    confirmed: true,
   },
   {
-    name: { th: "รอประกาศ", en: "To be announced" },
+    name: { th: "Tan Chun Loong", en: "Tan Chun Loong" },
+    role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional Quantum Partner" },
+    org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
+    topic: { th: "Qiskit Theory Support", en: "Qiskit Theory Support" },
+    confirmed: true,
+  },
+  {
+    name: { th: "Ricky Young", en: "Ricky Young" },
+    role: { th: "Session 1 Lead Speaker & Platform Partner", en: "Session 1 Lead Speaker & Platform Partner" },
+    org: { th: "qBraid", en: "qBraid" },
+    topic: { th: "qBraid Platform & Optimization", en: "qBraid Platform & Optimization" },
+    confirmed: true,
+  },
+  {
+    name: { th: "อ.นิค", en: "Aj. Nick" },
+    role: { th: "ผู้สอน", en: "Instructor" },
+    org: { th: "รอยืนยัน", en: "To be confirmed" },
+    topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
+    confirmed: false,
+  },
+  // === Session 2: Workshop Track Leads ===
+  {
+    name: { th: "อ.นนท์ (ดร.นนท์)", en: "Aj. Non (Dr. Non)" },
+    role: { th: "Track Lead - Energy", en: "Track Lead - Energy" },
+    org: { th: "QTRiC", en: "QTRiC" },
+    topic: { th: "Energy & Smart Grid Optimization", en: "Energy & Smart Grid Optimization" },
+    confirmed: true,
+  },
+  {
+    name: { th: "อ.มนัสวี", en: "Aj. Manasvi" },
+    role: { th: "Track Lead - PQC", en: "Track Lead - PQC" },
+    org: { th: "รอยืนยัน", en: "To be confirmed" },
+    topic: { th: "Post-Quantum Cryptography & Security", en: "Post-Quantum Cryptography & Security" },
+    confirmed: false,
+  },
+  // === Session 3: Networking Circle Leads ===
+  {
+    name: { th: "พี่จู๊ด (P'Jude)", en: "P'Jude" },
+    role: { th: "Circle 1 Lead - Senior Mentorship", en: "Circle 1 Lead - Senior Mentorship" },
+    org: { th: "QTRiC", en: "QTRiC" },
+    topic: { th: "Deep-tech career growth, startup scaling", en: "Deep-tech career growth, startup scaling" },
+    confirmed: true,
+  },
+  {
+    name: { th: "อ.แจน", en: "Aj. Jan" },
+    role: { th: "Circle 2 Lead - Academic & Faculty", en: "Circle 2 Lead - Academic & Faculty" },
+    org: { th: "รอยืนยัน", en: "To be confirmed" },
+    topic: { th: "Joint research, curriculum design, research grants", en: "Joint research, curriculum design, research grants" },
+    confirmed: false,
+  },
+  // === Use Case Speakers (TBC) ===
+  {
+    name: { th: "อ.ทิว", en: "Aj. Tiew" },
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "รอยืนยัน", en: "To be confirmed" },
-    topic: { th: "รอยืนยันหัวข้อ", en: "Topic to be confirmed" },
+    topic: { th: "Quantum Use Cases", en: "Quantum Use Cases" },
+    confirmed: false,
+  },
+  {
+    name: { th: "อ.ชาญวิทย์", en: "Aj. Chanwit" },
+    role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
+    org: { th: "รอยืนยัน", en: "To be confirmed" },
+    topic: { th: "Quantum AI", en: "Quantum AI" },
+    confirmed: false,
+  },
+  {
+    name: { th: "อ.พีช", en: "Aj. Peach" },
+    role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
+    org: { th: "รอยืนยัน", en: "To be confirmed" },
+    topic: { th: "Quantum Hardware", en: "Quantum Hardware" },
     confirmed: false,
   },
 ];
@@ -83,21 +123,69 @@ export const committee: CommitteeGroup[] = [
     people: [
       {
         name: { th: "รศ. ดร. วรวัฒน์ มีวาสนา", en: "Assoc. Prof. Dr. Worawat Meevasana" },
-        role: { th: "หัวหน้าผู้จัดงาน", en: "Lead organiser and main host" },
+        role: { th: "ที่ปรึกษาและหัวหน้า SUT Node", en: "Advisor & SUT Node Lead" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
         link: "https://www.linkedin.com/in/worawat-meevasana-7423a94b/",
         confirmed: true,
       },
       {
-        name: { th: "นิติกร ชุมนันกุล", en: "Nitikorn Chumnankul" },
-        role: { th: "ดูแลโปรแกรมและงานประสานงาน", en: "Programme and logistics" },
+        name: { th: "นิติกร ชุมนันกุล (Pat)", en: "Nitikorn Chumnankul (Pat)" },
+        role: { th: "Project Lead & Coordinator", en: "Project Lead & Coordinator" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
         confirmed: true,
       },
       {
         name: { th: "ชัชวาล ใจสุข", en: "Chutchawan Jaisuk" },
-        role: { th: "ดูแลโปรแกรมและงานประสานงาน", en: "Programme and logistics" },
+        role: { th: "Co-organizer & Technical Support", en: "Co-organizer & Technical Support" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
+        confirmed: true,
+      },
+    ],
+  },
+  {
+    title: { th: "ทีมดำเนินงานหลัก", en: "Core Operations Team" },
+    note: { th: "ได้รับการจัดสรรงบประมาณสนับสนุน", en: "Budget-allocated team members" },
+    people: [
+      {
+        name: { th: "P. Peer", en: "P. Peer" },
+        role: { th: "Lead Coordinator", en: "Lead Coordinator" },
+        org: { th: "QTRiC", en: "QTRiC" },
+        confirmed: true,
+      },
+      {
+        name: { th: "N. Han", en: "N. Han" },
+        role: { th: "Core Team", en: "Core Team" },
+        org: { th: "QTRiC", en: "QTRiC" },
+        confirmed: true,
+      },
+      {
+        name: { th: "N. Fiya", en: "N. Fiya" },
+        role: { th: "Core Team / QML", en: "Core Team / QML" },
+        org: { th: "QTRiC", en: "QTRiC" },
+        confirmed: true,
+      },
+      {
+        name: { th: "N. Subun", en: "N. Subun" },
+        role: { th: "Core Team", en: "Core Team" },
+        org: { th: "QTRiC", en: "QTRiC" },
+        confirmed: true,
+      },
+      {
+        name: { th: "Macky", en: "Macky" },
+        role: { th: "Technical Lead", en: "Technical Lead" },
+        org: { th: "QTRiC", en: "QTRiC" },
+        confirmed: true,
+      },
+      {
+        name: { th: "หลิว", en: "Liu" },
+        role: { th: "Core Team / Backend", en: "Core Team / Backend" },
+        org: { th: "SQV", en: "SQV" },
+        confirmed: true,
+      },
+      {
+        name: { th: "มีเบียร์", en: "Beer" },
+        role: { th: "TA & Platform Support", en: "TA & Platform Support" },
+        org: { th: "QTRiC", en: "QTRiC" },
         confirmed: true,
       },
     ],
