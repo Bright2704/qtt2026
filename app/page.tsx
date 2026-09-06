@@ -6,11 +6,12 @@ import { editions } from "@/data/editions";
 import { agenda } from "@/data/programme";
 import { globalStats, site } from "@/data/site";
 import { partnerTiers } from "@/data/partners";
+import { sponsorTiers } from "@/data/sponsors";
 import { scatterDark, scatterLight, stickers } from "@/data/stickers";
 import Countdown from "@/components/Countdown";
 import EditionCard from "@/components/EditionCard";
 import Icon from "@/components/Icon";
-import { Section } from "@/components/ui";
+import { Section, TbcChip } from "@/components/ui";
 import OrbitingStickers from "@/components/magic/OrbitingStickers";
 import StickerMarquee from "@/components/magic/StickerMarquee";
 import Reveal from "@/components/magic/Reveal";
@@ -394,6 +395,61 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
+
+      {/* ================= SPONSORS ================= */}
+      <Section id="sponsors" variant="mist">
+        <Reveal>
+          <div style={{ textAlign: "center", marginBottom: 32 }}>
+            <p className="eyebrow">{t({ th: "ผู้สนับสนุน", en: "Sponsors" })}</p>
+            <h2>{t({ th: "ผู้สนับสนุนโครงการ", en: "Our Sponsors" })}</h2>
+            <p className="muted" style={{ maxWidth: "56ch", margin: "12px auto 0" }}>
+              {t({
+                th: "ขอขอบคุณองค์กรและหน่วยงานที่ร่วมสนับสนุนการจัดงาน Qiskit Fall Fest 2026",
+                en: "Special thanks to our sponsors supporting Qiskit Fall Fest 2026",
+              })}
+            </p>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 36 }}>
+            {sponsorTiers.map((tier, ti) => (
+              <div key={ti}>
+                <h3 style={{ fontSize: 16, fontWeight: 600, color: "var(--indigo-800)", marginBottom: 16 }}>
+                  {t(tier.tierName)}
+                </h3>
+                {tier.note && (
+                  <p className="muted" style={{ fontSize: 14, marginBottom: 16 }}>
+                    {t(tier.note)}
+                  </p>
+                )}
+                <div className="logo-grid">
+                  {tier.sponsors.map((s, i) => (
+                    <div className="logo-box beam" key={i}>
+                      {s.url ? (
+                        <a href={s.url} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none", color: "inherit" }}>
+                          {s.logo && <img src={s.logo} alt={t(s.name)} />}
+                          <div>
+                            <div className="logo-box__name">{t(s.name)}</div>
+                            {s.sub && <div className="logo-box__sub">{t(s.sub)}</div>}
+                          </div>
+                        </a>
+                      ) : (
+                        <div>
+                          {s.logo && <img src={s.logo} alt={t(s.name)} />}
+                          <div>
+                            <div className="logo-box__name">{t(s.name)}</div>
+                            {s.sub && <div className="logo-box__sub">{t(s.sub)}</div>}
+                          </div>
+                          {s.confirmed === false && <TbcChip />}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+      </Section>
     </>
   );
 }
