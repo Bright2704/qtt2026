@@ -90,7 +90,7 @@ export const editions: Edition[] = [
     id: "bangkok",
     slug: "bangkok",
     name: { th: "ทรู ดิจิทัล พาร์ค", en: "True Digital Park" },
-    city: { th: "กรุงเทพมหานคร", en: "Bangkok" },
+    city: { th: "IBM Thailand", en: "IBM Thailand" },
     date: null,
     dateConfirmed: false,
     dateLabel: { th: "รอยืนยันวันที่", en: "Date to be confirmed" },

@@ -9,7 +9,7 @@ import { Notice, PageHead, Section } from "@/components/ui";
 
 const trackTone: Record<string, { th: string; en: string }> = {
   current: { th: "งานนี้", en: "This event" },
-  "current-bkk": { th: "เฉพาะที่กรุงเทพฯ", en: "Bangkok only" },
+  "current-bkk": { th: "เฉพาะที่ IBM Thailand", en: "IBM Thailand only" },
   future: { th: "งานต่อเนื่อง", en: "Follow-on event" },
 };
 
