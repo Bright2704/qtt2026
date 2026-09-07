@@ -11,7 +11,7 @@ import RegisterForm from "@/components/RegisterForm";
 const steps = [
   {
     title: { th: "เลือกงาน", en: "Pick an edition" },
-    body: { th: "มทส. · กรุงเทพฯ · ออนไลน์", en: "SUT · Bangkok · Online" },
+    body: { th: "มทส. · IBM Thailand · ออนไลน์", en: "SUT · IBM Thailand · Online" },
   },
   {
     title: { th: "กรอกฟอร์ม", en: "Fill the form" },
@@ -66,7 +66,7 @@ const formFields: { field: { th: string; en: string }; note: { th: string; en: s
   },
   {
     field: { th: "เลือกงานที่จะเข้าร่วม", en: "Which edition" },
-    note: { th: "มทส. · กรุงเทพฯ · ออนไลน์ · ยังไม่แน่ใจ", en: "SUT · Bangkok · Online · Undecided" },
+    note: { th: "มทส. · IBM Thailand · ออนไลน์ · ยังไม่แน่ใจ", en: "SUT · IBM Thailand · Online · Undecided" },
   },
   {
     field: { th: "สถานะปัจจุบัน", en: "Your current status" },
