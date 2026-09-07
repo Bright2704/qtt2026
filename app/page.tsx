@@ -368,34 +368,6 @@ export default function Home() {
         </Reveal>
       </Section>
 
-      {/* ================= CTA ================= */}
-      <section className="cta-band">
-        <div className="wrap">
-          <Reveal>
-            <h2>{t({ th: "ที่นั่งมีจำกัด และเราไม่คิดค่าใช้จ่ายสักบาท", en: "Seats are limited. Admission is free." })}</h2>
-            <p>
-              {t({
-                th: "ถ้าคุณเคยสงสัยว่าควอนตัมคอมพิวติงมันคืออะไรกันแน่ นี่คือวันที่คุณจะได้คำตอบด้วยมือตัวเอง",
-                en: "If you have ever wondered what quantum computing actually is, this is the day you find out with your own hands.",
-              })}
-            </p>
-            <div className="btn-row">
-              <Link className="btn btn--solidDark btn--shimmer" href="/register">
-                <span>{t({ th: "ลงทะเบียนเลย", en: "Register now" })}</span>
-                <Icon name="i-arrow" size={18} />
-              </Link>
-              <Link className="btn btn--solidLight" href="/learn">
-                {t({ th: "ดูวิธีเตรียมตัว", en: "How to prepare" })}
-                <Icon name="i-arrow" size={18} />
-              </Link>
-            </div>
-            <p className="small" style={{ marginTop: 20, opacity: 0.75 }}>
-              {t(site.qbraid.note)}
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
       {/* ================= SPONSORS ================= */}
       <Section id="sponsors" variant="mist">
         <Reveal>
