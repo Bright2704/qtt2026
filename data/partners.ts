@@ -62,16 +62,6 @@ export const partnerTiers: PartnerTier[] = [
     ],
   },
   {
-    title: { th: "พันธมิตรด้านสถานที่", en: "Venue partner" },
-    partners: [
-      {
-        name: { th: "True Corporation", en: "True Corporation" },
-        sub: { th: "ทรู ดิจิทัล พาร์ค กรุงเทพฯ", en: "True Digital Park, Bangkok" },
-        confirmed: true,
-      },
-    ],
-  },
-  {
     title: { th: "เครือข่ายวิชาการ", en: "Academic network" },
     note: {
       th: "อยู่ระหว่างยืนยันการเข้าร่วมอย่างเป็นทางการ",
