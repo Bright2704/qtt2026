@@ -18,13 +18,13 @@ export default function PersonCard({ p, showTopic = true }: { p: Person; showTop
         />
       </div>
       <h3>
-        {/*p.link ? (
+        {p.link ? (
           <a href={p.link} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none" }}>
             {t(p.name)}
           </a>
         ) : (
           t(p.name)
-        )*/}
+        )}
         {!p.confirmed && <TbcChip />}
       </h3>
       <p className="person__role" style={{ margin: 0 }}>
