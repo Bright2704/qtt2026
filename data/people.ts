@@ -96,17 +96,17 @@ export const speakers: Person[] = [
   // === Use Case Speakers (TBC) ===
   {
     name: { th: "อ.ทิว", en: "Aj. Tiew" },
-    role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
-    org: { th: "รอยืนยัน", en: "To be confirmed" },
+    role: { th: "วิทยากรรับเชิญ", en: "วิทยากรรับเชิญ" },
+    org: { th: "Co-Founder & CEO, Quantum Technology Foundation (Thailand) [QTFT]", en: "Co-Founder & CEO, Quantum Technology Foundation (Thailand) [QTFT]" },
     topic: { th: "Quantum Use Cases", en: "Quantum Use Cases" },
-    confirmed: false,
+    confirmed: true,
   },
   {
     name: { th: "อ.ชาญวิทย์", en: "Aj. Chanwit" },
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "รอยืนยัน", en: "To be confirmed" },
     topic: { th: "Quantum AI", en: "Quantum AI" },
-    confirmed: false,
+    confirmed: true,
   },
   {
     name: { th: "อ.พีช", en: "Aj. Peach" },
