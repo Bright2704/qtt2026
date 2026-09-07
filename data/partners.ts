@@ -70,8 +70,8 @@ export const partnerTiers: PartnerTier[] = [
     partners: [
       { name: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" }, confirmed: false },
       { name: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" }, confirmed: false },
-      { name: { th: "มหาวิทยาลัยมหิดล", en: "Mahidol University" }, confirmed: false },
-      { name: { th: "จุฬาลงกรณ์มหาวิทยาลัย", en: "Chulalongkorn University" }, confirmed: false },
+      // { name: { th: "มหาวิทยาลัยมหิดล", en: "Mahidol University" }, confirmed: false },
+      // { name: { th: "จุฬาลงกรณ์มหาวิทยาลัย", en: "Chulalongkorn University" }, confirmed: false },
     ],
   },
   {
