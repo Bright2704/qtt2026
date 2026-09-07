@@ -224,24 +224,24 @@ export const committee: CommitteeGroup[] = [
         org: { th: "qBraid", en: "qBraid" },
         confirmed: true,
       },
-      {
-        name: { th: "ณัฐพล ก.", en: "Natthaphol K." },
-        role: { th: "ผู้ประสานงาน", en: "Coordination" },
-        org: { th: "IBM ประเทศไทย", en: "IBM Thailand" },
-        confirmed: true,
-      },
-      {
-        name: { th: "Julian Tan", en: "Julian Tan" },
-        role: { th: "ผู้มีส่วนได้ส่วนเสียระดับภูมิภาค", en: "Regional stakeholder" },
-        org: { th: "IBM สิงคโปร์", en: "IBM Singapore" },
-        confirmed: false,
-      },
-      {
-        name: { th: "Ruchi Pendse", en: "Ruchi Pendse" },
-        role: { th: "ผู้มีส่วนได้ส่วนเสียระดับภูมิภาค", en: "Regional stakeholder" },
-        org: { th: "IBM ชิคาโก", en: "IBM Chicago" },
-        confirmed: false,
-      },
+      // {
+      //   name: { th: "ณัฐพล ก.", en: "Natthaphol K." },
+      //   role: { th: "ผู้ประสานงาน", en: "Coordination" },
+      //   org: { th: "IBM ประเทศไทย", en: "IBM Thailand" },
+      //   confirmed: true,
+      // },
+      // {
+      //   name: { th: "Julian Tan", en: "Julian Tan" },
+      //   role: { th: "ผู้มีส่วนได้ส่วนเสียระดับภูมิภาค", en: "Regional stakeholder" },
+      //   org: { th: "IBM สิงคโปร์", en: "IBM Singapore" },
+      //   confirmed: false,
+      // },
+      // {
+      //   name: { th: "Ruchi Pendse", en: "Ruchi Pendse" },
+      //   role: { th: "ผู้มีส่วนได้ส่วนเสียระดับภูมิภาค", en: "Regional stakeholder" },
+      //   org: { th: "IBM ชิคาโก", en: "IBM Chicago" },
+      //   confirmed: false,
+      // },
     ],
   },
   {
@@ -269,18 +269,18 @@ export const committee: CommitteeGroup[] = [
         org: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" },
         confirmed: false,
       },
-      {
-        name: { th: "รศ. ดร. อารียา จันทร์ศรี", en: "Assoc. Prof. Dr. Areeya Chantasri" },
-        role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
-        org: { th: "มหาวิทยาลัยมหิดล", en: "Mahidol University" },
-        confirmed: false,
-      },
-      {
-        name: { th: "ผศ. ดร. ศลินพร กิตติวัฒนกุล", en: "Asst. Prof. Dr. Salinporn Kittiwatanakul" },
-        role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
-        org: { th: "จุฬาลงกรณ์มหาวิทยาลัย", en: "Chulalongkorn University" },
-        confirmed: false,
-      },
+      // {
+      //   name: { th: "รศ. ดร. อารียา จันทร์ศรี", en: "Assoc. Prof. Dr. Areeya Chantasri" },
+      //   role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
+      //   org: { th: "มหาวิทยาลัยมหิดล", en: "Mahidol University" },
+      //   confirmed: false,
+      // },
+      // {
+      //   name: { th: "ผศ. ดร. ศลินพร กิตติวัฒนกุล", en: "Asst. Prof. Dr. Salinporn Kittiwatanakul" },
+      //   role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
+      //   org: { th: "จุฬาลงกรณ์มหาวิทยาลัย", en: "Chulalongkorn University" },
+      //   confirmed: false,
+      // },
     ],
   },
 ];
