@@ -63,6 +63,8 @@ export const sponsorTiers: SponsorTier[] = [
       {
         name: { th: "IBM Thailand", en: "IBM Thailand" },
         sub: { th: "สถานที่จัดงาน กรุงเทพฯ", en: "Bangkok Venue Host" },
+        logo: "/assets/ibm-quantum-logo.png",
+        url: "https://www.ibm.com/quantum",
         confirmed: true,
       },
       {
