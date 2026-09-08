@@ -91,8 +91,8 @@ export const agenda: Slot[] = [
       en: "Choose your Domain Track: Energy & Smart Grid, Network Optimization, or Post-Quantum Cryptography and build a Solution Architecture.",
     },
     speaker: {
-      th: "Track Leads: อ.นนท์ (Energy), อ.มนัสวี (PQC), Domain Experts",
-      en: "Track Leads: Aj. Non (Energy), Aj. Manasvi (PQC), Domain Experts",
+      th: "Track Leads: อ.มนัสวี (PQC), Domain Experts",
+      en: "Track Leads: Aj. Manasvi (PQC), Domain Experts",
     },
   },
   {
@@ -144,8 +144,8 @@ export const tracks: Track[] = [
     level: { th: "Use Case Challenge", en: "Use Case Challenge" },
     status: "current",
     detail: {
-      th: "Peak shaving, battery dispatch, grid load balancing ด้วย QUBO / QAOA / Linear-Quadratic Optimization — ดูแลโดย อ.นนท์",
-      en: "Peak shaving, battery dispatch, grid load balancing using QUBO / QAOA / Linear-Quadratic Optimization — led by Aj. Non",
+      th: "Peak shaving, battery dispatch, grid load balancing ด้วย QUBO / QAOA / Linear-Quadratic Optimization",
+      en: "Peak shaving, battery dispatch, grid load balancing using QUBO / QAOA / Linear-Quadratic Optimization",
     },
   },
   {
