@@ -25,7 +25,7 @@ export const speakers: Person[] = [
       th: "ควอนตัมใช้ทำอะไรได้ และเส้นทางอาชีพสายควอนตัม",
       en: "Quantum use cases and career paths",
     },
-    photo: "/assets/photos/speaker-1.svg",
+    photo: "/assets/photos/worawat-meevasana.jpg",
     link: "https://www.linkedin.com/in/worawat-meevasana-7423a94b/",
     confirmed: true,
   },
@@ -34,7 +34,7 @@ export const speakers: Person[] = [
     role: { th: "Session 1 Online Lecture Speaker", en: "Session 1 Online Lecture Speaker" },
     org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
     topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
-    photo: "/assets/photos/speaker-2.svg",
+    photo: "/assets/photos/choong-pak-shen.jpg",
     confirmed: true,
   },
   {
@@ -42,7 +42,7 @@ export const speakers: Person[] = [
     role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional Quantum Partner" },
     org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
     topic: { th: "Qiskit Theory Support", en: "Qiskit Theory Support" },
-    photo: "/assets/photos/speaker-3.svg",
+    photo: "/assets/photos/Tan Chun.jpg",
     confirmed: true,
   },
   {
@@ -50,7 +50,7 @@ export const speakers: Person[] = [
     role: { th: "Session 1 Lead Speaker & Platform Partner", en: "Session 1 Lead Speaker & Platform Partner" },
     org: { th: "qBraid", en: "qBraid" },
     topic: { th: "qBraid Platform & Optimization", en: "qBraid Platform & Optimization" },
-    photo: "/assets/photos/speaker-4.svg",
+    photo: "/assets/photos/Ricky.jpg",
     confirmed: true,
   },
   {
@@ -66,7 +66,7 @@ export const speakers: Person[] = [
     role: { th: "Track Lead - Energy", en: "Track Lead - Energy" },
     org: { th: "QTRiC", en: "QTRiC" },
     topic: { th: "Energy & Smart Grid Optimization", en: "Energy & Smart Grid Optimization" },
-    photo: "/assets/photos/speaker-5.svg",
+    photo: "/assets/photos/aj non.jpg",
     confirmed: true,
   },
   {
@@ -99,6 +99,7 @@ export const speakers: Person[] = [
     role: { th: "วิทยากรรับเชิญ", en: "วิทยากรรับเชิญ" },
     org: { th: "Co-Founder & CEO, Quantum Technology Foundation (Thailand) [QTFT]", en: "Co-Founder & CEO, Quantum Technology Foundation (Thailand) [QTFT]" },
     topic: { th: "Quantum Use Cases", en: "Quantum Use Cases" },
+    photo: "/assets/photos/aj til.jpg",
     confirmed: true,
   },
   {
@@ -106,6 +107,7 @@ export const speakers: Person[] = [
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "รอยืนยัน", en: "To be confirmed" },
     topic: { th: "Quantum AI", en: "Quantum AI" },
+    photo: "/assets/photos/aieat_chanwit.jpg",
     confirmed: true,
   },
   {
