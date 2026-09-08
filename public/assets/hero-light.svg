@@ -41,14 +41,13 @@
     <path d="M-40 622 Q 160 444 360 622 T 760 622 T 1160 622 T 1560 622" stroke-width=".9" opacity=".28"/>
   </g>
 
-  <!-- วงจรควอนตัมจาง ๆ มุมซ้ายบน -->
-  <g stroke="#461d8a" stroke-opacity=".16" stroke-width="1.4" fill="none">
-    <path d="M110 180 H 520"/><path d="M110 240 H 520"/><path d="M110 300 H 520"/>
-    <rect x="196" y="161" width="38" height="38" rx="9" fill="#ffffff" stroke="#b796f6" stroke-opacity=".8"/>
-    <rect x="300" y="221" width="38" height="38" rx="9" fill="#ffffff" stroke="#f86dad" stroke-opacity=".8"/>
-    <rect x="404" y="281" width="38" height="38" rx="9" fill="#ffffff" stroke="#0071fd" stroke-opacity=".6"/>
-    <path d="M319 240 V 300"/>
-    <circle cx="319" cy="300" r="6" fill="#f86dad" stroke="none"/>
+  <!-- วงจรควอนตัมจาง ๆ มุมซ้ายบน - ย้ายให้ห่างจากข้อความและลด opacity -->
+  <g stroke="#461d8a" stroke-opacity=".08" stroke-width="1.2" fill="none" opacity=".5">
+    <path d="M-20 120 H 180"/><path d="M-20 170 H 180"/><path d="M-20 220 H 180"/>
+    <rect x="46" y="101" width="32" height="32" rx="8" fill="#ffffff" stroke="#b796f6" stroke-opacity=".5"/>
+    <rect x="100" y="151" width="32" height="32" rx="8" fill="#ffffff" stroke="#f86dad" stroke-opacity=".5"/>
+    <path d="M116 170 V 220"/>
+    <circle cx="116" cy="220" r="5" fill="#f86dad" fill-opacity=".4" stroke="none"/>
   </g>
 
   <!-- กราฟความพัวพันมุมขวาล่าง -->

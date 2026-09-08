@@ -81,7 +81,7 @@ export const globalStats: { num: string; label: L }[] = [
     },
   },
   {
-    num: "6",
+    num: "5",
     label: {
       th: "Regional Hubs ทั่วประเทศไทย",
       en: "regional hubs across Thailand",
@@ -150,8 +150,8 @@ export const minorNavItems: NavItem[] = [
 
 export const announce: { text: L; cta: L } = {
   text: {
-    th: "6 Regional Hubs ทั่วประเทศ · Online Lectures + On-site Workshops · ฟรีทั้งหมด",
-    en: "6 Regional Hubs nationwide · Online Lectures + On-site Workshops · Completely free",
+    th: "5 Regional Hubs ทั่วประเทศ · Online Lectures + On-site Workshops · ฟรีทั้งหมด",
+    en: "5 Regional Hubs nationwide · Online Lectures + On-site Workshops · Completely free",
   },
   cta: { th: "ลงทะเบียน", en: "Register" },
 };
@@ -161,8 +161,8 @@ export const footerCols: { title: L; links: NavItem[] }[] = [
     title: { th: "งาน", en: "Editions" },
     links: [
       { href: "/editions/sut", label: { th: "มทส. นครราชสีมา", en: "SUT, Nakhon Ratchasima" } },
-      { href: "/editions/bangkok", label: { th: "True Digital Park", en: "True Digital Park" } },
-      { href: "/editions/online", label: { th: "ปฐมนิเทศออนไลน์", en: "Pre-event online" } },
+      { href: "/editions/bangkok", label: { th: "IBM Thailand กรุงเทพฯ", en: "IBM Thailand, Bangkok" } },
+      { href: "/editions/online", label: { th: "Online Lectures", en: "Online Lectures" } },
       { href: "/programme", label: { th: "กำหนดการ", en: "Programme" } },
     ],
   },

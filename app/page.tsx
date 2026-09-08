@@ -372,12 +372,12 @@ export default function Home() {
       <Section id="sponsors" variant="mist">
         <Reveal>
           <div style={{ textAlign: "center", marginBottom: 32 }}>
-            <p className="eyebrow">{t({ th: "ผู้สนับสนุน", en: "Sponsors" })}</p>
-            <h2>{t({ th: "ผู้สนับสนุนโครงการ", en: "Our Sponsors" })}</h2>
+            <p className="eyebrow">{t({ th: "สนับสนุนโดย", en: "Supported By" })}</p>
+            <h2>{t({ th: "สนับสนุนโดย", en: "Supported By" })}</h2>
             <p className="muted" style={{ maxWidth: "56ch", margin: "12px auto 0" }}>
               {t({
                 th: "ขอขอบคุณองค์กรและหน่วยงานที่ร่วมสนับสนุนการจัดงาน Qiskit Fall Fest 2026",
-                en: "Special thanks to our sponsors supporting Qiskit Fall Fest 2026",
+                en: "Thank you to the organizations and partners supporting Qiskit Fall Fest 2026",
               })}
             </p>
           </div>
@@ -398,7 +398,7 @@ export default function Home() {
                     <div className="logo-box beam" key={i}>
                       {s.url ? (
                         <a href={s.url} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none", color: "inherit" }}>
-                          {s.logo && <img src={s.logo} alt={t(s.name)} />}
+                          {s.logo && <img src={s.logo} alt={t(s.name)} className={s.logoDarkBg ? "logo--dark-bg" : ""} />}
                           <div>
                             <div className="logo-box__name">{t(s.name)}</div>
                             {s.sub && <div className="logo-box__sub">{t(s.sub)}</div>}
@@ -406,7 +406,7 @@ export default function Home() {
                         </a>
                       ) : (
                         <div>
-                          {s.logo && <img src={s.logo} alt={t(s.name)} />}
+                          {s.logo && <img src={s.logo} alt={t(s.name)} className={s.logoDarkBg ? "logo--dark-bg" : ""} />}
                           <div>
                             <div className="logo-box__name">{t(s.name)}</div>
                             {s.sub && <div className="logo-box__sub">{t(s.sub)}</div>}

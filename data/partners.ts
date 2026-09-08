@@ -31,6 +31,7 @@ export const partnerTiers: PartnerTier[] = [
           th: "สภาพแวดล้อมการเรียนรู้หลักของงาน",
           en: "The event's core learning environment",
         },
+        logo: "/assets/qbraid-logo.webp",
         url: "https://qbraid.com",
         confirmed: true,
       },
@@ -42,6 +43,8 @@ export const partnerTiers: PartnerTier[] = [
       {
         name: { th: "มหาวิทยาลัยเทคโนโลยีสุรนารี", en: "Suranaree University of Technology" },
         sub: { th: "สถาบันเจ้าภาพ", en: "Host institution" },
+        logo: "/assets/sut-logo.png",
+        url: "https://www.sut.ac.th",
         confirmed: true,
       },
       {
@@ -50,6 +53,7 @@ export const partnerTiers: PartnerTier[] = [
           th: "Quantum Technology Research Initiative Consortium",
           en: "Quantum Technology Research Initiative Consortium",
         },
+        logo: "/assets/qtric-logo.png",
         url: "https://qtric.sut.ac.th/",
         confirmed: true,
       },
@@ -97,7 +101,6 @@ export const partnerTiers: PartnerTier[] = [
     },
     partners: [
       { name: { th: "มหาวิทยาลัยนเรศวร", en: "Naresuan University" }, sub: { th: "Phitsanulok Hub", en: "Phitsanulok Hub" }, confirmed: false },
-      { name: { th: "เครือข่ายพันธมิตรภาคตะวันออก", en: "Eastern Partner Network" }, sub: { th: "Chonburi Hub", en: "Chonburi Hub" }, confirmed: false },
     ],
   },
 ];

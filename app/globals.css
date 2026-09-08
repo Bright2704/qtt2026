@@ -168,7 +168,41 @@ strong { font-weight: 600; }
 .section { position: relative; overflow: hidden; padding-block: var(--section-y); }
 .section--tight { padding-block: clamp(44px, 6vw, 80px); }
 .section--mist { background: var(--surface-2); }
-.section--lilac { background: var(--surface-3); }
+.section--lilac {
+  background: var(--surface-3);
+  position: relative;
+}
+.section--lilac::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--lavender-400), var(--pink-400), transparent);
+  opacity: 0.5;
+}
+
+/* Mist section with subtle quantum effect */
+.section--mist {
+  position: relative;
+}
+.section--mist::after {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(183, 150, 246, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: mistGlow 10s ease-in-out infinite;
+}
+@keyframes mistGlow {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+}
 
 .section--dark {
   position: relative;
@@ -306,8 +340,24 @@ strong { font-weight: 600; }
   background: var(--grad-cta); transform: scaleX(0); transform-origin: left;
   transition: transform var(--t-base) var(--ease-out);
 }
-.card--hover:hover { transform: translateY(-3px); box-shadow: var(--e-2); }
+.card--hover:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--e-2), 0 0 20px rgba(183, 150, 246, 0.15);
+}
 .card--hover:hover::before { transform: scaleX(1); }
+
+/* Quantum glow effect on hover */
+.card--hover::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(183, 150, 246, 0.1), rgba(248, 109, 173, 0.1));
+  opacity: 0;
+  transition: opacity var(--t-base);
+  z-index: -1;
+}
+.card--hover:hover::after { opacity: 1; }
 .card--flat { box-shadow: none; background: var(--surface-2); border-color: transparent; }
 .card--dark { background: rgba(255, 255, 255, 0.05); border-color: rgba(184, 150, 248, 0.18); box-shadow: none; }
 
@@ -542,7 +592,8 @@ strong { font-weight: 600; }
 }
 .hero__bg {
   position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover; opacity: 0.95; pointer-events: none;
+  object-fit: cover; opacity: 0.6; pointer-events: none;
+  filter: blur(0.5px);
 }
 .hero__inner { position: relative; z-index: 2; display: grid; grid-template-columns: 1.08fr 0.92fr; gap: var(--s-6); align-items: center; }
 .hero__badge { justify-self: center; width: min(300px, 100%); animation: float 9s ease-in-out infinite; }
@@ -724,18 +775,32 @@ strong { font-weight: 600; }
 
 .logo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--s-4); }
 .logo-box {
-  display: grid; place-items: center; min-height: 180px; height: auto; padding: var(--s-5);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-height: 200px; height: auto; padding: var(--s-5);
   background: var(--white); border: 1px solid var(--border-soft);
   border-radius: var(--r-md); text-align: center;
 }
+.logo-box > a,
+.logo-box > div {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  width: 100%; gap: 12px; text-decoration: none; color: inherit;
+}
 .logo-box img {
-  max-height: 120px; width: auto; margin-bottom: 12px; object-fit: contain;
+  max-height: 80px; max-width: 180px; width: auto; object-fit: contain;
   filter: grayscale(1); opacity: 0.85;
   transition: transform 0.25s ease, filter var(--t-base), opacity var(--t-base);
 }
-.logo-box:hover img { filter: grayscale(0); opacity: 1; transform: scale(1.1); }
+.logo-box:hover img { filter: grayscale(0); opacity: 1; transform: scale(1.05); }
 .logo-box__name { font-size: 14px; font-weight: 600; line-height: 1.35; color: var(--indigo-800); }
-.logo-box__sub { font-size: 12px; color: var(--text-muted); }
+.logo-box__sub { font-size: 12px; color: var(--text-muted); line-height: 1.4; max-width: 200px; }
+
+/* Logo with dark background - for logos with white text */
+.logo-box img.logo--dark-bg {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 16px 24px;
+  border-radius: var(--r-sm);
+  max-height: 100px;
+}
 
 /* ============================================================
    Tables
@@ -829,8 +894,35 @@ table.t td.muted { color: var(--text-muted); }
   content: ""; position: absolute; inset: 0;
   background-image: url("/assets/pattern-circuit.svg"); background-size: 240px;
   opacity: 0.06;
+  animation: patternDrift 60s linear infinite;
+}
+@keyframes patternDrift {
+  from { transform: translate(0, 0); }
+  to { transform: translate(240px, 240px); }
 }
 .pagehead > * { position: relative; z-index: 1; }
+
+/* Quantum decorations สำหรับ pagehead */
+.pagehead::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: 8%;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle at 30% 30%, rgba(183, 150, 246, 0.25) 0%, transparent 50%),
+              radial-gradient(circle at 70% 70%, rgba(248, 109, 173, 0.2) 0%, transparent 50%);
+  border-radius: 50%;
+  animation: quantumOrb 8s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes quantumOrb {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.6; }
+  50% { transform: scale(1.15) rotate(180deg); opacity: 0.9; }
+}
+@media (max-width: 768px) {
+  .pagehead::after { width: 120px; height: 120px; top: 10%; right: 5%; }
+}
 /* หัวข้อบนพื้นสว่างต้องเป็นม่วงเข้ม (13.6) — สีขาวเหลือจากตอนธีมมืด อ่านไม่ออกเลย */
 .pagehead h1 { color: var(--text-strong); max-width: 20ch; }
 .pagehead .lead { margin-top: var(--s-4); max-width: 60ch; color: var(--text-muted); }

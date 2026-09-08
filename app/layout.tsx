@@ -23,6 +23,7 @@ import { LangProvider } from "@/lib/i18n";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ScrollSway from "@/components/magic/ScrollSway";
+import QuantumBackground from "@/components/magic/QuantumBackground";
 
 const SITE_URL = "https://qtric.sut.ac.th/qff2026/";
 
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s · Qiskit Fall Fest 2026: ประเทศไทย",
   },
   description:
-    "เทศกาลควอนตัมคอมพิวติงระดับโลกของ IBM Quantum มาถึงประเทศไทย ตุลาคม–พฤศจิกายน 2026 ลงมือเขียนโปรแกรมควอนตัมจริงหนึ่งวันเต็ม ที่ มทส. นครราชสีมา และ True Digital Park กรุงเทพฯ เข้าร่วมฟรี ไม่ต้องมีพื้นฐาน",
+    "เทศกาลควอนตัมคอมพิวติงระดับโลกของ IBM Quantum มาถึงประเทศไทย ตุลาคม–พฤศจิกายน 2026 ลงมือเขียนโปรแกรมควอนตัมจริงหนึ่งวันเต็ม ที่ มทส. นครราชสีมา และ IBM Thailand กรุงเทพฯ เข้าร่วมฟรี ไม่ต้องมีพื้นฐาน",
   keywords: [
     "Qiskit Fall Fest",
     "ควอนตัมคอมพิวติง",
@@ -113,6 +114,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(eventJsonLd) }}
         />
         <LangProvider>
+          <QuantumBackground />
           <ScrollSway />
           <a className="skip" href="#main">
             ข้ามไปยังเนื้อหาหลัก / Skip to content
