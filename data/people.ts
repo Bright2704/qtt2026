@@ -25,7 +25,7 @@ export const speakers: Person[] = [
       th: "ควอนตัมใช้ทำอะไรได้ และเส้นทางอาชีพสายควอนตัม",
       en: "Quantum use cases and career paths",
     },
-    photo: "/assets/photos/worawat-meevasana.jpg",
+    photo: "/assets/photos/wa.jpg",
     link: "https://www.linkedin.com/in/worawat-meevasana-7423a94b/",
     confirmed: true,
   },
@@ -108,7 +108,7 @@ export const speakers: Person[] = [
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "Chief Technology Officer Centillex", en: "Chief Technology Officer Centillex" },
     topic: { th: "Quantum AI", en: "Quantum AI" },
-    photo: "/assets/photos/aieat_chanwit.jpg",
+    photo: "/assets/photos/ch.jpg",
     confirmed: true,
   },
   {
@@ -116,7 +116,7 @@ export const speakers: Person[] = [
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "รอยืนยัน", en: "To be confirmed" },
     topic: { th: "Quantum Hardware", en: "Quantum Hardware" },
-    photo: "/assets/photos/อ. พีช.jpg",
+    photo: "/assets/photos/DFD.jpg",
     confirmed: true,
   },
 ];
@@ -144,7 +144,7 @@ export const committee: CommitteeGroup[] = [
         name: { th: "นิติกร ชุมนันกุล (Pat)", en: "Nitikorn Chumnankul (Pat)" },
         role: { th: "Project Lead & Coordinator", en: "Project Lead & Coordinator" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
-        
+        photo: "/assets/photos/Nitikorn.jpg",
         confirmed: true,
       },
       {
@@ -210,13 +210,15 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "ดร. Choong Pak Shen", en: "Dr. Choong Pak Shen" },
         role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional advisor" },
-        org: { th: "Founder @ Quantum Wings", en: "Founder @ Quantum Wings" },
+        org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
+        photo: "/assets/photos/choong-pak-shen.jpg",
         confirmed: true,
       },
       {
         name: { th: "Tan Chun Loong", en: "Tan Chun Loong" },
         role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional advisor" },
         org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
+        photo: "/assets/photos/Tan Chun.jpg",
         confirmed: true,
       },
     ],
