@@ -32,7 +32,7 @@ export const speakers: Person[] = [
   {
     name: { th: "ดร. Choong Pak Shen", en: "Dr. Choong Pak Shen" },
     role: { th: "Session 1 Online Lecture Speaker", en: "Session 1 Online Lecture Speaker" },
-    org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
+    org: { th: "Founder @ Quantum Wings", en: "Founder @ Quantum Wings" },
     topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
     photo: "/assets/photos/choong-pak-shen.jpg",
     confirmed: true,
@@ -61,14 +61,14 @@ export const speakers: Person[] = [
     confirmed: false,
   },
   // === Session 2: Workshop Track Leads ===
-  {
-    name: { th: "อ.นนท์ (ดร.นนท์)", en: "Aj. Non (Dr. Non)" },
-    role: { th: "Track Lead - Energy", en: "Track Lead - Energy" },
-    org: { th: "QTRiC", en: "QTRiC" },
-    topic: { th: "Energy & Smart Grid Optimization", en: "Energy & Smart Grid Optimization" },
-    photo: "/assets/photos/aj non.jpg",
-    confirmed: true,
-  },
+  //{
+    //name: { th: "อ.นนท์ (ดร.นนท์)", en: "Aj. Non (Dr. Non)" },
+    //role: { th: "Track Lead - Energy", en: "Track Lead - Energy" },
+    //org: { th: "QTRiC", en: "QTRiC" },
+    //topic: { th: "Energy & Smart Grid Optimization", en: "Energy & Smart Grid Optimization" },
+    //photo: "/assets/photos/aj non.jpg",
+    //confirmed: true,
+  //},
   {
     name: { th: "อ.มนัสวี", en: "Aj. Manasvi" },
     role: { th: "Track Lead - PQC", en: "Track Lead - PQC" },
@@ -105,7 +105,7 @@ export const speakers: Person[] = [
   {
     name: { th: "อ.ชาญวิทย์", en: "Aj. Chanwit" },
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
-    org: { th: "รอยืนยัน", en: "To be confirmed" },
+    org: { th: "Chief Technology Officer Centillex", en: "Chief Technology Officer Centillex" },
     topic: { th: "Quantum AI", en: "Quantum AI" },
     photo: "/assets/photos/aieat_chanwit.jpg",
     confirmed: true,
@@ -207,7 +207,7 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "ดร. Choong Pak Shen", en: "Dr. Choong Pak Shen" },
         role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional advisor" },
-        org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
+        org: { th: "Founder @ Quantum Wings", en: "Founder @ Quantum Wings" },
         confirmed: true,
       },
       {
