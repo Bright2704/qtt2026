@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="footer__grid">
             <div>
               <div className="footer__brand">
-                <img src="/assets/logo-mark.svg" alt="" width={36} height={36} />
+                <img src="/assets/logo-web.png" alt="" width={36} height={36} style={{ borderRadius: "50%" }} />
                 <span>
                   <strong>Qiskit Fall Fest</strong>
                   <em>2026 · {t({ th: "ประเทศไทย", en: "Thailand" })}</em>

@@ -113,7 +113,7 @@ export default function Nav() {
         data-on-hero={onHero && !scrolled ? "true" : onHero ? "true" : "false"}
       >
         <Link className="nav__brand" href="/">
-          <img src="/assets/logo-mark.svg" alt="" width={32} height={32} />
+          <img src="/assets/logo-web.png" alt="" width={32} height={32} style={{ borderRadius: "50%" }} />
           <span>
             <strong>Qiskit Fall Fest</strong>
             <em>2026 · {t({ th: "ประเทศไทย", en: "Thailand" })}</em>
@@ -215,7 +215,7 @@ export default function Nav() {
         <div className="sheet" id="mobile-sheet" role="dialog" aria-modal="true">
           <div className="sheet__top">
             <Link className="nav__brand" href="/" onClick={closeSheet}>
-              <img src="/assets/logo-mark.svg" alt="" width={32} height={32} />
+              <img src="/assets/logo-web.png" alt="" width={32} height={32} style={{ borderRadius: "50%" }} />
               <span>
                 <strong>Qiskit Fall Fest</strong>
                 <em>2026 · {t({ th: "ประเทศไทย", en: "Thailand" })}</em>
