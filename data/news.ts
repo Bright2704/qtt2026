@@ -109,9 +109,9 @@ export const posts: Post[] = [
 
 export const pressKit: { name: L; detail: L; file: string }[] = [
   {
-    name: { th: "โลโก้งาน (SVG)", en: "Event mark (SVG)" },
-    detail: { th: "โลโก้ประจำเว็บไซต์ ใช้บนพื้นสว่างและพื้นมืดได้", en: "Site mark, usable on light and dark backgrounds" },
-    file: "/assets/logo-mark.svg",
+    name: { th: "โลโก้งาน (PNG)", en: "Event mark (PNG)" },
+    detail: { th: "โลโก้ประจำเว็บไซต์ Qiskit Fall Fest 2026", en: "Qiskit Fall Fest 2026 site logo" },
+    file: "/assets/logo-web.png",
   },
   {
     name: { th: "เหรียญตรางาน (SVG)", en: "Event badge (SVG)" },

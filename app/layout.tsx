@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     description: "Hands-on quantum computing, free to join. October–November 2026.",
     images: ["/assets/og-image.svg"],
   },
-  icons: { icon: "/assets/favicon.svg", apple: "/assets/favicon.svg" },
+  icons: { icon: "/assets/favicon.png", apple: "/assets/favicon.png" },
   robots: { index: true, follow: true },
 };
 

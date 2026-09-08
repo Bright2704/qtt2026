@@ -40,7 +40,7 @@ export const stickers: Record<string, Sticker> = {
   hummingbirds: {
     id: "hummingbirds",
     src: `${DIR}/hummingbirds.png`,
-    fallback: "/assets/logo-mark.svg",
+    fallback: "/assets/logo-web.png",
     alt: {
       th: "สติกเกอร์นกฮัมมิงเบิร์ดสองตัวบินอยู่บนก้อนเมฆ",
       en: "Sticker of two hummingbirds flying among clouds",
@@ -50,7 +50,7 @@ export const stickers: Record<string, Sticker> = {
   bluebird: {
     id: "bluebird",
     src: `${DIR}/bluebird.png`,
-    fallback: "/assets/logo-mark.svg",
+    fallback: "/assets/logo-web.png",
     alt: {
       th: "สติกเกอร์นกสีน้ำเงินเกาะกิ่งไม้",
       en: "Sticker of a blue bird perched on a branch",
@@ -70,7 +70,7 @@ export const stickers: Record<string, Sticker> = {
   eagle: {
     id: "eagle",
     src: `${DIR}/eagle.png`,
-    fallback: "/assets/logo-mark.svg",
+    fallback: "/assets/logo-web.png",
     alt: {
       th: "สติกเกอร์นกอินทรีขอบชมพู ปีกสีม่วงเข้ม",
       en: "Sticker of an eagle outlined in pink with a deep purple wing",
@@ -80,14 +80,14 @@ export const stickers: Record<string, Sticker> = {
   qiskit: {
     id: "qiskit",
     src: `${DIR}/qiskit-pill.png`,
-    fallback: "/assets/logo-mark.svg",
+    fallback: "/assets/logo-web.png",
     alt: { th: "สติกเกอร์คำว่า Qiskit", en: "Qiskit wordmark sticker" },
     decorative: true,
   },
   fallFest: {
     id: "fallFest",
     src: `${DIR}/fall-fest-pill.png`,
-    fallback: "/assets/logo-mark.svg",
+    fallback: "/assets/logo-web.png",
     alt: { th: "สติกเกอร์คำว่า Fall Fest", en: "Fall Fest wordmark sticker" },
     decorative: true,
   },
