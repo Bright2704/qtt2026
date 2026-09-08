@@ -349,12 +349,25 @@ export default function Home() {
             {partnerTiers
               .flatMap((tier) => tier.partners)
               .filter((p) => p.confirmed)
-              .map((p) => (
-                <div className="logo-box beam" key={t(p.name)}>
-                  <div>
-                    <div className="logo-box__name">{t(p.name)}</div>
-                    {p.sub && <div className="logo-box__sub">{t(p.sub)}</div>}
-                  </div>
+              .map((p, i) => (
+                <div className="logo-box beam" key={i}>
+                  {p.url ? (
+                    <a href={p.url} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none", color: "inherit" }}>
+                      {p.logo && <img src={p.logo} alt={t(p.name)} />}
+                      <div>
+                        <div className="logo-box__name">{t(p.name)}</div>
+                        {p.sub && <div className="logo-box__sub">{t(p.sub)}</div>}
+                      </div>
+                    </a>
+                  ) : (
+                    <div>
+                      {p.logo && <img src={p.logo} alt={t(p.name)} />}
+                      <div>
+                        <div className="logo-box__name">{t(p.name)}</div>
+                        {p.sub && <div className="logo-box__sub">{t(p.sub)}</div>}
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
           </div>
