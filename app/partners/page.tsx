@@ -66,19 +66,25 @@ export default function Partners() {
           <div className="logo-grid" style={{ marginTop: tier.note ? 0 : 24 }}>
             {tier.partners.map((p, i) => (
               <div className="logo-box" key={i}>
-                <div>
-                  <div className="logo-box__name">
-                    {p.url ? (
-                      <a href={p.url} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none" }}>
-                        {t(p.name)}
-                      </a>
-                    ) : (
-                      t(p.name)
-                    )}
+                {p.url ? (
+                  <a href={p.url} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none", color: "inherit" }}>
+                    {p.logo && <img src={p.logo} alt={t(p.name)} />}
+                    <div>
+                      <div className="logo-box__name">{t(p.name)}</div>
+                      {p.sub && <div className="logo-box__sub">{t(p.sub)}</div>}
+                    </div>
+                    {!p.confirmed && <TbcChip />}
+                  </a>
+                ) : (
+                  <div>
+                    {p.logo && <img src={p.logo} alt={t(p.name)} />}
+                    <div>
+                      <div className="logo-box__name">{t(p.name)}</div>
+                      {p.sub && <div className="logo-box__sub">{t(p.sub)}</div>}
+                    </div>
+                    {!p.confirmed && <TbcChip />}
                   </div>
-                  {p.sub && <div className="logo-box__sub">{t(p.sub)}</div>}
-                  {!p.confirmed && <TbcChip />}
-                </div>
+                )}
               </div>
             ))}
           </div>

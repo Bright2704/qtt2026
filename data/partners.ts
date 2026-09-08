@@ -16,7 +16,11 @@ export const partnerTiers: PartnerTier[] = [
     partners: [
       {
         name: { th: "IBM Quantum", en: "IBM Quantum" },
-        sub: { th: "ผู้จัด Fall Fest ระดับโลก", en: "Global Fall Fest programme" },
+        sub: {
+          th: "ผู้สนับสนุนโปรแกรม Qiskit Fall Fest ระดับโลก",
+          en: "Global Qiskit Fall Fest Programme Sponsor",
+        },
+        logo: "/assets/ibm-quantum-logo.png",
         url: "https://www.ibm.com/quantum",
         confirmed: true,
       },
@@ -28,8 +32,8 @@ export const partnerTiers: PartnerTier[] = [
       {
         name: { th: "qBraid", en: "qBraid" },
         sub: {
-          th: "สภาพแวดล้อมการเรียนรู้หลักของงาน",
-          en: "The event's core learning environment",
+          th: "แพลตฟอร์มเรียนรู้ควอนตัมคอมพิวติง",
+          en: "Quantum Computing Learning Platform",
         },
         logo: "/assets/qbraid-logo.webp",
         url: "https://qbraid.com",
@@ -42,7 +46,7 @@ export const partnerTiers: PartnerTier[] = [
     partners: [
       {
         name: { th: "มหาวิทยาลัยเทคโนโลยีสุรนารี", en: "Suranaree University of Technology" },
-        sub: { th: "สถาบันเจ้าภาพ", en: "Host institution" },
+        sub: { th: "สถาบันเจ้าภาพหลัก", en: "Host Institution" },
         logo: "/assets/sut-logo.png",
         url: "https://www.sut.ac.th",
         confirmed: true,
@@ -60,6 +64,7 @@ export const partnerTiers: PartnerTier[] = [
       {
         name: { th: "SEA Quantum Network", en: "SEA Quantum Network" },
         sub: { th: "เครือข่ายควอนตัมเอเชียตะวันออกเฉียงใต้", en: "Southeast Asian quantum network" },
+        logo: "/assets/sea-quantum-logo.jpg",
         url: "https://seaqnet.org/",
         confirmed: true,
       },
@@ -67,15 +72,21 @@ export const partnerTiers: PartnerTier[] = [
   },
   {
     title: { th: "เครือข่ายวิชาการ", en: "Academic network" },
-    note: {
-      th: "อยู่ระหว่างยืนยันการเข้าร่วมอย่างเป็นทางการ",
-      en: "Formal participation currently being confirmed",
-    },
     partners: [
-      { name: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" }, confirmed: false },
-      { name: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" }, confirmed: false },
-      // { name: { th: "มหาวิทยาลัยมหิดล", en: "Mahidol University" }, confirmed: false },
-      // { name: { th: "จุฬาลงกรณ์มหาวิทยาลัย", en: "Chulalongkorn University" }, confirmed: false },
+      {
+        name: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" },
+        sub: { th: "เจ้าภาพจัดงานภาคเหนือ", en: "Northern Region Host" },
+        logo: "/assets/cmu-logo.webp",
+        url: "https://www.cmu.ac.th",
+        confirmed: true,
+      },
+      {
+        name: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" },
+        sub: { th: "เจ้าภาพจัดงานภาคใต้", en: "Southern Region Host" },
+        logo: "/assets/psu-logo.png",
+        url: "https://www.psu.ac.th",
+        confirmed: true,
+      },
     ],
   },
   {
@@ -84,6 +95,8 @@ export const partnerTiers: PartnerTier[] = [
       {
         name: { th: "IBM ประเทศไทย", en: "IBM Thailand" },
         sub: { th: "ความร่วมมือระดับประเทศ", en: "National collaboration" },
+        logo: "/assets/ibm-quantum-logo.png",
+        url: "https://www.ibm.com/th-th",
         confirmed: true,
       },
       {
@@ -100,7 +113,22 @@ export const partnerTiers: PartnerTier[] = [
       en: "Regional Workshop Nodes across Thailand",
     },
     partners: [
-      { name: { th: "มหาวิทยาลัยนเรศวร", en: "Naresuan University" }, sub: { th: "Phitsanulok Hub", en: "Phitsanulok Hub" }, confirmed: false },
+      {
+        name: { th: "มหาวิทยาลัยนเรศวร", en: "Naresuan University" },
+        sub: { th: "Phitsanulok Hub", en: "Phitsanulok Hub" },
+        confirmed: false,
+      },
+    ],
+  },
+  {
+    title: { th: "ผู้สนับสนุนโครงการ", en: "Project Supporters" },
+    partners: [
+      {
+        name: { th: "The Tiger Team Academy", en: "The Tiger Team Academy" },
+        sub: { th: "ผู้สนับสนุนโครงการ", en: "Project Supporter" },
+        logo: "/images/TheTigerTeamAcademy.jpg",
+        confirmed: true,
+      },
     ],
   },
 ];

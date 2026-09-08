@@ -776,17 +776,17 @@ strong { font-weight: 600; }
 .logo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--s-4); }
 .logo-box {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  min-height: 200px; height: auto; padding: var(--s-5);
+  min-height: 190px; height: 100%; padding: var(--s-5);
   background: var(--white); border: 1px solid var(--border-soft);
   border-radius: var(--r-md); text-align: center;
 }
 .logo-box > a,
 .logo-box > div {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  width: 100%; gap: 12px; text-decoration: none; color: inherit;
+  width: 100%; height: 100%; gap: 12px; text-decoration: none; color: inherit;
 }
 .logo-box img {
-  max-height: 80px; max-width: 180px; width: auto; object-fit: contain;
+  height: 54px; max-height: 54px; max-width: 160px; width: auto; object-fit: contain;
   filter: grayscale(1); opacity: 0.85;
   transition: transform 0.25s ease, filter var(--t-base), opacity var(--t-base);
 }
