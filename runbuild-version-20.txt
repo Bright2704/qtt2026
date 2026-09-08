@@ -1,0 +1,6 @@
+รัน build แบบนี้เลย
+& "C:\Program Files\node-v24\node-v24.20.0\npm.cmd" run build
+& "C:\Program Files\node-v24\node-v24.20.0\npm.cmd" install --save-dev serve
+pm2 start ecosystem.config.js
+pm2 logs qiskit-fall-fest --lines 50
+
