@@ -114,7 +114,7 @@ export const speakers: Person[] = [
   {
     name: { th: "อ.พีช", en: "Aj. Peach" },
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
-    org: { th: "รอยืนยัน", en: "To be confirmed" },
+    org: { th: "School of Physics, Institute of Science, Suranaree University of Technology ", en: "School of Physics, Institute of Science, Suranaree University of Technology " },
     topic: { th: "Quantum Hardware", en: "Quantum Hardware" },
     photo: "/assets/photos/DFD.jpg",
     confirmed: true,
