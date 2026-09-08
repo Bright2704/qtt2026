@@ -58,6 +58,7 @@ export const speakers: Person[] = [
     role: { th: "ผู้สอน", en: "Instructor" },
     org: { th: "รอยืนยัน", en: "To be confirmed" },
     topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
+    photo: "/assets/photos/aj nick.jpg",
     confirmed: false,
   },
   // === Session 2: Workshop Track Leads ===
@@ -116,7 +117,7 @@ export const speakers: Person[] = [
     org: { th: "รอยืนยัน", en: "To be confirmed" },
     topic: { th: "Quantum Hardware", en: "Quantum Hardware" },
     photo: "/assets/photos/อ. พีช.jpg",
-    confirmed: false,
+    confirmed: true,
   },
 ];
 
@@ -136,12 +137,14 @@ export const committee: CommitteeGroup[] = [
         role: { th: "ที่ปรึกษาและหัวหน้า SUT Node", en: "Advisor & SUT Node Lead" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
         link: "https://www.linkedin.com/in/worawat-meevasana-7423a94b/",
+        photo: "/assets/photos/worawat-meevasana.jpg",
         confirmed: true,
       },
       {
         name: { th: "นิติกร ชุมนันกุล (Pat)", en: "Nitikorn Chumnankul (Pat)" },
         role: { th: "Project Lead & Coordinator", en: "Project Lead & Coordinator" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
+        
         confirmed: true,
       },
       {
@@ -225,6 +228,7 @@ export const committee: CommitteeGroup[] = [
         name: { th: "Ricky Young", en: "Ricky Young" },
         role: { th: "ผู้ประสานงานแพลตฟอร์ม", en: "Platform liaison" },
         org: { th: "qBraid", en: "qBraid" },
+        photo: "/assets/photos/Ricky.jpg",
         confirmed: true,
       },
       // {
@@ -258,18 +262,21 @@ export const committee: CommitteeGroup[] = [
         name: { th: "ผศ. ดร. สุกฤต สุจริตกุล", en: "Asst. Prof. Dr. Sukrit Sucharitakul" },
         role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
         org: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" },
+        photo: "/assets/photos/aj nick.jpg",
         confirmed: false,
       },
       {
         name: { th: "รศ. ดร. อนุชา วัชระภาสร", en: "Assoc. Prof. Dr. Anucha Watcharapasorn" },
         role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
         org: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" },
+        photo: "/assets/photos/Aun.jpg",
         confirmed: false,
       },
       {
         name: { th: "ผศ. ดร. ปรือ กลัสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
         role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
         org: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" },
+        photo: "/assets/photos/PPP.jpg",
         confirmed: false,
       },
       // {
