@@ -101,6 +101,7 @@ export const partnerTiers: PartnerTier[] = [
       },
       {
         name: { th: "Siam Quantum Valley", en: "Siam Quantum Valley" },
+        logo: "/assets/Primary FullColor SQV Logo.png",
         sub: { th: "Industry Partner & Collaborator", en: "Industry Partner & Collaborator" },
         confirmed: true,
       },
