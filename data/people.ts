@@ -115,6 +115,7 @@ export const speakers: Person[] = [
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "รอยืนยัน", en: "To be confirmed" },
     topic: { th: "Quantum Hardware", en: "Quantum Hardware" },
+    photo: "/assets/photos/อ. พีช.jpg",
     confirmed: false,
   },
 ];
