@@ -3,4 +3,20 @@
 & "C:\Program Files\node-v24\node-v24.20.0\npm.cmd" install --save-dev serve
 pm2 start ecosystem.config.js
 pm2 logs qiskit-fall-fest --lines 50
+pm2 restart ecosystem.config.js
 
+
+[Error: ENOTEMPTY: directory not empty, rmdir 'C:\inetpub\qtt2026\out\images'] {
+  errno: -4051,
+  code: 'ENOTEMPTY',
+  syscall: 'rmdir',
+  path: 'C:\\inetpub\\qtt2026\\out\\images'
+}
+
+
+
+# ลบ static-export output เดิมทั้งหมด
+Remove-Item -LiteralPath .\out -Recurse -Force
+
+# ถ้ายังมี cache เก่าด้วย ให้ลบเพิ่ม
+Remove-Item -LiteralPath .\.next -Recurse -Force -ErrorAction SilentlyContinue
