@@ -27,7 +27,7 @@ const reasons = [
     icon: "i-network",
     title: { th: "อยากร่วมสนับสนุน", en: "Supporting the event" },
     body: {
-      th: "สถานที่ อาหาร ทุนเดินทาง หรือส่งคนมาเป็นวิทยากร เราเปิดกว้างทุกรูปแบบ",
+      th: "สถานที่ อาหาร หรือส่งคนมาเป็นวิทยากร เราเปิดกว้างทุกรูปแบบ",
       en: "A venue, meals, travel bursaries, or a speaker from your team — all welcome.",
     },
   },
