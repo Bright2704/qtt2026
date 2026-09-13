@@ -1,14 +1,21 @@
 <svg width="400" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="400" height="240" fill="#0b0420"/>
-  <rect x="20" y="20" width="360" height="200" rx="16" fill="#150836" stroke="#0071fd" stroke-width="2"/>
-  <circle cx="200" cy="100" r="50" fill="none" stroke="#b796f6" stroke-width="3"/>
-  <circle cx="200" cy="100" r="35" fill="none" stroke="#f86dad" stroke-width="2"/>
-  <circle cx="200" cy="100" r="20" fill="#0071fd"/>
-  <line x1="140" y1="100" x2="100" y2="60" stroke="#b796f6" stroke-width="2"/>
-  <line x1="260" y1="100" x2="300" y2="60" stroke="#b796f6" stroke-width="2"/>
-  <line x1="200" y1="150" x2="200" y2="180" stroke="#f86dad" stroke-width="2"/>
-  <circle cx="100" cy="60" r="8" fill="#f86dad"/>
-  <circle cx="300" cy="60" r="8" fill="#f86dad"/>
-  <circle cx="200" cy="185" r="8" fill="#0071fd"/>
-  <text x="200" y="210" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="16" font-weight="600" fill="white">Online Session</text>
+  <rect x="20" y="20" width="360" height="200" rx="16" fill="#150836" stroke="#0071fd" stroke-width="2.5"/>
+
+  <circle cx="200" cy="85" r="45" fill="none" stroke="#b796f6" stroke-width="2.5" opacity="0.8"/>
+  <circle cx="200" cy="85" r="30" fill="none" stroke="#f86dad" stroke-width="2"/>
+  <circle cx="200" cy="85" r="18" fill="#0071fd"/>
+
+  <line x1="145" y1="85" x2="90" y2="45" stroke="#b796f6" stroke-width="2"/>
+  <line x1="255" y1="85" x2="310" y2="45" stroke="#b796f6" stroke-width="2"/>
+  <line x1="200" y1="130" x2="200" y2="155" stroke="#f86dad" stroke-width="2"/>
+
+  <circle cx="90" cy="45" r="9" fill="#f86dad"/>
+  <circle cx="310" cy="45" r="9" fill="#f86dad"/>
+
+  <circle cx="200" cy="85" r="26" fill="white" opacity="0.95"/>
+  <image href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiPg0KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMzAuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjEgQnVpbGQgMTIzKSAgLS0+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5zdDAgew0KICAgICAgICBmaWxsOiBub25lOw0KICAgICAgfQ0KDQogICAgICAuc3QxIHsNCiAgICAgICAgZmlsbDogIzhhM2ZmYzsNCiAgICAgIH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQogIDxwYXRoIGlkPSJxaXNraXQiIGNsYXNzPSJzdDEiIGQ9Ik0xNiwzMS4zNkM3LjUzLDMxLjM2LjY0LDI0LjQ3LjY0LDE2YzAtMy4wNC44OS01Ljg4LDIuNDItOC4yNy4wMy0uMDguMDgtLjE3LjE3LS4yNkM1Ljk5LDMuMzUsMTAuNjkuNjQsMTYsLjY0YzguNDcsMCwxNS4zNiw2Ljg5LDE1LjM2LDE1LjM2LDAsMy4wNC0uODksNS44OC0yLjQyLDguMjctLjAzLjA4LS4wOC4xNy0uMTcuMjYtMi43Niw0LjExLTcuNDUsNi44My0xMi43Nyw2LjgzWk00LjY1LDI1LjI0YzIuNjksMy4zLDYuNzgsNS40LDExLjM1LDUuNHM4LjY0LTIuMSwxMS4zMy01LjM4Yy0uODQuMjYtMi4xMS41Mi00LjA0LjczLS4yMi43OS0uOTQsMS4zNy0xLjc5LDEuMzctLjc1LDAtMS40LS40NS0xLjY5LTEuMDktMS4yMy4wNi0yLjUxLjA5LTMuODEuMDktMy4yNywwLTguNjYtLjI2LTExLjM1LTEuMTJaTTIxLjUsMjQuMzZjLS42MywwLTEuMTQuNTEtMS4xNCwxLjE0cy41MSwxLjE0LDEuMTQsMS4xNCwxLjE0LS41MSwxLjE0LTEuMTQtLjUxLTEuMTQtMS4xNC0xLjE0Wk0zLjgzLDI0LjE0Yy42OS41OSw0Ljg3LDEuNSwxMi4xNywxLjUsMS4yNCwwLDIuNDYtLjAzLDMuNjQtLjA4LDAtLjAyLDAtLjA0LDAtLjA2LDAtLjYxLjI5LTEuMTUuNzUtMS40OWwtLjk1LTEuNThjLTEuMDYtLjA1LTIuMi0uMDctMy40NC0uMDctNy44LDAtMTIuMDQsMS4wNC0xMi4yNiwxLjY0LjAzLjA1LjA2LjA5LjA5LjE0Wk0yMS41LDIzLjY0Yy45NCwwLDEuNzMuNzEsMS44NCwxLjYyLDMuNDQtLjM5LDQuNjItLjk1LDQuODctMS4yLjAyLS4wMi4wMy0uMDUuMDUtLjA4LS4xNC0uNDYtMi44Ny0xLjIzLTcuOTYtMS41MWwuNzMsMS4yMmMuMTUtLjA0LjMtLjA2LjQ2LS4wNlpNMTkuODYsMjEuNzRjMy42MS4xOSw3LjYuNjYsOC43NywxLjY0LDEuMTQtMS45NCwxLjg1LTQuMTgsMS45OC02LjU2LTEuNjIuODItNS42MiwxLjIxLTkuMSwxLjM5bC0uMDQtLjcyYzYuMjctLjMzLDguOTMtMS4xLDkuMTYtMS41MnYtLjAyYy0uMzYtLjYzLTUuNzUtMS42MS0xNC42NC0xLjYxLS4xOSwwLS4zOCwwLS41NiwwbDQuNDMsNy4zOFpNMS4zOCwxNi44M2MuMTMsMi4zOC44NCw0LjYxLDEuOTgsNi41NiwxLjY0LTEuMzYsOC42OS0xLjc1LDEyLjY0LTEuNzUuODgsMCwxLjkxLjAyLDMsLjA2bC0yLjAxLTMuMzVjLS4zMywwLS42NiwwLS45OSwwLS41NCwwLTExLjYyLS4wMi0xNC42Mi0xLjUzWk0xLjM2LDE2LjAzYy4zNi42Myw1Ljc1LDEuNjEsMTQuNjQsMS42MS4xOSwwLC4zOCwwLC41NiwwbC00LjQzLTcuMzhjLTMuNjEtLjE5LTcuNTktLjY2LTguNzctMS42NC0xLjE0LDEuOTQtMS44NSw0LjE4LTEuOTgsNi41NiwxLjYyLS44Miw1LjYyLTEuMjEsOS4xLTEuMzlsLjA0LjcyYy02LjI3LjMzLTguOTMsMS4xLTkuMTYsMS41MiwwLDAsMCwuMDEsMCwuMDJaTTE2LDEzLjY0Yy41NCwwLDExLjYyLjAyLDE0LjYyLDEuNTMtLjEzLTIuMzgtLjg0LTQuNjEtMS45OC02LjU2LTEuNjMsMS4zNi04LjY5LDEuNzUtMTIuNjQsMS43NS0uODgsMC0xLjkxLS4wMi0zLS4wNmwyLjAxLDMuMzVjLjMzLDAsLjY2LDAsLjk5LDBaTTEyLjU2LDkuNTdjMS4wNi4wNSwyLjIuMDcsMy40NC4wNyw3LjgsMCwxMi4wNC0xLjA0LDEyLjI2LTEuNjQtLjAzLS4wNS0uMDYtLjA5LS4wOS0uMTQtLjY5LS41OS00Ljg3LTEuNTEtMTIuMTctMS41MS0xLjI0LDAtMi40Ni4wMy0zLjY0LjA5di4wNWMwLC42MS0uMjksMS4xNS0uNzUsMS40OWwuOTUsMS41OFpNMy43NCw4LjAxYy4xNC40NiwyLjg3LDEuMjMsNy45NiwxLjUybC0uNzMtMS4yMmMtLjE1LjA0LS4zLjA2LS40Ni4wNi0uOTUsMC0xLjczLS43MS0xLjg1LTEuNjItMy40My4zOS00LjYyLjk1LTQuODcsMS4yLS4wMi4wMy0uMDMuMDUtLjA1LjA4Wk0xMC41LDUuMzZjLS42MywwLTEuMTQuNTEtMS4xNCwxLjE0cy41MSwxLjE0LDEuMTQsMS4xNCwxLjE0LS41MSwxLjE0LTEuMTQtLjUxLTEuMTQtMS4xNC0xLjE0Wk0xNiw1LjY0YzMuMjcsMCw4LjY2LjI2LDExLjM1LDEuMTItMi42OS0zLjMtNi43OC01LjQtMTEuMzUtNS40UzcuMzYsMy40Niw0LjY3LDYuNzRjLjg0LS4yNiwyLjExLS41Miw0LjA0LS43My4yMi0uNzkuOTQtMS4zNywxLjc5LTEuMzcuNzUsMCwxLjQuNDUsMS42OSwxLjA5LDEuMjMtLjA2LDIuNTEtLjA5LDMuODEtLjA5WiIvPg0KICA8cmVjdCBpZD0iX1RyYW5zcGFyZW50X1JlY3RhbmdsZSIgY2xhc3M9InN0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIi8+DQo8L3N2Zz4=" x="178" y="63" width="44" height="44" preserveAspectRatio="xMidYMid meet"/>
+
+  <text x="200" y="162" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="18" font-weight="600" fill="white">Online Session</text>
+  <text x="200" y="188" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="13" fill="#a5b4fc">10, 17, 24 October 2026</text>
 </svg>
