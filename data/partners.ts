@@ -118,7 +118,7 @@ export const partnerTiers: PartnerTier[] = [
         name: { th: "มหาวิทยาลัยนเรศวร", en: "Naresuan University" },
         sub: { th: "Phitsanulok Hub", en: "Phitsanulok Hub" },
         logo: "/assets/nu-logo.png",
-        url: "https://www.nu.ac.th",
+        url: "https://www.if.nu.ac.th/",
         confirmed: false,
       },
     ],
