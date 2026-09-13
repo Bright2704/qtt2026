@@ -12,7 +12,9 @@ export default function EditionCard({ e }: { e: Edition }) {
 
   return (
     <article className={`card card--hover edition${muted ? " edition--muted" : ""}`}>
-      <img className="edition__img" src={e.image} alt="" aria-hidden="true" />
+      <div className="edition__img-wrap">
+        <img className="edition__img" src={e.image} alt="" aria-hidden="true" />
+      </div>
 
       <div className="edition__body">
         <span className={`status status--${e.status}`}>{t(statusLabel[e.status])}</span>

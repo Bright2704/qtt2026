@@ -652,7 +652,9 @@ strong { font-weight: 600; }
 .edition {
   display: flex; flex-direction: column; padding: 0; overflow: hidden;
 }
-.edition__img { width: 100%; aspect-ratio: 8/5; object-fit: cover; display: block; background: var(--indigo-800); }
+.edition__img-wrap { width: 100%; aspect-ratio: 8/5; overflow: hidden; background: var(--indigo-800); position: relative; }
+.edition__img { width: 100%; height: 100%; aspect-ratio: 8/5; object-fit: cover; display: block; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease, opacity 0.3s ease; }
+.edition:hover .edition__img { transform: scale(1.08); }
 .edition__body { padding: var(--s-5); display: flex; flex-direction: column; gap: var(--s-3); flex: 1; }
 .edition__meta { display: flex; flex-direction: column; gap: 6px; font-size: 14.5px; color: var(--text-muted); }
 .edition__meta span { display: flex; align-items: center; gap: 8px; }
@@ -664,7 +666,7 @@ strong { font-weight: 600; }
 .edition--muted { background: var(--surface-2); border-style: dashed; }
 .edition--muted .edition__img { filter: grayscale(0.55); opacity: 0.85; }
 .edition--muted:hover { background: var(--surface); border-style: solid; }
-.edition--muted:hover .edition__img { filter: none; opacity: 1; }
+.edition--muted:hover .edition__img { filter: none; opacity: 1; transform: scale(1.08); }
 
 /* ============================================================
    Timeline (programme)
