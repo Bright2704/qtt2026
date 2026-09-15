@@ -137,7 +137,7 @@ export const committee: CommitteeGroup[] = [
         role: { th: "ที่ปรึกษาและหัวหน้า SUT Node", en: "Advisor & SUT Node Lead" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
         link: "https://www.linkedin.com/in/worawat-meevasana-7423a94b/",
-        photo: "/assets/photos/worawat-meevasana.jpg",
+        photo: "/assets/photos/wa.jpg",
         confirmed: true,
       },
       {
@@ -151,6 +151,7 @@ export const committee: CommitteeGroup[] = [
         name: { th: "ชัชวาล ใจสุข", en: "Chutchawan Jaisuk" },
         role: { th: "Co-organizer & Technical Support", en: "Co-organizer & Technical Support" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
+        photo: "/assets/photos/chutchawan.jpg",
         confirmed: true,
       },
     ],
