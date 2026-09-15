@@ -195,12 +195,7 @@ export const committee: CommitteeGroup[] = [
         photo: "/assets/photos/มาโนช คำธร (2).jpg",
         confirmed: true,
       },
-      {
-        name: { th: "ปุณยธร ปรีชาพุฒ ", en: "Poonyathorn Preechapood " },
-        role: { th: "Core Team / Backend", en: "Core Team / Backend" },
-        org: { th: "SQV", en: "SQV" },
-        confirmed: true,
-      },
+    //
       //{
       //  name: { th: "มีเบียร์", en: "Beer" },
       //  role: { th: "TA & Platform Support", en: "TA & Platform Support" },
