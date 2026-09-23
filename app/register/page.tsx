@@ -128,7 +128,7 @@ export default function Register() {
             src={site.contact.registerForm}
             title={t({ th: "ฟอร์มลงทะเบียน", en: "Registration form" })}
             loading="lazy"
-          />
+          />  
         ) : (
           <div style={{ marginTop: 36 }}>
             <RegisterForm />
