@@ -1,4 +1,5 @@
 import type { L } from "@/lib/i18n";
+import { asset } from "@/lib/asset";
 
 export type Post = {
   slug: string;
@@ -111,21 +112,21 @@ export const pressKit: { name: L; detail: L; file: string }[] = [
   {
     name: { th: "โลโก้งาน (PNG)", en: "Event mark (PNG)" },
     detail: { th: "โลโก้ประจำเว็บไซต์ Qiskit Fall Fest 2026", en: "Qiskit Fall Fest 2026 site logo" },
-    file: "/assets/logo-web.png",
+    file: asset("/assets/logo-web.png"),
   },
   {
     name: { th: "เหรียญตรางาน (SVG)", en: "Event badge (SVG)" },
     detail: { th: "เหรียญวงกลม เหมาะกับสติกเกอร์และโซเชียล", en: "Circular badge, suited to stickers and social posts" },
-    file: "/assets/badge-2026.svg",
+    file: asset("/assets/badge-2026.svg"),
   },
   {
     name: { th: "ภาพสำหรับแชร์ (1200×630)", en: "Social share image (1200×630)" },
     detail: { th: "ภาพ preview สำหรับ Facebook, LinkedIn และ X", en: "Preview card for Facebook, LinkedIn, and X" },
-    file: "/assets/og-image.svg",
+    file: asset("/assets/og-image.svg"),
   },
   {
     name: { th: "ภาพพื้นหลังหลัก", en: "Hero background" },
     detail: { th: "ภาพพื้นหลังธีมงาน ใช้ประกอบบทความได้", en: "Themed background for use alongside articles" },
-    file: "/assets/hero-bg.svg",
+    file: asset("/assets/hero-bg.svg"),
   },
 ];

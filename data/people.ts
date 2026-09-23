@@ -1,4 +1,5 @@
 import type { L } from "@/lib/i18n";
+import { asset } from "@/lib/asset";
 
 export type Person = {
   name: L;
@@ -25,7 +26,7 @@ export const speakers: Person[] = [
       th: "ควอนตัมใช้ทำอะไรได้ และเส้นทางอาชีพสายควอนตัม",
       en: "Quantum use cases and career paths",
     },
-    photo: "/assets/photos/wa.jpg",
+    photo: asset("/assets/photos/wa.jpg"),
     link: "https://www.linkedin.com/in/worawat-meevasana-7423a94b/",
     confirmed: true,
   },
@@ -34,7 +35,7 @@ export const speakers: Person[] = [
     role: { th: "Session 1 Online Lecture Speaker", en: "Session 1 Online Lecture Speaker" },
     org: { th: "Founder @ Quantum Wings", en: "Founder @ Quantum Wings" },
     topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
-    photo: "/assets/photos/choong-pak-shen.jpg",
+    photo: asset("/assets/photos/choong-pak-shen.jpg"),
     confirmed: true,
   },
   {
@@ -42,7 +43,7 @@ export const speakers: Person[] = [
     role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional Quantum Partner" },
     org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
     topic: { th: "Qiskit Theory Support", en: "Qiskit Theory Support" },
-    photo: "/assets/photos/Tan Chun.jpg",
+    photo: asset("/assets/photos/Tan Chun.jpg"),
     confirmed: true,
   },
   {
@@ -50,7 +51,7 @@ export const speakers: Person[] = [
     role: { th: "Session 1 Lead Speaker & Platform Partner", en: "Session 1 Lead Speaker & Platform Partner" },
     org: { th: "qBraid", en: "qBraid" },
     topic: { th: "qBraid Platform & Optimization", en: "qBraid Platform & Optimization" },
-    photo: "/assets/photos/Ricky.jpg",
+    photo: asset("/assets/photos/Ricky.jpg"),
     confirmed: true,
   },
   {
@@ -58,7 +59,7 @@ export const speakers: Person[] = [
     role: { th: "ผู้สอน", en: "Instructor" },
     org: { th: "รอยืนยัน", en: "To be confirmed" },
     topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
-    photo: "/assets/photos/aj nick.jpg",
+    photo: asset("/assets/photos/aj nick.jpg"),
     confirmed: false,
   },
   // === Session 2: Workshop Track Leads ===
@@ -75,7 +76,7 @@ export const speakers: Person[] = [
     role: { th: "Track Lead - PQC", en: "Track Lead - PQC" },
     org: { th: "รอยืนยัน", en: "To be confirmed" },
     topic: { th: "Post-Quantum Cryptography & Security", en: "Post-Quantum Cryptography & Security" },
-    photo: "/assets/photos/speaker-6.svg",
+    photo: asset("/assets/photos/speaker-6.svg"),
     confirmed: false,
   },
   // === Session 3: Networking Circle Leads ===
@@ -84,7 +85,7 @@ export const speakers: Person[] = [
     role: { th: "Circle 1 Lead - Senior Mentorship", en: "Circle 1 Lead - Senior Mentorship" },
     org: { th: "QTRiC", en: "QTRiC" },
     topic: { th: "Deep-tech career growth, startup scaling", en: "Deep-tech career growth, startup scaling" },
-    photo: "/assets/photos/speaker-1.svg",
+    photo: asset("/assets/photos/speaker-1.svg"),
     confirmed: true,
   },
   {
@@ -100,7 +101,7 @@ export const speakers: Person[] = [
     role: { th: "วิทยากรรับเชิญ", en: "วิทยากรรับเชิญ" },
     org: { th: "Co-Founder & CEO, Quantum Technology Foundation (Thailand) [QTFT]", en: "Co-Founder & CEO, Quantum Technology Foundation (Thailand) [QTFT]" },
     topic: { th: "Quantum Use Cases", en: "Quantum Use Cases" },
-    photo: "/assets/photos/aj til.jpg",
+    photo: asset("/assets/photos/aj til.jpg"),
     confirmed: true,
   },
   {
@@ -108,7 +109,7 @@ export const speakers: Person[] = [
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "Chief Technology Officer Centillex", en: "Chief Technology Officer Centillex" },
     topic: { th: "Quantum AI", en: "Quantum AI" },
-    photo: "/assets/photos/ch.jpg",
+    photo: asset("/assets/photos/ch.jpg"),
     confirmed: true,
   },
   {
@@ -116,7 +117,7 @@ export const speakers: Person[] = [
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "School of Physics, Institute of Science, Suranaree University of Technology ", en: "School of Physics, Institute of Science, Suranaree University of Technology " },
     topic: { th: "Quantum Hardware", en: "Quantum Hardware" },
-    photo: "/assets/photos/DFD.jpg",
+    photo: asset("/assets/photos/DFD.jpg"),
     confirmed: true,
   },
 ];
@@ -137,21 +138,21 @@ export const committee: CommitteeGroup[] = [
         role: { th: "ที่ปรึกษาและหัวหน้า SUT Node", en: "Advisor & SUT Node Lead" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
         link: "https://www.linkedin.com/in/worawat-meevasana-7423a94b/",
-        photo: "/assets/photos/wa.jpg",
+        photo: asset("/assets/photos/wa.jpg"),
         confirmed: true,
       },
       {
         name: { th: "นิธิกร ชำนาญกุล (Pat)", en: "Nitikorn Chumnankul (Pat)" },
         role: { th: "Project Lead & Coordinator", en: "Project Lead & Coordinator" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
-        photo: "/assets/photos/Nitikorn.jpg",
+        photo: asset("/assets/photos/Nitikorn.jpg"),
         confirmed: true,
       },
       {
         name: { th: "ชัชวาล ใจสุข", en: "Chutchawan Jaisuk" },
         role: { th: "Co-organizer & Technical Support", en: "Co-organizer & Technical Support" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
-        photo: "/assets/photos/chutchawan.jpg",
+        photo: asset("/assets/photos/chutchawan.jpg"),
         confirmed: true,
       },
     ],
@@ -164,7 +165,7 @@ export const committee: CommitteeGroup[] = [
         name: { th: "ธนกฤต ทิพย์นางรอง", en: "Thanakrit Thipnangrong" },
         role: { th: "Lead Coordinator", en: "Lead Coordinator" },
         org: { th: "QTRiC", en: "QTRiC" },
-        photo: "/assets/photos/thanakrit.jpg",
+        photo: asset("/assets/photos/thanakrit.jpg"),
         confirmed: true,
         
       },
@@ -172,28 +173,28 @@ export const committee: CommitteeGroup[] = [
         name: { th: "อนุพงศ์ สินธุวงศานนท์", en: "Anupong Sintuwonsanon" },
         role: { th: "Core Team", en: "Core Team" },
         org: { th: "QTRiC", en: "QTRiC" },
-        photo: "/assets/photos/Anupong.jpg",
+        photo: asset("/assets/photos/Anupong.jpg"),
         confirmed: true,
       },
       {
         name: { th: "พิชชาพร ดวงแก้ว ", en: "Pichaphon Duangkeow " },
         role: { th: "Core Team / QML", en: "Core Team / QML" },
         org: { th: "QTRiC", en: "QTRiC" },
-        photo: "/assets/photos/Noey.jpg",
+        photo: asset("/assets/photos/Noey.jpg"),
         confirmed: true,
       },
       {
         name: { th: "กรกนก หอมกลิ่น", en: "Kronkanok Homglin" },
         role: { th: "Core Team", en: "Core Team" },
         org: { th: "QTRiC", en: "QTRiC" },
-        photo: "/assets/photos/pat.jpg",
+        photo: asset("/assets/photos/pat.jpg"),
         confirmed: true,
       },
       {
         name: { th: "มาโนช คำธร", en: "Manot khamton" },
         role: { th: "Technical Lead", en: "Technical Lead" },
         org: { th: "QTRiC", en: "QTRiC" },
-        photo: "/assets/photos/มาโนช คำธร (2).jpg",
+        photo: asset("/assets/photos/มาโนช คำธร (2).jpg"),
         confirmed: true,
       },
     //
@@ -213,14 +214,14 @@ export const committee: CommitteeGroup[] = [
         name: { th: "ดร. Choong Pak Shen", en: "Dr. Choong Pak Shen" },
         role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional advisor" },
         org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
-        photo: "/assets/photos/choong-pak-shen.jpg",
+        photo: asset("/assets/photos/choong-pak-shen.jpg"),
         confirmed: true,
       },
       {
         name: { th: "Tan Chun Loong", en: "Tan Chun Loong" },
         role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional advisor" },
         org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
-        photo: "/assets/photos/Tan Chun.jpg",
+        photo: asset("/assets/photos/Tan Chun.jpg"),
         confirmed: true,
       },
     ],
@@ -232,7 +233,7 @@ export const committee: CommitteeGroup[] = [
         name: { th: "Ricky Young", en: "Ricky Young" },
         role: { th: "ผู้ประสานงานแพลตฟอร์ม", en: "Platform liaison" },
         org: { th: "qBraid", en: "qBraid" },
-        photo: "/assets/photos/Ricky.jpg",
+        photo: asset("/assets/photos/Ricky.jpg"),
         confirmed: true,
       },
       // {
@@ -266,21 +267,21 @@ export const committee: CommitteeGroup[] = [
         name: { th: "ผศ. ดร. สุกฤต สุจริตกุล", en: "Asst. Prof. Dr. Sukrit Sucharitakul" },
         role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
         org: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" },
-        photo: "/assets/photos/aj nick.jpg",
+        photo: asset("/assets/photos/aj nick.jpg"),
         confirmed: false,
       },
       {
         name: { th: "รศ. ดร. อนุชา วัชระภาสร", en: "Assoc. Prof. Dr. Anucha Watcharapasorn" },
         role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
         org: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" },
-        photo: "/assets/photos/Aun.jpg",
+        photo: asset("/assets/photos/Aun.jpg"),
         confirmed: false,
       },
       {
         name: { th: "ผศ. ดร. ปรือ กลัสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
         role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
         org: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" },
-        photo: "/assets/photos/PPP.jpg",
+        photo: asset("/assets/photos/PPP.jpg"),
         confirmed: false,
       },
       // {

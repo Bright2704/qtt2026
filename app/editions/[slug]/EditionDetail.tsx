@@ -57,10 +57,10 @@ export default function EditionDetail({ slug }: { slug: string }) {
 
           {e.status === "open" && (
             <div className="btn-row" style={{ marginTop: 32 }}>
-              <Link className="btn btn--primary" href="/register">
+              {/* <Link className="btn btn--primary" href="/register">
                 {t({ th: "จองที่นั่งงานนี้", en: "Book a seat here" })}
                 <Icon name="i-arrow" size={18} />
-              </Link>
+              </Link> */}
               <Link className="btn btn--secondary" href="/learn">
                 {t({ th: "ดูวิธีเตรียมตัว", en: "How to prepare" })}
               </Link>
@@ -128,11 +128,11 @@ export default function EditionDetail({ slug }: { slug: string }) {
                 <CapacityMeter registered={e.registered} capacity={e.capacity} />
               </div>
               <p style={{ marginTop: 18 }}>{t(e.audience)}</p>
-              {e.status === "open" && (
+              {/* {e.status === "open" && (
                 <Link className="btn btn--primary btn--block" href="/register" style={{ marginTop: 20 }}>
                   {t({ th: "ลงทะเบียน", en: "Register" })}
                 </Link>
-              )}
+              )} */}
               {isPlanned && (
                 <Link className="btn btn--secondary btn--block" href="/contact" style={{ marginTop: 20 }}>
                   {t({ th: "แจ้งความสนใจ", en: "Register your interest" })}

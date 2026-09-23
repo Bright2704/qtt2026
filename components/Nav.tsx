@@ -8,6 +8,7 @@ import { announce, minorNavItems, navItems, site } from "@/data/site";
 import { editions, statusLabel } from "@/data/editions";
 import Icon from "./Icon";
 import { CapacityMeter } from "./ui";
+import { asset } from "@/lib/asset";
 
 export default function Nav() {
   const { lang, setLang, t } = useLang();
@@ -96,7 +97,7 @@ export default function Nav() {
       {showAnnounce && (
         <div className="announce">
           <p style={{ margin: 0 }}>{t(announce.text)}</p>
-          <Link href="/register">{t(announce.cta)} →</Link>
+          {/* <Link href="/register">{t(announce.cta)} →</Link> */}
           <button
             className="announce__close"
             onClick={() => setShowAnnounce(false)}
@@ -113,7 +114,7 @@ export default function Nav() {
         data-on-hero={onHero && !scrolled ? "true" : onHero ? "true" : "false"}
       >
         <Link className="nav__brand" href="/">
-          <img src="/assets/logo-web.png" alt="" width={32} height={32} style={{ borderRadius: "50%" }} />
+          <img src={asset("/assets/logo-web.png")} alt="" width={32} height={32} style={{ borderRadius: "50%" }} />
           <span>
             <strong>Qiskit Fall Fest</strong>
             <em>2026 · {t({ th: "ประเทศไทย", en: "Thailand" })}</em>
@@ -215,7 +216,7 @@ export default function Nav() {
         <div className="sheet" id="mobile-sheet" role="dialog" aria-modal="true">
           <div className="sheet__top">
             <Link className="nav__brand" href="/" onClick={closeSheet}>
-              <img src="/assets/logo-web.png" alt="" width={32} height={32} style={{ borderRadius: "50%" }} />
+              <img src={asset("/assets/logo-web.png")} alt="" width={32} height={32} style={{ borderRadius: "50%" }} />
               <span>
                 <strong>Qiskit Fall Fest</strong>
                 <em>2026 · {t({ th: "ประเทศไทย", en: "Thailand" })}</em>
@@ -298,11 +299,11 @@ export default function Nav() {
             </div>
           </div>
 
-          <div className="mobile-cta" style={{ display: "block" }}>
+          {/* <div className="mobile-cta" style={{ display: "block" }}>
             <Link className="btn btn--primary btn--block" href="/register" onClick={closeSheet}>
               {t({ th: "ลงทะเบียนเลย", en: "Register now" })} →
             </Link>
-          </div>
+          </div> */}
         </div>
       )}
 

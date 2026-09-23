@@ -24,6 +24,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ScrollSway from "@/components/magic/ScrollSway";
 import QuantumBackground from "@/components/magic/QuantumBackground";
+import { asset } from "@/lib/asset";
 
 const SITE_URL = "https://qtric.sut.ac.th/qff2026/";
 
@@ -55,15 +56,15 @@ export const metadata: Metadata = {
     siteName: "Qiskit Fall Fest 2026: Thailand",
     locale: "th_TH",
     alternateLocale: ["en_US"],
-    images: [{ url: "/assets/og-image.svg", width: 1200, height: 630 }],
+    images: [{ url: asset("/assets/og-image.svg"), width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Qiskit Fall Fest 2026: Thailand",
     description: "Hands-on quantum computing, free to join. October–November 2026.",
-    images: ["/assets/og-image.svg"],
+    images: [asset("/assets/og-image.svg")],
   },
-  icons: { icon: "/assets/favicon.png", apple: "/assets/favicon.png" },
+  icons: { icon: asset("/assets/favicon.png"), apple: asset("/assets/favicon.png") },
   robots: { index: true, follow: true },
 };
 
