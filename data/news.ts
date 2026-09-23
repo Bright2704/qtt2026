@@ -34,8 +34,8 @@ export const posts: Post[] = [
         en: "Each year IBM Quantum runs a worldwide series of community-led quantum computing events. In 2025 more than 32,000 people took part, organised by 150 volunteer hosts across six continents. This year, Thailand joins the roster.",
       },
       {
-        th: "งานในประเทศไทยจะจัดขึ้นในรูปแบบไฮบริดช่วงเดือนตุลาคมถึงพฤศจิกายน 2026 โดยมีสองสถานที่หลักคือมหาวิทยาลัยเทคโนโลยีสุรนารี จังหวัดนครราชสีมา และทรู ดิจิทัล พาร์ค กรุงเทพมหานคร แต่ละแห่งรับผู้เข้าร่วมประมาณ 40 ถึง 50 คน",
-        en: "The Thai edition runs in hybrid format between October and November 2026, at two main venues: Suranaree University of Technology in Nakhon Ratchasima, and True Digital Park in Bangkok. Each accommodates roughly 40 to 50 participants on site.",
+        th: "งานในประเทศไทยจะจัดขึ้นในรูปแบบไฮบริดช่วงเดือนตุลาคมถึงพฤศจิกายน 2026 โดยมีสองสถานที่หลักคือมหาวิทยาลัยเทคโนโลยีสุรนารี จังหวัดนครราชสีมา และทรู IBM Thailand กรุงเทพมหานคร แต่ละแห่งรับผู้เข้าร่วมประมาณ 40 ถึง 50 คน",
+        en: "The Thai edition runs in hybrid format between October and November 2026, at two main venues: Suranaree University of Technology in Nakhon Ratchasima, and IBM Thailand Park in Bangkok. Each accommodates roughly 40 to 50 participants on site.",
       },
       {
         th: "ธีมระดับโลกของปีนี้คือหนึ่งทศวรรษของควอนตัมบนคลาวด์ ครบสิบปีนับตั้งแต่ IBM เปิดให้คนทั่วโลกส่งวงจรควอนตัมไปรันบนเครื่องจริงผ่านอินเทอร์เน็ตเป็นครั้งแรก",
