@@ -100,10 +100,10 @@ export default function Programme() {
         </div>
 
         <div className="btn-row" style={{ marginTop: 40 }}>
-          <Link className="btn btn--primary" href="/register">
+          {/* <Link className="btn btn--primary" href="/register">
             {t({ th: "ลงทะเบียนเข้าร่วม", en: "Register to attend" })}
             <Icon name="i-arrow" size={18} />
-          </Link>
+          </Link> */}
           <Link className="btn btn--secondary" href="/learn">
             {t({ th: "เตรียมตัวก่อนวันงาน", en: "Prepare for the day" })}
           </Link>
