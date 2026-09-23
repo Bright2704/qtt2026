@@ -299,7 +299,7 @@ export default function Home() {
       </Section>
 
       {/* ================= AGENDA PREVIEW ================= */}
-      <Section>
+      {/* <Section>
         <Reveal>
           <p className="eyebrow">{t({ th: "หนึ่งวันของคุณ", en: "Your day" })}</p>
           <h2>{t({ th: "หน้าตากำหนดการเป็นอย่างไร", en: "What the day looks like" })}</h2>
@@ -336,7 +336,7 @@ export default function Home() {
             </Link>
           </div>
         </Reveal>
-      </Section>
+      </Section> */}
 
       {/* ================= PARTNERS ================= */}
       <Section variant="mist" tight>
