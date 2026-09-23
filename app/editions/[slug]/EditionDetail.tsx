@@ -4,9 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { useLang } from "@/lib/i18n";
 import { getEdition, statusLabel } from "@/data/editions";
-import { agenda } from "@/data/programme";
 import Icon from "@/components/Icon";
-import Timeline from "@/components/Timeline";
 import { CapacityMeter, Notice, Section } from "@/components/ui";
 
 export default function EditionDetail({ slug }: { slug: string }) {
@@ -156,23 +154,6 @@ export default function EditionDetail({ slug }: { slug: string }) {
           </div>
         </div>
       </Section>
-
-      {/* ---------- Agenda ---------- */}
-      {!isOnline && !isPlanned && (
-        <Section variant="mist">
-          <p className="eyebrow">{t({ th: "กำหนดการ", en: "Programme" })}</p>
-          <h2>{t({ th: "หนึ่งวันของคุณที่นี่", en: "Your day here" })}</h2>
-          <div style={{ marginTop: 40 }}>
-            <Timeline slots={agenda} />
-          </div>
-          <div className="btn-row" style={{ marginTop: 24 }}>
-            <Link className="btn btn--secondary" href="/programme">
-              {t({ th: "ดูรายละเอียดหลักสูตร", en: "See the full curriculum" })}
-              <Icon name="i-arrow" size={18} />
-            </Link>
-          </div>
-        </Section>
-      )}
 
       {isOnline && (
         <Section variant="mist">

@@ -31,6 +31,7 @@ export default function Editions() {
         </div>
       </Section>
 
+      {/* ---------- Compare table (disabled — see screenshot request) ----------
       <Section variant="mist">
         <p className="eyebrow">{t({ th: "เปรียบเทียบ", en: "Compare" })}</p>
         <h2>{t({ th: "งานไหนเหมาะกับคุณ", en: "Which edition suits you" })}</h2>
@@ -99,6 +100,7 @@ export default function Editions() {
           </Notice>
         </div>
       </Section>
+      ---------------------------------------------------------------------- */}
     </>
   );
 }
