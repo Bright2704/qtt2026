@@ -1,4 +1,5 @@
 import type { L } from "@/lib/i18n";
+import { asset } from "@/lib/asset";
 
 export type SponsorItem = {
   name: L;
@@ -25,21 +26,21 @@ export const sponsorTiers: SponsorTier[] = [
       {
         name: { th: "IBM Quantum", en: "IBM Quantum" },
         sub: { th: "ผู้สนับสนุนโปรแกรม Qiskit Fall Fest ระดับโลก", en: "Global Qiskit Fall Fest Programme Sponsor" },
-        logo: "/assets/ibm-quantum-logo.png",
+        logo: asset("/assets/ibm-quantum-logo.png"),
         url: "https://www.ibm.com/quantum",
         confirmed: true,
       },
       {
         name: { th: "QTRiC", en: "QTRiC" },
         sub: { th: "Quantum Technology Research Initiative Consortium", en: "Quantum Technology Research Initiative Consortium" },
-        logo: "/assets/qtric-logo.png",
+        logo: asset("/assets/qtric-logo.png"),
         url: "https://qtric.sut.ac.th",
         confirmed: true,
       },
       {
         name: { th: "มหาวิทยาลัยเทคโนโลยีสุรนารี", en: "Suranaree University of Technology" },
         sub: { th: "สถาบันเจ้าภาพหลัก", en: "Host Institution" },
-        logo: "/assets/sut-logo.png",
+        logo: asset("/assets/sut-logo.png"),
         url: "https://www.sut.ac.th",
         confirmed: true,
       },
@@ -51,7 +52,7 @@ export const sponsorTiers: SponsorTier[] = [
       {
         name: { th: "qBraid", en: "qBraid" },
         sub: { th: "แพลตฟอร์มเรียนรู้ควอนตัมคอมพิวติง", en: "Quantum Computing Learning Platform" },
-        logo: "/assets/qbraid-logo.webp",
+        logo: asset("/assets/qbraid-logo.webp"),
         url: "https://qbraid.com",
         confirmed: true,
       },
@@ -63,14 +64,14 @@ export const sponsorTiers: SponsorTier[] = [
       {
         name: { th: "IBM Thailand", en: "IBM Thailand" },
         sub: { th: "สถานที่จัดงาน กรุงเทพฯ", en: "Bangkok Venue Host" },
-        logo: "/assets/ibm-quantum-logo.png",
+        logo: asset("/assets/ibm-quantum-logo.png"),
         url: "https://www.ibm.com/quantum",
         confirmed: true,
       },
       {
         name: { th: "SEA Quantum Network", en: "SEA Quantum Network" },
         sub: { th: "เครือข่ายควอนตัมอาเซียน", en: "Southeast Asia Quantum Network" },
-        logo: "/assets/sea-quantum-logo.jpg",
+        logo: asset("/assets/sea-quantum-logo.jpg"),
         url: "https://seaqnet.org",
         confirmed: true,
       },
@@ -82,14 +83,14 @@ export const sponsorTiers: SponsorTier[] = [
       {
         name: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" },
         sub: { th: "เจ้าภาพจัดงานภาคเหนือ", en: "Northern Region Host" },
-        logo: "/assets/cmu-logo.webp",
+        logo: asset("/assets/cmu-logo.webp"),
         url: "https://www.cmu.ac.th",
         confirmed: true,
       },
       {
         name: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" },
         sub: { th: "เจ้าภาพจัดงานภาคใต้", en: "Southern Region Host" },
-        logo: "/assets/psu-logo.png",
+        logo: asset("/assets/psu-logo.png"),
         url: "https://www.psu.ac.th",
         confirmed: true,
       },
@@ -101,7 +102,7 @@ export const sponsorTiers: SponsorTier[] = [
       {
         name: { th: "The Tiger Team Academy", en: "The Tiger Team Academy" },
         sub: { th: "ผู้สนับสนุนโครงการ", en: "Project Supporter" },
-        logo: "/images/TheTigerTeamAcademy.jpg",
+        logo: asset("/images/TheTigerTeamAcademy.jpg"),
         confirmed: true,
       },
     ],

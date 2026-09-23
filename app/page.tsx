@@ -21,6 +21,7 @@ import Spotlight from "@/components/magic/Spotlight";
 import StickerIcon from "@/components/magic/StickerIcon";
 import Parallax from "@/components/magic/Parallax";
 import PointerLayer from "@/components/magic/PointerLayer";
+import { asset } from "@/lib/asset";
 
 const benefits = [
   {
@@ -87,7 +88,7 @@ export default function Home() {
     <>
       {/* ================= HERO ================= */}
       <section className="hero">
-        <img className="hero__bg" src="/assets/hero-light.svg" alt="" aria-hidden="true" />
+        <img className="hero__bg" src={asset("/assets/hero-light.svg")} alt="" aria-hidden="true" />
 
         <div className="wrap hero__inner">
           <div>

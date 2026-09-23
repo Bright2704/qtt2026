@@ -214,7 +214,7 @@ strong { font-weight: 600; }
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/assets/pattern-circuit.svg");
+  background-image: url("../public/assets/pattern-circuit.svg");
   background-size: 240px 240px;
   opacity: 0.07;
   filter: invert(1);
@@ -849,7 +849,7 @@ table.t td.muted { color: var(--text-muted); }
 .footer { background: var(--indigo-900); color: var(--ice-100); position: relative; overflow: hidden; padding-block: var(--s-8) var(--s-5); }
 .footer::before {
   content: ""; position: absolute; inset: 0;
-  background-image: url("/assets/pattern-circuit.svg"); background-size: 240px;
+  background-image: url("../public/assets/pattern-circuit.svg"); background-size: 240px;
   opacity: 0.06; filter: invert(1); pointer-events: none;
 }
 .footer > * { position: relative; z-index: 1; }
@@ -893,7 +893,7 @@ table.t td.muted { color: var(--text-muted); }
 /* ลายวงจรจาง ๆ เป็นสีเข้มบนพื้นสว่าง จึงไม่ต้อง invert แล้ว */
 .pagehead::before {
   content: ""; position: absolute; inset: 0;
-  background-image: url("/assets/pattern-circuit.svg"); background-size: 240px;
+  background-image: url("../public/assets/pattern-circuit.svg"); background-size: 240px;
   opacity: 0.06;
   animation: patternDrift 60s linear infinite;
 }

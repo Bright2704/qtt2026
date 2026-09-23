@@ -1,4 +1,5 @@
 import type { L } from "@/lib/i18n";
+import { asset } from "@/lib/asset";
 
 export type EditionStatus = "open" | "soon" | "planned" | "closed";
 
@@ -84,7 +85,7 @@ export const editions: Edition[] = [
         },
       },
     ],
-    image: "/assets/venue-sut.svg",
+    image: asset("/assets/venue-sut.svg"),
   },
   {
     id: "bangkok",
@@ -128,7 +129,7 @@ export const editions: Edition[] = [
         },
       },
     ],
-    image: "/assets/venue-bangkok.svg",
+    image: asset("/assets/venue-bangkok.svg"),
   },
   {
     id: "online",
@@ -169,7 +170,7 @@ export const editions: Edition[] = [
         },
       },
     ],
-    image: "/assets/venue-online.svg",
+    image: asset("/assets/venue-online.svg"),
   },
   {
     id: "chiangmai",
@@ -209,7 +210,7 @@ export const editions: Edition[] = [
         },
       },
     ],
-    image: "/assets/venue-chiangmai.svg",
+    image: asset("/assets/venue-chiangmai.svg"),
   },
   {
     id: "psu",
@@ -249,7 +250,7 @@ export const editions: Edition[] = [
         },
       },
     ],
-    image: "/assets/venue-psu.svg",
+    image: asset("/assets/venue-psu.svg"),
   },
   {
     id: "phitsanulok",
@@ -281,7 +282,7 @@ export const editions: Edition[] = [
       en: "Naresuan University, Tha Pho, Mueang, Phitsanulok 65000",
     },
     travel: [],
-    image: "/assets/venue-phitsanulok.svg",
+    image: asset("/assets/venue-phitsanulok.svg"),
   },
 ];
 

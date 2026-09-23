@@ -3,6 +3,7 @@
 import { useLang } from "@/lib/i18n";
 import type { Person } from "@/data/people";
 import { TbcChip } from "./ui";
+import { asset } from "@/lib/asset";
 
 export default function PersonCard({ p, showTopic = true }: { p: Person; showTopic?: boolean }) {
   const { t } = useLang();
@@ -12,7 +13,7 @@ export default function PersonCard({ p, showTopic = true }: { p: Person; showTop
       <div className="person__wrap">
         <img
           className="person__img"
-          src={p.photo ?? "/assets/speaker-placeholder.svg"}
+          src={p.photo ?? asset("/assets/speaker-placeholder.svg")}
           alt={p.photo ? t(p.name) : ""}
           aria-hidden={p.photo ? undefined : true}
         />

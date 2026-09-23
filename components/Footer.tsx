@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useLang } from "@/lib/i18n";
 import { footerCols, site } from "@/data/site";
 import Icon from "./Icon";
+import { asset } from "@/lib/asset";
 
 const socials = [
   { key: "discord", label: "Discord", icon: "i-chat" },
@@ -18,13 +19,13 @@ export default function Footer() {
 
   return (
     <>
-      <img className="divider" src="/assets/divider-wave.svg" alt="" aria-hidden="true" />
+      <img className="divider" src={asset("/assets/divider-wave.svg")} alt="" aria-hidden="true" />
       <footer className="footer">
         <div className="wrap">
           <div className="footer__grid">
             <div>
               <div className="footer__brand">
-                <img src="/assets/logo-web.png" alt="" width={36} height={36} style={{ borderRadius: "50%" }} />
+                <img src={asset("/assets/logo-web.png")} alt="" width={36} height={36} style={{ borderRadius: "50%" }} />
                 <span>
                   <strong>Qiskit Fall Fest</strong>
                   <em>2026 · {t({ th: "ประเทศไทย", en: "Thailand" })}</em>

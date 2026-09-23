@@ -8,6 +8,11 @@ const nextConfig = {
   
     // ทำให้ CSS / JS ที่อยู่ใน _next มี prefix เดียวกัน
     assetPrefix: "/qiskit-fall-fest-2026/",
+
+    // ให้ lib/asset.ts เติม basePath ให้ path รูปใน public/
+    env: {
+      NEXT_PUBLIC_BASE_PATH: "/qiskit-fall-fest-2026",
+    },
   
     images: {
       unoptimized: true,
