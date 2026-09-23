@@ -31,10 +31,10 @@ export default function Faq() {
         </div>
 
         <div className="btn-row" style={{ marginTop: 48 }}>
-          <Link className="btn btn--primary" href="/register">
+          {/* <Link className="btn btn--primary" href="/register">
             {t({ th: "พร้อมแล้ว ลงทะเบียนเลย", en: "Ready? Register now" })}
             <Icon name="i-arrow" size={18} />
-          </Link>
+          </Link> */}
           <Link className="btn btn--secondary" href="/contact">
             {t({ th: "ยังมีคำถามอื่น", en: "Still have a question" })}
           </Link>

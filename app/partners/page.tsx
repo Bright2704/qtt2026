@@ -24,14 +24,6 @@ const supportWays = [
     },
   },
   {
-    icon: "i-certificate",
-    title: { th: "ทุนเดินทาง", en: "Travel bursaries" },
-    body: {
-      th: "ทุนสำหรับนักเรียนนักศึกษาจากต่างจังหวัดที่อยากมาแต่ค่าเดินทางเป็นอุปสรรค",
-      en: "Support for students from other provinces for whom travel cost is the barrier.",
-    },
-  },
-  {
     icon: "i-chat",
     title: { th: "วิทยากรและพี่เลี้ยง", en: "Speakers and mentors" },
     body: {
@@ -102,8 +94,8 @@ export default function Partners() {
         </h2>
         <p className="lead prose" style={{ marginTop: 20 }}>
           {t({
-            th: "หากองค์กรของคุณอยากร่วมสนับสนุน ไม่ว่าจะเป็นสถานที่ อาหาร ทุนเดินทางสำหรับผู้เข้าร่วมจากต่างจังหวัด หรือส่งคนมาเป็นวิทยากร เราอยากคุยด้วย และเราเปิดกว้างกับรูปแบบความร่วมมือที่ไม่ใช่ตัวเงินด้วย",
-            en: "If your organisation would like to help — a venue, meals, travel bursaries for participants from other provinces, or a speaker from your team — we would like to talk. Non-financial contributions are just as welcome.",
+            th: "หากองค์กรของคุณอยากร่วมสนับสนุน ไม่ว่าจะเป็นสถานที่ อาหาร หรือส่งคนมาเป็นวิทยากร เราอยากคุยด้วย และเราเปิดกว้างกับรูปแบบความร่วมมือที่ไม่ใช่ตัวเงินด้วย",
+            en: "If your organisation would like to help — a venue, meals, or a speaker from your team — we would like to talk. Non-financial contributions are just as welcome.",
           })}
         </p>
 

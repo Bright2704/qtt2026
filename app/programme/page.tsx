@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import { useLang } from "@/lib/i18n";
-import { agenda, syllabus, tracks } from "@/data/programme";
+import { syllabus, tracks } from "@/data/programme";
 import Icon from "@/components/Icon";
-import Timeline from "@/components/Timeline";
-import { Notice, PageHead, Section } from "@/components/ui";
+import { PageHead, Section } from "@/components/ui";
 
 const trackTone: Record<string, { th: string; en: string }> = {
   current: { th: "งานนี้", en: "This event" },
@@ -51,24 +50,6 @@ export default function Programme() {
               </Link>
             </div>
           </div>
-        </div>
-      </Section>
-
-      {/* ---------- Timeline ---------- */}
-      <Section id="agenda">
-        <p className="eyebrow">{t({ th: "ตารางเวลา", en: "Schedule" })}</p>
-        <h2 style={{ marginBottom: 40 }}>{t({ th: "วันงาน 08:30 – 16:15 น.", en: "The day: 08:30 – 16:15" })}</h2>
-        <Timeline slots={agenda} />
-
-        <div style={{ marginTop: 40 }}>
-          <Notice icon="i-info">
-            <p style={{ margin: 0 }}>
-              {t({
-                th: "ช่วงที่ยังไม่ระบุชื่อวิทยากรอยู่ระหว่างยืนยัน เราจะอัปเดตหน้านี้ทันทีที่ได้ข้อสรุป ผู้ที่ลงทะเบียนแล้วจะได้รับอีเมลแจ้งด้วย",
-                en: "Sessions without a named speaker are still being confirmed. We update this page as soon as they are settled, and registered participants receive an email.",
-              })}
-            </p>
-          </Notice>
         </div>
       </Section>
 
@@ -119,10 +100,10 @@ export default function Programme() {
         </div>
 
         <div className="btn-row" style={{ marginTop: 40 }}>
-          <Link className="btn btn--primary" href="/register">
+          {/* <Link className="btn btn--primary" href="/register">
             {t({ th: "ลงทะเบียนเข้าร่วม", en: "Register to attend" })}
             <Icon name="i-arrow" size={18} />
-          </Link>
+          </Link> */}
           <Link className="btn btn--secondary" href="/learn">
             {t({ th: "เตรียมตัวก่อนวันงาน", en: "Prepare for the day" })}
           </Link>

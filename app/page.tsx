@@ -111,10 +111,10 @@ export default function Home() {
             </p>
 
             <div className="btn-row">
-              <Link className="btn btn--primary btn--shimmer" href="/register">
+              {/* <Link className="btn btn--primary btn--shimmer" href="/register">
                 <span>{t({ th: "ลงทะเบียนฟรี", en: "Register free" })}</span>
                 <Icon name="i-arrow" size={18} />
-              </Link>
+              </Link> */}
               <Link className="btn btn--secondary" href="/programme">
                 {t({ th: "ดูกำหนดการ", en: "See the programme" })}
               </Link>

@@ -194,9 +194,9 @@ export default function Nav() {
               <span>EN</span>
             </button>
           </div>
-          <Link className="btn btn--primary btn--sm" href="/register">
+          {/* <Link className="btn btn--primary btn--sm" href="/register">
             {t({ th: "ลงทะเบียน", en: "Register" })}
-          </Link>
+          </Link> */}
           <button
             ref={burgerRef}
             className="nav__burger"
@@ -309,9 +309,9 @@ export default function Nav() {
       {/* ปุ่มลงทะเบียนติดล่างจอบนมือถือ */}
       {!sheetOpen && (
         <div className="mobile-cta">
-          <Link className="btn btn--primary btn--block" href="/register">
+          {/* <Link className="btn btn--primary btn--block" href="/register">
             {t({ th: "ลงทะเบียนฟรี", en: "Register free" })} →
-          </Link>
+          </Link> */}
         </div>
       )}
 
