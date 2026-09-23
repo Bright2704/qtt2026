@@ -24,8 +24,8 @@ export default function Programme() {
           en: "One full day: from not knowing what a qubit is, to running your own circuit",
         }}
         lead={{
-          th: "ตารางนี้ใช้ทั้งงานที่มหาวิทยาลัยเทคโนโลยีสุรนารีและที่ True Digital Park เซสชันช่วงบ่ายของงานกรุงเทพฯ จะปรับเนื้อหาให้เข้ากับผู้เข้าร่วมสายทำงาน",
-          en: "This schedule applies to both the SUT and True Digital Park editions. Afternoon sessions in Bangkok are adapted for a working-professional audience.",
+          th: "ตารางนี้ใช้ทั้งงานที่มหาวิทยาลัยเทคโนโลยีสุรนารีและที่ IBM Thailand เซสชันช่วงบ่ายของงานกรุงเทพฯ จะปรับเนื้อหาให้เข้ากับผู้เข้าร่วมสายทำงาน",
+          en: "This schedule applies to both the SUT and IBM Thailand editions. Afternoon sessions in Bangkok are adapted for a working-professional audience.",
         }}
       />
 
