@@ -54,7 +54,7 @@ export default function Programme() {
         </div>
       </Section>
 
-      {/* ---------- Timeline ---------- */}
+      {/* ---------- Timeline (disabled) ----------
       <Section id="agenda">
         <p className="eyebrow">{t({ th: "ตารางเวลา", en: "Schedule" })}</p>
         <h2 style={{ marginBottom: 40 }}>{t({ th: "วันงาน 08:30 – 16:15 น.", en: "The day: 08:30 – 16:15" })}</h2>
@@ -71,6 +71,7 @@ export default function Programme() {
           </Notice>
         </div>
       </Section>
+      ---------------------------------------------------------------------- */}
 
       {/* ---------- Syllabus ---------- */}
       <Section variant="mist" id="syllabus">

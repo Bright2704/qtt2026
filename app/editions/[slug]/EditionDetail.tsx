@@ -158,7 +158,7 @@ export default function EditionDetail({ slug }: { slug: string }) {
         </div>
       </Section>
 
-      {/* ---------- Agenda ---------- */}
+      {/* ---------- Agenda (disabled) ----------
       {showAgenda && (
         <Section variant="mist">
           <p className="eyebrow">{t({ th: "กำหนดการ", en: "Programme" })}</p>
@@ -174,6 +174,7 @@ export default function EditionDetail({ slug }: { slug: string }) {
           </div>
         </Section>
       )}
+      ---------------------------------------------------------------------- */}
 
       {isOnline && (
         <Section variant="mist">
