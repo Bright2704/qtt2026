@@ -55,11 +55,11 @@ export const speakers: Person[] = [
     confirmed: true,
   },
   {
-    name: { th: "อ.นิค", en: "Aj. Nick" },
+    name: { th: "ผศ. ดร. สุกฤต สุจริตกุล", en: "Asst. Prof. Dr. Sukrit Sucharitakul" },
     role: { th: "ผู้สอน", en: "Instructor" },
     org: { th: "รอยืนยัน", en: "To be confirmed" },
     topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
-    photo: asset("/assets/photos/aj nick.jpg"),
+    photo: asset("/assets/photos/AJ nick.png"),
     confirmed: false,
   },
   // === Session 2: Workshop Track Leads ===
@@ -81,7 +81,7 @@ export const speakers: Person[] = [
   },
   // === Session 3: Networking Circle Leads ===
   {
-    name: { th: "พี่จู๊ด (P'Jude)", en: "P'Jude" },
+    name: { th: "คุณจิราวุธ (จู๊ด) กนกอาชา", en: "Mr. Chirawut Kanogart" },
     role: { th: "Circle 1 Lead - Senior Mentorship", en: "Circle 1 Lead - Senior Mentorship" },
     org: { th: "QTRiC", en: "QTRiC" },
     topic: { th: "Deep-tech career growth, startup scaling", en: "Deep-tech career growth, startup scaling" },
@@ -97,23 +97,23 @@ export const speakers: Person[] = [
   },
   // === Use Case Speakers (TBC) ===
   {
-    name: { th: "อ.ทิว", en: "Aj. Tiew" },
-    role: { th: "วิทยากรรับเชิญ", en: "วิทยากรรับเชิญ" },
+    name: { th: "ดร. จิรวัฒน์ ตั้งปณิธานนท์", en: "Dr. Jirawat Tangpanitanon" },
+    role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "Co-Founder & CEO, Quantum Technology Foundation (Thailand) [QTFT]", en: "Co-Founder & CEO, Quantum Technology Foundation (Thailand) [QTFT]" },
     topic: { th: "Quantum Use Cases", en: "Quantum Use Cases" },
     photo: asset("/assets/photos/aj til.jpg"),
     confirmed: true,
   },
   {
-    name: { th: "อ.ชาญวิทย์", en: "Aj. Chanwit" },
+    name: { th: "ผศ. ดร. ชาญวิทย์ แก้วกสิ", en: "Asst. Prof. Dr. Chanwit Kaewkasi" },
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "Chief Technology Officer Centillex", en: "Chief Technology Officer Centillex" },
     topic: { th: "Quantum AI", en: "Quantum AI" },
-    photo: asset("/assets/photos/ch.jpg"),
+    photo: asset("/assets/photos/j.chanwit.png"),
     confirmed: true,
   },
   {
-    name: { th: "อ.พีช", en: "Aj. Peach" },
+    name: { th: "ผศ. ดร. สรวิศ แสงทวีสิน", en: "Asst. Prof. Dr. Sorawis Sangtawesin" },
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "School of Physics, Institute of Science, Suranaree University of Technology ", en: "School of Physics, Institute of Science, Suranaree University of Technology " },
     topic: { th: "Quantum Hardware", en: "Quantum Hardware" },
@@ -159,7 +159,7 @@ export const committee: CommitteeGroup[] = [
   },
   {
     title: { th: "ทีมดำเนินงานหลัก", en: "Core Operations Team" },
-    note: { th: "ได้รับการจัดสรรงบประมาณสนับสนุน", en: "Budget-allocated team members" },
+    note: {  th: "นักศึกษาอาสาสมัคร มทส.", en: "SUT Student Volunteer" },
     people: [
       {
         name: { th: "ธนกฤต ทิพย์นางรอง", en: "Thanakrit Thipnangrong" },
@@ -194,7 +194,7 @@ export const committee: CommitteeGroup[] = [
         name: { th: "มาโนช คำธร", en: "Manot khamton" },
         role: { th: "Technical Lead", en: "Technical Lead" },
         org: { th: "Student volunteer", en: "Student volunteer" },
-        photo: asset("/assets/photos/มาโนช คำธร (2).jpg"),
+        photo: asset("/assets/photos/SUT_studnet_Volunteer2.png"),
         confirmed: true,
       },
     //
@@ -220,7 +220,7 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "Tan Chun Loong", en: "Tan Chun Loong" },
         role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional advisor" },
-        org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
+        org: { th: "Nanyang Technological University", en: "Nanyang Technological University" },
         photo: asset("/assets/photos/Tan Chun.jpg"),
         confirmed: true,
       },
