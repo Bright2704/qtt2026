@@ -767,6 +767,8 @@ strong { font-weight: 600; }
 .person__role { font-size: 14px; color: var(--indigo-600); font-weight: 500; }
 .person__org { font-size: 13.5px; color: var(--text-muted); }
 .person__topic { font-size: 13.5px; color: var(--text-muted); margin-top: 7px; font-style: italic; }
+.grid--volunteer .person__wrap { background: #CBD5E1; }
+.grid--volunteer .person__img { background: #CBD5E1; }
 
 .tbc-chip {
   display: inline-block; font-family: var(--font-mono), monospace; font-size: 11px;
