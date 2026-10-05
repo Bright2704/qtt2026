@@ -43,7 +43,7 @@ export default function Speakers() {
           </p>
         </div>
 
-        <div className="grid grid--4">
+        <div className="grid grid--4 grid--speakers">
           {speakers.map((s, i) => (
             <PersonCard key={i} p={s} />
           ))}
