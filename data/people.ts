@@ -7,6 +7,8 @@ export type Person = {
   org: L;
   topic?: L;
   photo?: string;
+  photoPosition?: string;
+  photoScale?: number;
   link?: string;
   confirmed: boolean;
 };
@@ -26,7 +28,7 @@ export const speakers: Person[] = [
       th: "ควอนตัมใช้ทำอะไรได้ และเส้นทางอาชีพสายควอนตัม",
       en: "Quantum use cases and career paths",
     },
-    photo: asset("/assets/photos/wa.jpg"),
+    photo: asset("/assets/photos/white-speakers/worawat.webp"),
     link: "https://www.linkedin.com/in/worawat-meevasana-7423a94b/",
     confirmed: true,
   },
@@ -43,7 +45,9 @@ export const speakers: Person[] = [
     role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional Quantum Partner" },
     org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
     topic: { th: "Qiskit Theory Support", en: "Qiskit Theory Support" },
-    photo: asset("/assets/photos/Tan Chun.jpg"),
+    photo: asset("/assets/photos/white-speakers/tan-chun-loong.webp"),
+    photoPosition: "center 12%",
+    photoScale: 1.65,
     confirmed: true,
   },
   {
@@ -51,17 +55,17 @@ export const speakers: Person[] = [
     role: { th: "Session 1 Lead Speaker & Platform Partner", en: "Session 1 Lead Speaker & Platform Partner" },
     org: { th: "qBraid", en: "qBraid" },
     topic: { th: "qBraid Platform & Optimization", en: "qBraid Platform & Optimization" },
-    photo: asset("/assets/photos/Ricky.jpg"),
+    photo: asset("/assets/photos/white-speakers/ricky.webp"),
     confirmed: true,
   },
-  {
-    name: { th: "ผศ. ดร. สุกฤต สุจริตกุล", en: "Asst. Prof. Dr. Sukrit Sucharitakul" },
-    role: { th: "ผู้สอน", en: "Instructor" },
-    org: { th: "รอยืนยัน", en: "To be confirmed" },
-    topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
-    photo: asset("/assets/photos/AJ nick.png"),
-    confirmed: false,
-  },
+//   {
+//     name: { th: "ผศ. ดร. สุกฤต สุจริตกุล", en: "Asst. Prof. Dr. Sukrit Sucharitakul" },
+//     role: { th: "ผู้สอน", en: "Instructor" },
+//     org: { th: "รอยืนยัน", en: "To be confirmed" },
+//     topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
+//     photo: asset("/assets/photos/AJ nick.png"),
+//     confirmed: false,
+//   },
   // === Session 2: Workshop Track Leads ===
   //{
     //name: { th: "อ.นนท์ (ดร.นนท์)", en: "Aj. Non (Dr. Non)" },
@@ -71,30 +75,30 @@ export const speakers: Person[] = [
     //photo: "/assets/photos/aj non.jpg",
     //confirmed: true,
   //},
-  {
-    name: { th: "อ.มนัสวี", en: "Aj. Manasvi" },
-    role: { th: "Track Lead - PQC", en: "Track Lead - PQC" },
-    org: { th: "รอยืนยัน", en: "To be confirmed" },
-    topic: { th: "Post-Quantum Cryptography & Security", en: "Post-Quantum Cryptography & Security" },
-    photo: asset("/assets/photos/speaker-6.svg"),
-    confirmed: false,
-  },
+//   {
+//     name: { th: "อ.มนัสวี", en: "Aj. Manasvi" },
+//     role: { th: "Track Lead - PQC", en: "Track Lead - PQC" },
+//     org: { th: "รอยืนยัน", en: "To be confirmed" },
+//     topic: { th: "Post-Quantum Cryptography & Security", en: "Post-Quantum Cryptography & Security" },
+//     photo: asset("/assets/photos/speaker-6.svg"),
+//     confirmed: false,
+//   },
   // === Session 3: Networking Circle Leads ===
-  {
-    name: { th: "คุณจิราวุธ (จู๊ด) กนกอาชา", en: "Mr. Chirawut Kanogart" },
-    role: { th: "Circle 1 Lead - Senior Mentorship", en: "Circle 1 Lead - Senior Mentorship" },
-    org: { th: "QTRiC", en: "QTRiC" },
-    topic: { th: "Deep-tech career growth, startup scaling", en: "Deep-tech career growth, startup scaling" },
-    photo: asset("/assets/photos/speaker-1.svg"),
-    confirmed: true,
-  },
-  {
-    name: { th: "อ.แจน", en: "Aj. Jan" },
-    role: { th: "Circle 2 Lead - Academic & Faculty", en: "Circle 2 Lead - Academic & Faculty" },
-    org: { th: "รอยืนยัน", en: "To be confirmed" },
-    topic: { th: "Joint research, curriculum design, research grants", en: "Joint research, curriculum design, research grants" },
-    confirmed: false,
-  },
+//   {
+//     name: { th: "คุณจิราวุธ (จู๊ด) กนกอาชา", en: "Mr. Chirawut Kanogart" },
+//     role: { th: "Circle 1 Lead - Senior Mentorship", en: "Circle 1 Lead - Senior Mentorship" },
+//     org: { th: "QTRiC", en: "QTRiC" },
+//     topic: { th: "Deep-tech career growth, startup scaling", en: "Deep-tech career growth, startup scaling" },
+//     photo: asset("/assets/photos/speaker-1.svg"),
+//     confirmed: true,
+//   },
+//   {
+//     name: { th: "อ.แจน", en: "Aj. Jan" },
+//     role: { th: "Circle 2 Lead - Academic & Faculty", en: "Circle 2 Lead - Academic & Faculty" },
+//     org: { th: "รอยืนยัน", en: "To be confirmed" },
+//     topic: { th: "Joint research, curriculum design, research grants", en: "Joint research, curriculum design, research grants" },
+//     confirmed: false,
+//   },
   // === Use Case Speakers (TBC) ===
   {
     name: { th: "ดร. จิรวัฒน์ ตั้งปณิธานนท์", en: "Dr. Jirawat Tangpanitanon" },
@@ -109,7 +113,7 @@ export const speakers: Person[] = [
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "Chief Technology Officer Centillex", en: "Chief Technology Officer Centillex" },
     topic: { th: "Quantum AI", en: "Quantum AI" },
-    photo: asset("/assets/photos/j.chanwit.png"),
+    photo: asset("/assets/photos/white-speakers/chanwit.webp"),
     confirmed: true,
   },
   {
@@ -117,7 +121,47 @@ export const speakers: Person[] = [
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "School of Physics, Institute of Science, Suranaree University of Technology ", en: "School of Physics, Institute of Science, Suranaree University of Technology " },
     topic: { th: "Quantum Hardware", en: "Quantum Hardware" },
-    photo: asset("/assets/photos/DFD.jpg"),
+    photo: asset("/assets/photos/white-speakers/sorawis.webp"),
+    confirmed: true,
+  },
+  // รูปชั่วคราวใช้ avatar ของ PersonCard; เพิ่ม photo: asset("/assets/photos/ชื่อไฟล์") เมื่อได้รูปจริง
+  {
+    name: { th: "ดร. ธนภัทร ดีสุวรรณ", en: "Dr. Tanapat Deesuwan" },
+    role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
+    org: {
+      th: "ภาควิชาฟิสิกส์ คณะวิทยาศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี",
+      en: "Department of Physics, Faculty of Science, King Mongkut's University of Technology Thonburi",
+    },
+    topic: { th: "Quantum Fundamental (Basic)", en: "Quantum Fundamental (Basic)" },
+    photo: asset("/assets/photos/white-speakers/tanapat.webp"),
+    confirmed: false,
+  },
+  {
+    name: { th: "ดร. ศุภณัฐ ธนศิลป์", en: "Dr. Supanut Thanasip" },
+    role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
+    org: {
+      th: "ภาควิชาฟิสิกส์ คณะวิทยาศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย",
+      en: "Department of Physics, Faculty of Science, Chulalongkorn University",
+    },
+    topic: { th: "Quantum Machine Learning", en: "Quantum Machine Learning" },
+    photo: asset("/assets/photos/white-speakers/supanut.webp"),
+    photoPosition: "center top",
+    confirmed: false,
+  },
+  {
+    name: { th: "ผศ. ดร. ปรือ กลสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
+    role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
+    org: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" },
+    topic: { th: "Quantum Communication", en: "Quantum Communication" },
+    photo: asset("/assets/photos/white-speakers/pruet.webp"),
+    confirmed: true,
+  },
+  {
+    name: { th: "Harshit Gupta", en: "Harshit Gupta" },
+    role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
+    org: { th: "Quantum Software Engineer @ qBraid", en: "Quantum Software Engineer @ qBraid" },
+    topic: { th: "qBraid Platform / Qiskit on qBraid Platform", en: "qBraid Platform / Qiskit on qBraid Platform" },
+    photo: asset("/assets/photos/white-speakers/harshit.webp"),
     confirmed: true,
   },
 ];
