@@ -763,9 +763,10 @@ strong { font-weight: 600; }
 .person__img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--r-md); background: var(--surface-2); display: block; transition: transform var(--t-base) var(--ease-out); }
 .person__wrap { overflow: hidden; border-radius: var(--r-md); }
 .person:hover .person__img { transform: scale(1.04); }
-.grid--speakers .person__wrap { background: #EAEAEA; }
-.grid--speakers .person__img { background: #FFFFFF; mix-blend-mode: multiply; }
-.grid--speakers .person__img { object-position: center top; transform-origin: center top; }
+.grid--speakers .person__wrap,
+.grid--committee .person__wrap { background: #EAEAEA; }
+.grid--speakers .person__img,
+.grid--committee .person__img { background: #FFFFFF; mix-blend-mode: multiply; object-position: center top; transform-origin: center top; }
 .person h3 { font-size: 17px; margin-top: var(--s-4); margin-bottom: 2px; line-height: 1.35; }
 .person__role { font-size: 14px; color: var(--indigo-600); font-weight: 500; }
 .person__org { font-size: 13.5px; color: var(--text-muted); }

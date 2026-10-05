@@ -25,7 +25,7 @@ export default function Committee() {
           {group.note && (
             <h2 style={{ fontSize: "clamp(21px, 2vw, 27px)" }}>{t(group.note)}</h2>
           )}
-          <div className={`grid grid--4${gi === 1 ? " grid--volunteer" : ""}`} style={{ marginTop: 32 }}>
+          <div className="grid grid--4 grid--committee" style={{ marginTop: 32 }}>
             {group.people.map((p, i) => (
               <PersonCard key={i} p={p} showTopic={false} />
             ))}
