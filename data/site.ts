@@ -139,6 +139,7 @@ export const navItems: NavItem[] = [
   { href: "/committee", label: { th: "คณะกรรมการ", en: "Committee" } },
   { href: "/partners", label: { th: "พันธมิตร", en: "Partners" } },
   { href: "/news", label: { th: "ข่าวสาร", en: "News" } },
+  { href: "/calendar", label: { th: "ปฏิทิน", en: "Calendar" } },
 ];
 
 export const minorNavItems: NavItem[] = [
@@ -164,6 +165,7 @@ export const footerCols: { title: L; links: NavItem[] }[] = [
       { href: "/editions/bangkok", label: { th: "IBM Thailand กรุงเทพฯ", en: "IBM Thailand, Bangkok" } },
       { href: "/editions/online", label: { th: "Online Lectures", en: "Online Lectures" } },
       { href: "/programme", label: { th: "กำหนดการ", en: "Programme" } },
+      { href: "/calendar", label: { th: "ปฏิทิน", en: "Calendar" } },
     ],
   },
   {

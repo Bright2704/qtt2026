@@ -34,11 +34,17 @@
   
   /* Events */
   .event { position: absolute; left: 5px; right: 5px; color: white; border-radius: 6px; padding: 6px 10px; font-size: 12px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.2); cursor: pointer; box-sizing: border-box; transition: transform 0.15s, box-shadow 0.15s; }
-  .event:hover { transform: scale(1.02); z-index: 10; box-shadow: 0 4px 10px rgba(0,0,0,0.25); }
+  .event:hover { transform: scale(1.02); z-index: 50; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
   .event .title { font-weight: 600; margin-bottom: 2px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
   .event .time { font-size: 11px; opacity: 0.9; margin-bottom: 2px; }
-  .event .speaker { font-size: 11px; opacity: 0.85; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+  .event .speaker { font-size: 11px; opacity: 0.9; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
   
+  .event.is-short { padding: 4px 8px; display: flex; flex-direction: column; justify-content: center; }
+  .event.is-short .event-header-inline { display: flex; justify-content: space-between; align-items: baseline; gap: 4px; margin-bottom: 2px; }
+  .event.is-short .title { font-size: 11.5px; margin-bottom: 0; line-height: 1.2; flex: 1; }
+  .event.is-short .time { font-size: 10px; margin-bottom: 0; line-height: 1.2; flex: none; opacity: 0.95; }
+  .event.is-short .speaker { font-size: 11px; line-height: 1.3; }
+
   .event-blue { background: #039be5; border-left: 4px solid #0277bd; }
   .event-green { background: #33b679; border-left: 4px solid #0b8043; }
   .event-purple { background: #8e24aa; border-left: 4px solid #4a148c; }
@@ -205,19 +211,19 @@
   // Initial Data from Excel & Master Plan
   const initialData = [
     // Confirmed
-    { id: 1, title: 'Overview', speaker: 'อาจารย์ นน', status: 'Confirmed', date: '10', start: '13:30', end: '14:00', color: 'event-blue' },
-    { id: 2, title: 'Quantum Technology Use Case (Optimization)', speaker: 'ดร. จิรวัฒน์ ตั้งปณิธานนท์', status: 'Confirmed', date: '10', start: '14:00', end: '15:00', color: 'event-green' },
-    { id: 3, title: 'Lecture 2: qBraid Platform & Optimization', speaker: 'คุณ Harshit Gupta, Ricky Young', status: 'Confirmed', date: '17', start: '14:00', end: '15:00', color: 'event-purple' },
-    { id: 4, title: 'Quantum AI', speaker: 'ผศ. ดร. ชาญวิทย์ แก้วกสิ', status: 'Confirmed', date: '17', start: '15:00', end: '16:00', color: 'event-blue' },
-    { id: 5, title: 'Quantum Hardware (NV-Center)', speaker: 'ผศ. ดร. สรวิศ แสงทวีสิน', status: 'Confirmed', date: '24', start: '14:00', end: '15:00', color: 'event-orange' },
-    { id: 6, title: 'Qauntum Communication', speaker: 'อาจารย์ เคล', status: 'Confirmed', date: '24', start: '15:00', end: '16:00', color: 'event-green' },
-    { id: 10, title: 'The wall beyond AI: Where computation stops, and what comes next?', speaker: 'Tan Chun Loong and Choong Pak Shen', status: 'Confirmed', date: '24', start: '16:00', end: '17:30', color: 'event-purple' },
+    { id: 1, title: 'Overview', speaker: 'รศ. ดร. วรวัฒน์ มีวาสนา', role: 'ที่ปรึกษาและหัวหน้าโครงการ (มทส.)', status: 'Confirmed', date: '10', start: '13:30', end: '14:00', color: 'event-blue' },
+    { id: 2, title: 'Quantum Technology Use Case (Optimization)', speaker: 'ดร. จิรวัฒน์ ตั้งปณิธานนท์', role: 'Co-Founder & CEO, QTFT', status: 'Confirmed', date: '10', start: '14:00', end: '15:00', color: 'event-green' },
+    { id: 3, title: 'Lecture 2: qBraid Platform & Optimization', speaker: 'คุณ Harshit Gupta, Ricky Young', role: 'Platform Partners & Engineers @ qBraid', status: 'Confirmed', date: '17', start: '14:00', end: '15:00', color: 'event-purple' },
+    { id: 4, title: 'Quantum AI', speaker: 'ผศ. ดร. ชาญวิทย์ แก้วกสิ', role: 'Chief Technology Officer Centillex', status: 'Confirmed', date: '17', start: '15:00', end: '16:00', color: 'event-blue' },
+    { id: 5, title: 'Quantum Hardware (NV-Center)', speaker: 'ผศ. ดร. สรวิศ แสงทวีสิน', role: 'สาขาวิชาฟิสิกส์ มทส.', status: 'Confirmed', date: '24', start: '14:00', end: '15:00', color: 'event-orange' },
+    { id: 6, title: 'Quantum Communication', speaker: 'ผศ. ดร. ปรือ กลสุวรรณ', role: 'ผู้เชี่ยวชาญควอนตัม & ม.อ.', status: 'Confirmed', date: '24', start: '15:00', end: '16:00', color: 'event-green' },
+    { id: 10, title: 'The wall beyond AI: Where computation stops, and what comes next?', speaker: 'Tan Chun Loong and Choong Pak Shen', role: 'Monash University Malaysia & Quantum Wings', status: 'Confirmed', date: '24', start: '16:00', end: '17:30', color: 'event-purple' },
     
     // TBC
-    { id: 7, title: 'Online Onboarding & Check-in', speaker: 'Organizing Team', status: 'TBC', date: null, start: null, end: null },
-    { id: 8, title: 'Lecture 1: Qiskit Theory & Fundamentals', speaker: 'IBM Request / อ.นิค', status: 'TBC', date: null, start: null, end: null },
-    { id: 9, title: 'Quantum Fundamental (Basic)', speaker: 'ดร. ธนภัทร ดีสุวรรณ (อาจารย์โอม)', status: 'TBC', date: '10', start: '15:00', end: '17:00', note: 'Scheduled (TBC เส้นประบนตาราง)', color: 'event-orange' },
-    { id: 11, title: 'Quantum Machine Learning', speaker: 'ดร. ศุภณัฐ ธนศิลป์ (อาจารย์ไปป์)', status: 'TBC', date: null, start: null, end: null }
+    { id: 7, title: 'Online Onboarding & Check-in', speaker: 'Organizing Team', role: 'ทีมผู้จัดงาน QTRiC', status: 'TBC', date: null, start: null, end: null },
+    { id: 8, title: 'Lecture 1: Qiskit Theory & Fundamentals', speaker: 'IBM Request / อ.นิค', role: 'วิทยากรรับเชิญจาก IBM', status: 'TBC', date: null, start: null, end: null },
+    { id: 9, title: 'Quantum Fundamental (Basic)', speaker: 'ดร. ธนภัทร ดีสุวรรณ (อาจารย์โอม)', role: 'ภาควิชาฟิสิกส์ มจธ.', status: 'TBC', date: '10', start: '15:00', end: '17:00', note: 'Scheduled (TBC เส้นประบนตาราง)', color: 'event-orange' },
+    { id: 11, title: 'Quantum Machine Learning', speaker: 'ดร. ศุภณัฐ ธนศิลป์ (อาจารย์ไปป์)', role: 'ภาควิชาฟิสิกส์ จุฬาฯ', status: 'TBC', date: null, start: null, end: null }
   ];
 
   let events = [...initialData];
@@ -247,16 +253,29 @@
         const bottomPx = timeToPixels(ev.end);
         const heightPx = bottomPx - topPx;
         
+        const isShort = heightPx <= 70;
         const eventEl = document.createElement('div');
-        eventEl.className = `event ${ev.color || 'event-orange'} ${isTBC ? 'is-tbc' : ''}`;
+        eventEl.className = `event ${ev.color || 'event-orange'} ${isTBC ? 'is-tbc' : ''} ${isShort ? 'is-short' : ''}`;
         eventEl.style.top = `${topPx}px`;
         eventEl.style.height = `${heightPx}px`;
         
-        eventEl.innerHTML = `
-          <div class="title" title="${ev.title}">${isTBC ? '<span class="tbc-badge">TBC</span>' : ''}${ev.title}</div>
-          <div class="time">${ev.start} - ${ev.end}</div>
-          <div class="speaker" title="${ev.speaker}">${ev.speaker}</div>
-        `;
+        if (isShort) {
+          eventEl.innerHTML = `
+            <div class="event-header-inline">
+              <div class="title" title="${ev.title}">${isTBC ? '<span class="tbc-badge">TBC</span>' : ''}${ev.title}</div>
+              <div class="time">${ev.start} - ${ev.end}</div>
+            </div>
+            <div class="speaker" title="${ev.speaker}">${ev.speaker}</div>
+            ${ev.role ? `<div class="role" style="font-size: 9.5px; opacity: 0.88; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 1px; line-height: 1.2;" title="${ev.role}">${ev.role}</div>` : ''}
+          `;
+        } else {
+          eventEl.innerHTML = `
+            <div class="title" title="${ev.title}">${isTBC ? '<span class="tbc-badge">TBC</span>' : ''}${ev.title}</div>
+            <div class="time">${ev.start} - ${ev.end}</div>
+            <div class="speaker" title="${ev.speaker}">${ev.speaker}</div>
+            ${ev.role ? `<div class="role" style="font-size: 10px; opacity: 0.88; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px;" title="${ev.role}">${ev.role}</div>` : ''}
+          `;
+        }
         
         const colId = `col-${ev.date}-oct`;
         const colEl = document.getElementById(colId);
@@ -272,6 +291,7 @@
         li.innerHTML = `
           <div class="title"><span class="tbc-badge">TBC</span>${ev.title}</div>
           <div class="speaker">Speaker: ${ev.speaker || '-'}</div>
+          ${ev.role ? `<div class="speaker" style="color: #4b5563; font-style: italic;">Role: ${ev.role}</div>` : ''}
           <div class="speaker">${timeInfo}</div>
           ${ev.note ? `<div class="note">${ev.note}</div>` : ''}
         `;
