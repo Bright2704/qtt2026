@@ -8,6 +8,8 @@ import { agenda } from "@/data/programme";
 import Icon from "@/components/Icon";
 import Timeline from "@/components/Timeline";
 import { CapacityMeter, Notice, Section } from "@/components/ui";
+import OnlineSchedule from "@/components/OnlineSchedule";
+import Countdown from "@/components/Countdown";
 
 export default function EditionDetail({ slug }: { slug: string }) {
   const { t } = useLang();
@@ -67,6 +69,19 @@ export default function EditionDetail({ slug }: { slug: string }) {
               <Link className="btn btn--secondary" href="/learn">
                 {t({ th: "ดูวิธีเตรียมตัว", en: "How to prepare" })}
               </Link>
+            </div>
+          )}
+
+          {e.status !== "planned" && (
+            <div style={{ marginTop: 40, maxWidth: 480 }}>
+              <Countdown
+                target={e.date ? `${e.date}T${e.start !== "—" ? e.start : "13:30"}:00+07:00` : null}
+                label={{ th: `นับถอยหลังสู่งาน${t(e.city)}`, en: `Countdown to the ${t(e.city)} edition` }}
+                fallback={{
+                  th: `งาน${t(e.city)} ${t(e.dateLabel)}`,
+                  en: `${t(e.city)} edition, ${t(e.dateLabel)}`,
+                }}
+              />
             </div>
           )}
         </div>
@@ -178,21 +193,10 @@ export default function EditionDetail({ slug }: { slug: string }) {
 
       {isOnline && (
         <Section variant="mist">
-          <p className="eyebrow">{t({ th: "รูปแบบ", en: "Format" })}</p>
-          <h2>{t({ th: "หนึ่งชั่วโมง สองรอบ", en: "One hour, run twice" })}</h2>
-          <div className="prose lead" style={{ marginTop: 24 }}>
-            <p>
-              {t({
-                th: "เราจัดสองรอบเพื่อให้ทุกคนมีโอกาสเข้าอย่างน้อยหนึ่งครั้ง เนื้อหาเหมือนกันทั้งสองรอบ ครอบคลุมภาพรวมของกิจกรรมทั้งหมด สิ่งที่ต้องเตรียม และปูพื้นควอนตัมแบบเบา ๆ",
-                en: "We run it twice so nobody misses out. Both sessions cover the same ground: the shape of the day, what to prepare, and a gentle introduction to the quantum ideas involved.",
-              })}
-            </p>
-            <p>
-              {t({
-                th: "ไม่บังคับ แต่แนะนำอย่างยิ่ง คนที่เข้าปฐมนิเทศจะตามทันในวันงานได้ง่ายกว่ามาก และมีบันทึกย้อนหลังให้ดูภายหลัง",
-                en: "Optional, but strongly recommended — those who attend find the workshop day much easier to follow. A recording is published afterwards.",
-              })}
-            </p>
+          <p className="eyebrow">{t({ th: "กำหนดการ", en: "Schedule" })}</p>
+          <h2>{t({ th: "หัวข้อและเวลา", en: "Sessions & Times" })}</h2>
+          <div style={{ marginTop: 40 }}>
+            <OnlineSchedule />
           </div>
         </Section>
       )}
