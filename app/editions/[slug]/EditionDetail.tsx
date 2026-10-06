@@ -60,6 +60,15 @@ export default function EditionDetail({ slug }: { slug: string }) {
 
           {e.status === "open" && (
             <div className="btn-row" style={{ marginTop: 32 }}>
+              {isOnline && (
+                <a
+                  className="btn btn--primary"
+                  href="https://sites.google.com/view/registerqiskitfallfest2026th/register"
+                >
+                  Register
+                  <Icon name="i-arrow" size={18} />
+                </a>
+              )}
               {/* <Link className="btn btn--primary" href="/register">
                 {t({ th: "จองที่นั่งงานนี้", en: "Book a seat here" })}
                 <Icon name="i-arrow" size={18} />

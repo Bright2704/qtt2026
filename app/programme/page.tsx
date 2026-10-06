@@ -6,6 +6,7 @@ import { agenda, syllabus, tracks } from "@/data/programme";
 import Icon from "@/components/Icon";
 import Timeline from "@/components/Timeline";
 import { Notice, PageHead, Section } from "@/components/ui";
+import DayScheduleView from "@/components/DayScheduleView";
 
 const trackTone: Record<string, { th: string; en: string }> = {
   current: { th: "งานนี้", en: "This event" },
@@ -54,24 +55,59 @@ export default function Programme() {
         </div>
       </Section>
 
-      {/* ---------- Timeline (disabled) ----------
+      {/* ---------- Day-by-Day Speaker Schedule ---------- */}
       <Section id="agenda">
-        <p className="eyebrow">{t({ th: "ตารางเวลา", en: "Schedule" })}</p>
-        <h2 style={{ marginBottom: 40 }}>{t({ th: "วันงาน 08:30 – 16:15 น.", en: "The day: 08:30 – 16:15" })}</h2>
-        <Timeline slots={agenda} />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "flex-end",
+            flexWrap: "wrap",
+            gap: 16,
+            marginBottom: 32,
+          }}
+        >
+          <div>
+            <p className="eyebrow">{t({ th: "ตารางเวลาและวิทยากร", en: "Schedule & Speakers" })}</p>
+            <h2 style={{ margin: 0 }}>
+              {t({ th: "กำหนดการทั้งหมด (เรียงตามวันและเวลา)", en: "Full Programme & Speaker Schedule" })}
+            </h2>
+            <p style={{ color: "var(--text-muted)", marginTop: 8, fontSize: 15 }}>
+              {t({
+                th: "ลำดับเซสชันการบรรยายและเวิร์กช็อป พร้อมรายชื่อวิทยากรผู้เชี่ยวชาญในแต่ละวันและชั่วโมง",
+                en: "Chronological lecture sessions and workshops with confirmed speakers by date and hour.",
+              })}
+            </p>
+          </div>
+          <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+            <Link className="btn btn--secondary btn--sm" href="/editions/online">
+              {t({ th: "ไปหน้า Online Lectures", en: "Go to Online Lectures" })}
+              <Icon name="i-arrow" size={15} />
+            </Link>
+            <Link className="btn btn--secondary btn--sm" href="/calendar">
+              <Icon name="i-calendar" size={15} />
+              {t({ th: "กำหนดการ & Hubs ทั้งหมด", en: "Schedule & Hubs" })}
+            </Link>
+            <Link className="btn btn--primary btn--sm" href="/speakers">
+              <Icon name="i-users" size={15} />
+              {t({ th: "ดูหน้าวิทยากร", en: "View Speakers" })}
+            </Link>
+          </div>
+        </div>
 
-        <div style={{ marginTop: 40 }}>
+        <DayScheduleView />
+
+        <div style={{ marginTop: 32 }}>
           <Notice icon="i-info">
             <p style={{ margin: 0 }}>
               {t({
-                th: "ช่วงที่ยังไม่ระบุชื่อวิทยากรอยู่ระหว่างยืนยัน เราจะอัปเดตหน้านี้ทันทีที่ได้ข้อสรุป ผู้ที่ลงทะเบียนแล้วจะได้รับอีเมลแจ้งด้วย",
-                en: "Sessions without a named speaker are still being confirmed. We update this page as soon as they are settled, and registered participants receive an email.",
+                th: "เซสชันที่ระบุ TBC อยู่ระหว่างการยืนยันรายละเอียดขั้นสุดท้าย สามารถติดตามและดูประวัติเต็มของวิทยากรได้ที่หน้า Speaker",
+                en: "Sessions marked as TBC are in final stages of confirmation. You can view all speaker profiles on the Speakers page.",
               })}
             </p>
           </Notice>
         </div>
       </Section>
-      ---------------------------------------------------------------------- */}
 
       {/* ---------- Syllabus ---------- */}
       <Section variant="mist" id="syllabus">
