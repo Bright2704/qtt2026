@@ -10,7 +10,8 @@ module.exports = {
         script: "node_modules\\serve\\build\\main.js",
   
         // out คือ output จาก Next.js output: "export"
-        args: "out -l tcp://127.0.0.1:3001 -s",
+        // Next.js exports an index.html for every route; do not fall back to the homepage.
+        args: "out -l tcp://127.0.0.1:3001",
   
         // project root
         cwd: "C:\\inetpub\\qtt2026",
