@@ -330,6 +330,18 @@ NEXT_PUBLIC_BASE_PATH=/qff2026 npm run build
 โปรเจกต์นี้ใช้ `trailingSlash: true` ทุกหน้าจึงเป็นโฟลเดอร์ที่มี `index.html` อยู่ข้างใน
 Apache และ Nginx ทั่วไปเสิร์ฟได้เลยโดยไม่ต้องตั้งค่าเพิ่ม
 
+### IIS + PM2: เปิดลิงก์หน้ากำหนดการโดยตรง
+
+สำหรับการ deploy ที่ `/qiskit-fall-fest-2026/` ด้วย `ecosystem.config.js`:
+
+1. รัน `npm run build` แล้วอัปโหลดไฟล์ทั้งหมดใน `out/` ไปที่ `C:\inetpub\qtt2026\out` รวมถึง `calendar/index.html` และ `_next/` จาก build เดียวกัน
+2. ตั้ง IIS reverse proxy ให้ตัด prefix ก่อนส่งไปยัง serve: `/qiskit-fall-fest-2026/calendar/` ต้องส่งไป `http://127.0.0.1:3001/calendar/` ไม่ใช่ `http://127.0.0.1:3001/qiskit-fall-fest-2026/calendar/`
+3. ถ้า rule อยู่ระดับ site root ให้ match `^qiskit-fall-fest-2026/(.*)$` แล้ว rewrite ไป `http://127.0.0.1:3001/{R:1}`; ถ้าอยู่ใน application `/qiskit-fall-fest-2026` ให้ match `^(.*)$` แทน เพราะ IIS ตัด prefix ให้แล้ว ปรับ rule เดิมที่รับผิดชอบเว็บนี้และให้หยุดประมวลผล rule ถัดไป
+4. อัปโหลด `ecosystem.config.js` แล้วรัน `pm2 startOrReload ecosystem.config.js --only qiskit-fall-fest --update-env` บนเซิร์ฟเวอร์เพื่อใช้ args ที่ไม่มี `-s` (SPA fallback จะซ่อน path ที่ผิดด้วยหน้าแรก)
+5. ทดสอบ `http://127.0.0.1:3001/calendar/` บนเซิร์ฟเวอร์ก่อน แล้วเปิด URL สาธารณะ `/qiskit-fall-fest-2026/calendar/` และกด refresh ทั้งสองครั้งต้องได้หน้ากำหนดการ หาก local ใช้ได้แต่ URL สาธารณะไม่ได้ ให้ตรวจ IIS rewrite และ cache
+
+ไม่ต้องเพิ่ม redirect ใน React: URL นี้ต้องเสิร์ฟ `out/calendar/index.html` โดยตรง
+
 ---
 
 ## ฟอนต์
