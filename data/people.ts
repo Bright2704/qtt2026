@@ -203,7 +203,7 @@ export const committee: CommitteeGroup[] = [
   },
   {
     title: { th: "ทีมดำเนินงานหลัก", en: "Core Operations Team" },
-    note: {  th: "นักศึกษาอาสาสมัคร มทส.", en: "SUT Student Volunteer" },
+    note: { th: "นักศึกษาอาสาสมัคร มทส. และจุฬาลงกรณ์มหาวิทยาลัย", en: "SUT & Chulalongkorn Student Volunteers" },
     people: [
       {
         name: { th: "ธนกฤต ทิพย์นางรอง", en: "Thanakrit Thipnangrong" },
@@ -249,6 +249,15 @@ export const committee: CommitteeGroup[] = [
         photo: asset("/assets/photos/committee-portraits/manot.webp"),
         photoPosition: "center 6%",
         photoScale: 1.25,
+        confirmed: true,
+      },
+      {
+        name: { th: "นางสาวพอเพียง อินทจันทร์", en: "Popeang Intajan" },
+        role: { th: "นักศึกษาอาสาสมัคร", en: "Student Volunteer" },
+        org: { th: "จุฬาลงกรณ์มหาวิทยาลัย", en: "Chulalongkorn University" },
+        photo: asset("/assets/photos/committee-portraits/popeang.png"),
+        photoPosition: "center 6%",
+        photoScale: 1.5,
         confirmed: true,
       },
     //
