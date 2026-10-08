@@ -134,7 +134,7 @@ export const speakers: Person[] = [
     },
     topic: { th: "Quantum Fundamental (Basic)", en: "Quantum Fundamental (Basic)" },
     photo: asset("/assets/photos/white-speakers/tanapat.webp"),
-    confirmed: false,
+    confirmed: true,
   },
   {
     name: { th: "ดร. ศุภณัฐ ธนศิลป์", en: "Dr. Supanut Thanasip" },
