@@ -203,12 +203,12 @@ export const committee: CommitteeGroup[] = [
   },
   {
     title: { th: "ทีมดำเนินงานหลัก", en: "Core Operations Team" },
-    note: { th: "นักศึกษาอาสาสมัคร มทส. และจุฬาลงกรณ์มหาวิทยาลัย", en: "SUT & Chulalongkorn Student Volunteers" },
+    note: { th: "นักศึกษาอาสาสมัคร.", en: "Student Volunteers" },
     people: [
       {
         name: { th: "ธนกฤต ทิพย์นางรอง", en: "Thanakrit Thipnangrong" },
         role: { th: "Lead Coordinator", en: "Lead Coordinator" },
-        org: { th: "Student volunteer", en: "Student volunteer" },
+        org: { th: "SUT Student volunteer", en: "SUT Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/thanakrit.webp"),
         photoPosition: "center 6%",
         photoScale: 1.4,
@@ -218,7 +218,7 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "อนุพงศ์ สินธุวงศานนท์", en: "Anupong Sintuwonsanon" },
         role: { th: "Core Team", en: "Core Team" },
-        org: { th: "Student volunteer", en: "Student volunteer" },
+        org: { th: "SUT Student volunteer", en: "SUT Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/anupong.webp"),
         photoPosition: "center 6%",
         photoScale: 1.2,
@@ -227,7 +227,7 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "พิชชาพร ดวงแก้ว ", en: "Pichaphon Duangkeow " },
         role: { th: "Core Team / QML", en: "Core Team / QML" },
-        org: { th: "Student volunteer", en: "Student volunteer" },
+        org: { th: "SUT Student volunteer", en: "SUT Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/pichaphon.webp"),
         photoPosition: "center 6%",
         photoScale: 1.2,
@@ -236,7 +236,7 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "กรกนก หอมกลิ่น", en: "Kronkanok Homglin" },
         role: { th: "Core Team", en: "Core Team" },
-        org: { th: "Student volunteer", en: "Student volunteer" },
+        org: { th: "SUT Student volunteer", en: "SUT Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/kronkanok.webp"),
         photoPosition: "center 6%",
         photoScale: 1.6,
@@ -245,16 +245,16 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "มาโนช คำธร", en: "Manot khamton" },
         role: { th: "Technical Lead", en: "Technical Lead" },
-        org: { th: "Student volunteer", en: "Student volunteer" },
+        org: { th: "SUT Student volunteer", en: "SUT Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/manot.webp"),
         photoPosition: "center 6%",
         photoScale: 1.25,
         confirmed: true,
       },
       {
-        name: { th: "นางสาวพอเพียง อินทจันทร์", en: "Popeang Intajan" },
-        role: { th: "นักศึกษาอาสาสมัคร", en: "Student Volunteer" },
-        org: { th: "จุฬาลงกรณ์มหาวิทยาลัย", en: "Chulalongkorn University" },
+        name: { th: "พอเพียง อินทจันทร์", en: "Popeang Intajan" },
+        role: { th: "QML", en: "QML" },
+        org: { th: "CU Student volunteer", en: "CU Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/popeang.png"),
         photoPosition: "center 6%",
         photoScale: 1.5,
