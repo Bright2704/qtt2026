@@ -203,12 +203,12 @@ export const committee: CommitteeGroup[] = [
   },
   {
     title: { th: "ทีมดำเนินงานหลัก", en: "Core Operations Team" },
-    note: { th: "นักศึกษาอาสาสมัคร.", en: "Student Volunteers" },
+    note: { th: "นักศึกษาอาสาสมัคร มทส.", en: "SUT Student Volunteers" },
     people: [
       {
         name: { th: "ธนกฤต ทิพย์นางรอง", en: "Thanakrit Thipnangrong" },
         role: { th: "Lead Coordinator", en: "Lead Coordinator" },
-        org: { th: "SUT Student volunteer", en: "SUT Student volunteer" },
+        org: { th: "Student volunteer", en: "Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/thanakrit.webp"),
         photoPosition: "center 6%",
         photoScale: 1.4,
@@ -251,15 +251,6 @@ export const committee: CommitteeGroup[] = [
         photoScale: 1.25,
         confirmed: true,
       },
-      {
-        name: { th: "พอเพียง อินทจันทร์", en: "Popeang Intajan" },
-        role: { th: "QML", en: "QML" },
-        org: { th: "CU Student volunteer", en: "CU Student volunteer" },
-        photo: asset("/assets/photos/committee-portraits/popeang.png"),
-        photoPosition: "center 6%",
-        photoScale: 1.5,
-        confirmed: true,
-      },
     //
       //{
       //  name: { th: "มีเบียร์", en: "Beer" },
@@ -267,6 +258,21 @@ export const committee: CommitteeGroup[] = [
        // org: { th: "QTRiC", en: "QTRiC" },
        // confirmed: true,
     //  },
+    ],
+  },
+  {
+    title: { th: "ทีมดำเนินงานหลัก", en: "Core Operations Team" },
+    note: { th: "นักศึกษาอาสาสมัคร จุฬาฯ", en: "CU Student Volunteers" },
+    people: [
+      {
+        name: { th: "พอเพียง อินทจันทร์", en: "Popeang Intajan" },
+        role: { th: "", en: "" },
+        org: { th: "Student volunteer", en: "Student volunteer" },
+        photo: asset("/assets/photos/committee-portraits/popeang.png"),
+        photoPosition: "center 6%",
+        photoScale: 1.5,
+        confirmed: true,
+      },
     ],
   },
   {

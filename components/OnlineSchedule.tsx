@@ -68,7 +68,7 @@ export default function OnlineSchedule() {
           <div className={styles.cardTime}>14:00–15:00</div>
           <div className={styles.cardBody}>
             <div className={styles.cardTitle}>Lecture 2 — qBraid Platform &amp; Optimization</div>
-            <div className={styles.cardSpeaker}>Harshit Gupta, Dr. Ricky Young</div>
+            <div className={styles.cardSpeaker}>Harshit Gupta, Ricky Young</div>
             <div className={styles.cardAffiliation}>qBraid</div>
           </div>
         </div>

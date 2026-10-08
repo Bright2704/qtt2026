@@ -311,12 +311,12 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
         duration: { th: "1 ชั่วโมง", en: "1 hour" },
         title: { th: "Lecture 2: qBraid Platform & Optimization", en: "Lecture 2: qBraid Platform & Optimization" },
         speaker: {
-          name: { th: "ดร. Ricky Young & คุณ Harshit Gupta", en: "Dr. Ricky Young & Harshit Gupta" },
+          name: { th: "ดร. Ricky Young & คุณ Harshit Gupta", en: "Ricky Young & Harshit Gupta" },
           role: { th: "Quantum Software Engineers", en: "Quantum Software Engineers" },
           org: { th: "qBraid", en: "qBraid" },
           photo: asset("/assets/photos/white-speakers/ricky.webp"),
           portraits: [
-            { name: { th: "ดร. Ricky Young", en: "Dr. Ricky Young" }, photo: asset("/assets/photos/white-speakers/ricky.webp") },
+            { name: { th: "ดร. Ricky Young", en: "Ricky Young" }, photo: asset("/assets/photos/white-speakers/ricky.webp") },
             { name: { th: "คุณ Harshit Gupta", en: "Harshit Gupta" }, photo: asset("/assets/photos/white-speakers/harshit.webp") },
           ],
         },
