@@ -38,12 +38,11 @@ export default function OnlineSchedule() {
           </div>
         </div>
 
-        <div className={`${styles.card} ${styles.isTbc}`}>
+        <div className={styles.card}>
           <div className={styles.cardTime}>15:00–17:00</div>
           <div className={styles.cardBody}>
             <div className={styles.cardTitle}>
               Quantum Fundamental (Basic)
-              <span className={styles.badgeTbc}>TBC</span>
             </div>
             <div className={styles.cardSpeaker}>Dr. Tanapat Deesuwan (Aj. Om)</div>
             <div className={styles.cardAffiliation}>King Mongkut&apos;s University of Technology Thonburi</div>
