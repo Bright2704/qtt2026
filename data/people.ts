@@ -203,12 +203,12 @@ export const committee: CommitteeGroup[] = [
   },
   {
     title: { th: "ทีมดำเนินงานหลัก", en: "Core Operations Team" },
-    note: { th: "นักศึกษาอาสาสมัคร มทส.", en: "SUT Student Volunteers" },
+    note: { th: "นักศึกษาอาสาสมัคร มหาวิทยาลัยเทคโนโลยีสุรนารี.", en: "Suranaree University of Technology Student Volunteers" },
     people: [
       {
         name: { th: "ธนกฤต ทิพย์นางรอง", en: "Thanakrit Thipnangrong" },
         role: { th: "Lead Coordinator", en: "Lead Coordinator" },
-        org: { th: "Student volunteer", en: "Student volunteer" },
+        org: { th: "SUT Student volunteer", en: "SUT Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/thanakrit.webp"),
         photoPosition: "center 6%",
         photoScale: 1.4,
@@ -262,12 +262,12 @@ export const committee: CommitteeGroup[] = [
   },
   {
     title: { th: "ทีมดำเนินงานหลัก", en: "Core Operations Team" },
-    note: { th: "นักศึกษาอาสาสมัคร จุฬาฯ", en: "CU Student Volunteers" },
+    note: { th: "นักศึกษาอาสาสมัคร จุฬาลงกรณ์มหาวิทยาลัย", en: "Chulalongkorn University Student Volunteers" },
     people: [
       {
         name: { th: "พอเพียง อินทจันทร์", en: "Popeang Intajan" },
         role: { th: "", en: "" },
-        org: { th: "Student volunteer", en: "Student volunteer" },
+        org: { th: "CU Student volunteer", en: "CU Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/popeang.png"),
         photoPosition: "center 6%",
         photoScale: 1.5,
