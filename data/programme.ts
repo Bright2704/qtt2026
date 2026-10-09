@@ -271,8 +271,8 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
           photo: asset("/assets/photos/aj til.jpg"),
         },
         detail: {
-          th: "กรณีศึกษาการประยุกต์ใช้ควอนตัมคอมพิวติ้งแก้ปัญหา Optimization ในภาคอุตสาหกรรมและธุรกิจจริง",
-          en: "Case studies on applying quantum computing to industrial and business optimization challenges.",
+          th: "Deploying Quantum Computing Live in Logistics Operations: Some Challenges and How to Overcome",
+          en: "Deploying Quantum Computing Live in Logistics Operations: Some Challenges and How to Overcome",
         },
         status: "Confirmed",
       },
