@@ -798,6 +798,31 @@ strong { font-weight: 600; }
   transition: transform 0.25s ease;
 }
 .logo-box:hover img { transform: scale(1.05); }
+.logo-box__image { display: flex; align-items: center; justify-content: center; width: 100%; }
+.logo-grid--academic .logo-box > a,
+.logo-grid--academic .logo-box > div { justify-content: flex-start; }
+.logo-grid--academic .logo-box__image { height: 110px; flex: 0 0 110px; overflow: hidden; }
+.logo-grid--academic .logo-box__name {
+  min-height: 2.7em; display: flex; align-items: flex-start; justify-content: center;
+}
+.logo-box img[src$="/ibm-quantum-logo.png"] {
+  height: 90px; max-height: 90px; max-width: min(220px, 100%);
+}
+.logo-box img[src$="/naresuan-logo.png"] {
+  height: 90px; max-height: 90px; max-width: 100%;
+}
+.logo-box img[src$="/TheTigerTeamAcademy.jpg"] {
+  height: 110px; max-height: 110px; max-width: min(220px, 100%);
+}
+/* Account for the transparent space around the supplied KMUTT mark. */
+.logo-box img[src$="/kmutt-logo.png"] {
+  height: 260px; max-height: 260px; max-width: 100%; margin-block: -75px;
+}
+/* Keep the PSU mark readable despite the whitespace in its source image. */
+.logo-box img[src$="/psu-logo.png"] {
+  width: 220px; max-width: 100%; height: auto; max-height: none;
+  margin-top: -35px; margin-bottom: -30px;
+}
 .logo-box__name { font-size: 14px; font-weight: 600; line-height: 1.35; color: var(--indigo-800); }
 .logo-box__sub { font-size: 12px; color: var(--text-muted); line-height: 1.4; max-width: 200px; }
 

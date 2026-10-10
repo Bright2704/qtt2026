@@ -113,7 +113,7 @@ export const agenda: Slot[] = [
     time: "16:30 – 17:00",
     title: { th: "Session 3: Networking Circles", en: "Session 3: Networking Circles" },
     detail: {
-      th: "เลือกวงคุย:\n• Circle 1: Senior Mentorship (พี่จู๊ด) — Career growth, startup scaling\n• Circle 2: Academic & Faculty (อ.แจน) — Research grants, curriculum design\n• Circle 3: Student & Community (น้องๆ) — Learning path, hackathon experience",
+      th: "เลือกวงคุย:\n• Circle 1: Senior Mentorship — Career growth, startup scaling\n• Circle 2: Academic & Faculty (อ.แจน) — Research grants, curriculum design\n• Circle 3: Student & Community (น้องๆ) — Learning path, hackathon experience",
       en: "Choose your circle:\n• Circle 1: Senior Mentorship (P'Jude) — Career growth, startup scaling\n• Circle 2: Academic & Faculty (Aj. Jan) — Research grants, curriculum design\n• Circle 3: Student & Community (Students) — Learning path, hackathon experience",
     },
     speaker: {
@@ -282,7 +282,7 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
         duration: { th: "2 ชั่วโมง", en: "2 hours" },
         title: { th: "Quantum Fundamental (Basic)", en: "Quantum Fundamental (Basic)" },
         speaker: {
-          name: { th: "ดร. ธนภัทร ดีสุวรรณ (อาจารย์โอม)", en: "Dr. Tanapat Deesuwan (Aj. Ohm)" },
+          name: { th: "ดร. ธนภัทร ดีสุวรรณ", en: "Dr. Tanapat Deesuwan" },
           role: { th: "อาจารย์ประจำภาควิชาฟิสิกส์", en: "Lecturer, Department of Physics" },
           org: { th: "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (มจธ.)", en: "KMUTT" },
           photo: asset("/assets/photos/white-speakers/tanapat.webp"),
@@ -340,6 +340,21 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
         detail: {
           th: "สำรวจจุดตัดของเทคโนโลยี Quantum Computing และ AI โอกาสและความท้าทายในยุคถัดไป",
           en: "Exploring the intersection of Quantum Computing and AI, future opportunities, and breakthroughs.",
+        },
+        status: "Confirmed",
+      },
+      {
+        id: "s2-qiskit-101",
+        time: "16:00 – 17:00 น.",
+        duration: { th: "1 ชั่วโมง", en: "1 hour" },
+        title: { th: "Quantum and Qiskit 101 Seminar", en: "Quantum and Qiskit 101 Seminar" },
+        speaker: {
+          name: { th: "Preethi Balakrishnan", en: "Preethi Balakrishnan" },
+          org: { th: "IBM Quantum", en: "IBM Quantum" },
+        },
+        detail: {
+          th: "สัมมนาออนไลน์แนะนำพื้นฐาน Quantum และ Qiskit โดยวิทยากรจาก IBM Quantum เวลา 16:00–17:00 น. (ICT)",
+          en: "Virtual introductory seminar on Quantum and Qiskit with an IBM Quantum speaker, 16:00–17:00 ICT.",
         },
         status: "Confirmed",
       },
