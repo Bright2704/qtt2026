@@ -48,7 +48,7 @@ export const editions: Edition[] = [
     end: "17:00",
     capacity: 50,
     registered: 0,
-    status: "open",
+    status: "soon",
     audience: {
       th: "นักเรียนมัธยมปลาย นักศึกษา และอาจารย์ในภาคอีสาน",
       en: "High school students, university students, and faculty across north-eastern Thailand",
@@ -99,7 +99,7 @@ export const editions: Edition[] = [
     end: "16:15",
     capacity: 40,
     registered: 0,
-    status: "open",
+    status: "soon",
     audience: {
       th: "นักพัฒนา คนทำงานสายเทคโนโลยี สตาร์ทอัพ และนักศึกษาในกรุงเทพฯ",
       en: "Developers, technology professionals, startups, and students in Bangkok",
@@ -260,21 +260,21 @@ export const editions: Edition[] = [
       en: "Naresuan University",
     },
     city: { th: "พิษณุโลก", en: "Phitsanulok" },
-    date: null,
-    dateConfirmed: false,
-    dateLabel: { th: "รอยืนยันวันที่", en: "Date to be confirmed" },
+    date: "2026-11-27",
+    dateConfirmed: true,
+    dateLabel: { th: "27–28 พฤศจิกายน 2026", en: "27–28 November 2026" },
     start: "08:30",
     end: "17:00",
     capacity: 30,
     registered: 0,
-    status: "planned",
+    status: "soon",
     audience: {
       th: "นักศึกษา อาจารย์ และผู้สนใจในภาคเหนือตอนล่าง",
       en: "Students, faculty, and enthusiasts in the lower northern region",
     },
     summary: {
       th: "งาน Regional Workshop Node ของภาคเหนือตอนล่าง จัดที่มหาวิทยาลัยนเรศวร ดูแลโดย อ.ริน ใช้หลักสูตรแกนกลางเดียวกันกับทุก Hub",
-      en: "The lower northern regional workshop node at Naresuan University, led by Aj. Rin. Same core curriculum as all hubs.",
+      en: "The lower northern regional workshop node at Naresuan University, Same core curriculum as all hubs.",
     },
     mapQuery: "Naresuan University, Phitsanulok",
     address: {
@@ -285,6 +285,9 @@ export const editions: Edition[] = [
     image: asset("/assets/venue-phitsanulok.svg"),
   },
 ];
+
+// Show editions accepting registrations first, keeping the remaining order.
+editions.sort((a, b) => Number(b.status === "open") - Number(a.status === "open"));
 
 export const bookableEditions = editions.filter((e) => e.status === "open");
 

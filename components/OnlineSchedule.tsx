@@ -45,7 +45,7 @@ export default function OnlineSchedule() {
               Quantum Fundamental (Basic)
               <span className={styles.badgeTbc}>TBC</span>
             </div>
-            <div className={styles.cardSpeaker}>Dr. Tanapat Deesuwan (Aj. Om)</div>
+            <div className={styles.cardSpeaker}>Dr. Tanapat Deesuwan</div>
             <div className={styles.cardAffiliation}>King Mongkut&apos;s University of Technology Thonburi</div>
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function OnlineSchedule() {
           </div>
           <div>
             <div className={styles.dFull}>October 17, 2026</div>
-            <div className={styles.dCount}>2 sessions</div>
+            <div className={styles.dCount}>3 sessions</div>
           </div>
         </div>
 
@@ -79,6 +79,14 @@ export default function OnlineSchedule() {
             <div className={styles.cardTitle}>Quantum AI</div>
             <div className={styles.cardSpeaker}>Asst. Prof. Dr. Chanwit Kaewkasi</div>
             <div className={styles.cardAffiliation}>Chief Technology Officer Centillex</div>
+          </div>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.cardTime}>16:00–17:00</div>
+          <div className={styles.cardBody}>
+            <div className={styles.cardTitle}>Quantum and Qiskit 101 Seminar</div>
+            <div className={styles.cardSpeaker}>Preethi Balakrishnan</div>
+            <div className={styles.cardAffiliation}>IBM Quantum · Virtual · ICT (UTC+7)</div>
           </div>
         </div>
       </div>
@@ -139,19 +147,19 @@ export default function OnlineSchedule() {
 
       <div className={styles.tbcCard}>
         <div className={styles.tbcCardTitle}>Lecture 1: Qiskit Theory &amp; Fundamentals</div>
-        <div className={styles.tbcCardMeta}>IBM Request / Aj. Nik · Time: Not set</div>
+        <div className={styles.tbcCardMeta}>IBM Request · Time: Not set</div>
       </div>
 
       <div className={styles.tbcCard}>
         <div className={styles.tbcCardTitle}>Quantum Fundamental (Basic)</div>
-        <div className={styles.tbcCardMeta}>Dr. Tanapat Deesuwan (Aj. Om) · Oct 10 · 15:00–17:00</div>
+        <div className={styles.tbcCardMeta}>Dr. Tanapat Deesuwan · Oct 10 · 15:00–17:00</div>
         <div className={styles.tbcCardAffiliation}>King Mongkut&apos;s University of Technology Thonburi</div>
         <div className={styles.tbcCardNote}>&#8627; Scheduled — Pending process confirmation</div>
       </div>
 
       <div className={styles.tbcCard}>
         <div className={styles.tbcCardTitle}>Quantum Machine Learning</div>
-        <div className={styles.tbcCardMeta}>Dr. Dutsadee Tanataspee (Aj. Pipe) · Time: Not set</div>
+        <div className={styles.tbcCardMeta}>Dr. Dutsadee Tanataspee · Time: Not set</div>
       </div>
     </div>
   );

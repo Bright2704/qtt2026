@@ -354,7 +354,7 @@ export default function Home() {
                 <div className="logo-box beam" key={i}>
                   {p.url ? (
                     <a href={p.url} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none", color: "inherit" }}>
-                      {p.logo && <img src={p.logo} alt={t(p.name)} />}
+                      {p.logo && <span className="logo-box__image"><img src={p.logo} alt={t(p.name)} /></span>}
                       <div>
                         <div className="logo-box__name">{t(p.name)}</div>
                         {p.sub && <div className="logo-box__sub">{t(p.sub)}</div>}
@@ -362,7 +362,7 @@ export default function Home() {
                     </a>
                   ) : (
                     <div>
-                      {p.logo && <img src={p.logo} alt={t(p.name)} />}
+                      {p.logo && <span className="logo-box__image"><img src={p.logo} alt={t(p.name)} /></span>}
                       <div>
                         <div className="logo-box__name">{t(p.name)}</div>
                         {p.sub && <div className="logo-box__sub">{t(p.sub)}</div>}
@@ -407,12 +407,12 @@ export default function Home() {
                     {t(tier.note)}
                   </p>
                 )}
-                <div className="logo-grid">
+                <div className={`logo-grid ${tier.tierName.en === "Academic Partners" ? "logo-grid--academic" : ""}`}>
                   {tier.sponsors.map((s, i) => (
                     <div className="logo-box beam" key={i}>
                       {s.url ? (
                         <a href={s.url} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none", color: "inherit" }}>
-                          {s.logo && <img src={s.logo} alt={t(s.name)} className={s.logoDarkBg ? "logo--dark-bg" : ""} />}
+                          {s.logo && <span className="logo-box__image"><img src={s.logo} alt={t(s.name)} className={s.logoDarkBg ? "logo--dark-bg" : ""} /></span>}
                           <div>
                             <div className="logo-box__name">{t(s.name)}</div>
                             {s.sub && <div className="logo-box__sub">{t(s.sub)}</div>}
@@ -420,7 +420,7 @@ export default function Home() {
                         </a>
                       ) : (
                         <div>
-                          {s.logo && <img src={s.logo} alt={t(s.name)} className={s.logoDarkBg ? "logo--dark-bg" : ""} />}
+                          {s.logo && <span className="logo-box__image"><img src={s.logo} alt={t(s.name)} className={s.logoDarkBg ? "logo--dark-bg" : ""} /></span>}
                           <div>
                             <div className="logo-box__name">{t(s.name)}</div>
                             {s.sub && <div className="logo-box__sub">{t(s.sub)}</div>}

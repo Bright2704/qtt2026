@@ -55,12 +55,12 @@ export default function Partners() {
               {t(tier.note)}
             </p>
           )}
-          <div className="logo-grid" style={{ marginTop: tier.note ? 0 : 24 }}>
+          <div className={`logo-grid ${tier.title.en === "Academic network" ? "logo-grid--academic" : ""}`} style={{ marginTop: tier.note ? 0 : 24 }}>
             {tier.partners.map((p, i) => (
               <div className="logo-box" key={i}>
                 {p.url ? (
                   <a href={p.url} target="_blank" rel="noreferrer noopener" style={{ textDecoration: "none", color: "inherit" }}>
-                    {p.logo && <img src={p.logo} alt={t(p.name)} />}
+                    {p.logo && <span className="logo-box__image"><img src={p.logo} alt={t(p.name)} /></span>}
                     <div>
                       <div className="logo-box__name">{t(p.name)}</div>
                       {p.sub && <div className="logo-box__sub">{t(p.sub)}</div>}
@@ -69,7 +69,7 @@ export default function Partners() {
                   </a>
                 ) : (
                   <div>
-                    {p.logo && <img src={p.logo} alt={t(p.name)} />}
+                    {p.logo && <span className="logo-box__image"><img src={p.logo} alt={t(p.name)} /></span>}
                     <div>
                       <div className="logo-box__name">{t(p.name)}</div>
                       {p.sub && <div className="logo-box__sub">{t(p.sub)}</div>}

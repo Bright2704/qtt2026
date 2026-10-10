@@ -186,7 +186,7 @@ export const committee: CommitteeGroup[] = [
         confirmed: true,
       },
       {
-        name: { th: "นิธิกร ชำนาญกุล (Pat)", en: "Nitikorn Chumnankul (Pat)" },
+        name: { th: "นิธิกร ชำนาญกุล", en: "Nitikorn Chumnankul" },
         role: { th: "Project Lead & Coordinator", en: "Project Lead & Coordinator" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
         photo: asset("/assets/photos/committee-portraits/nitikorn.webp"),
