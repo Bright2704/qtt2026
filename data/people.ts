@@ -289,7 +289,7 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "Tan Chun Loong", en: "Tan Chun Loong" },
         role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional advisor" },
-        org: { th: "Nanyang Technological University", en: "Nanyang Technological University" },
+        org: { th: "Founder @ Quantum Wings", en: "Founder @ Quantum Wings" },
         photo: asset("/assets/photos/white-speakers/tan-chun-loong-sharp.png"),
         photoPosition: "center 12%",
         photoScale: 1.9,
