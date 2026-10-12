@@ -35,7 +35,7 @@ export const speakers: Person[] = [
   {
     name: { th: "ดร. Choong Pak Shen", en: "Dr. Choong Pak Shen" },
     role: { th: "Session 1 Online Lecture Speaker", en: "Session 1 Online Lecture Speaker" },
-    org: { th: "Founder @ Quantum Wings", en: "Founder @ Quantum Wings" },
+    org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
     topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
     photo: asset("/assets/photos/choong-pak-shen.jpg"),
     confirmed: true,
@@ -43,7 +43,7 @@ export const speakers: Person[] = [
   {
     name: { th: "Tan Chun Loong", en: "Tan Chun Loong" },
     role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional Quantum Partner" },
-    org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
+    org: { th: "Founder @ Quantum Wings", en: "Founder @ Quantum Wings" },
     topic: { th: "Qiskit Theory Support", en: "Qiskit Theory Support" },
     photo: asset("/assets/photos/white-speakers/tan-chun-loong-sharp.png"),
     photoPosition: "center 12%",
