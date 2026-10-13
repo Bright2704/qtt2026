@@ -129,11 +129,11 @@ export default function Home() {
             </p>
 
             <Countdown
-              target={sut.date ? `${sut.date}T08:30:00+07:00` : null}
-              label={{ th: "นับถอยหลังสู่งานที่ มทส.", en: "Countdown to the SUT edition" }}
+              target="2026-10-17T14:00:00+07:00"
+              label={{ th: "นับถอยหลังสู่ Online Session 2", en: "Countdown to Online Session 2" }}
               fallback={{
-                th: `งานที่ มทส. ${t(sut.dateLabel)}`,
-                en: `SUT edition, ${t(sut.dateLabel)}`,
+                th: "17 ตุลาคม 2026 เวลา 14:00 น.",
+                en: "17 October 2026, 14:00",
               }}
             />
           </div>
