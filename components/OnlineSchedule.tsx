@@ -150,13 +150,6 @@ export default function OnlineSchedule() {
       </div>
 
       <div className={styles.tbcCard}>
-        <div className={styles.tbcCardTitle}>Quantum Fundamental (Basic)</div>
-        <div className={styles.tbcCardMeta}>Dr. Tanapat Deesuwan · Oct 10 · 15:00–17:00</div>
-        <div className={styles.tbcCardAffiliation}>King Mongkut&apos;s University of Technology Thonburi</div>
-        <div className={styles.tbcCardNote}>&#8627; Scheduled — Pending process confirmation</div>
-      </div>
-
-      <div className={styles.tbcCard}>
         <div className={styles.tbcCardTitle}>Quantum Machine Learning</div>
         <div className={styles.tbcCardMeta}>Dr. Dutsadee Tanataspee · Time: Not set</div>
       </div>
