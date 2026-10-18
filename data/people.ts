@@ -58,6 +58,16 @@ export const speakers: Person[] = [
     photo: asset("/assets/photos/white-speakers/ricky.webp"),
     confirmed: true,
   },
+  {
+    name: { th: "Kyle Carlo C. Lasala", en: "Kyle Carlo C. Lasala" },
+    role: { th: "วิทยากรรับเชิญ (IBM Qiskit Advocate)", en: "Invited speaker (IBM Qiskit Advocate)" },
+    org: { th: "IBM Quantum", en: "IBM Quantum" },
+    topic: { th: "Quantum and Qiskit 101 Seminar", en: "Quantum and Qiskit 101 Seminar" },
+    photo: asset("/assets/photos/white-speakers/kyle-lasala.png"),
+    photoPosition: "center 30%",
+    photoScale: 1.45,
+    confirmed: true,
+  },
 //   {
 //     name: { th: "ผศ. ดร. สุกฤต สุจริตกุล", en: "Asst. Prof. Dr. Sukrit Sucharitakul" },
 //     role: { th: "ผู้สอน", en: "Instructor" },

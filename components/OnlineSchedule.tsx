@@ -84,8 +84,8 @@ export default function OnlineSchedule() {
           <div className={styles.cardTime}>16:00–17:00</div>
           <div className={styles.cardBody}>
             <div className={styles.cardTitle}>Quantum and Qiskit 101 Seminar</div>
-            <div className={styles.cardSpeaker}>Preethi Balakrishnan</div>
-            <div className={styles.cardAffiliation}>IBM Quantum · Virtual · ICT (UTC+7)</div>
+            <div className={styles.cardSpeaker}>Kyle Carlo C. Lasala</div>
+            <div className={styles.cardAffiliation}>IBM Qiskit Advocate · ICT (UTC+7)</div>
           </div>
         </div>
       </div>
