@@ -349,8 +349,9 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
         duration: { th: "1 ชั่วโมง", en: "1 hour" },
         title: { th: "Quantum and Qiskit 101 Seminar", en: "Quantum and Qiskit 101 Seminar" },
         speaker: {
-          name: { th: "Preethi Balakrishnan", en: "Preethi Balakrishnan" },
-          org: { th: "IBM Quantum", en: "IBM Quantum" },
+          name: { th: "Kyle Carlo C. Lasala", en: "Kyle Carlo C. Lasala" },
+          org: { th: "IBM Qiskit Advocate", en: "IBM Qiskit Advocate" },
+          photo: asset("/assets/photos/white-speakers/kyle-lasala.png"),
         },
         detail: {
           th: "สัมมนาออนไลน์แนะนำพื้นฐาน Quantum และ Qiskit โดยวิทยากรจาก IBM Quantum เวลา 16:00–17:00 น. (ICT)",
