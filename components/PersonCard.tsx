@@ -13,7 +13,12 @@ export default function PersonCard({ p, showTopic = true }: { p: Person; showTop
       <div className="person__wrap">
         <img
           className="person__img"
-          style={{ objectPosition: p.photoPosition, transformOrigin: p.photoPosition, scale: p.photoScale }}
+          style={{
+            objectPosition: p.photoPosition,
+            transformOrigin: p.photoPosition,
+            scale: p.photoScale,
+            translate: p.photoOffsetX ? `${p.photoOffsetX} 0` : undefined,
+          }}
           src={p.photo ?? asset("/assets/speaker-placeholder.svg")}
           alt={p.photo ? t(p.name) : ""}
           aria-hidden={p.photo ? undefined : true}

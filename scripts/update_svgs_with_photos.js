@@ -62,7 +62,7 @@ const svgs = {
   <!-- Text details -->
   <text x="200" y="118" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="18" font-weight="600" fill="white">Korat Hub</text>
   <text x="200" y="142" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="14" fill="#d6c6fc">Suranaree University of Technology</text>
-  <text x="200" y="168" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="13" fill="#b796f6">31 October 2026</text>
+  <text x="200" y="168" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="13" fill="#b796f6">21 November 2026</text>
   <text x="200" y="192" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="12" fill="#fc9fc9">50 seats</text>
 </svg>`,
 

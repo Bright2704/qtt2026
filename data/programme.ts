@@ -394,7 +394,7 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
         duration: { th: "1 ชั่วโมง", en: "1 hour" },
         title: { th: "Quantum Communication", en: "Quantum Communication" },
         speaker: {
-          name: { th: "ผศ. ดร. ปรือ กลสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
+          name: { th: "ผศ. ดร. พฤฒิ กาฬสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
           role: { th: "ผู้เชี่ยวชาญด้านการสื่อสารควอนตัม & Southern Node Lead", en: "Quantum Communication Expert & Southern Node Lead" },
           org: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" },
           photo: asset("/assets/photos/white-speakers/pruet.webp"),
@@ -430,8 +430,8 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
   },
   {
     id: "day-onsite-workshops",
-    dateStr: "จะประกาศภายหลัง",
-    dayLabel: { th: "On-site Workshops (จะประกาศวันจัดงานภายหลัง)", en: "On-site Workshops (To be announced later)" },
+    dateStr: "7, 21, 28 พ.ย. 2026",
+    dayLabel: { th: "On-site Workshops (7, 21, 28 พฤศจิกายน 2026)", en: "On-site Workshops (November 7, 21, 28, 2026)" },
     sessionType: { th: "Regional Workshop Hubs (On-site)", en: "Regional Workshop Hubs (On-site)" },
     description: {
       th: "เวิร์กช็อปลงมือปฏิบัติการจริงในแต่ละภูมิภาค วันและเวลาจัดงานจะประกาศให้ทราบอย่างเป็นทางการเร็ว ๆ นี้",
