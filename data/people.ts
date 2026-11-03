@@ -9,6 +9,7 @@ export type Person = {
   photo?: string;
   photoPosition?: string;
   photoScale?: number;
+  photoOffsetX?: string;
   link?: string;
   confirmed: boolean;
 };
@@ -159,7 +160,7 @@ export const speakers: Person[] = [
     confirmed: false,
   },
   {
-    name: { th: "ผศ. ดร. ปรือ กลสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
+    name: { th: "ผศ. ดร. พฤฒิ กาฬสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" },
     topic: { th: "Quantum Communication", en: "Quantum Communication" },
@@ -348,24 +349,25 @@ export const committee: CommitteeGroup[] = [
         name: { th: "ผศ. ดร. สุกฤต สุจริตกุล", en: "Asst. Prof. Dr. Sukrit Sucharitakul" },
         role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
         org: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" },
-        photo: asset("/assets/photos/committee-portraits/sukrit-sharp.png"),
-        photoPosition: "center 8%",
+        photo: asset("/assets/photos/AJ.nick.png"),
+        photoPosition: "center top",
         photoScale: 1.15,
-        confirmed: false,
+        photoOffsetX: "-18%",
+        confirmed: true,
       },
       {
         name: { th: "รศ. ดร. อนุชา วัชระภาสร", en: "Assoc. Prof. Dr. Anucha Watcharapasorn" },
         role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
         org: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" },
         photo: asset("/assets/photos/Dr.anucha.png"),
-        confirmed: false,
+        confirmed: true,
       },
       {
-        name: { th: "ผศ. ดร. ปรือ กลสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
+        name: { th: "ผศ. ดร. พฤฒิ กาฬสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
         role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
         org: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" },
         photo: asset("/assets/photos/white-speakers/pruet.webp"),
-        confirmed: false,
+        confirmed: true,
       },
       // {
       //   name: { th: "รศ. ดร. อารียา จันทร์ศรี", en: "Assoc. Prof. Dr. Areeya Chantasri" },

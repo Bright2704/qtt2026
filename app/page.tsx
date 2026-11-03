@@ -129,11 +129,11 @@ export default function Home() {
             </p>
 
             <Countdown
-              target="2026-10-17T14:00:00+07:00"
-              label={{ th: "นับถอยหลังสู่ Online Session 2", en: "Countdown to Online Session 2" }}
+              target="2026-11-07T08:30:00+07:00"
+              label={{ th: "นับถอยหลังสู่เวิร์กช็อป ณ IBM Thailand และ มหาวิทยาลัยเชียงใหม่", en: "Countdown to Workshops at IBM Thailand and Chiang Mai University" }}
               fallback={{
-                th: "17 ตุลาคม 2026 เวลา 14:00 น.",
-                en: "17 October 2026, 14:00",
+                th: "7 พฤศจิกายน 2026 เวลา 08:30 น. (เวลาประเทศไทย)",
+                en: "7 November 2026, 08:30 (ICT)",
               }}
             />
           </div>
