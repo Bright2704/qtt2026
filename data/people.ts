@@ -69,14 +69,17 @@ export const speakers: Person[] = [
     photoScale: 1.45,
     confirmed: true,
   },
-//   {
-//     name: { th: "ผศ. ดร. สุกฤต สุจริตกุล", en: "Asst. Prof. Dr. Sukrit Sucharitakul" },
-//     role: { th: "ผู้สอน", en: "Instructor" },
-//     org: { th: "รอยืนยัน", en: "To be confirmed" },
-//     topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
-//     photo: asset("/assets/photos/AJ nick.png"),
-//     confirmed: false,
-//   },
+  {
+    name: { th: "ผศ. ดร. สุกฤต สุจริตกุล", en: "Asst. Prof. Dr. Sukrit Sucharitakul" },
+    role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
+    org: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" },
+    topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
+    photo: asset("/assets/photos/AJ.nick.png"),
+    photoPosition: "center top",
+    photoScale: 1.15,
+    photoOffsetX: "-18%",
+    confirmed: true,
+  },
   // === Session 2: Workshop Track Leads ===
   //{
     //name: { th: "อ.นนท์ (ดร.นนท์)", en: "Aj. Non (Dr. Non)" },
