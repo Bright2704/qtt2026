@@ -156,10 +156,10 @@ export default function Programme() {
         </div>
 
         <div className="btn-row" style={{ marginTop: 40 }}>
-          <Link className="btn btn--primary" href="/register">
+          <a className="btn btn--primary" href="https://sites.google.com/view/registerqiskitfallfest2026th/register" target="_blank" rel="noopener noreferrer">
             {t({ th: "ลงทะเบียนเข้าร่วม", en: "Register to attend" })}
             <Icon name="i-arrow" size={18} />
-          </Link>
+          </a>
           <Link className="btn btn--secondary" href="/learn">
             {t({ th: "เตรียมตัวก่อนวันงาน", en: "Prepare for the day" })}
           </Link>

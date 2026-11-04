@@ -54,9 +54,9 @@ export default function EditionCard({ e }: { e: Edition }) {
             {t({ th: "ดูรายละเอียด", en: "Details" })}
           </Link>
           {e.status === "open" && (
-            <Link className="btn btn--primary btn--sm" href="/register">
+            <a className="btn btn--primary btn--sm" href="https://sites.google.com/view/registerqiskitfallfest2026th/register" target="_blank" rel="noopener noreferrer">
               {t({ th: "จองที่นั่ง", en: "Book a seat" })}
-            </Link>
+            </a>
           )}
           {e.status === "planned" && (
             <Link className="btn btn--secondary btn--sm" href="/contact">
