@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><base target="_top"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f2f5fa;color:#172333;font:16px/1.6 Arial,sans-serif;padding:32px 16px}main{max-width:480px;margin:5vh auto;background:white;padding:28px;border:1px solid #dbe4ed;border-radius:18px}h1{font-size:26px;margin:0 0 8px}.tag{color:#a52f70;font-weight:bold;font-size:13px}label{display:block;margin:18px 0 6px;font-weight:bold}input,button{font:inherit;width:100%;padding:12px;border:1px solid #b7c3d2;border-radius:8px}input:focus{outline:3px solid #c9dcff}button{margin-top:16px;background:#174ea6;color:white;border:0;cursor:pointer;font-weight:bold}button.secondary{background:#edf2fa;color:#174ea6}button:disabled{opacity:.5;cursor:wait}.hint{font-size:13px;color:#526174}.status{white-space:pre-wrap;padding:12px 0;color:#174a37}.error{color:#a31b29}[hidden]{display:none!important}
+</style></head><body><main>
+<div class="tag">QISKIT FALL FEST 2026 THAILAND</div><h1>Event check-in</h1>
+<p><?= eventLabel ?></p><p class="hint">Enter an email address you can access. We will send you a verification code.</p>
+<form id="requestForm"><label for="email">Email address</label><input id="email" type="email" autocomplete="email" required maxlength="254" placeholder="name@example.com"><button id="request">Send verification code</button></form>
+<form id="verifyForm" hidden><label for="code">8-character verification code</label><input id="code" autocomplete="one-time-code" maxlength="8" minlength="8" required pattern="[a-fA-F0-9]{8}" autocapitalize="characters" spellcheck="false"><p class="hint">Your code expires in 10 minutes and can only be used once. A new code replaces the previous one.</p><button id="verify">Confirm check-in</button><button id="resend" type="button" class="secondary">Request a new code / change email</button></form>
+<p id="status" class="status" role="status" aria-live="polite"></p><p class="hint">One check-in per email address for each event day. If you cannot find your code, check your spam folder or contact the organizer.</p>
+</main><div id="context" hidden data-event="<?= eventId ?>" data-invite="<?= invite ?>"></div>
+<script>
+const $=id=>document.getElementById(id);let challengeId='',busy=false,complete=false;
+const context=$('context').dataset;
+function status(text,error=false){$('status').textContent=text;$('status').classList.toggle('error',error)}
+function setBusy(value){busy=value;document.querySelectorAll('button').forEach(b=>b.disabled=value||complete)}
+function rpc(method,...args){return new Promise((resolve,reject)=>google.script.run.withSuccessHandler(resolve).withFailureHandler(reject)[method](...args))}
+$('requestForm').addEventListener('submit',async e=>{e.preventDefault();if(busy||complete)return;setBusy(true);status('Sending your code…');
+try{const result=await rpc('qciRequestCode',context.event,context.invite,$('email').value);challengeId=result.challengeId;$('email').readOnly=true;$('request').hidden=true;$('verifyForm').hidden=false;$('code').value='';status(result.message);$('code').focus()}catch(e){status(e.message||'Unable to connect. Please try again.',true)}finally{setBusy(false)}});
+$('verifyForm').addEventListener('submit',async e=>{e.preventDefault();if(busy||complete)return;setBusy(true);status('Confirming your check-in…');
+try{const result=await rpc('qciVerifyCode',context.event,context.invite,$('email').value,challengeId,$('code').value);complete=true;$('verifyForm').hidden=true;$('requestForm').hidden=true;status(result.message+'\nThailand time (UTC+7): '+result.checkedInAt)}catch(e){status(e.message||'Unable to connect. Please try again.',true)}finally{setBusy(false)}});
+$('resend').addEventListener('click',()=>{if(busy||complete)return;challengeId='';$('email').readOnly=false;$('request').hidden=false;$('verifyForm').hidden=true;status('Wait at least 60 seconds after your last request, then select Send verification code again.');$('email').focus()});
+</script></body></html>

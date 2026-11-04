@@ -9,7 +9,8 @@ import { Notice, PageHead, Section } from "@/components/ui";
 
 export default function Speakers() {
   const { t } = useLang();
-  const confirmed = speakers.filter((s) => s.confirmed).length;
+  const visibleSpeakers = speakers.filter((s) => s.name.en !== "Dr. Supanut Thanasip");
+  const confirmed = visibleSpeakers.filter((s) => s.confirmed).length;
 
   return (
     <>
@@ -39,12 +40,12 @@ export default function Speakers() {
           </div>
           <p className="small muted mono">
             {t({ th: "ยืนยันแล้ว ", en: "Confirmed " })}
-            {confirmed}/{speakers.length}
+            {confirmed}/{visibleSpeakers.length}
           </p>
         </div>
 
         <div className="grid grid--4 grid--speakers">
-          {speakers.map((s, i) => (
+          {visibleSpeakers.map((s, i) => (
             <PersonCard key={i} p={s} />
           ))}
         </div>

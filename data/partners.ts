@@ -88,6 +88,20 @@ export const partnerTiers: PartnerTier[] = [
         url: "https://www.psu.ac.th",
         confirmed: true,
       },
+      {
+        name: { th: "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี", en: "King Mongkut’s University of Technology Thonburi" },
+        sub: { th: "พันธมิตรสถาบันการศึกษา", en: "Academic Partner" },
+        logo: asset("/assets/kmutt-logo.png"),
+        url: "https://www.kmutt.ac.th/",
+        confirmed: true,
+      },
+      {
+        name: { th: "มหาวิทยาลัยนเรศวร", en: "Naresuan University" },
+        sub: { th: "Phitsanulok Host", en: "Phitsanulok Host" },
+        logo: asset("/assets/naresuan-logo.png"),
+        url: "https://www.nu.ac.th/",
+        confirmed: true,
+      },
     ],
   },
   {
@@ -96,7 +110,7 @@ export const partnerTiers: PartnerTier[] = [
       {
         name: { th: "IBM ประเทศไทย", en: "IBM Thailand" },
         sub: { th: "ความร่วมมือระดับประเทศ", en: "National collaboration" },
-        logo: asset("/assets/ibm-quantum-logo.png"),
+        logo: asset("/assets/photos/IBMTHAILAND.png"),
         url: "https://www.ibm.com/th-th",
         confirmed: true,
       },
@@ -105,22 +119,6 @@ export const partnerTiers: PartnerTier[] = [
         logo: asset("/assets/Primary FullColor SQV Logo.png"),
         sub: { th: "Industry Partner & Collaborator", en: "Industry Partner & Collaborator" },
         confirmed: true,
-      },
-    ],
-  },
-  {
-    title: { th: "เครือข่ายมหาวิทยาลัยระดับภูมิภาค", en: "Regional University Network" },
-    note: {
-      th: "Regional Workshop Nodes ทั่วประเทศ",
-      en: "Regional Workshop Nodes across Thailand",
-    },
-    partners: [
-      {
-        name: { th: "มหาวิทยาลัยนเรศวร", en: "Naresuan University" },
-        sub: { th: "Phitsanulok Hub", en: "Phitsanulok Hub" },
-        logo: asset("/assets/nu-logo.png"),
-        url: "https://www.if.nu.ac.th/",
-        confirmed: false,
       },
     ],
   },

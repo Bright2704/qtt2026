@@ -69,7 +69,18 @@ export default function DayScheduleView() {
                       {(sess.speaker.portraits ?? [{
                         name: sess.speaker.name,
                         photo: sess.speaker.photo ?? asset("/assets/speaker-placeholder.svg"),
-                      }]).map((person) => (
+                      }]).map((person) => person.photo.endsWith("/kyle-lasala.png") ? (
+                        <span key={person.name.en} className="sched-speaker-avatar" style={{ overflow: "hidden" }}>
+                          <img
+                            src={person.photo}
+                            alt={t(person.name)}
+                            title={t(person.name)}
+                            width={46}
+                            height={46}
+                            style={{ display: "block", width: "100%", height: "100%", objectFit: "cover", scale: 1.6, transformOrigin: "center 30%" }}
+                          />
+                        </span>
+                      ) : (
                         <img
                           key={person.name.en}
                           src={person.photo}

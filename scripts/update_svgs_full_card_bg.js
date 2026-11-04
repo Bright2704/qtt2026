@@ -63,7 +63,7 @@ const svgs = {
   <g filter="url(#shadow-text)">
     <text x="200" y="108" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="18" font-weight="600" fill="white">Korat Hub</text>
     <text x="200" y="134" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="14" fill="#f0e6ff">Suranaree University of Technology</text>
-    <text x="200" y="162" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="13" fill="#d6c6fc">31 October 2026</text>
+    <text x="200" y="162" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="13" fill="#d6c6fc">21 November 2026</text>
     <text x="200" y="188" text-anchor="middle" font-family="IBM Plex Sans Thai, sans-serif" font-size="12" fill="#fc9fc9">50 seats</text>
   </g>
 </svg>`,

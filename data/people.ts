@@ -9,6 +9,7 @@ export type Person = {
   photo?: string;
   photoPosition?: string;
   photoScale?: number;
+  photoOffsetX?: string;
   link?: string;
   confirmed: boolean;
 };
@@ -35,7 +36,7 @@ export const speakers: Person[] = [
   {
     name: { th: "ดร. Choong Pak Shen", en: "Dr. Choong Pak Shen" },
     role: { th: "Session 1 Online Lecture Speaker", en: "Session 1 Online Lecture Speaker" },
-    org: { th: "Founder @ Quantum Wings", en: "Founder @ Quantum Wings" },
+    org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
     topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
     photo: asset("/assets/photos/choong-pak-shen.jpg"),
     confirmed: true,
@@ -43,7 +44,7 @@ export const speakers: Person[] = [
   {
     name: { th: "Tan Chun Loong", en: "Tan Chun Loong" },
     role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional Quantum Partner" },
-    org: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
+    org: { th: "Founder @ Quantum Wings", en: "Founder @ Quantum Wings" },
     topic: { th: "Qiskit Theory Support", en: "Qiskit Theory Support" },
     photo: asset("/assets/photos/white-speakers/tan-chun-loong-sharp.png"),
     photoPosition: "center 12%",
@@ -58,14 +59,27 @@ export const speakers: Person[] = [
     photo: asset("/assets/photos/white-speakers/ricky.webp"),
     confirmed: true,
   },
-//   {
-//     name: { th: "ผศ. ดร. สุกฤต สุจริตกุล", en: "Asst. Prof. Dr. Sukrit Sucharitakul" },
-//     role: { th: "ผู้สอน", en: "Instructor" },
-//     org: { th: "รอยืนยัน", en: "To be confirmed" },
-//     topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
-//     photo: asset("/assets/photos/AJ nick.png"),
-//     confirmed: false,
-//   },
+  {
+    name: { th: "Kyle Carlo C. Lasala", en: "Kyle Carlo C. Lasala" },
+    role: { th: "วิทยากรรับเชิญ (IBM Qiskit Advocate)", en: "Invited speaker (IBM Qiskit Advocate)" },
+    org: { th: "IBM Quantum", en: "IBM Quantum" },
+    topic: { th: "Quantum and Qiskit 101 Seminar", en: "Quantum and Qiskit 101 Seminar" },
+    photo: asset("/assets/photos/white-speakers/kyle-lasala.png"),
+    photoPosition: "center 30%",
+    photoScale: 1.45,
+    confirmed: true,
+  },
+  {
+    name: { th: "ผศ. ดร. สุกฤต สุจริตกุล", en: "Asst. Prof. Dr. Sukrit Sucharitakul" },
+    role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
+    org: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" },
+    topic: { th: "Qiskit Theory & Fundamentals", en: "Qiskit Theory & Fundamentals" },
+    photo: asset("/assets/photos/AJ.nick.png"),
+    photoPosition: "center top",
+    photoScale: 1.15,
+    photoOffsetX: "-18%",
+    confirmed: true,
+  },
   // === Session 2: Workshop Track Leads ===
   //{
     //name: { th: "อ.นนท์ (ดร.นนท์)", en: "Aj. Non (Dr. Non)" },
@@ -134,7 +148,7 @@ export const speakers: Person[] = [
     },
     topic: { th: "Quantum Fundamental (Basic)", en: "Quantum Fundamental (Basic)" },
     photo: asset("/assets/photos/white-speakers/tanapat.webp"),
-    confirmed: false,
+    confirmed: true,
   },
   {
     name: { th: "ดร. ศุภณัฐ ธนศิลป์", en: "Dr. Supanut Thanasip" },
@@ -149,7 +163,7 @@ export const speakers: Person[] = [
     confirmed: false,
   },
   {
-    name: { th: "ผศ. ดร. ปรือ กลสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
+    name: { th: "ผศ. ดร. พฤฒิ กาฬสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
     role: { th: "วิทยากรรับเชิญ", en: "Invited speaker" },
     org: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" },
     topic: { th: "Quantum Communication", en: "Quantum Communication" },
@@ -186,7 +200,7 @@ export const committee: CommitteeGroup[] = [
         confirmed: true,
       },
       {
-        name: { th: "นิธิกร ชำนาญกุล (Pat)", en: "Nitikorn Chumnankul (Pat)" },
+        name: { th: "นิธิกร ชำนาญกุล", en: "Nitikorn Chumnankul" },
         role: { th: "Project Lead & Coordinator", en: "Project Lead & Coordinator" },
         org: { th: "มทส. · QTRiC", en: "SUT · QTRiC" },
         photo: asset("/assets/photos/committee-portraits/nitikorn.webp"),
@@ -203,12 +217,12 @@ export const committee: CommitteeGroup[] = [
   },
   {
     title: { th: "ทีมดำเนินงานหลัก", en: "Core Operations Team" },
-    note: {  th: "นักศึกษาอาสาสมัคร มทส.", en: "SUT Student Volunteer" },
+    note: { th: "นักศึกษาอาสาสมัคร มหาวิทยาลัยเทคโนโลยีสุรนารี.", en: "Suranaree University of Technology Student Volunteers" },
     people: [
       {
         name: { th: "ธนกฤต ทิพย์นางรอง", en: "Thanakrit Thipnangrong" },
         role: { th: "Lead Coordinator", en: "Lead Coordinator" },
-        org: { th: "Student volunteer", en: "Student volunteer" },
+        org: { th: "SUT Student volunteer", en: "SUT Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/thanakrit.webp"),
         photoPosition: "center 6%",
         photoScale: 1.4,
@@ -218,7 +232,7 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "อนุพงศ์ สินธุวงศานนท์", en: "Anupong Sintuwonsanon" },
         role: { th: "Core Team", en: "Core Team" },
-        org: { th: "Student volunteer", en: "Student volunteer" },
+        org: { th: "SUT Student volunteer", en: "SUT Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/anupong.webp"),
         photoPosition: "center 6%",
         photoScale: 1.2,
@@ -227,7 +241,7 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "พิชชาพร ดวงแก้ว ", en: "Pichaphon Duangkeow " },
         role: { th: "Core Team / QML", en: "Core Team / QML" },
-        org: { th: "Student volunteer", en: "Student volunteer" },
+        org: { th: "SUT Student volunteer", en: "SUT Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/pichaphon.webp"),
         photoPosition: "center 6%",
         photoScale: 1.2,
@@ -236,7 +250,7 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "กรกนก หอมกลิ่น", en: "Kronkanok Homglin" },
         role: { th: "Core Team", en: "Core Team" },
-        org: { th: "Student volunteer", en: "Student volunteer" },
+        org: { th: "SUT Student volunteer", en: "SUT Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/kronkanok.webp"),
         photoPosition: "center 6%",
         photoScale: 1.6,
@@ -245,7 +259,7 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "มาโนช คำธร", en: "Manot khamton" },
         role: { th: "Technical Lead", en: "Technical Lead" },
-        org: { th: "Student volunteer", en: "Student volunteer" },
+        org: { th: "SUT Student volunteer", en: "SUT Student volunteer" },
         photo: asset("/assets/photos/committee-portraits/manot.webp"),
         photoPosition: "center 6%",
         photoScale: 1.25,
@@ -258,6 +272,21 @@ export const committee: CommitteeGroup[] = [
        // org: { th: "QTRiC", en: "QTRiC" },
        // confirmed: true,
     //  },
+    ],
+  },
+  {
+    title: { th: "ทีมดำเนินงานหลัก", en: "Core Operations Team" },
+    note: { th: "นักศึกษาอาสาสมัคร จุฬาลงกรณ์มหาวิทยาลัย", en: "Chulalongkorn University Student Volunteers" },
+    people: [
+      {
+        name: { th: "พอเพียง อินทจันทร์", en: "Popeang Intajan" },
+        role: { th: "", en: "" },
+        org: { th: "CU Student volunteer", en: "CU Student volunteer" },
+        photo: asset("/assets/photos/committee-portraits/popeang.png"),
+        photoPosition: "center 6%",
+        photoScale: 1.5,
+        confirmed: true,
+      },
     ],
   },
   {
@@ -274,7 +303,7 @@ export const committee: CommitteeGroup[] = [
       {
         name: { th: "Tan Chun Loong", en: "Tan Chun Loong" },
         role: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional advisor" },
-        org: { th: "Nanyang Technological University", en: "Nanyang Technological University" },
+        org: { th: "Founder @ Quantum Wings", en: "Founder @ Quantum Wings" },
         photo: asset("/assets/photos/white-speakers/tan-chun-loong-sharp.png"),
         photoPosition: "center 12%",
         photoScale: 1.9,
@@ -323,24 +352,25 @@ export const committee: CommitteeGroup[] = [
         name: { th: "ผศ. ดร. สุกฤต สุจริตกุล", en: "Asst. Prof. Dr. Sukrit Sucharitakul" },
         role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
         org: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" },
-        photo: asset("/assets/photos/committee-portraits/sukrit-sharp.png"),
-        photoPosition: "center 8%",
+        photo: asset("/assets/photos/AJ.nick.png"),
+        photoPosition: "center top",
         photoScale: 1.15,
-        confirmed: false,
+        photoOffsetX: "-18%",
+        confirmed: true,
       },
       {
         name: { th: "รศ. ดร. อนุชา วัชระภาสร", en: "Assoc. Prof. Dr. Anucha Watcharapasorn" },
         role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
         org: { th: "มหาวิทยาลัยเชียงใหม่", en: "Chiang Mai University" },
         photo: asset("/assets/photos/Dr.anucha.png"),
-        confirmed: false,
+        confirmed: true,
       },
       {
-        name: { th: "ผศ. ดร. ปรือ กลสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
+        name: { th: "ผศ. ดร. พฤฒิ กาฬสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
         role: { th: "ผู้ประสานงานมหาวิทยาลัย", en: "University coordinator" },
         org: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" },
         photo: asset("/assets/photos/white-speakers/pruet.webp"),
-        confirmed: false,
+        confirmed: true,
       },
       // {
       //   name: { th: "รศ. ดร. อารียา จันทร์ศรี", en: "Assoc. Prof. Dr. Areeya Chantasri" },

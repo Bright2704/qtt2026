@@ -113,7 +113,7 @@ export const agenda: Slot[] = [
     time: "16:30 – 17:00",
     title: { th: "Session 3: Networking Circles", en: "Session 3: Networking Circles" },
     detail: {
-      th: "เลือกวงคุย:\n• Circle 1: Senior Mentorship (พี่จู๊ด) — Career growth, startup scaling\n• Circle 2: Academic & Faculty (อ.แจน) — Research grants, curriculum design\n• Circle 3: Student & Community (น้องๆ) — Learning path, hackathon experience",
+      th: "เลือกวงคุย:\n• Circle 1: Senior Mentorship — Career growth, startup scaling\n• Circle 2: Academic & Faculty (อ.แจน) — Research grants, curriculum design\n• Circle 3: Student & Community (น้องๆ) — Learning path, hackathon experience",
       en: "Choose your circle:\n• Circle 1: Senior Mentorship (P'Jude) — Career growth, startup scaling\n• Circle 2: Academic & Faculty (Aj. Jan) — Research grants, curriculum design\n• Circle 3: Student & Community (Students) — Learning path, hackathon experience",
     },
     speaker: {
@@ -282,7 +282,7 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
         duration: { th: "2 ชั่วโมง", en: "2 hours" },
         title: { th: "Quantum Fundamental (Basic)", en: "Quantum Fundamental (Basic)" },
         speaker: {
-          name: { th: "ดร. ธนภัทร ดีสุวรรณ (อาจารย์โอม)", en: "Dr. Tanapat Deesuwan (Aj. Ohm)" },
+          name: { th: "ดร. ธนภัทร ดีสุวรรณ", en: "Dr. Tanapat Deesuwan" },
           role: { th: "อาจารย์ประจำภาควิชาฟิสิกส์", en: "Lecturer, Department of Physics" },
           org: { th: "มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (มจธ.)", en: "KMUTT" },
           photo: asset("/assets/photos/white-speakers/tanapat.webp"),
@@ -291,8 +291,7 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
           th: "ปูพื้นฐานแนวคิดทางควอนตัม คิวบิต เกตควอนตัม และการคำนวณเบื้องต้น",
           en: "Fundamental quantum concepts, qubits, quantum gates, and basic computations.",
         },
-        status: "TBC",
-        note: { th: "กำหนดลงตาราง (TBC)", en: "Scheduled (TBC)" },
+        status: "Confirmed",
       },
     ],
   },
@@ -312,12 +311,12 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
         duration: { th: "1 ชั่วโมง", en: "1 hour" },
         title: { th: "Lecture 2: qBraid Platform & Optimization", en: "Lecture 2: qBraid Platform & Optimization" },
         speaker: {
-          name: { th: "ดร. Ricky Young & คุณ Harshit Gupta", en: "Dr. Ricky Young & Harshit Gupta" },
+          name: { th: "ดร. Ricky Young & คุณ Harshit Gupta", en: "Ricky Young & Harshit Gupta" },
           role: { th: "Quantum Software Engineers", en: "Quantum Software Engineers" },
           org: { th: "qBraid", en: "qBraid" },
           photo: asset("/assets/photos/white-speakers/ricky.webp"),
           portraits: [
-            { name: { th: "ดร. Ricky Young", en: "Dr. Ricky Young" }, photo: asset("/assets/photos/white-speakers/ricky.webp") },
+            { name: { th: "ดร. Ricky Young", en: "Ricky Young" }, photo: asset("/assets/photos/white-speakers/ricky.webp") },
             { name: { th: "คุณ Harshit Gupta", en: "Harshit Gupta" }, photo: asset("/assets/photos/white-speakers/harshit.webp") },
           ],
         },
@@ -341,6 +340,22 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
         detail: {
           th: "สำรวจจุดตัดของเทคโนโลยี Quantum Computing และ AI โอกาสและความท้าทายในยุคถัดไป",
           en: "Exploring the intersection of Quantum Computing and AI, future opportunities, and breakthroughs.",
+        },
+        status: "Confirmed",
+      },
+      {
+        id: "s2-qiskit-101",
+        time: "16:00 – 17:00 น.",
+        duration: { th: "1 ชั่วโมง", en: "1 hour" },
+        title: { th: "Quantum and Qiskit 101 Seminar", en: "Quantum and Qiskit 101 Seminar" },
+        speaker: {
+          name: { th: "Kyle Carlo C. Lasala", en: "Kyle Carlo C. Lasala" },
+          org: { th: "IBM Qiskit Advocate", en: "IBM Qiskit Advocate" },
+          photo: asset("/assets/photos/white-speakers/kyle-lasala.png"),
+        },
+        detail: {
+          th: "สัมมนาออนไลน์แนะนำพื้นฐาน Quantum และ Qiskit โดยวิทยากรจาก IBM Quantum เวลา 16:00–17:00 น. (ICT)",
+          en: "Virtual introductory seminar on Quantum and Qiskit with an IBM Quantum speaker, 16:00–17:00 ICT.",
         },
         status: "Confirmed",
       },
@@ -379,7 +394,7 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
         duration: { th: "1 ชั่วโมง", en: "1 hour" },
         title: { th: "Quantum Communication", en: "Quantum Communication" },
         speaker: {
-          name: { th: "ผศ. ดร. ปรือ กลสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
+          name: { th: "ผศ. ดร. พฤฒิ กาฬสุวรรณ", en: "Asst. Prof. Dr. Pruet Kalasuwan" },
           role: { th: "ผู้เชี่ยวชาญด้านการสื่อสารควอนตัม & Southern Node Lead", en: "Quantum Communication Expert & Southern Node Lead" },
           org: { th: "มหาวิทยาลัยสงขลานครินทร์", en: "Prince of Songkla University" },
           photo: asset("/assets/photos/white-speakers/pruet.webp"),
@@ -415,8 +430,8 @@ export const dayByDaySchedule: DayScheduleGroup[] = [
   },
   {
     id: "day-onsite-workshops",
-    dateStr: "จะประกาศภายหลัง",
-    dayLabel: { th: "On-site Workshops (จะประกาศวันจัดงานภายหลัง)", en: "On-site Workshops (To be announced later)" },
+    dateStr: "7, 21, 28 พ.ย. 2026",
+    dayLabel: { th: "On-site Workshops (7, 21, 28 พฤศจิกายน 2026)", en: "On-site Workshops (November 7, 21, 28, 2026)" },
     sessionType: { th: "Regional Workshop Hubs (On-site)", en: "Regional Workshop Hubs (On-site)" },
     description: {
       th: "เวิร์กช็อปลงมือปฏิบัติการจริงในแต่ละภูมิภาค วันและเวลาจัดงานจะประกาศให้ทราบอย่างเป็นทางการเร็ว ๆ นี้",
