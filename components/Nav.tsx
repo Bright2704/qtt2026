@@ -97,7 +97,7 @@ export default function Nav() {
       {showAnnounce && (
         <div className="announce">
           <p style={{ margin: 0 }}>{t(announce.text)}</p>
-          {/* <Link href="/register">{t(announce.cta)} →</Link> */}
+          <a href="https://sites.google.com/view/registerqiskitfallfest2026th/register" target="_blank" rel="noopener noreferrer">{t(announce.cta)} →</a>
           <button
             className="announce__close"
             onClick={() => setShowAnnounce(false)}
@@ -195,9 +195,9 @@ export default function Nav() {
               <span>EN</span>
             </button>
           </div>
-          {/* <Link className="btn btn--primary btn--sm" href="/register">
+          <a className="btn btn--primary btn--sm" href="https://sites.google.com/view/registerqiskitfallfest2026th/register" target="_blank" rel="noopener noreferrer">
             {t({ th: "ลงทะเบียน", en: "Register" })}
-          </Link> */}
+          </a>
           <button
             ref={burgerRef}
             className="nav__burger"
@@ -310,9 +310,9 @@ export default function Nav() {
       {/* ปุ่มลงทะเบียนติดล่างจอบนมือถือ */}
       {!sheetOpen && (
         <div className="mobile-cta">
-          {/* <Link className="btn btn--primary btn--block" href="/register">
+          <a className="btn btn--primary btn--block" href="https://sites.google.com/view/registerqiskitfallfest2026th/register" target="_blank" rel="noopener noreferrer">
             {t({ th: "ลงทะเบียนฟรี", en: "Register free" })} →
-          </Link> */}
+          </a>
         </div>
       )}
 

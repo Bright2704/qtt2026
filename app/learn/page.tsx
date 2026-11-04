@@ -155,10 +155,10 @@ export default function Learn() {
         </div>
 
         <div className="btn-row" style={{ marginTop: 40 }}>
-          {/* <Link className="btn btn--primary" href="/register">
+          <a className="btn btn--primary" href="https://sites.google.com/view/registerqiskitfallfest2026th/register" target="_blank" rel="noopener noreferrer">
             {t({ th: "ยังไม่ได้ลงทะเบียน กดที่นี่", en: "Not registered yet? Start here" })}
             <Icon name="i-arrow" size={18} />
-          </Link> */}
+          </a>
           <Link className="btn btn--secondary" href="/faq">
             {t({ th: "คำถามที่พบบ่อย", en: "Read the FAQ" })}
           </Link>

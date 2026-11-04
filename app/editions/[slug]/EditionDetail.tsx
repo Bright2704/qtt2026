@@ -71,10 +71,12 @@ export default function EditionDetail({ slug }: { slug: string }) {
                   <Icon name="i-arrow" size={18} />
                 </a>
               )}
-              {/* <Link className="btn btn--primary" href="/register">
+              {!isOnline && (
+                <a className="btn btn--primary" href="https://sites.google.com/view/registerqiskitfallfest2026th/register" target="_blank" rel="noopener noreferrer">
                 {t({ th: "จองที่นั่งงานนี้", en: "Book a seat here" })}
                 <Icon name="i-arrow" size={18} />
-              </Link> */}
+              </a>
+              )}
               <Link className="btn btn--secondary" href="/learn">
                 {t({ th: "ดูวิธีเตรียมตัว", en: "How to prepare" })}
               </Link>
@@ -155,11 +157,11 @@ export default function EditionDetail({ slug }: { slug: string }) {
                 <CapacityMeter registered={e.registered} capacity={e.capacity} />
               </div>
               <p style={{ marginTop: 18 }}>{t(e.audience)}</p>
-              {/* {e.status === "open" && (
-                <Link className="btn btn--primary btn--block" href="/register" style={{ marginTop: 20 }}>
+              {e.status === "open" && (
+                <a className="btn btn--primary btn--block" href="https://sites.google.com/view/registerqiskitfallfest2026th/register" target="_blank" rel="noopener noreferrer" style={{ marginTop: 20 }}>
                   {t({ th: "ลงทะเบียน", en: "Register" })}
-                </Link>
-              )} */}
+                </a>
+              )}
               {isPlanned && (
                 <Link className="btn btn--secondary btn--block" href="/contact" style={{ marginTop: 20 }}>
                   {t({ th: "แจ้งความสนใจ", en: "Register your interest" })}

@@ -53,11 +53,11 @@ export default function EditionCard({ e }: { e: Edition }) {
           <Link className="btn btn--secondary btn--sm" href={`/editions/${e.slug}`}>
             {t({ th: "ดูรายละเอียด", en: "Details" })}
           </Link>
-          {/* {e.status === "open" && (
-            <Link className="btn btn--primary btn--sm" href="/register">
+          {e.status === "open" && (
+            <a className="btn btn--primary btn--sm" href="https://sites.google.com/view/registerqiskitfallfest2026th/register" target="_blank" rel="noopener noreferrer">
               {t({ th: "จองที่นั่ง", en: "Book a seat" })}
-            </Link>
-          )} */}
+            </a>
+          )}
           {e.status === "planned" && (
             <Link className="btn btn--secondary btn--sm" href="/contact">
               {t({ th: "รับแจ้งเตือน", en: "Get notified" })}
