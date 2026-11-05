@@ -57,7 +57,7 @@ export default function Editions() {
                 <th>{t({ th: "วันที่", en: "Date" })}</th>
                 {compare.map((e) => (
                   <td key={e.id} className={e.dateConfirmed ? "" : "muted"}>
-                    {t(e.dateLabel)}
+                    {e.dateConfirmed ? t(e.dateLabel) : "—"}
                   </td>
                 ))}
               </tr>
@@ -73,7 +73,8 @@ export default function Editions() {
                 <th>{t({ th: "เวลา", en: "Hours" })}</th>
                 {compare.map((e) => (
                   <td key={e.id} className="mono muted">
-                    {e.start === "—" ? t({ th: "1 ชั่วโมง", en: "1 hour" }) : `${e.start} – ${e.end}`}
+                    {e.dateConfirmed && (e.start === "—" ? t({ th: "1 ชั่วโมง", en: "1 hour" }) : `${e.start} – ${e.end}`)}
+                    {!e.dateConfirmed && "—"}
                   </td>
                 ))}
               </tr>

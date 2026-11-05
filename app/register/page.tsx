@@ -163,7 +163,7 @@ export default function Register() {
               <span className={`status status--${e.status}`}>{t(statusLabel[e.status])}</span>
               <h3 style={{ marginTop: 10 }}>{t(e.name)}</h3>
               <p className="small muted" style={{ marginTop: 4 }}>
-                {t(e.city)} · {t(e.dateLabel)}
+                {t(e.city)}{e.dateConfirmed && ` · ${t(e.dateLabel)}`}
               </p>
               <div style={{ marginTop: 18 }}>
                 <CapacityMeter registered={e.registered} capacity={e.capacity} />

@@ -124,7 +124,7 @@ export default function Nav() {
         <nav className="nav__menu" aria-label={t({ th: "เมนูหลัก", en: "Main menu" })}>
           {navItems.map((item) =>
             item.mega ? (
-              <div className="nav__group" key={item.href}>
+              <div key={item.href}>
                 <button
                   ref={megaBtnRef}
                   className="nav__link"
@@ -150,7 +150,7 @@ export default function Nav() {
                           </span>
                           <h4>{t(e.name)}</h4>
                           <p>
-                            {t(e.city)} · {t(e.dateLabel)}
+                            {t(e.city)}{e.dateConfirmed && ` · ${t(e.dateLabel)}`}
                           </p>
                           {e.status === "open" && (
                             <CapacityMeter

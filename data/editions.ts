@@ -26,13 +26,13 @@ export type Edition = {
 };
 
 export const statusLabel: Record<EditionStatus, L> = {
-  open: { th: "เปิดรับลงทะเบียน", en: "Registration open" },
-  soon: { th: "เร็ว ๆ นี้", en: "Coming soon" },
+  open: { th: "เปิดลงทะเบียน", en: "Registration open" },
+  soon: { th: "เร็วๆนี้", en: "Coming soon" },
   planned: { th: "อยู่ระหว่างวางแผน", en: "Being planned" },
   closed: { th: "ปิดรับแล้ว", en: "Closed" },
 };
 
-export const editions: Edition[] = [
+const editionList: Edition[] = [
   {
     id: "sut",
     slug: "sut",
@@ -43,12 +43,12 @@ export const editions: Edition[] = [
     city: { th: "นครราชสีมา", en: "Nakhon Ratchasima" },
     date: null,
     dateConfirmed: false,
-    dateLabel: { th: "จะประกาศภายหลัง", en: "To be announced later" },
+    dateLabel: { th: "รอวันที่ยืนยัน", en: "To be confirmed" },
     start: "13:00",
     end: "17:00",
     capacity: 50,
     registered: 0,
-    status: "open",
+    status: "soon",
     audience: {
       th: "นักเรียนมัธยมปลาย นักศึกษา และอาจารย์ในภาคอีสาน",
       en: "High school students, university students, and faculty across north-eastern Thailand",
@@ -117,14 +117,14 @@ export const editions: Edition[] = [
       {
         icon: "i-pin",
         text: {
-          th: "รอยืนยันรายละเอียดสถานที่",
-          en: "Venue details to be confirmed",
+          th: "รอยืนยันสถานที่",
+          en: "Venue pending",
         },
       },
       {
         icon: "i-laptop",
         text: {
-          th: "มี Wi-Fi และปลั๊กไฟทุกที่นั่ง",
+          th: "Wi-Fi และปลั๊กไฟทุกที่นั่ง",
           en: "Wi-Fi and power at every seat",
         },
       },
@@ -143,7 +143,7 @@ export const editions: Edition[] = [
     end: "—",
     capacity: null,
     registered: 0,
-    status: "open",
+    status: "closed",
     audience: {
       th: "ทุกคนที่อยากรู้ว่างานนี้เกี่ยวกับอะไร ก่อนตัดสินใจสมัคร",
       en: "Anyone who wants to know what the day involves before committing",
@@ -180,14 +180,14 @@ export const editions: Edition[] = [
       en: "Chiang Mai University",
     },
     city: { th: "เชียงใหม่", en: "Chiang Mai" },
-    date: null,
-    dateConfirmed: false,
-    dateLabel: { th: "รอยืนยันวันที่", en: "Date to be confirmed" },
-    start: "08:30",
+    date: "2026-11-07",
+    dateConfirmed: true,
+    dateLabel: { th: "7 พฤศจิกายน 2026", en: "7 November 2026" },
+    start: "13:00",
     end: "17:00",
     capacity: 30,
     registered: 0,
-    status: "soon",
+    status: "open",
     audience: {
       th: "นักศึกษา อาจารย์ และผู้สนใจในภาคเหนือ",
       en: "Students, faculty, and enthusiasts in northern Thailand",
@@ -196,17 +196,17 @@ export const editions: Edition[] = [
       th: "งาน Regional Workshop Node ของภาคเหนือ จัดที่มหาวิทยาลัยเชียงใหม่ ดูแลโดย ผศ. ดร. สุกฤต สุจริตกุล ใช้หลักสูตรแกนกลางเดียวกันกับทุก Hub",
       en: "The northern regional workshop node at Chiang Mai University, led by Asst. Prof. Dr. Sukrit Sucharitakul. Same core curriculum as all hubs.",
     },
-    mapQuery: "Chiang Mai University",
+    mapQuery: "Department of Physics and Materials Science, Faculty of Science, Chiang Mai University",
     address: {
-      th: "มหาวิทยาลัยเชียงใหม่ ต.สุเทพ อ.เมือง จ.เชียงใหม่ 50200",
-      en: "Chiang Mai University, Suthep, Mueang, Chiang Mai 50200",
+      th: "ห้องปฏิบัติการฟิสิกส์ประยุกต์ PB1-119 ชั้น 1 อาคาร PB1 คณะวิทยาศาสตร์ มช.",
+      en: "Applied Physics Research Lab, Room PB1-119, 1st floor, Building PB1, Faculty of Science, CMU",
     },
     travel: [
       {
         icon: "i-pin",
         text: {
-          th: "ห้องประชุม: รอยืนยันอาคารและเลขห้อง",
-          en: "Room: building and room number to be confirmed",
+          th: "ตรงข้ามป้ายหน้าภาควิชาฟิสิกส์และวัสดุศาสตร์",
+          en: "Opposite the Physics and Materials Science department sign.",
         },
       },
     ],
@@ -267,7 +267,7 @@ export const editions: Edition[] = [
     end: "17:00",
     capacity: 30,
     registered: 0,
-    status: "planned",
+    status: "soon",
     audience: {
       th: "นักศึกษา อาจารย์ และผู้สนใจในภาคเหนือตอนล่าง",
       en: "Students, faculty, and enthusiasts in the lower northern region",
@@ -286,7 +286,13 @@ export const editions: Edition[] = [
   },
 ];
 
-export const bookableEditions = editions.filter((e) => e.status === "open");
+export const bookableEditions = editionList.filter((e) => e.status === "open");
+
+export const editions = [
+  ...bookableEditions,
+  ...editionList.filter((e) => e.status !== "open" && e.status !== "closed"),
+  ...editionList.filter((e) => e.status === "closed"),
+];
 
 export function getEdition(slug: string) {
   return editions.find((e) => e.slug === slug);
