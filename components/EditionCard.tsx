@@ -28,11 +28,13 @@ export default function EditionCard({ e }: { e: Edition }) {
             <Icon name="i-pin" size={17} />
             {t(e.city)}
           </span>
-          <span>
-            <Icon name="i-calendar" size={17} />
-            {t(e.dateLabel)}
-          </span>
-          {e.start !== "—" && (
+          {e.dateConfirmed && (
+            <span>
+              <Icon name="i-calendar" size={17} />
+              {t(e.dateLabel)}
+            </span>
+          )}
+          {e.dateConfirmed && e.start !== "—" && (
             <span>
               <Icon name="i-clock" size={17} />
               {e.start} – {e.end}

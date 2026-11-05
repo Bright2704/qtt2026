@@ -467,10 +467,11 @@ strong { font-weight: 600; }
 .nav__burger { display: none; }
 
 /* --- Editions mega menu --- */
-.nav__group { position: relative; }
 .mega {
-  position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%);
-  width: min(940px, calc(100vw - 40px));
+  position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%);
+  width: min(940px, calc(100% - 2 * var(--gutter)));
+  max-height: calc(100dvh - var(--nav-h) - 64px);
+  overflow-y: auto; overscroll-behavior-y: contain;
   background: var(--surface); color: var(--text);
   border-radius: var(--r-lg); box-shadow: var(--e-3);
   border: 1px solid var(--border-soft);
@@ -660,7 +661,13 @@ strong { font-weight: 600; }
 .edition__meta span { display: flex; align-items: center; gap: 8px; }
 .edition__meta svg { color: var(--indigo-600); flex: none; }
 .edition__who { font-size: 14px; color: var(--text-muted); padding: var(--s-3); background: var(--surface-2); border-radius: var(--r-sm); }
-.edition__actions { margin-top: auto; padding-top: var(--s-3); display: flex; gap: var(--s-2); flex-wrap: wrap; }
+.edition__actions { margin-top: auto; padding-top: var(--s-3); display: flex; gap: var(--s-2); }
+.edition__actions > .btn { min-width: 0; padding: 2px 8px; text-align: center; overflow-wrap: anywhere; }
+.edition.card--hover:hover { transform: none; }
+@media (min-width: 505px) {
+  .edition__body h3 { min-block-size: 3lh; }
+  .edition__meta { min-block-size: calc(3lh + 12px); }
+}
 /* งานที่ยังไม่เปิด — เดิมหรี่ทั้งการ์ดด้วย opacity 0.72 ทำให้ตัวหนังสือตกเกณฑ์
    เปลี่ยนมาบอกด้วยพื้นกับเส้นขอบแทน ตัวอักษรยังเข้มเต็มที่ อ่านออกทุกบรรทัด */
 .edition--muted { background: var(--surface-2); border-style: dashed; }
@@ -987,11 +994,9 @@ table.t td.muted { color: var(--text-muted); }
   width: 100%; min-height: 780px; border: 1px solid var(--border);
   border-radius: var(--r-md); background: var(--mist-050);
 }
-.embed-placeholder {
-  display: grid; place-items: center; text-align: center; gap: var(--s-4);
-  min-height: 380px; padding: var(--s-7);
-  border: 2px dashed var(--lavender-200); border-radius: var(--r-lg);
-  background: var(--surface-3);
+.venue-map {
+  display: block; width: 100%; height: 320px; margin-bottom: var(--s-3);
+  border: 1px solid var(--border); border-radius: var(--r-lg);
 }
 
 .calendar-card {

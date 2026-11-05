@@ -101,7 +101,9 @@ export default function RegisterForm() {
   // localStorage อ่านได้หลัง hydrate เท่านั้น ไม่งั้น HTML ฝั่ง server จะไม่ตรงกับ client
   useEffect(() => { if (DEMO) setSaved(listRegistrations()); }, []);
 
-  const open = editions.filter((e) => e.status === "open" || e.status === "soon");
+  const availableEditions = editions.filter(
+    (e) => e.status === "open" || (e.status === "soon" && e.id === "psu"),
+  );
   const set = <K extends keyof Values>(k: K, val: Values[K]) => {
     setV((p) => ({ ...p, [k]: val }));
     setErrors((p) => ({ ...p, [k]: undefined }));
@@ -405,9 +407,9 @@ export default function RegisterForm() {
             aria-invalid={!!errors.edition}
           >
             <option value="">{t({ th: "— เลือกงาน —", en: "— Choose —" })}</option>
-            {open.map((e) => (
+            {availableEditions.map((e) => (
               <option key={e.id} value={e.id}>
-                {t(e.name)} · {t(e.city)} · {t(e.dateLabel)}
+                {t(e.name)} · {t(e.city)}{e.dateConfirmed && ` · ${t(e.dateLabel)}`}
               </option>
             ))}
             <option value="undecided">{t({ th: "ยังไม่แน่ใจ", en: "Not sure yet" })}</option>

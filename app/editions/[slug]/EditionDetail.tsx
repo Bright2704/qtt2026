@@ -18,6 +18,7 @@ export default function EditionDetail({ slug }: { slug: string }) {
 
   const isOnline = e.id === "online";
   const isPlanned = e.status === "planned";
+  const mapQuery = encodeURIComponent(e.mapQuery);
   const showAgenda = e.id === "sut" || e.id === "bangkok";
 
   return (
@@ -44,10 +45,12 @@ export default function EditionDetail({ slug }: { slug: string }) {
             <span style={{ display: "flex", alignItems: "center", gap: 9 }}>
               <Icon name="i-pin" size={19} /> {t(e.city)}
             </span>
-            <span style={{ display: "flex", alignItems: "center", gap: 9 }}>
-              <Icon name="i-calendar" size={19} /> {t(e.dateLabel)}
-            </span>
-            {e.start !== "—" && (
+            {e.dateConfirmed && (
+              <span style={{ display: "flex", alignItems: "center", gap: 9 }}>
+                <Icon name="i-calendar" size={19} /> {t(e.dateLabel)}
+              </span>
+            )}
+            {e.dateConfirmed && e.start !== "—" && (
               <span style={{ display: "flex", alignItems: "center", gap: 9 }}>
                 <Icon name="i-clock" size={19} /> {e.start} – {e.end}
               </span>
@@ -83,7 +86,7 @@ export default function EditionDetail({ slug }: { slug: string }) {
             </div>
           )}
 
-          {e.status !== "planned" && (
+          {e.dateConfirmed && !isPlanned && e.status !== "closed" && (
             <div style={{ marginTop: 40, maxWidth: 480 }}>
               <Countdown
                 target={e.date ? `${e.date}T${e.start !== "—" ? e.start : "13:30"}:00+07:00` : null}
@@ -132,20 +135,22 @@ export default function EditionDetail({ slug }: { slug: string }) {
             )}
 
             {!isOnline && !isPlanned && e.mapQuery && (
-              <div className="embed-placeholder" style={{ minHeight: 260 }}>
-                <Icon name="i-pin" size={34} />
-                <div>
-                  <strong>{t({ th: "แผนที่", en: "Map" })}</strong>
-                  <p className="small muted" style={{ marginTop: 6, maxWidth: "42ch" }}>
-                    {t({
-                      th: "ใส่ Google Maps embed ตรงนี้ได้เลย — ดูวิธีในไฟล์ README ของโปรเจกต์",
-                      en: "Drop a Google Maps embed here — see the project README for how.",
-                    })}
-                  </p>
-                  <p className="small mono muted" style={{ marginTop: 8 }}>
-                    {e.mapQuery}
-                  </p>
-                </div>
+              <div>
+                <iframe
+                  className="venue-map"
+                  src={`https://maps.google.com/maps?q=${mapQuery}&output=embed`}
+                  title={`${t({ th: "แผนที่", en: "Map of" })} ${t(e.name)}`}
+                  loading="lazy"
+                  allowFullScreen
+                />
+                <a
+                  className="btn btn--secondary btn--sm"
+                  href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t({ th: "เปิดใน Google Maps", en: "Open in Google Maps" })}
+                </a>
               </div>
             )}
           </div>

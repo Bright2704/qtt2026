@@ -128,14 +128,17 @@ export default function Home() {
               })}
             </p>
 
-            <Countdown
-              target="2026-11-07T08:30:00+07:00"
-              label={{ th: "นับถอยหลังสู่เวิร์กช็อป ณ IBM Thailand และ มหาวิทยาลัยเชียงใหม่", en: "Countdown to Workshops at IBM Thailand and Chiang Mai University" }}
-              fallback={{
-                th: "7 พฤศจิกายน 2026 เวลา 08:30 น. (เวลาประเทศไทย)",
-                en: "7 November 2026, 08:30 (ICT)",
-              }}
-            />
+            {editions.filter((e) => e.id === "bangkok" || e.id === "chiangmai").map((e) => (
+              <Countdown
+                key={e.id}
+                target={e.date ? `${e.date}T${e.start}:00+07:00` : null}
+                label={{ th: `นับถอยหลังสู่เวิร์กช็อป ณ ${e.name.th}`, en: `Countdown to the workshop at ${e.name.en}` }}
+                fallback={{
+                  th: `${e.dateLabel.th} เวลา ${e.start} น. (เวลาประเทศไทย)`,
+                  en: `${e.dateLabel.en}, ${e.start} (ICT)`,
+                }}
+              />
+            ))}
           </div>
 
           {/* เหรียญตราพร้อมสติกเกอร์โคจรรอบ */}
