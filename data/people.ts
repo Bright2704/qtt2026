@@ -290,6 +290,22 @@ export const committee: CommitteeGroup[] = [
     ],
   },
   {
+    title: { th: "ทีมดำเนินงานหลัก", en: "Core Operations Team" },
+    note: { th: "นักศึกษาอาสาสมัคร มหาวิทยาลัยนเรศวร", en: "Naresuan University Student Volunteers" },
+    people: [
+      { number: 1, name: { th: "เมธาชาญ อุปถัมป์", en: "Matachan Oupatam" } },
+      { number: 2, name: { th: "ลภัส เปรมเจริญ", en: "Laphas Premcharoen" } },
+      { number: 3, name: { th: "เมธาสิทธิ์ ศรีเพชร", en: "Metrasit Sripech" } },
+    ].map(({ number, name }) => ({
+      name,
+      role: { th: "", en: "" },
+      org: { th: "NU Student volunteer", en: "NU Student volunteer" },
+      photo: asset(`/assets/photos/committee-portraits/naresuan-volunteer-${number}.png`),
+      ...(number === 3 ? { photoPosition: "center 8%", photoScale: 1.14 } : {}),
+      confirmed: true,
+    })),
+  },
+  {
     title: { th: "ที่ปรึกษาระดับภูมิภาค", en: "Regional advisors" },
     note: { th: "Monash University Malaysia", en: "Monash University Malaysia" },
     people: [
