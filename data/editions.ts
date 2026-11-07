@@ -267,7 +267,7 @@ const editionList: Edition[] = [
     end: "17:00",
     capacity: 30,
     registered: 0,
-    status: "soon",
+    status: "open",
     audience: {
       th: "นักศึกษา อาจารย์ และผู้สนใจในภาคเหนือตอนล่าง",
       en: "Students, faculty, and enthusiasts in the lower northern region",
