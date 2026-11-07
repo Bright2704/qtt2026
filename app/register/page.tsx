@@ -102,7 +102,7 @@ const formFields: { field: { th: string; en: string }; note: { th: string; en: s
 
 export default function Register() {
   const { t } = useLang();
-  const open = editions.filter((e) => e.status === "open" || e.status === "soon");
+  const open = editions.filter((e) => e.status === "open");
   const hasForm = Boolean(site.contact.registerForm);
 
   return (

@@ -102,7 +102,7 @@ export default function RegisterForm() {
   useEffect(() => { if (DEMO) setSaved(listRegistrations()); }, []);
 
   const availableEditions = editions.filter(
-    (e) => e.status === "open" || (e.status === "soon" && e.id === "psu"),
+    (e) => e.status === "open",
   );
   const set = <K extends keyof Values>(k: K, val: Values[K]) => {
     setV((p) => ({ ...p, [k]: val }));
