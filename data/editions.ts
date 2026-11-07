@@ -233,7 +233,7 @@ const editionList: Edition[] = [
       en: "Students, faculty, and enthusiasts in southern Thailand",
     },
     summary: {
-      th: "งาน Regional Workshop Node ของภาคใต้ จัดที่มหาวิทยาลัยสงขลานครินทร์ ดูแลโดย ผศ. ดร. ปรือ กลัสุวรรณ ใช้หลักสูตรแกนกลางเดียวกันกับทุก Hub",
+      th: "งาน Regional Workshop Node ของภาคใต้ จัดที่มหาวิทยาลัยสงขลานครินทร์ ดูแลโดย ผศ. ดร. พฤฒิ กาฬสุวรรณ ใช้หลักสูตรแกนกลางเดียวกันกับทุก Hub",
       en: "The southern regional workshop node at Prince of Songkla University, led by Asst. Prof. Dr. Pruet Kalasuwan. Same core curriculum as all hubs.",
     },
     mapQuery: "Prince of Songkla University, Hat Yai",
