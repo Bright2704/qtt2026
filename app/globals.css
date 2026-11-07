@@ -964,6 +964,7 @@ table.t td.muted { color: var(--text-muted); }
 }
 /* หัวข้อบนพื้นสว่างต้องเป็นม่วงเข้ม (13.6) — สีขาวเหลือจากตอนธีมมืด อ่านไม่ออกเลย */
 .pagehead h1 { color: var(--text-strong); max-width: 20ch; }
+.pagehead .edition-title { max-width: none; white-space: nowrap; }
 .pagehead .lead { margin-top: var(--s-4); max-width: 60ch; color: var(--text-muted); }
 
 .crumbs { font-size: 13.5px; margin-bottom: var(--s-4); color: var(--text-muted); font-family: var(--font-mono), monospace; }

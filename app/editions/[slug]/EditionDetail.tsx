@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { useEffect, useRef } from "react";
 import { useLang } from "@/lib/i18n";
 import { getEdition, statusLabel } from "@/data/editions";
 import { agenda } from "@/data/programme";
@@ -14,6 +15,31 @@ import Countdown from "@/components/Countdown";
 export default function EditionDetail({ slug }: { slug: string }) {
   const { t } = useLang();
   const e = getEdition(slug);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const title = e ? t(e.name) : "";
+
+  useEffect(() => {
+    const heading = titleRef.current;
+    if (!heading) return;
+
+    function fitTitle() {
+      if (!heading) return;
+      heading.style.removeProperty("font-size");
+      const fontSize = parseFloat(getComputedStyle(heading).fontSize);
+      if (heading.scrollWidth > heading.clientWidth) {
+        heading.style.fontSize = `${fontSize * heading.clientWidth / heading.scrollWidth}px`;
+      }
+    }
+
+    const observer = new ResizeObserver(fitTitle);
+    observer.observe(heading);
+    fitTitle();
+    void document.fonts.ready.then(() => {
+      if (heading.isConnected) fitTitle();
+    });
+    return () => observer.disconnect();
+  }, [title]);
+
   if (!e) notFound();
 
   const isOnline = e.id === "online";
@@ -30,7 +56,7 @@ export default function EditionDetail({ slug }: { slug: string }) {
             {t(e.city)}
           </p>
           <span className={`status status--${e.status}`}>{t(statusLabel[e.status])}</span>
-          <h1 style={{ marginTop: 12 }}>{t(e.name)}</h1>
+          <h1 ref={titleRef} className="edition-title" style={{ marginTop: 12 }}>{title}</h1>
           <p className="lead">{t(e.summary)}</p>
 
           <div
