@@ -1,0 +1,1063 @@
+{
+  "checked_date": "2026-11-13",
+  "repository": "Bright2704/qtt2026",
+  "total_main_commits": 146,
+  "commits": [
+    {
+      "sha": "8c2d263b76f509c96edb9ea5522c21023a738750",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-11-07T08:07:45Z",
+      "committer_time_utc": "2026-11-07T08:07:45Z",
+      "message": "Merge pull request #68 from Bright2704/Toon\n\nFix little",
+      "url": "https://github.com/Bright2704/qtt2026/commit/8c2d263b76f509c96edb9ea5522c21023a738750",
+      "parent_count": 2
+    },
+    {
+      "sha": "c657be555317391e8bfa162066d9c8bf3787ca7f",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-11-07T08:07:13Z",
+      "committer_time_utc": "2026-11-07T08:07:13Z",
+      "message": "fix timing naesuan",
+      "url": "https://github.com/Bright2704/qtt2026/commit/c657be555317391e8bfa162066d9c8bf3787ca7f",
+      "parent_count": 1
+    },
+    {
+      "sha": "8a95b4b708ba0ecc92f352db474b36c0b3cfbbd8",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-11-07T07:46:40Z",
+      "committer_time_utc": "2026-11-07T07:46:40Z",
+      "message": "Fix little",
+      "url": "https://github.com/Bright2704/qtt2026/commit/8a95b4b708ba0ecc92f352db474b36c0b3cfbbd8",
+      "parent_count": 1
+    },
+    {
+      "sha": "f7d5e2370f14c27caeb4eb9b466aeda6e9636452",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-11-07T07:41:23Z",
+      "committer_time_utc": "2026-11-07T07:41:23Z",
+      "message": "Merge pull request #67 from Bright2704/Toon\n\nfix name aj pluet",
+      "url": "https://github.com/Bright2704/qtt2026/commit/f7d5e2370f14c27caeb4eb9b466aeda6e9636452",
+      "parent_count": 2
+    },
+    {
+      "sha": "061acde39260c3f45bf5549b2036696a823e74c0",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-11-07T07:39:53Z",
+      "committer_time_utc": "2026-11-07T07:39:53Z",
+      "message": "fix name aj pluet",
+      "url": "https://github.com/Bright2704/qtt2026/commit/061acde39260c3f45bf5549b2036696a823e74c0",
+      "parent_count": 1
+    },
+    {
+      "sha": "77e402cfed9bf8fbe4ab2fd6577d4f3eca7f14cb",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-11-05T12:32:49Z",
+      "committer_time_utc": "2026-11-05T12:32:49Z",
+      "message": "Merge pull request #66 from Bright2704/Toon\n\nFix กระจุกกะจิก(ตารางของงานทั้งหมด)",
+      "url": "https://github.com/Bright2704/qtt2026/commit/77e402cfed9bf8fbe4ab2fd6577d4f3eca7f14cb",
+      "parent_count": 2
+    },
+    {
+      "sha": "fda294e82527288f64f514539882ee99b7c44af3",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-11-05T12:30:21Z",
+      "committer_time_utc": "2026-11-05T12:30:21Z",
+      "message": "Fix กระจุกกะจิก(ตารางของงานทั้งหมด)",
+      "url": "https://github.com/Bright2704/qtt2026/commit/fda294e82527288f64f514539882ee99b7c44af3",
+      "parent_count": 1
+    },
+    {
+      "sha": "ac0d6bc6cf86c49994bb54d8a9daff0efd3617d5",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-11-05T10:38:03Z",
+      "committer_time_utc": "2026-11-05T10:38:03Z",
+      "message": "Merge pull request #65 from Bright2704/Toon\n\nAdd student Volunteer",
+      "url": "https://github.com/Bright2704/qtt2026/commit/ac0d6bc6cf86c49994bb54d8a9daff0efd3617d5",
+      "parent_count": 2
+    },
+    {
+      "sha": "0ee95dcc9eae5c1bece3d9fd4862e4924d7314c4",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-11-05T10:36:58Z",
+      "committer_time_utc": "2026-11-05T10:36:58Z",
+      "message": "Add student Volunteer",
+      "url": "https://github.com/Bright2704/qtt2026/commit/0ee95dcc9eae5c1bece3d9fd4862e4924d7314c4",
+      "parent_count": 1
+    },
+    {
+      "sha": "96a3c9bd17ba963911355f671f9d50476bef29c7",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-11-04T03:16:57Z",
+      "committer_time_utc": "2026-11-04T03:16:57Z",
+      "message": "Merge pull request #63 from Bright2704/Toon\n\nข้อมู,อาจารย์",
+      "url": "https://github.com/Bright2704/qtt2026/commit/96a3c9bd17ba963911355f671f9d50476bef29c7",
+      "parent_count": 2
+    },
+    {
+      "sha": "07798b36a212d10815dc78def455308fc7b5ffb6",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-11-04T03:15:54Z",
+      "committer_time_utc": "2026-11-04T03:15:54Z",
+      "message": "ข้อมู,อาจารย์",
+      "url": "https://github.com/Bright2704/qtt2026/commit/07798b36a212d10815dc78def455308fc7b5ffb6",
+      "parent_count": 1
+    },
+    {
+      "sha": "43c9c4fd9951ff31282b730ca3e5e073395393ed",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-11-03T12:40:08Z",
+      "committer_time_utc": "2026-11-03T12:40:08Z",
+      "message": "Merge pull request #62 from Bright2704/Toon\n\nBIg fix",
+      "url": "https://github.com/Bright2704/qtt2026/commit/43c9c4fd9951ff31282b730ca3e5e073395393ed",
+      "parent_count": 2
+    },
+    {
+      "sha": "78ca30a6a88f4ddd084c904377d307a2373efcea",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-11-03T12:38:43Z",
+      "committer_time_utc": "2026-11-03T12:38:43Z",
+      "message": "BIg fix",
+      "url": "https://github.com/Bright2704/qtt2026/commit/78ca30a6a88f4ddd084c904377d307a2373efcea",
+      "parent_count": 1
+    },
+    {
+      "sha": "7480df91db5d6cd6dfac27cdacc016b1e7851561",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-18T07:52:23Z",
+      "committer_time_utc": "2026-10-18T07:52:23Z",
+      "message": "Merge pull request #61 from Bright2704/Toon\n\nMini update?",
+      "url": "https://github.com/Bright2704/qtt2026/commit/7480df91db5d6cd6dfac27cdacc016b1e7851561",
+      "parent_count": 2
+    },
+    {
+      "sha": "7c11c77b7f5c458bf8dcf97f9eca02630d6b54be",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-18T07:51:14Z",
+      "committer_time_utc": "2026-10-18T07:51:14Z",
+      "message": "Mini update?",
+      "url": "https://github.com/Bright2704/qtt2026/commit/7c11c77b7f5c458bf8dcf97f9eca02630d6b54be",
+      "parent_count": 1
+    },
+    {
+      "sha": "8353192667e70309e959dde011bbdcc6286ee91a",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-13T03:50:42Z",
+      "committer_time_utc": "2026-10-13T03:50:42Z",
+      "message": "Merge pull request #60 from Bright2704/Toon\n\nFix  Time",
+      "url": "https://github.com/Bright2704/qtt2026/commit/8353192667e70309e959dde011bbdcc6286ee91a",
+      "parent_count": 2
+    },
+    {
+      "sha": "1ed2f676eacaa542cfb3a431bdf3f1743a5b8ce5",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-13T03:41:03Z",
+      "committer_time_utc": "2026-10-13T03:41:03Z",
+      "message": "Fix  Time",
+      "url": "https://github.com/Bright2704/qtt2026/commit/1ed2f676eacaa542cfb3a431bdf3f1743a5b8ce5",
+      "parent_count": 1
+    },
+    {
+      "sha": "1f7b927f3b2a97ccea935bfe002bd1360409245f",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-12T12:37:42Z",
+      "committer_time_utc": "2026-10-12T12:37:42Z",
+      "message": "Merge pull request #59 from Bright2704/Anupong\n\npeople fix",
+      "url": "https://github.com/Bright2704/qtt2026/commit/1f7b927f3b2a97ccea935bfe002bd1360409245f",
+      "parent_count": 2
+    },
+    {
+      "sha": "effa8cf3d606e064cf387da50b54d0f9ae903e4b",
+      "github_login": "Anupong101",
+      "git_author": "B6825515",
+      "author_time_utc": "2026-10-12T12:37:13Z",
+      "committer_time_utc": "2026-10-12T12:37:13Z",
+      "message": "people fix",
+      "url": "https://github.com/Bright2704/qtt2026/commit/effa8cf3d606e064cf387da50b54d0f9ae903e4b",
+      "parent_count": 1
+    },
+    {
+      "sha": "897f7b8ffcea2665a64e00bb30e0783ed6f83387",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-12T09:46:34Z",
+      "committer_time_utc": "2026-10-12T09:46:34Z",
+      "message": "Merge pull request #58 from Bright2704/Toon\n\nSpeaker1",
+      "url": "https://github.com/Bright2704/qtt2026/commit/897f7b8ffcea2665a64e00bb30e0783ed6f83387",
+      "parent_count": 2
+    },
+    {
+      "sha": "575e51223596e0da434123ae577541997b0ad4ff",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-12T09:45:29Z",
+      "committer_time_utc": "2026-10-12T09:45:29Z",
+      "message": "Speaker1",
+      "url": "https://github.com/Bright2704/qtt2026/commit/575e51223596e0da434123ae577541997b0ad4ff",
+      "parent_count": 1
+    },
+    {
+      "sha": "d37df0c1958e58668a92141dea8b8f595d5ccf0b",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-10T05:34:47Z",
+      "committer_time_utc": "2026-10-10T05:34:47Z",
+      "message": "Merge pull request #57 from Bright2704/Toon\n\nUpdate speaker",
+      "url": "https://github.com/Bright2704/qtt2026/commit/d37df0c1958e58668a92141dea8b8f595d5ccf0b",
+      "parent_count": 2
+    },
+    {
+      "sha": "ad7a22ef25a10d1f309302d9f0b849493705ca02",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-10T05:33:59Z",
+      "committer_time_utc": "2026-10-10T05:33:59Z",
+      "message": "Update speaker",
+      "url": "https://github.com/Bright2704/qtt2026/commit/ad7a22ef25a10d1f309302d9f0b849493705ca02",
+      "parent_count": 1
+    },
+    {
+      "sha": "a008b8241fe2bb496a3da4cf7dea8affcde1b985",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-09T11:11:34Z",
+      "committer_time_utc": "2026-10-09T11:11:34Z",
+      "message": "Merge pull request #54 from Bright2704/Toon\n\nแก้ fix people",
+      "url": "https://github.com/Bright2704/qtt2026/commit/a008b8241fe2bb496a3da4cf7dea8affcde1b985",
+      "parent_count": 2
+    },
+    {
+      "sha": "8709caa331967d3f55f7552a6e7581dcc6f40934",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-09T10:59:35Z",
+      "committer_time_utc": "2026-10-09T10:59:35Z",
+      "message": "แก้ fix people",
+      "url": "https://github.com/Bright2704/qtt2026/commit/8709caa331967d3f55f7552a6e7581dcc6f40934",
+      "parent_count": 1
+    },
+    {
+      "sha": "9f093a2132d06cce534754ffb2b932ca67438b85",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-08T14:22:40Z",
+      "committer_time_utc": "2026-10-08T14:22:40Z",
+      "message": "Merge pull request #53 from Bright2704/Anupong\n\nFix people and name",
+      "url": "https://github.com/Bright2704/qtt2026/commit/9f093a2132d06cce534754ffb2b932ca67438b85",
+      "parent_count": 2
+    },
+    {
+      "sha": "4c02d9891ed82d9c0e3e61661e204d54ccb3fae8",
+      "github_login": "Anupong101",
+      "git_author": "B6825515",
+      "author_time_utc": "2026-10-08T14:22:03Z",
+      "committer_time_utc": "2026-10-08T14:22:03Z",
+      "message": "Fix people and name",
+      "url": "https://github.com/Bright2704/qtt2026/commit/4c02d9891ed82d9c0e3e61661e204d54ccb3fae8",
+      "parent_count": 1
+    },
+    {
+      "sha": "d9c8297d0ed05c508c352534c7e37f4595c8ae44",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-08T08:37:30Z",
+      "committer_time_utc": "2026-10-08T08:37:30Z",
+      "message": "Merge pull request #52 from Bright2704/Toon\n\nFix speaker & Calendar",
+      "url": "https://github.com/Bright2704/qtt2026/commit/d9c8297d0ed05c508c352534c7e37f4595c8ae44",
+      "parent_count": 2
+    },
+    {
+      "sha": "6d4c5720e2c2b291c43fa2136c8d6d1b95fcddc0",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-08T08:36:23Z",
+      "committer_time_utc": "2026-10-08T08:36:23Z",
+      "message": "Fix speaker & Calendar",
+      "url": "https://github.com/Bright2704/qtt2026/commit/6d4c5720e2c2b291c43fa2136c8d6d1b95fcddc0",
+      "parent_count": 1
+    },
+    {
+      "sha": "79903784819d5cade701e40ab9296af8000054d2",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-08T05:46:43Z",
+      "committer_time_utc": "2026-10-08T05:46:43Z",
+      "message": "Merge pull request #51 from Bright2704/Toon\n\nFIx people",
+      "url": "https://github.com/Bright2704/qtt2026/commit/79903784819d5cade701e40ab9296af8000054d2",
+      "parent_count": 2
+    },
+    {
+      "sha": "0af6fcb7bcb6703a0db2b56c5e15d2b101e50243",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-08T05:43:42Z",
+      "committer_time_utc": "2026-10-08T05:43:42Z",
+      "message": "FIx people",
+      "url": "https://github.com/Bright2704/qtt2026/commit/0af6fcb7bcb6703a0db2b56c5e15d2b101e50243",
+      "parent_count": 1
+    },
+    {
+      "sha": "4c7b60a40e6329d7ddcaf36460ff5ecbad26e7bf",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-08T05:30:58Z",
+      "committer_time_utc": "2026-10-08T05:30:58Z",
+      "message": "Merge pull request #50 from Bright2704/Toon\n\nFrom Chula",
+      "url": "https://github.com/Bright2704/qtt2026/commit/4c7b60a40e6329d7ddcaf36460ff5ecbad26e7bf",
+      "parent_count": 2
+    },
+    {
+      "sha": "4c7a8b5f1d966419cb54fe09502df7c5ff6573bc",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-08T05:28:01Z",
+      "committer_time_utc": "2026-10-08T05:28:01Z",
+      "message": "From Chula",
+      "url": "https://github.com/Bright2704/qtt2026/commit/4c7a8b5f1d966419cb54fe09502df7c5ff6573bc",
+      "parent_count": 1
+    },
+    {
+      "sha": "0179c7b66f407e36935df8957d26e50b4415e8a6",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-07T17:40:55Z",
+      "committer_time_utc": "2026-10-07T17:40:55Z",
+      "message": "Merge pull request #49 from Bright2704/Anupong\n\nScript",
+      "url": "https://github.com/Bright2704/qtt2026/commit/0179c7b66f407e36935df8957d26e50b4415e8a6",
+      "parent_count": 2
+    },
+    {
+      "sha": "e9a24ef25c1b2ca185fb642d4fcda6da970fe200",
+      "github_login": "Anupong101",
+      "git_author": "B6825515",
+      "author_time_utc": "2026-10-07T17:40:30Z",
+      "committer_time_utc": "2026-10-07T17:40:30Z",
+      "message": "Script",
+      "url": "https://github.com/Bright2704/qtt2026/commit/e9a24ef25c1b2ca185fb642d4fcda6da970fe200",
+      "parent_count": 1
+    },
+    {
+      "sha": "b4c066719e613354aaf533478dd0d2d938bebb08",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-06T08:11:57Z",
+      "committer_time_utc": "2026-10-06T08:11:57Z",
+      "message": "Merge pull request #48 from Bright2704/Toon\n\nFix",
+      "url": "https://github.com/Bright2704/qtt2026/commit/b4c066719e613354aaf533478dd0d2d938bebb08",
+      "parent_count": 2
+    },
+    {
+      "sha": "709071f5ae36497d535ef464fa6d6010b86ea9d9",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-06T08:08:47Z",
+      "committer_time_utc": "2026-10-06T08:08:47Z",
+      "message": "Fix",
+      "url": "https://github.com/Bright2704/qtt2026/commit/709071f5ae36497d535ef464fa6d6010b86ea9d9",
+      "parent_count": 1
+    },
+    {
+      "sha": "7181bb1b93ba1f9454a0dab7621a3e7de6cd3aa6",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-06T07:19:25Z",
+      "committer_time_utc": "2026-10-06T07:19:25Z",
+      "message": "Merge pull request #47 from Bright2704/Toon\n\nCalendar & register",
+      "url": "https://github.com/Bright2704/qtt2026/commit/7181bb1b93ba1f9454a0dab7621a3e7de6cd3aa6",
+      "parent_count": 2
+    },
+    {
+      "sha": "9a448a33ba85bb177bcdb3e44ccde287469c6b53",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-06T07:18:20Z",
+      "committer_time_utc": "2026-10-06T07:18:20Z",
+      "message": "Calendar & register",
+      "url": "https://github.com/Bright2704/qtt2026/commit/9a448a33ba85bb177bcdb3e44ccde287469c6b53",
+      "parent_count": 1
+    },
+    {
+      "sha": "b74451d9e2916ad59c64ab8f11cb304b98e2032a",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-06T04:26:37Z",
+      "committer_time_utc": "2026-10-06T04:26:37Z",
+      "message": "Merge pull request #45 from Bright2704/Toon\n\ncalendar",
+      "url": "https://github.com/Bright2704/qtt2026/commit/b74451d9e2916ad59c64ab8f11cb304b98e2032a",
+      "parent_count": 2
+    },
+    {
+      "sha": "d9dbe8f75ba6913650fae6e15dcbf0ef976f1749",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-06T04:25:49Z",
+      "committer_time_utc": "2026-10-06T04:25:49Z",
+      "message": "calendar",
+      "url": "https://github.com/Bright2704/qtt2026/commit/d9dbe8f75ba6913650fae6e15dcbf0ef976f1749",
+      "parent_count": 1
+    },
+    {
+      "sha": "a798b4aac00b41fe28e283d53e459be4ae754e13",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-05T11:18:10Z",
+      "committer_time_utc": "2026-10-05T11:18:10Z",
+      "message": "Merge pull request #44 from Bright2704/Toon\n\nแก้ commitee",
+      "url": "https://github.com/Bright2704/qtt2026/commit/a798b4aac00b41fe28e283d53e459be4ae754e13",
+      "parent_count": 2
+    },
+    {
+      "sha": "854957cf38b3667ca0bf930a4359ef0ad0c7a5da",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-05T11:17:17Z",
+      "committer_time_utc": "2026-10-05T11:17:17Z",
+      "message": "แก้ commitee",
+      "url": "https://github.com/Bright2704/qtt2026/commit/854957cf38b3667ca0bf930a4359ef0ad0c7a5da",
+      "parent_count": 1
+    },
+    {
+      "sha": "670d0c1186697f5aa69bbd15a8acfbbe22de67ef",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-05T09:42:47Z",
+      "committer_time_utc": "2026-10-05T09:42:47Z",
+      "message": "Merge pull request #43 from Bright2704/Toon\n\nแก้ไข speaker",
+      "url": "https://github.com/Bright2704/qtt2026/commit/670d0c1186697f5aa69bbd15a8acfbbe22de67ef",
+      "parent_count": 2
+    },
+    {
+      "sha": "68e8155482a4d7efd82588b24188dec432a2ec02",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-10-05T09:40:31Z",
+      "committer_time_utc": "2026-10-05T09:40:31Z",
+      "message": "แก้ไข speaker",
+      "url": "https://github.com/Bright2704/qtt2026/commit/68e8155482a4d7efd82588b24188dec432a2ec02",
+      "parent_count": 1
+    },
+    {
+      "sha": "7c017caf1d23cf519ffc2ac2bc9060e9dd2e2e71",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-10-04T18:53:49Z",
+      "committer_time_utc": "2026-10-04T18:53:49Z",
+      "message": "Merge pull request #42 from Bright2704/Anupong\n\nFix name",
+      "url": "https://github.com/Bright2704/qtt2026/commit/7c017caf1d23cf519ffc2ac2bc9060e9dd2e2e71",
+      "parent_count": 2
+    },
+    {
+      "sha": "a7b114bd9f823d1d21e3909d92a4b83b05c64156",
+      "github_login": "Anupong101",
+      "git_author": "B6825515",
+      "author_time_utc": "2026-10-04T18:53:17Z",
+      "committer_time_utc": "2026-10-04T18:53:17Z",
+      "message": "Fix name",
+      "url": "https://github.com/Bright2704/qtt2026/commit/a7b114bd9f823d1d21e3909d92a4b83b05c64156",
+      "parent_count": 1
+    },
+    {
+      "sha": "b389beae29012dc3bb58fa180bdbe6a8ce730924",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-23T15:26:03Z",
+      "committer_time_utc": "2026-09-23T15:26:03Z",
+      "message": "Merge pull request #39 from Bright2704/Toon\n\npeople",
+      "url": "https://github.com/Bright2704/qtt2026/commit/b389beae29012dc3bb58fa180bdbe6a8ce730924",
+      "parent_count": 2
+    },
+    {
+      "sha": "d8eb7c92d12ff472214e2518e8c5544c920f1102",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-09-23T15:24:36Z",
+      "committer_time_utc": "2026-09-23T15:24:36Z",
+      "message": "people",
+      "url": "https://github.com/Bright2704/qtt2026/commit/d8eb7c92d12ff472214e2518e8c5544c920f1102",
+      "parent_count": 1
+    },
+    {
+      "sha": "c784b59630e5f8241d36f37435b908e7eb872d19",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-23T14:27:16Z",
+      "committer_time_utc": "2026-09-23T14:27:16Z",
+      "message": "Merge pull request #38 from Bright2704/Toon\n\nTrue - IBM",
+      "url": "https://github.com/Bright2704/qtt2026/commit/c784b59630e5f8241d36f37435b908e7eb872d19",
+      "parent_count": 2
+    },
+    {
+      "sha": "18670644047fda9592d7c1eafa50106ae34bede4",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-09-23T14:25:57Z",
+      "committer_time_utc": "2026-09-23T14:25:57Z",
+      "message": "True - IBM",
+      "url": "https://github.com/Bright2704/qtt2026/commit/18670644047fda9592d7c1eafa50106ae34bede4",
+      "parent_count": 1
+    },
+    {
+      "sha": "336f0ba10c3a46ffb222e5930f51b89e740cff66",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-23T14:17:40Z",
+      "committer_time_utc": "2026-09-23T14:17:40Z",
+      "message": "Merge pull request #37 from Bright2704/Toon\n\nแก้หน้า ตารางกำหนดการ",
+      "url": "https://github.com/Bright2704/qtt2026/commit/336f0ba10c3a46ffb222e5930f51b89e740cff66",
+      "parent_count": 2
+    },
+    {
+      "sha": "3b0d4047680acaf0218913b1d4c6d36df141a191",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-09-23T14:12:13Z",
+      "committer_time_utc": "2026-09-23T14:12:13Z",
+      "message": "แก้หน้า ตารางกำหนดการ",
+      "url": "https://github.com/Bright2704/qtt2026/commit/3b0d4047680acaf0218913b1d4c6d36df141a191",
+      "parent_count": 1
+    },
+    {
+      "sha": "a61622018f94bea6d8c5fc5d575cdd81edc9f3b7",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-23T05:45:53Z",
+      "committer_time_utc": "2026-09-23T05:45:53Z",
+      "message": "Merge pull request #35 from Bright2704/Anupong\n\nFix register",
+      "url": "https://github.com/Bright2704/qtt2026/commit/a61622018f94bea6d8c5fc5d575cdd81edc9f3b7",
+      "parent_count": 2
+    },
+    {
+      "sha": "705f5d40707efa6f4bf182f332fc6c24ee6a6945",
+      "github_login": "Anupong101",
+      "git_author": "B6825515",
+      "author_time_utc": "2026-09-23T05:44:34Z",
+      "committer_time_utc": "2026-09-23T05:44:34Z",
+      "message": "Fix register",
+      "url": "https://github.com/Bright2704/qtt2026/commit/705f5d40707efa6f4bf182f332fc6c24ee6a6945",
+      "parent_count": 1
+    },
+    {
+      "sha": "96cfae7c77ba6ebbc2aef870d004d7fe34a9c03c",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-13T08:28:21Z",
+      "committer_time_utc": "2026-09-13T08:28:21Z",
+      "message": "Merge pull request #30 from Bright2704/Anupong\n\nใส่ รูปสถานที่และ logo สถานที่ต่างๆ",
+      "url": "https://github.com/Bright2704/qtt2026/commit/96cfae7c77ba6ebbc2aef870d004d7fe34a9c03c",
+      "parent_count": 2
+    },
+    {
+      "sha": "f87719099e1ace51473984c62e295c89a4434c16",
+      "github_login": "Anupong101",
+      "git_author": "B6825515",
+      "author_time_utc": "2026-09-13T08:27:47Z",
+      "committer_time_utc": "2026-09-13T08:27:47Z",
+      "message": "ใส่ รูปสถานที่และ logo สถานที่ต่างๆ",
+      "url": "https://github.com/Bright2704/qtt2026/commit/f87719099e1ace51473984c62e295c89a4434c16",
+      "parent_count": 1
+    },
+    {
+      "sha": "902772ad27463f908bfcf775df9271e0babfcecd",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-13T07:17:12Z",
+      "committer_time_utc": "2026-09-13T07:17:12Z",
+      "message": "Merge pull request #29 from Bright2704/Anupong\n\nแก้ url ของ มหาลัยนเรศวร",
+      "url": "https://github.com/Bright2704/qtt2026/commit/902772ad27463f908bfcf775df9271e0babfcecd",
+      "parent_count": 2
+    },
+    {
+      "sha": "c2e7ee44ad9370c90964c76535451261a2f9bc45",
+      "github_login": "Anupong101",
+      "git_author": "B6825515",
+      "author_time_utc": "2026-09-13T07:16:35Z",
+      "committer_time_utc": "2026-09-13T07:16:35Z",
+      "message": "แก้ url ของ มหาลัยนเรศวร",
+      "url": "https://github.com/Bright2704/qtt2026/commit/c2e7ee44ad9370c90964c76535451261a2f9bc45",
+      "parent_count": 1
+    },
+    {
+      "sha": "58f8b02f5067fe43e0781ff141e2a8315080599e",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-11T15:02:16Z",
+      "committer_time_utc": "2026-09-11T15:02:16Z",
+      "message": "Merge pull request #28 from Bright2704/Anupong\n\nLogo มหาลัย , ลบ ทุนเดินทางออก",
+      "url": "https://github.com/Bright2704/qtt2026/commit/58f8b02f5067fe43e0781ff141e2a8315080599e",
+      "parent_count": 2
+    },
+    {
+      "sha": "3c62dd2a81387a6d2e8cc01518afd6526765433c",
+      "github_login": "Anupong101",
+      "git_author": "B6825515",
+      "author_time_utc": "2026-09-11T15:01:27Z",
+      "committer_time_utc": "2026-09-11T15:01:27Z",
+      "message": "Logo มหาลัย , ลบ ทุนเดินทางออก",
+      "url": "https://github.com/Bright2704/qtt2026/commit/3c62dd2a81387a6d2e8cc01518afd6526765433c",
+      "parent_count": 1
+    },
+    {
+      "sha": "e7262b1d1a1f154ebe29cb8b114f48af558e2a30",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-09T12:33:38Z",
+      "committer_time_utc": "2026-09-09T12:33:38Z",
+      "message": "Merge pull request #19 from Bright2704/Toon\n\nบุคลากรณ์",
+      "url": "https://github.com/Bright2704/qtt2026/commit/e7262b1d1a1f154ebe29cb8b114f48af558e2a30",
+      "parent_count": 2
+    },
+    {
+      "sha": "4d8df9e414a6e22f41ca1fc12ef8a137120df27a",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-09-09T12:33:32Z",
+      "committer_time_utc": "2026-09-09T12:33:32Z",
+      "message": "บุคลากรณ์",
+      "url": "https://github.com/Bright2704/qtt2026/commit/4d8df9e414a6e22f41ca1fc12ef8a137120df27a",
+      "parent_count": 1
+    },
+    {
+      "sha": "c5baf0e806ccd2e11c23a44bd5194dea8df9e509",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-08T12:33:04Z",
+      "committer_time_utc": "2026-09-08T12:33:04Z",
+      "message": "Merge pull request #12 from Bright2704/Toon\n\nแก้ในส่วนของข้อมูล อ.ทิว , อ.chanwit",
+      "url": "https://github.com/Bright2704/qtt2026/commit/c5baf0e806ccd2e11c23a44bd5194dea8df9e509",
+      "parent_count": 2
+    },
+    {
+      "sha": "447ea00475a712d5581974f811cf9facafa342fb",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-09-08T12:33:00Z",
+      "committer_time_utc": "2026-09-08T12:33:00Z",
+      "message": "แก้ในส่วนของข้อมูล อ.ทิว , อ.chanwit",
+      "url": "https://github.com/Bright2704/qtt2026/commit/447ea00475a712d5581974f811cf9facafa342fb",
+      "parent_count": 1
+    },
+    {
+      "sha": "8b89ed9f383974a22f71613e9d9122d267cb3fd8",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-08T11:57:03Z",
+      "committer_time_utc": "2026-09-08T11:57:03Z",
+      "message": "Merge pull request #10 from Bright2704/Toon\n\nใส่ Logo ในส่วนของ Partner/พันธมิตร",
+      "url": "https://github.com/Bright2704/qtt2026/commit/8b89ed9f383974a22f71613e9d9122d267cb3fd8",
+      "parent_count": 2
+    },
+    {
+      "sha": "b54f9d0131e995500e17dd9f7c5d291afc27a7e6",
+      "github_login": null,
+      "git_author": "Anupongณ",
+      "author_time_utc": "2026-09-08T11:56:29Z",
+      "committer_time_utc": "2026-09-08T11:56:29Z",
+      "message": "ใส่ Logo ในส่วนของ Partner/พันธมิตร",
+      "url": "https://github.com/Bright2704/qtt2026/commit/b54f9d0131e995500e17dd9f7c5d291afc27a7e6",
+      "parent_count": 1
+    },
+    {
+      "sha": "51343e9632c00238ed56d7244b4eacad15867352",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-07T16:57:59Z",
+      "committer_time_utc": "2026-09-07T16:57:59Z",
+      "message": "Merge pull request #7 from Bright2704/Anupong\n\nแก้ในส่วนของ speaker",
+      "url": "https://github.com/Bright2704/qtt2026/commit/51343e9632c00238ed56d7244b4eacad15867352",
+      "parent_count": 2
+    },
+    {
+      "sha": "7d4c27a9c0421b91c7ca71f6f0e33905f7da8159",
+      "github_login": "Anupong101",
+      "git_author": "B6825515",
+      "author_time_utc": "2026-09-07T16:57:16Z",
+      "committer_time_utc": "2026-09-07T16:57:16Z",
+      "message": "แก้ในส่วนของ speaker",
+      "url": "https://github.com/Bright2704/qtt2026/commit/7d4c27a9c0421b91c7ca71f6f0e33905f7da8159",
+      "parent_count": 1
+    },
+    {
+      "sha": "46e835969392b9c0843116f25a5f08622665c523",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-07T15:58:03Z",
+      "committer_time_utc": "2026-09-07T15:58:03Z",
+      "message": "Merge pull request #3 from Bright2704/Anupong\n\nแก้เปลี่ยนจาก กรุงเทพ เป็น IBM Thailand",
+      "url": "https://github.com/Bright2704/qtt2026/commit/46e835969392b9c0843116f25a5f08622665c523",
+      "parent_count": 2
+    },
+    {
+      "sha": "ebaa42d13792cfe97dfd86c9c3f4f0b751c23c3c",
+      "github_login": "Anupong101",
+      "git_author": "B6825515",
+      "author_time_utc": "2026-09-07T15:55:33Z",
+      "committer_time_utc": "2026-09-07T15:55:33Z",
+      "message": "แก้เปลี่ยนจาก กรุงเทพ เป็น IBM Thailand",
+      "url": "https://github.com/Bright2704/qtt2026/commit/ebaa42d13792cfe97dfd86c9c3f4f0b751c23c3c",
+      "parent_count": 1
+    },
+    {
+      "sha": "8ba7b85171181e3655e8e43bdab42e9f21c5aab0",
+      "github_login": "AnupongSin",
+      "git_author": "AnupongSin",
+      "author_time_utc": "2026-09-07T15:36:27Z",
+      "committer_time_utc": "2026-09-07T15:36:27Z",
+      "message": "Merge pull request #2 from Bright2704/Poom",
+      "url": "https://github.com/Bright2704/qtt2026/commit/8ba7b85171181e3655e8e43bdab42e9f21c5aab0",
+      "parent_count": 2
+    },
+    {
+      "sha": "36ba23141158c8cf130e23b1a324cfe8f8a5f8c5",
+      "github_login": "Anupong101",
+      "git_author": "B6825515",
+      "author_time_utc": "2026-09-06T15:08:51Z",
+      "committer_time_utc": "2026-09-06T15:08:51Z",
+      "message": "Add sponsor at last session",
+      "url": "https://github.com/Bright2704/qtt2026/commit/36ba23141158c8cf130e23b1a324cfe8f8a5f8c5",
+      "parent_count": 1
+    }
+  ],
+  "pull_requests": [
+    {
+      "number": 68,
+      "title": "Fix little",
+      "github_login": "AnupongSin",
+      "created_at": "2026-11-07T07:47:55Z",
+      "merged_at": "2026-11-07T08:07:45Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/68",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 67,
+      "title": "fix name aj pluet",
+      "github_login": "AnupongSin",
+      "created_at": "2026-11-07T07:40:52Z",
+      "merged_at": "2026-11-07T07:41:23Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/67",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 66,
+      "title": "Fix กระจุกกะจิก(ตารางของงานทั้งหมด)",
+      "github_login": "AnupongSin",
+      "created_at": "2026-11-05T12:32:37Z",
+      "merged_at": "2026-11-05T12:32:50Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/66",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 65,
+      "title": "Add student Volunteer",
+      "github_login": "AnupongSin",
+      "created_at": "2026-11-05T10:37:38Z",
+      "merged_at": "2026-11-05T10:38:03Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/65",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 63,
+      "title": "ข้อมู,อาจารย์",
+      "github_login": "AnupongSin",
+      "created_at": "2026-11-04T03:16:42Z",
+      "merged_at": "2026-11-04T03:16:57Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/63",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 62,
+      "title": "BIg fix",
+      "github_login": "AnupongSin",
+      "created_at": "2026-11-03T12:39:55Z",
+      "merged_at": "2026-11-03T12:40:08Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/62",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 61,
+      "title": "Mini update?",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-18T07:52:12Z",
+      "merged_at": "2026-10-18T07:52:24Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/61",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 60,
+      "title": "Fix  Time",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-13T03:50:22Z",
+      "merged_at": "2026-10-13T03:50:43Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/60",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 59,
+      "title": "people fix",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-12T12:37:27Z",
+      "merged_at": "2026-10-12T12:37:43Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/59",
+      "source_branch": "Anupong"
+    },
+    {
+      "number": 58,
+      "title": "Speaker1",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-12T09:46:21Z",
+      "merged_at": "2026-10-12T09:46:35Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/58",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 57,
+      "title": "Update speaker",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-10T05:34:32Z",
+      "merged_at": "2026-10-10T05:34:47Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/57",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 54,
+      "title": "แก้ fix people",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-09T11:11:18Z",
+      "merged_at": "2026-10-09T11:11:35Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/54",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 53,
+      "title": "Fix people and name",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-08T14:22:29Z",
+      "merged_at": "2026-10-08T14:22:40Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/53",
+      "source_branch": "Anupong"
+    },
+    {
+      "number": 52,
+      "title": "Fix speaker & Calendar",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-08T08:37:12Z",
+      "merged_at": "2026-10-08T08:37:30Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/52",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 51,
+      "title": "FIx people",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-08T05:44:48Z",
+      "merged_at": "2026-10-08T05:46:44Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/51",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 50,
+      "title": "From Chula",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-08T05:30:41Z",
+      "merged_at": "2026-10-08T05:30:58Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/50",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 49,
+      "title": "Script",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-07T17:40:46Z",
+      "merged_at": "2026-10-07T17:40:55Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/49",
+      "source_branch": "Anupong"
+    },
+    {
+      "number": 48,
+      "title": "Fix",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-06T08:11:45Z",
+      "merged_at": "2026-10-06T08:11:58Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/48",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 47,
+      "title": "Calendar & register",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-06T07:19:06Z",
+      "merged_at": "2026-10-06T07:19:25Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/47",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 45,
+      "title": "calendar",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-06T04:26:27Z",
+      "merged_at": "2026-10-06T04:26:38Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/45",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 44,
+      "title": "แก้ commitee",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-05T11:17:56Z",
+      "merged_at": "2026-10-05T11:18:11Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/44",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 43,
+      "title": "แก้ไข speaker",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-05T09:42:29Z",
+      "merged_at": "2026-10-05T09:42:47Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/43",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 42,
+      "title": "Fix name",
+      "github_login": "AnupongSin",
+      "created_at": "2026-10-04T18:53:36Z",
+      "merged_at": "2026-10-04T18:53:49Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/42",
+      "source_branch": "Anupong"
+    },
+    {
+      "number": 39,
+      "title": "people",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-23T15:25:50Z",
+      "merged_at": "2026-09-23T15:26:03Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/39",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 38,
+      "title": "True - IBM",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-23T14:26:52Z",
+      "merged_at": "2026-09-23T14:27:16Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/38",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 37,
+      "title": "แก้หน้า ตารางกำหนดการ",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-23T14:17:24Z",
+      "merged_at": "2026-09-23T14:17:41Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/37",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 35,
+      "title": "Fix register",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-23T05:44:50Z",
+      "merged_at": "2026-09-23T05:45:54Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/35",
+      "source_branch": "Anupong"
+    },
+    {
+      "number": 30,
+      "title": "ใส่ รูปสถานที่และ logo สถานที่ต่างๆ",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-13T08:28:08Z",
+      "merged_at": "2026-09-13T08:28:21Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/30",
+      "source_branch": "Anupong"
+    },
+    {
+      "number": 29,
+      "title": "แก้ url ของ มหาลัยนเรศวร",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-13T07:17:03Z",
+      "merged_at": "2026-09-13T07:17:12Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/29",
+      "source_branch": "Anupong"
+    },
+    {
+      "number": 28,
+      "title": "Logo มหาลัย , ลบ ทุนเดินทางออก",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-11T15:02:08Z",
+      "merged_at": "2026-09-11T15:02:16Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/28",
+      "source_branch": "Anupong"
+    },
+    {
+      "number": 19,
+      "title": "บุคลากรณ์",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-09T12:33:23Z",
+      "merged_at": "2026-09-09T12:33:39Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/19",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 12,
+      "title": "แก้ในส่วนของข้อมูล อ.ทิว , อ.chanwit",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-08T12:32:54Z",
+      "merged_at": "2026-09-08T12:33:04Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/12",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 10,
+      "title": "ใส่ Logo ในส่วนของ Partner/พันธมิตร",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-08T11:56:53Z",
+      "merged_at": "2026-09-08T11:57:03Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/10",
+      "source_branch": "Toon"
+    },
+    {
+      "number": 7,
+      "title": "แก้ในส่วนของ speaker",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-07T16:57:51Z",
+      "merged_at": "2026-09-07T16:58:00Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/7",
+      "source_branch": "Anupong"
+    },
+    {
+      "number": 3,
+      "title": "แก้เปลี่ยนจาก กรุงเทพ เป็น IBM Thailand",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-07T15:57:47Z",
+      "merged_at": "2026-09-07T15:58:03Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/3",
+      "source_branch": "Anupong"
+    },
+    {
+      "number": 1,
+      "title": "Add sponsor at last session",
+      "github_login": "AnupongSin",
+      "created_at": "2026-09-06T15:12:10Z",
+      "merged_at": "2026-09-06T18:33:03Z",
+      "html_url": "https://github.com/Bright2704/qtt2026/pull/1",
+      "source_branch": "Anupong"
+    }
+  ]
+}

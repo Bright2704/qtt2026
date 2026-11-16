@@ -1,0 +1,2568 @@
+{
+  "spreadsheetId": "1vShfoRwe2XRnHoKqrObqUv6OpLCb1yxuPhXIyZiTFCk",
+  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1vShfoRwe2XRnHoKqrObqUv6OpLCb1yxuPhXIyZiTFCk/edit",
+  "properties": {
+    "title": "Qiskit Logs",
+    "locale": "th_TH",
+    "timeZone": "Asia/Bangkok"
+  },
+  "sheets": [
+    {
+      "properties": {
+        "sheetId": 0,
+        "title": "Toon",
+        "index": 0,
+        "sheetType": "GRID",
+        "gridProperties": {
+          "rowCount": 1011,
+          "columnCount": 26
+        }
+      },
+      "data": [
+        {
+          "rowData": [
+            {
+              "values": [
+                {
+                  "formattedValue": "ลำดับ",
+                  "userEnteredValue": {
+                    "stringValue": "ลำดับ"
+                  }
+                },
+                {
+                  "formattedValue": "ตำแหน่ง",
+                  "userEnteredValue": {
+                    "stringValue": "ตำแหน่ง"
+                  }
+                },
+                {
+                  "formattedValue": "ชื่องาน",
+                  "userEnteredValue": {
+                    "stringValue": "ชื่องาน"
+                  }
+                },
+                {
+                  "formattedValue": "รายละเอียด",
+                  "userEnteredValue": {
+                    "stringValue": "รายละเอียด"
+                  }
+                },
+                {
+                  "formattedValue": "วันที่",
+                  "userEnteredValue": {
+                    "stringValue": "วันที่"
+                  }
+                },
+                {
+                  "formattedValue": "ระยะเวลา",
+                  "userEnteredValue": {
+                    "stringValue": "ระยะเวลา"
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "ลำดับ",
+                  "userEnteredValue": {
+                    "stringValue": "ลำดับ"
+                  }
+                },
+                {
+                  "formattedValue": "ตำเเหน่ง",
+                  "userEnteredValue": {
+                    "stringValue": "ตำเเหน่ง"
+                  }
+                },
+                {
+                  "formattedValue": "งาน",
+                  "userEnteredValue": {
+                    "stringValue": "งาน"
+                  }
+                },
+                {
+                  "formattedValue": "รายละเอียด",
+                  "userEnteredValue": {
+                    "stringValue": "รายละเอียด"
+                  }
+                },
+                {
+                  "formattedValue": "วันที่",
+                  "userEnteredValue": {
+                    "stringValue": "วันที่"
+                  }
+                },
+                {
+                  "formattedValue": "ระยะเวลา",
+                  "userEnteredValue": {
+                    "stringValue": "ระยะเวลา"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มข้อมูลผู้สนับสนุน",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มข้อมูลผู้สนับสนุน"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มข้อมูลและภาพผู้สนับสนุนในส่วนท้ายหน้าเว็บไซต์",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มข้อมูลและภาพผู้สนับสนุนในส่วนท้ายหน้าเว็บไซต์"
+                  }
+                },
+                {
+                  "formattedValue": "06/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46271
+                  }
+                },
+                {
+                  "formattedValue": "2 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "1",
+                  "userEnteredValue": {
+                    "numberValue": 1
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขรายละเอียดบนเว็ป",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขรายละเอียดบนเว็ป"
+                  }
+                },
+                {
+                  "formattedValue": "06/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46271
+                  }
+                },
+                {
+                  "formattedValue": "3.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "3.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับข้อมูลวิทยากรและสถานที่",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับข้อมูลวิทยากรและสถานที่"
+                  }
+                },
+                {
+                  "formattedValue": "แก้ไขข้อมูลวิทยากรและเปลี่ยนข้อมูลสถานที่จัดงานเป็น IBM Thailand",
+                  "userEnteredValue": {
+                    "stringValue": "แก้ไขข้อมูลวิทยากรและเปลี่ยนข้อมูลสถานที่จัดงานเป็น IBM Thailand"
+                  }
+                },
+                {
+                  "formattedValue": "07/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46272
+                  }
+                },
+                {
+                  "formattedValue": "2 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "2",
+                  "userEnteredValue": {
+                    "numberValue": 2
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "คอมเมนต์/แก้ไขชื่อเริ่มต้น",
+                  "userEnteredValue": {
+                    "stringValue": "คอมเมนต์/แก้ไขชื่อเริ่มต้น"
+                  }
+                },
+                {
+                  "formattedValue": "06/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46271
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "อัปเดตพันธมิตรและกำหนดการ",
+                  "userEnteredValue": {
+                    "stringValue": "อัปเดตพันธมิตรและกำหนดการ"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มโลโก้พันธมิตร ปรับการแสดงผล และแก้ไขข้อมูลวิทยากรกับกำหนดการ",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มโลโก้พันธมิตร ปรับการแสดงผล และแก้ไขข้อมูลวิทยากรกับกำหนดการ"
+                  }
+                },
+                {
+                  "formattedValue": "08/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46273
+                  }
+                },
+                {
+                  "formattedValue": "2 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "3",
+                  "userEnteredValue": {
+                    "numberValue": 3
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "คอมเมนต์และทดสอบการแสดงผลชื่อในการ์ดบุคคลเริ่มต้น",
+                  "userEnteredValue": {
+                    "stringValue": "คอมเมนต์และทดสอบการแสดงผลชื่อในการ์ดบุคคลเริ่มต้น"
+                  }
+                },
+                {
+                  "formattedValue": "07/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46272
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "อัปเดตข้อมูลบุคลากร",
+                  "userEnteredValue": {
+                    "stringValue": "อัปเดตข้อมูลบุคลากร"
+                  }
+                },
+                {
+                  "formattedValue": "แก้ไขข้อมูลบุคลากรที่เกี่ยวข้องกับงานบนเว็บไซต์",
+                  "userEnteredValue": {
+                    "stringValue": "แก้ไขข้อมูลบุคลากรที่เกี่ยวข้องกับงานบนเว็บไซต์"
+                  }
+                },
+                {
+                  "formattedValue": "09/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46274
+                  }
+                },
+                {
+                  "formattedValue": "2 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "4",
+                  "userEnteredValue": {
+                    "numberValue": 4
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "แก้ไขชื่อและตำแหน่งในการ์ดบุคคล (PersonCard)",
+                  "userEnteredValue": {
+                    "stringValue": "แก้ไขชื่อและตำแหน่งในการ์ดบุคคล (PersonCard)"
+                  }
+                },
+                {
+                  "formattedValue": "08/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46273
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับข้อมูลมหาวิทยาลัยและทุนเดินทาง",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับข้อมูลมหาวิทยาลัยและทุนเดินทาง"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มโลโก้มหาวิทยาลัยและนำข้อมูลทุนสนับสนุนการเดินทางออกจากเว็บไซต์",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มโลโก้มหาวิทยาลัยและนำข้อมูลทุนสนับสนุนการเดินทางออกจากเว็บไซต์"
+                  }
+                },
+                {
+                  "formattedValue": "11/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46276
+                  }
+                },
+                {
+                  "formattedValue": "2 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "5",
+                  "userEnteredValue": {
+                    "numberValue": 5
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "ลบข้อมูลและโลโก้สปอนเซอร์ True ออกจากระบบ",
+                  "userEnteredValue": {
+                    "stringValue": "ลบข้อมูลและโลโก้สปอนเซอร์ True ออกจากระบบ"
+                  }
+                },
+                {
+                  "formattedValue": "09/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46274
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับภาพและข้อมูลสถานที่จัดงาน",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับภาพและข้อมูลสถานที่จัดงาน"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มภาพและกราฟิกสถานที่ ปรับการแสดงผล และแก้ไขลิงก์มหาวิทยาลัยนเรศวร",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มภาพและกราฟิกสถานที่ ปรับการแสดงผล และแก้ไขลิงก์มหาวิทยาลัยนเรศวร"
+                  }
+                },
+                {
+                  "formattedValue": "13/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46278
+                  }
+                },
+                {
+                  "formattedValue": "2 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "6",
+                  "userEnteredValue": {
+                    "numberValue": 6
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "ลบรายชื่อบุคคลและพาร์ตเนอร์ที่ไม่เกี่ยวข้องออกจากระบบ",
+                  "userEnteredValue": {
+                    "stringValue": "ลบรายชื่อบุคคลและพาร์ตเนอร์ที่ไม่เกี่ยวข้องออกจากระบบ"
+                  }
+                },
+                {
+                  "formattedValue": "10/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46275
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับระบบลงทะเบียนและเนื้อหากิจกรรม",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับระบบลงทะเบียนและเนื้อหากิจกรรม"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับหน้าลงทะเบียน เพิ่มข้อมูลและรูปบุคลากร พร้อมอัปเดตกำหนดการหน้าแรกและข่าวกิจกรรม",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับหน้าลงทะเบียน เพิ่มข้อมูลและรูปบุคลากร พร้อมอัปเดตกำหนดการหน้าแรกและข่าวกิจกรรม"
+                  }
+                },
+                {
+                  "formattedValue": "23/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46288
+                  }
+                },
+                {
+                  "formattedValue": "2 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "7",
+                  "userEnteredValue": {
+                    "numberValue": 7
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มและจัดการรูปภาพวิทยากร (Speakers) ชุดแรก",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มและจัดการรูปภาพวิทยากร (Speakers) ชุดแรก"
+                  }
+                },
+                {
+                  "formattedValue": "15/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46280
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Pm",
+                  "userEnteredValue": {
+                    "stringValue": "Pm"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าสุรพัฒเพื่อไปรับบรีฟ",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าสุรพัฒเพื่อไปรับบรีฟ"
+                  }
+                },
+                {
+                  "formattedValue": "เนื้อหาในการจัดทำงาน Calendar , และทำการแก้ไข Poster เพื่อโปรโมต",
+                  "userEnteredValue": {
+                    "stringValue": "เนื้อหาในการจัดทำงาน Calendar , และทำการแก้ไข Poster เพื่อโปรโมต"
+                  }
+                },
+                {
+                  "formattedValue": "04/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46299
+                  }
+                },
+                {
+                  "formattedValue": "1 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "1 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "8",
+                  "userEnteredValue": {
+                    "numberValue": 8
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มรูปภาพ Speakers ชุดที่สอง (อ.เติล, Ricky, Pak Shen)",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มรูปภาพ Speakers ชุดที่สอง (อ.เติล, Ricky, Pak Shen)"
+                  }
+                },
+                {
+                  "formattedValue": "16/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46281
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับหน้าวิทยากรและคณะกรรมการ",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับหน้าวิทยากรและคณะกรรมการ"
+                  }
+                },
+                {
+                  "formattedValue": "แก้ไขรายชื่อ รูปภาพ และการแสดงผล พร้อมจัดทำสื่อสำหรับ Google Sites",
+                  "userEnteredValue": {
+                    "stringValue": "แก้ไขรายชื่อ รูปภาพ และการแสดงผล พร้อมจัดทำสื่อสำหรับ Google Sites"
+                  }
+                },
+                {
+                  "formattedValue": "05/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46300
+                  }
+                },
+                {
+                  "formattedValue": "2 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "9",
+                  "userEnteredValue": {
+                    "numberValue": 9
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มข้อมูลและรูปภาพ Partners ชุดแรก",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มข้อมูลและรูปภาพ Partners ชุดแรก"
+                  }
+                },
+                {
+                  "formattedValue": "17/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46282
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับปฏิทินและการตั้งค่าเซิร์ฟเวอร์",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับปฏิทินและการตั้งค่าเซิร์ฟเวอร์"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับปฏิทิน ตารางกำหนดการ และข้อมูลลงทะเบียน พร้อมแก้ไขการตั้งค่าเซิร์ฟเวอร์และคู่มือ",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับปฏิทิน ตารางกำหนดการ และข้อมูลลงทะเบียน พร้อมแก้ไขการตั้งค่าเซิร์ฟเวอร์และคู่มือ"
+                  }
+                },
+                {
+                  "formattedValue": "06/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46301
+                  }
+                },
+                {
+                  "formattedValue": "2 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "10",
+                  "userEnteredValue": {
+                    "numberValue": 10
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มข้อมูล Partners ชุดที่สอง (DFD, Nitikorn ฯลฯ)",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มข้อมูล Partners ชุดที่สอง (DFD, Nitikorn ฯลฯ)"
+                  }
+                },
+                {
+                  "formattedValue": "18/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46283
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Co-host",
+                  "userEnteredValue": {
+                    "stringValue": "Co-host"
+                  }
+                },
+                {
+                  "formattedValue": "ส่งอีเมล ทั้งสิ้น",
+                  "userEnteredValue": {
+                    "stringValue": "ส่งอีเมล ทั้งสิ้น"
+                  }
+                },
+                {
+                  "formattedValue": "ส่งอีเมล ลิ้ง Zoom ,",
+                  "userEnteredValue": {
+                    "stringValue": "ส่งอีเมล ลิ้ง Zoom ,"
+                  }
+                },
+                {
+                  "formattedValue": "07/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46302
+                  }
+                },
+                {
+                  "formattedValue": "1 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "1 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "11",
+                  "userEnteredValue": {
+                    "numberValue": 11
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มไอคอน SQV Logo (SVG) เข้าสู่ระบบ",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มไอคอน SQV Logo (SVG) เข้าสู่ระบบ"
+                  }
+                },
+                {
+                  "formattedValue": "19/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46284
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับข้อมูลและเพิ่มสคริปต์อีเมลยืนยัน",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับข้อมูลและเพิ่มสคริปต์อีเมลยืนยัน"
+                  }
+                },
+                {
+                  "formattedValue": "แก้ไขข้อมูลบุคลากร วิทยากร รูปคณะกรรมการ และกำหนดการ พร้อมเพิ่มสคริปต์อีเมลยืนยันที่มีโลโก้",
+                  "userEnteredValue": {
+                    "stringValue": "แก้ไขข้อมูลบุคลากร วิทยากร รูปคณะกรรมการ และกำหนดการ พร้อมเพิ่มสคริปต์อีเมลยืนยันที่มีโลโก้"
+                  }
+                },
+                {
+                  "formattedValue": "08/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46303
+                  }
+                },
+                {
+                  "formattedValue": "5 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "5 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "12",
+                  "userEnteredValue": {
+                    "numberValue": 12
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มไอคอนและข้อมูล IBM Sponsor",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มไอคอนและข้อมูล IBM Sponsor"
+                  }
+                },
+                {
+                  "formattedValue": "20/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46285
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Co-host",
+                  "userEnteredValue": {
+                    "stringValue": "Co-host"
+                  }
+                },
+                {
+                  "formattedValue": "ส่งอีเมล ทั้งสิ้น",
+                  "userEnteredValue": {
+                    "stringValue": "ส่งอีเมล ทั้งสิ้น"
+                  }
+                },
+                {
+                  "formattedValue": "ส่งอีเมล ลิ้ง Zoom ,",
+                  "userEnteredValue": {
+                    "stringValue": "ส่งอีเมล ลิ้ง Zoom ,"
+                  }
+                },
+                {
+                  "formattedValue": "08/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46303
+                  }
+                },
+                {
+                  "formattedValue": "1 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "1 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "13",
+                  "userEnteredValue": {
+                    "numberValue": 13
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "อัปเดตและปรับสไตล์ CSS ของโลโก้ในเว็บไซต์",
+                  "userEnteredValue": {
+                    "stringValue": "อัปเดตและปรับสไตล์ CSS ของโลโก้ในเว็บไซต์"
+                  }
+                },
+                {
+                  "formattedValue": "21/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46286
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "แก้ไขข้อมูลบุคลากรและวิทยากร",
+                  "userEnteredValue": {
+                    "stringValue": "แก้ไขข้อมูลบุคลากรและวิทยากร"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับปรุงข้อมูลบุคลากรและวิทยากรบนเว็บไซต์",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับปรุงข้อมูลบุคลากรและวิทยากรบนเว็บไซต์"
+                  }
+                },
+                {
+                  "formattedValue": "09/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46304
+                  }
+                },
+                {
+                  "formattedValue": "2 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "14",
+                  "userEnteredValue": {
+                    "numberValue": 14
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มและปรับแก้ CSS สำหรับโลโก้ผู้ร่วมจัดงาน (Co-hosts)",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มและปรับแก้ CSS สำหรับโลโก้ผู้ร่วมจัดงาน (Co-hosts)"
+                  }
+                },
+                {
+                  "formattedValue": "22/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46287
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Co-host",
+                  "userEnteredValue": {
+                    "stringValue": "Co-host"
+                  }
+                },
+                {
+                  "formattedValue": "ส่งอีเมล ทั้งสิ้น",
+                  "userEnteredValue": {
+                    "stringValue": "ส่งอีเมล ทั้งสิ้น"
+                  }
+                },
+                {
+                  "formattedValue": "ส่งอีเมล ลิ้ง Zoom ,",
+                  "userEnteredValue": {
+                    "stringValue": "ส่งอีเมล ลิ้ง Zoom ,"
+                  }
+                },
+                {
+                  "formattedValue": "09/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46304
+                  }
+                },
+                {
+                  "formattedValue": "1 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "1 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "15",
+                  "userEnteredValue": {
+                    "numberValue": 15
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับปรุงข้อมูลและ layout ในหน้า Partners",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับปรุงข้อมูลและ layout ในหน้า Partners"
+                  }
+                },
+                {
+                  "formattedValue": "23/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46288
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มระบบ Automation เช็กอินและอัปเดตข้อมูลงาน",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มระบบ Automation เช็กอินและอัปเดตข้อมูลงาน"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มไฟล์ระบบเช็กอิน เก็บข้อมูลไว้ในไฟล์ Google sheet",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มไฟล์ระบบเช็กอิน เก็บข้อมูลไว้ในไฟล์ Google sheet"
+                  }
+                },
+                {
+                  "formattedValue": "10/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46305
+                  }
+                },
+                {
+                  "formattedValue": "7 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "7 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "16",
+                  "userEnteredValue": {
+                    "numberValue": 16
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "เพิ่มรูปภาพทีมงาน (Anupong, Noey, Pat, Thanakrit)",
+                  "userEnteredValue": {
+                    "stringValue": "เพิ่มรูปภาพทีมงาน (Anupong, Noey, Pat, Thanakrit)"
+                  }
+                },
+                {
+                  "formattedValue": "24/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46289
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Co-host",
+                  "userEnteredValue": {
+                    "stringValue": "Co-host"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมงาน QiskitFallFest TH 1",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมงาน QiskitFallFest TH 1"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมงาน QiskitFallFest TH 1",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมงาน QiskitFallFest TH 1"
+                  }
+                },
+                {
+                  "formattedValue": "10/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46305
+                  }
+                },
+                {
+                  "formattedValue": "7 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "7 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "17",
+                  "userEnteredValue": {
+                    "numberValue": 17
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "จัดการลบรายชื่อและอัปเดตรูปทีมงานเพิ่มเติม",
+                  "userEnteredValue": {
+                    "stringValue": "จัดการลบรายชื่อและอัปเดตรูปทีมงานเพิ่มเติม"
+                  }
+                },
+                {
+                  "formattedValue": "25/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46290
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Pm",
+                  "userEnteredValue": {
+                    "stringValue": "Pm"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าสุรพัฒเพื่อไปรับบรีฟ",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าสุรพัฒเพื่อไปรับบรีฟ"
+                  }
+                },
+                {
+                  "formattedValue": "ทั้งหมด 10 ประการ วิดิโอ,Qbraid,คู่มือ,Social media,Discord,โปรโมต",
+                  "userEnteredValue": {
+                    "stringValue": "ทั้งหมด 10 ประการ วิดิโอ,Qbraid,คู่มือ,Social media,Discord,โปรโมต"
+                  }
+                },
+                {
+                  "formattedValue": "12/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46307
+                  }
+                },
+                {
+                  "formattedValue": "2 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "18",
+                  "userEnteredValue": {
+                    "numberValue": 18
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับแต่ง Layout โครงสร้างตารางในหน้า Programme",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับแต่ง Layout โครงสร้างตารางในหน้า Programme"
+                  }
+                },
+                {
+                  "formattedValue": "26/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46291
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "อัปเดตข้อมูลบุคลากรและวิทยากร",
+                  "userEnteredValue": {
+                    "stringValue": "อัปเดตข้อมูลบุคลากรและวิทยากร"
+                  }
+                },
+                {
+                  "formattedValue": "แก้ไขและอัปเดตข้อมูลบุคลากรและวิทยากรบนเว็บไซต์",
+                  "userEnteredValue": {
+                    "stringValue": "แก้ไขและอัปเดตข้อมูลบุคลากรและวิทยากรบนเว็บไซต์"
+                  }
+                },
+                {
+                  "formattedValue": "12/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46307
+                  }
+                },
+                {
+                  "formattedValue": "2 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "19",
+                  "userEnteredValue": {
+                    "numberValue": 19
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "จัดการ Path รูปภาพและ assets ในหน้าลงทะเบียนและทั้งเว็บ",
+                  "userEnteredValue": {
+                    "stringValue": "จัดการ Path รูปภาพและ assets ในหน้าลงทะเบียนและทั้งเว็บ"
+                  }
+                },
+                {
+                  "formattedValue": "27/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46292
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Co-host",
+                  "userEnteredValue": {
+                    "stringValue": "Co-host"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมงาน Quantum TH True bangkok",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมงาน Quantum TH True bangkok"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมงาน Quantum TH True bangkok - onsite",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมงาน Quantum TH True bangkok - onsite"
+                  }
+                },
+                {
+                  "formattedValue": "16/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46311
+                  }
+                },
+                {
+                  "formattedValue": "2.5 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "2.5 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "20",
+                  "userEnteredValue": {
+                    "numberValue": 20
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "ปรับปรุงโครงสร้างข้อมูลตารางเวลาและวันจัดกิจกรรม",
+                  "userEnteredValue": {
+                    "stringValue": "ปรับปรุงโครงสร้างข้อมูลตารางเวลาและวันจัดกิจกรรม"
+                  }
+                },
+                {
+                  "formattedValue": "28/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46293
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Co-host",
+                  "userEnteredValue": {
+                    "stringValue": "Co-host"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมงาน QiskitFallFest TH 2",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมงาน QiskitFallFest TH 2"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมงาน QiskitFallFest TH 2",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมงาน QiskitFallFest TH 2"
+                  }
+                },
+                {
+                  "formattedValue": "17/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46312
+                  }
+                },
+                {
+                  "formattedValue": "7 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "7 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "21",
+                  "userEnteredValue": {
+                    "numberValue": 21
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "29/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46294
+                  }
+                },
+                {
+                  "formattedValue": "4.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "4.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Pm/Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Pm/Dev"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมการประชุม",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมการประชุม"
+                  }
+                },
+                {
+                  "formattedValue": "อัปเดทข้อมูลล่าสุดให้กับอาจารย์ฟัง",
+                  "userEnteredValue": {
+                    "stringValue": "อัปเดทข้อมูลล่าสุดให้กับอาจารย์ฟัง"
+                  }
+                },
+                {
+                  "formattedValue": "20/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46315
+                  }
+                },
+                {
+                  "formattedValue": "0.5 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "0.5 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "22",
+                  "userEnteredValue": {
+                    "numberValue": 22
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "อัปเดตรายละเอียดหัวข้อของ อ.เติล (Logistics Operations)",
+                  "userEnteredValue": {
+                    "stringValue": "อัปเดตรายละเอียดหัวข้อของ อ.เติล (Logistics Operations)"
+                  }
+                },
+                {
+                  "formattedValue": "30/09/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46295
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Co-host",
+                  "userEnteredValue": {
+                    "stringValue": "Co-host"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมงาน QiskitFallFest TH 3",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมงาน QiskitFallFest TH 3"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมงาน QiskitFallFest TH 3",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมงาน QiskitFallFest TH 3"
+                  }
+                },
+                {
+                  "formattedValue": "24/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46319
+                  }
+                },
+                {
+                  "formattedValue": "7 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "7 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "23",
+                  "userEnteredValue": {
+                    "numberValue": 23
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้ไขเว็ป qiskit",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้ไขเว็ป qiskit"
+                  }
+                },
+                {
+                  "formattedValue": "ปลดสถานะ TBC และขอบสีส้มของ ดร. ธนภัทร ดีสุวรรณ",
+                  "userEnteredValue": {
+                    "stringValue": "ปลดสถานะ TBC และขอบสีส้มของ ดร. ธนภัทร ดีสุวรรณ"
+                  }
+                },
+                {
+                  "formattedValue": "01/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46296
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Pm/Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Pm/Dev"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมการประชุม",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมการประชุม"
+                  }
+                },
+                {
+                  "formattedValue": "อัปเดทข้อมูลล่าสุดให้กับอาจารย์ฟัง",
+                  "userEnteredValue": {
+                    "stringValue": "อัปเดทข้อมูลล่าสุดให้กับอาจารย์ฟัง"
+                  }
+                },
+                {
+                  "formattedValue": "26/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46321
+                  }
+                },
+                {
+                  "formattedValue": "0.5 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "0.5 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "24",
+                  "userEnteredValue": {
+                    "numberValue": 24
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "ทำ login online",
+                  "userEnteredValue": {
+                    "stringValue": "ทำ login online"
+                  }
+                },
+                {
+                  "formattedValue": "สร้้างระบบเช็คอินออนไลน์",
+                  "userEnteredValue": {
+                    "stringValue": "สร้้างระบบเช็คอินออนไลน์"
+                  }
+                },
+                {
+                  "formattedValue": "02/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46297
+                  }
+                },
+                {
+                  "formattedValue": "7.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "7.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Pm/Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Pm/Dev"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมการประชุม",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมการประชุม"
+                  }
+                },
+                {
+                  "formattedValue": "อัปเดทข้อมูลล่าสุดให้กับอาจารย์ฟัง",
+                  "userEnteredValue": {
+                    "stringValue": "อัปเดทข้อมูลล่าสุดให้กับอาจารย์ฟัง"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Co-host",
+                  "userEnteredValue": {
+                    "stringValue": "Co-host"
+                  }
+                },
+                {
+                  "formattedValue": "Confirm ผู้เข้าร่วมสมัคร IBM วันที่ 7",
+                  "userEnteredValue": {
+                    "stringValue": "Confirm ผู้เข้าร่วมสมัคร IBM วันที่ 7"
+                  }
+                },
+                {
+                  "formattedValue": "โทร Confirm ผู้เข้าร่วมสมัคร IBM วันที่ 7",
+                  "userEnteredValue": {
+                    "stringValue": "โทร Confirm ผู้เข้าร่วมสมัคร IBM วันที่ 7"
+                  }
+                },
+                {
+                  "formattedValue": "31/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46326
+                  }
+                },
+                {
+                  "formattedValue": "4.5 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "4.5 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "25",
+                  "userEnteredValue": {
+                    "numberValue": 25
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าคุมงาน online ",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าคุมงาน online "
+                  }
+                },
+                {
+                  "formattedValue": "เข้าคุมงานออนไลน์ 3 ss",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าคุมงานออนไลน์ 3 ss"
+                  }
+                },
+                {
+                  "formattedValue": "03/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46298
+                  }
+                },
+                {
+                  "formattedValue": "24.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "24.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Pm/Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Pm/Dev"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมการประชุม",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมการประชุม"
+                  }
+                },
+                {
+                  "formattedValue": "อัปเดทข้อมูลล่าสุดให้กับอาจารย์ฟัง",
+                  "userEnteredValue": {
+                    "stringValue": "อัปเดทข้อมูลล่าสุดให้กับอาจารย์ฟัง"
+                  }
+                },
+                {
+                  "formattedValue": "31/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46326
+                  }
+                },
+                {
+                  "formattedValue": "0.5 ชม.",
+                  "userEnteredValue": {
+                    "stringValue": "0.5 ชม."
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "26",
+                  "userEnteredValue": {
+                    "numberValue": 26
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "ทำ register",
+                  "userEnteredValue": {
+                    "stringValue": "ทำ register"
+                  }
+                },
+                {
+                  "formattedValue": "ทำ register",
+                  "userEnteredValue": {
+                    "stringValue": "ทำ register"
+                  }
+                },
+                {
+                  "formattedValue": "04/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46299
+                  }
+                },
+                {
+                  "formattedValue": "10.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "10.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "ทำเช็คอิิน",
+                  "userEnteredValue": {
+                    "stringValue": "ทำเช็คอิิน"
+                  }
+                },
+                {
+                  "formattedValue": "ทำเช็คอิิน IBM",
+                  "userEnteredValue": {
+                    "stringValue": "ทำเช็คอิิน IBM"
+                  }
+                },
+                {
+                  "formattedValue": "5/11/2569",
+                  "userEnteredValue": {
+                    "numberValue": 244658
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "27",
+                  "userEnteredValue": {
+                    "numberValue": 27
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "ทำระบบส่งอัตโนมัติ",
+                  "userEnteredValue": {
+                    "stringValue": "ทำระบบส่งอัตโนมัติ"
+                  }
+                },
+                {
+                  "formattedValue": "ส่งเมลอัตโนมัติ",
+                  "userEnteredValue": {
+                    "stringValue": "ส่งเมลอัตโนมัติ"
+                  }
+                },
+                {
+                  "formattedValue": "05/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46300
+                  }
+                },
+                {
+                  "formattedValue": "5.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "5.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {
+                  "formattedValue": "Dev",
+                  "userEnteredValue": {
+                    "stringValue": "Dev"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมงานของ IBm ",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมงานของ IBm "
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมงานของ IBm ",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมงานของ IBm "
+                  }
+                },
+                {
+                  "formattedValue": "7/11/2569",
+                  "userEnteredValue": {
+                    "numberValue": 244660
+                  }
+                },
+                {
+                  "formattedValue": "7.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "7.ชม"
+                  }
+                },
+                {},
+                {
+                  "formattedValue": "28",
+                  "userEnteredValue": {
+                    "numberValue": 28
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "จัดการ discord",
+                  "userEnteredValue": {
+                    "stringValue": "จัดการ discord"
+                  }
+                },
+                {
+                  "formattedValue": "สร้างห้องต่างๆของดิส",
+                  "userEnteredValue": {
+                    "stringValue": "สร้างห้องต่างๆของดิส"
+                  }
+                },
+                {
+                  "formattedValue": "06/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46301
+                  }
+                },
+                {
+                  "formattedValue": "1.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "1.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "29",
+                  "userEnteredValue": {
+                    "numberValue": 29
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "ประชุมงาน",
+                  "userEnteredValue": {
+                    "stringValue": "ประชุมงาน"
+                  }
+                },
+                {
+                  "formattedValue": "ประชุมงานของทีม",
+                  "userEnteredValue": {
+                    "stringValue": "ประชุมงานของทีม"
+                  }
+                },
+                {
+                  "formattedValue": "07/10/2026",
+                  "userEnteredValue": {
+                    "numberValue": 46302
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "30",
+                  "userEnteredValue": {
+                    "numberValue": 30
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เข้างาน",
+                  "userEnteredValue": {
+                    "stringValue": "เข้างาน"
+                  }
+                },
+                {
+                  "formattedValue": "โทรคอนเฟิร์ม",
+                  "userEnteredValue": {
+                    "stringValue": "โทรคอนเฟิร์ม"
+                  }
+                },
+                {
+                  "formattedValue": "31/10/2569",
+                  "userEnteredValue": {
+                    "numberValue": 244653
+                  }
+                },
+                {
+                  "formattedValue": "4.30.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "4.30.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "31",
+                  "userEnteredValue": {
+                    "numberValue": 31
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "dev",
+                  "userEnteredValue": {
+                    "stringValue": "dev"
+                  }
+                },
+                {
+                  "formattedValue": "ทำควิช & นำวิดีโอลง qbrid ",
+                  "userEnteredValue": {
+                    "stringValue": "ทำควิช & นำวิดีโอลง qbrid "
+                  }
+                },
+                {
+                  "formattedValue": "31/10/2569",
+                  "userEnteredValue": {
+                    "numberValue": 244653
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "32",
+                  "userEnteredValue": {
+                    "numberValue": 32
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "dev",
+                  "userEnteredValue": {
+                    "stringValue": "dev"
+                  }
+                },
+                {
+                  "formattedValue": "เทสระบบส่ง cer ",
+                  "userEnteredValue": {
+                    "stringValue": "เทสระบบส่ง cer "
+                  }
+                },
+                {
+                  "formattedValue": "1/11/2569",
+                  "userEnteredValue": {
+                    "numberValue": 244654
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "33",
+                  "userEnteredValue": {
+                    "numberValue": 33
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "จัดตารางเวล",
+                  "userEnteredValue": {
+                    "stringValue": "จัดตารางเวล"
+                  }
+                },
+                {
+                  "formattedValue": "จัดตารางเวลา",
+                  "userEnteredValue": {
+                    "stringValue": "จัดตารางเวลา"
+                  }
+                },
+                {
+                  "formattedValue": "1/11/2569",
+                  "userEnteredValue": {
+                    "numberValue": 244654
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "34",
+                  "userEnteredValue": {
+                    "numberValue": 34
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เขียนสรุป",
+                  "userEnteredValue": {
+                    "stringValue": "เขียนสรุป"
+                  }
+                },
+                {
+                  "formattedValue": "เข้ียนสรุปภาพรวมจำนวนคนเข้าร่วมคนที่เข้าครบ",
+                  "userEnteredValue": {
+                    "stringValue": "เข้ียนสรุปภาพรวมจำนวนคนเข้าร่วมคนที่เข้าครบ"
+                  }
+                },
+                {
+                  "formattedValue": "1/11/2569",
+                  "userEnteredValue": {
+                    "numberValue": 244654
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "35",
+                  "userEnteredValue": {
+                    "numberValue": 35
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้้ไขเว็ป",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้้ไขเว็ป"
+                  }
+                },
+                {
+                  "formattedValue": "เเก้้ไขเว็ป",
+                  "userEnteredValue": {
+                    "stringValue": "เเก้้ไขเว็ป"
+                  }
+                },
+                {
+                  "formattedValue": "4/11/2569",
+                  "userEnteredValue": {
+                    "numberValue": 244657
+                  }
+                },
+                {
+                  "formattedValue": "3.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "3.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "36",
+                  "userEnteredValue": {
+                    "numberValue": 36
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "ทำเช็คอิิน",
+                  "userEnteredValue": {
+                    "stringValue": "ทำเช็คอิิน"
+                  }
+                },
+                {
+                  "formattedValue": "ทำเช็คอิิน IBM",
+                  "userEnteredValue": {
+                    "stringValue": "ทำเช็คอิิน IBM"
+                  }
+                },
+                {
+                  "formattedValue": "5/11/2569",
+                  "userEnteredValue": {
+                    "numberValue": 244658
+                  }
+                },
+                {
+                  "formattedValue": "2.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "2.ชม"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {
+                  "formattedValue": "37",
+                  "userEnteredValue": {
+                    "numberValue": 37
+                  }
+                },
+                {
+                  "formattedValue": "DEV",
+                  "userEnteredValue": {
+                    "stringValue": "DEV"
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมงานของ IBm ",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมงานของ IBm "
+                  }
+                },
+                {
+                  "formattedValue": "เข้าร่วมงานของ IBm ",
+                  "userEnteredValue": {
+                    "stringValue": "เข้าร่วมงานของ IBm "
+                  }
+                },
+                {
+                  "formattedValue": "7/11/2569",
+                  "userEnteredValue": {
+                    "numberValue": 244660
+                  }
+                },
+                {
+                  "formattedValue": "7.ชม",
+                  "userEnteredValue": {
+                    "stringValue": "7.ชม"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
