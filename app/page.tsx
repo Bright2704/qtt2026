@@ -128,7 +128,7 @@ export default function Home() {
               })}
             </p>
 
-            {editions.filter((e) => e.id === "bangkok" || e.id === "chiangmai").map((e) => (
+            {editions.filter((e) => e.id === "sut").map((e) => (
               <Countdown
                 key={e.id}
                 target={e.date ? `${e.date}T${e.start}:00+07:00` : null}
